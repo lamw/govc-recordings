@@ -1,0 +1,387 @@
+<ObjectContent>
+  <obj type="AlarmManager">AlarmManager</obj>
+  <propSet>
+    <name>defaultExpression</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmExpression">
+      <AlarmExpression XMLSchema-instance:type="StateAlarmExpression">
+        <operator>isEqual</operator>
+        <type>HostSystem</type>
+        <statePath>runtime.connectionState</statePath>
+        <red>notResponding</red>
+      </AlarmExpression>
+      <AlarmExpression XMLSchema-instance:type="StateAlarmExpression">
+        <operator>isEqual</operator>
+        <type>HostSystem</type>
+        <statePath>runtime.powerState</statePath>
+        <yellow>standBy</yellow>
+      </AlarmExpression>
+      <AlarmExpression XMLSchema-instance:type="StateAlarmExpression">
+        <operator>isEqual</operator>
+        <type>VirtualMachine</type>
+        <statePath>runtime.powerState</statePath>
+        <yellow>poweredOff</yellow>
+      </AlarmExpression>
+      <AlarmExpression XMLSchema-instance:type="StateAlarmExpression">
+        <operator>isEqual</operator>
+        <type>VirtualMachine</type>
+        <statePath>summary.quickStats.guestHeartbeatStatus</statePath>
+        <yellow>yellow</yellow>
+        <red>red</red>
+      </AlarmExpression>
+      <AlarmExpression XMLSchema-instance:type="StateAlarmExpression">
+        <operator>isEqual</operator>
+        <type>VirtualMachine</type>
+        <statePath>summary.quickStats.ftLatencyStatus</statePath>
+        <yellow>yellow</yellow>
+        <red>red</red>
+      </AlarmExpression>
+      <AlarmExpression XMLSchema-instance:type="MetricAlarmExpression">
+        <operator>isAbove</operator>
+        <type>HostSystem</type>
+        <metric>
+          <counterId>2</counterId>
+          <instance></instance>
+        </metric>
+        <yellow>7500</yellow>
+        <yellowInterval>300</yellowInterval>
+        <red>9000</red>
+        <redInterval>300</redInterval>
+      </AlarmExpression>
+      <AlarmExpression XMLSchema-instance:type="MetricAlarmExpression">
+        <operator>isAbove</operator>
+        <type>VirtualMachine</type>
+        <metric>
+          <counterId>2</counterId>
+          <instance></instance>
+        </metric>
+        <yellow>7500</yellow>
+        <yellowInterval>300</yellowInterval>
+        <red>9000</red>
+        <redInterval>300</redInterval>
+      </AlarmExpression>
+      <AlarmExpression XMLSchema-instance:type="MetricAlarmExpression">
+        <operator>isAbove</operator>
+        <type>HostSystem</type>
+        <metric>
+          <counterId>24</counterId>
+          <instance></instance>
+        </metric>
+        <yellow>7500</yellow>
+        <yellowInterval>300</yellowInterval>
+        <red>9000</red>
+        <redInterval>300</redInterval>
+      </AlarmExpression>
+      <AlarmExpression XMLSchema-instance:type="MetricAlarmExpression">
+        <operator>isAbove</operator>
+        <type>VirtualMachine</type>
+        <metric>
+          <counterId>24</counterId>
+          <instance></instance>
+        </metric>
+        <yellow>7500</yellow>
+        <yellowInterval>300</yellowInterval>
+        <red>9000</red>
+        <redInterval>300</redInterval>
+      </AlarmExpression>
+      <AlarmExpression XMLSchema-instance:type="MetricAlarmExpression">
+        <operator>isAbove</operator>
+        <type>HostSystem</type>
+        <metric>
+          <counterId>143</counterId>
+          <instance></instance>
+        </metric>
+        <yellow>7500</yellow>
+        <yellowInterval>300</yellowInterval>
+        <red>9000</red>
+        <redInterval>300</redInterval>
+      </AlarmExpression>
+      <AlarmExpression XMLSchema-instance:type="MetricAlarmExpression">
+        <operator>isAbove</operator>
+        <type>VirtualMachine</type>
+        <metric>
+          <counterId>143</counterId>
+          <instance></instance>
+        </metric>
+        <yellow>7500</yellow>
+        <yellowInterval>300</yellowInterval>
+        <red>9000</red>
+        <redInterval>300</redInterval>
+      </AlarmExpression>
+      <AlarmExpression XMLSchema-instance:type="MetricAlarmExpression">
+        <operator>isAbove</operator>
+        <type>HostSystem</type>
+        <metric>
+          <counterId>125</counterId>
+          <instance></instance>
+        </metric>
+        <yellow>7500</yellow>
+        <yellowInterval>300</yellowInterval>
+        <red>9000</red>
+        <redInterval>300</redInterval>
+      </AlarmExpression>
+      <AlarmExpression XMLSchema-instance:type="MetricAlarmExpression">
+        <operator>isAbove</operator>
+        <type>VirtualMachine</type>
+        <metric>
+          <counterId>125</counterId>
+          <instance></instance>
+        </metric>
+        <yellow>7500</yellow>
+        <yellowInterval>300</yellowInterval>
+        <red>9000</red>
+        <redInterval>300</redInterval>
+      </AlarmExpression>
+      <AlarmExpression XMLSchema-instance:type="MetricAlarmExpression">
+        <operator>isAbove</operator>
+        <type>Datastore</type>
+        <metric>
+          <counterId>268</counterId>
+          <instance></instance>
+        </metric>
+        <yellow>7500</yellow>
+        <red>8500</red>
+      </AlarmExpression>
+      <AlarmExpression XMLSchema-instance:type="EventAlarmExpression">
+        <eventType>LicenseNonComplianceEvent</eventType>
+      </AlarmExpression>
+      <AlarmExpression XMLSchema-instance:type="EventAlarmExpression">
+        <eventType>VmTimedoutStartingSecondaryEvent</eventType>
+      </AlarmExpression>
+      <AlarmExpression XMLSchema-instance:type="EventAlarmExpression">
+        <eventType>VmNoCompatibleHostForSecondaryEvent</eventType>
+      </AlarmExpression>
+      <AlarmExpression XMLSchema-instance:type="OrAlarmExpression">
+        <expression XMLSchema-instance:type="EventAlarmExpression">
+          <comparisons>
+            <attributeName>newState</attributeName>
+            <operator>equals</operator>
+            <value>needSecondary</value>
+          </comparisons>
+          <eventType>VmFaultToleranceStateChangedEvent</eventType>
+          <objectType>VirtualMachine</objectType>
+          <status>red</status>
+        </expression>
+        <expression XMLSchema-instance:type="EventAlarmExpression">
+          <comparisons>
+            <attributeName>newState</attributeName>
+            <operator>equals</operator>
+            <value>disabled</value>
+          </comparisons>
+          <eventType>VmFaultToleranceStateChangedEvent</eventType>
+          <objectType>VirtualMachine</objectType>
+          <status>yellow</status>
+        </expression>
+        <expression XMLSchema-instance:type="EventAlarmExpression">
+          <comparisons>
+            <attributeName>newState</attributeName>
+            <operator>equals</operator>
+            <value>notConfigured</value>
+          </comparisons>
+          <eventType>VmFaultToleranceStateChangedEvent</eventType>
+          <objectType>VirtualMachine</objectType>
+          <status>green</status>
+        </expression>
+        <expression XMLSchema-instance:type="EventAlarmExpression">
+          <comparisons>
+            <attributeName>newState</attributeName>
+            <operator>equals</operator>
+            <value>enabled</value>
+          </comparisons>
+          <eventType>VmFaultToleranceStateChangedEvent</eventType>
+          <objectType>VirtualMachine</objectType>
+          <status>green</status>
+        </expression>
+        <expression XMLSchema-instance:type="EventAlarmExpression">
+          <comparisons>
+            <attributeName>newState</attributeName>
+            <operator>equals</operator>
+            <value>running</value>
+          </comparisons>
+          <eventType>VmFaultToleranceStateChangedEvent</eventType>
+          <objectType>VirtualMachine</objectType>
+          <status>green</status>
+        </expression>
+      </AlarmExpression>
+    </val>
+  </propSet>
+  <propSet>
+    <name>description</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="AlarmDescription">
+      <expr XMLSchema-instance:type="TypeDescription">
+        <label>Entity state</label>
+        <summary>Alarm expression defined on the connection state of the host, power state of a host, or virtual machine</summary>
+        <key>StateAlarmExpression</key>
+      </expr>
+      <expr XMLSchema-instance:type="TypeDescription">
+        <label>DisableAlarmExpression</label>
+        <summary>DisableAlarmExpression</summary>
+        <key>DisableAlarmExpression</key>
+      </expr>
+      <expr XMLSchema-instance:type="TypeDescription">
+        <label>Event</label>
+        <summary>Event alarm expression</summary>
+        <key>EventAlarmExpression</key>
+      </expr>
+      <expr XMLSchema-instance:type="TypeDescription">
+        <label>Entity metric</label>
+        <summary>Alarm expression defined on the metric data of an entity</summary>
+        <key>MetricAlarmExpression</key>
+      </expr>
+      <expr XMLSchema-instance:type="TypeDescription">
+        <label>AND</label>
+        <summary>Alarm expression that describes conjoined alarm expressions</summary>
+        <key>AndAlarmExpression</key>
+      </expr>
+      <expr XMLSchema-instance:type="TypeDescription">
+        <label>OR</label>
+        <summary>Alarm expression that describes disjoined alarm expressions</summary>
+        <key>OrAlarmExpression</key>
+      </expr>
+      <stateOperator XMLSchema-instance:type="ElementDescription">
+        <label>Is equal to</label>
+        <summary>Test if the target item is in the current state</summary>
+        <key>isEqual</key>
+      </stateOperator>
+      <stateOperator XMLSchema-instance:type="ElementDescription">
+        <label>Not equal to</label>
+        <summary>Test if the target item is not in the current state</summary>
+        <key>isUnequal</key>
+      </stateOperator>
+      <metricOperator XMLSchema-instance:type="ElementDescription">
+        <label>Is above</label>
+        <summary>Test if the target metric value is greater than the given value</summary>
+        <key>isAbove</key>
+      </metricOperator>
+      <metricOperator XMLSchema-instance:type="ElementDescription">
+        <label>Is below</label>
+        <summary>Test if the target metric value is lesser than the given value</summary>
+        <key>isBelow</key>
+      </metricOperator>
+      <hostSystemConnectionState XMLSchema-instance:type="ElementDescription">
+        <label>Connected</label>
+        <summary>Host is connected</summary>
+        <key>connected</key>
+      </hostSystemConnectionState>
+      <hostSystemConnectionState XMLSchema-instance:type="ElementDescription">
+        <label>Not responding</label>
+        <summary>vCenter Server is not receiving heartbeats from the host</summary>
+        <key>notResponding</key>
+      </hostSystemConnectionState>
+      <hostSystemConnectionState XMLSchema-instance:type="ElementDescription">
+        <label>Disconnected</label>
+        <summary>The user has explicitly taken the host down</summary>
+        <key>disconnected</key>
+      </hostSystemConnectionState>
+      <virtualMachinePowerState XMLSchema-instance:type="ElementDescription">
+        <label>Powered off</label>
+        <summary>Virtual machine is powered off</summary>
+        <key>poweredOff</key>
+      </virtualMachinePowerState>
+      <virtualMachinePowerState XMLSchema-instance:type="ElementDescription">
+        <label>Powered on</label>
+        <summary>Virtual machine is powered on</summary>
+        <key>poweredOn</key>
+      </virtualMachinePowerState>
+      <virtualMachinePowerState XMLSchema-instance:type="ElementDescription">
+        <label>Suspended</label>
+        <summary>Virtual machine is suspended</summary>
+        <key>suspended</key>
+      </virtualMachinePowerState>
+      <datastoreConnectionState XMLSchema-instance:type="ElementDescription">
+        <label>Connected</label>
+        <summary>Datastore is connected</summary>
+        <key>True</key>
+      </datastoreConnectionState>
+      <datastoreConnectionState XMLSchema-instance:type="ElementDescription">
+        <label>Disconnected</label>
+        <summary>Datastore is disconnected</summary>
+        <key>False</key>
+      </datastoreConnectionState>
+      <hostSystemPowerState XMLSchema-instance:type="ElementDescription">
+        <label>Powered on</label>
+        <summary>Host is powered on</summary>
+        <key>poweredOn</key>
+      </hostSystemPowerState>
+      <hostSystemPowerState XMLSchema-instance:type="ElementDescription">
+        <label>Powered off</label>
+        <summary>Host is powered off</summary>
+        <key>poweredOff</key>
+      </hostSystemPowerState>
+      <hostSystemPowerState XMLSchema-instance:type="ElementDescription">
+        <label>Standby</label>
+        <summary>Host is in standby mode</summary>
+        <key>standBy</key>
+      </hostSystemPowerState>
+      <hostSystemPowerState XMLSchema-instance:type="ElementDescription">
+        <label>Unknown</label>
+        <summary>Host power state cannot be determined</summary>
+        <key>unknown</key>
+      </hostSystemPowerState>
+      <virtualMachineGuestHeartbeatStatus XMLSchema-instance:type="ElementDescription">
+        <label>Gray</label>
+        <summary>No status available</summary>
+        <key>gray</key>
+      </virtualMachineGuestHeartbeatStatus>
+      <virtualMachineGuestHeartbeatStatus XMLSchema-instance:type="ElementDescription">
+        <label>Green</label>
+        <summary>Normal operation</summary>
+        <key>green</key>
+      </virtualMachineGuestHeartbeatStatus>
+      <virtualMachineGuestHeartbeatStatus XMLSchema-instance:type="ElementDescription">
+        <label>Yellow</label>
+        <summary>Intermittent heartbeat</summary>
+        <key>yellow</key>
+      </virtualMachineGuestHeartbeatStatus>
+      <virtualMachineGuestHeartbeatStatus XMLSchema-instance:type="ElementDescription">
+        <label>Red</label>
+        <summary>No heartbeat</summary>
+        <key>red</key>
+      </virtualMachineGuestHeartbeatStatus>
+      <entityStatus XMLSchema-instance:type="ElementDescription">
+        <label>Gray</label>
+        <summary>No status available</summary>
+        <key>gray</key>
+      </entityStatus>
+      <entityStatus XMLSchema-instance:type="ElementDescription">
+        <label>Green</label>
+        <summary>Green indicates normal operation</summary>
+        <key>green</key>
+      </entityStatus>
+      <entityStatus XMLSchema-instance:type="ElementDescription">
+        <label>Yellow</label>
+        <summary>Yellow indicates an error</summary>
+        <key>yellow</key>
+      </entityStatus>
+      <entityStatus XMLSchema-instance:type="ElementDescription">
+        <label>Red</label>
+        <summary>Red indicates an error</summary>
+        <key>red</key>
+      </entityStatus>
+      <action XMLSchema-instance:type="TypeDescription">
+        <label>Method action</label>
+        <summary>Action invoked by standard entity APIs</summary>
+        <key>MethodAction</key>
+      </action>
+      <action XMLSchema-instance:type="TypeDescription">
+        <label>Run a script</label>
+        <summary>Action to run a server script</summary>
+        <key>RunScriptAction</key>
+      </action>
+      <action XMLSchema-instance:type="TypeDescription">
+        <label>Send email</label>
+        <summary>Action to send an email</summary>
+        <key>SendEmailAction</key>
+      </action>
+      <action XMLSchema-instance:type="TypeDescription">
+        <label>Create a task</label>
+        <summary>Action to create a task</summary>
+        <key>CreateTaskAction</key>
+      </action>
+      <action XMLSchema-instance:type="TypeDescription">
+        <label>Send SNMP</label>
+        <summary>Action to send a SNMP trap</summary>
+        <key>SendSNMPAction</key>
+      </action>
+    </val>
+  </propSet>
+</ObjectContent>

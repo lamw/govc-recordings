@@ -1,0 +1,23 @@
+<ObjectContent>
+  <obj type="HostDatastoreBrowser">datastoreBrowser-datastore-48</obj>
+  <propSet>
+    <name>datastore</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="Datastore">datastore-48</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>supportedType</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfFileQuery">
+      <FileQuery XMLSchema-instance:type="VmConfigFileQuery"></FileQuery>
+      <FileQuery XMLSchema-instance:type="TemplateConfigFileQuery"></FileQuery>
+      <FileQuery XMLSchema-instance:type="VmDiskFileQuery"></FileQuery>
+      <FileQuery XMLSchema-instance:type="FolderFileQuery"></FileQuery>
+      <FileQuery XMLSchema-instance:type="VmSnapshotFileQuery"></FileQuery>
+      <FileQuery XMLSchema-instance:type="IsoImageFileQuery"></FileQuery>
+      <FileQuery XMLSchema-instance:type="FloppyImageFileQuery"></FileQuery>
+      <FileQuery XMLSchema-instance:type="VmNvramFileQuery"></FileQuery>
+      <FileQuery XMLSchema-instance:type="VmLogFileQuery"></FileQuery>
+    </val>
+  </propSet>
+</ObjectContent>

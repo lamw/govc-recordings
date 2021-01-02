@@ -1,0 +1,24 @@
+<ObjectContent>
+  <obj type="CryptoManagerKmip">CryptoManager</obj>
+  <propSet>
+    <name>enabled</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:boolean">true</val>
+  </propSet>
+  <propSet>
+    <name>kmipServers</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfKmipClusterInfo">
+      <KmipClusterInfo>
+        <clusterId>
+          <id>f11f26e1-204c-44e0-a98b-4bf176611c5a</id>
+        </clusterId>
+        <servers>
+          <name>f11f26e1-204c-44e0-a98b-4bf176611c5a</name>
+          <address>arn:aws:kms:us-west-2:245849487045:key/f11f26e1-204c-44e0-a98b-4bf176611c5a</address>
+          <port>443</port>
+        </servers>
+        <useAsDefault>false</useAsDefault>
+        <managementType>vCenter</managementType>
+      </KmipClusterInfo>
+    </val>
+  </propSet>
+</ObjectContent>

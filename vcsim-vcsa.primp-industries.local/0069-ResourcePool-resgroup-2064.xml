@@ -1,0 +1,429 @@
+<ObjectContent>
+  <obj type="ResourcePool">resgroup-2064</obj>
+  <propSet>
+    <name>alarmActionsEnabled</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:boolean">true</val>
+  </propSet>
+  <propSet>
+    <name>availableField</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldDef"></val>
+  </propSet>
+  <propSet>
+    <name>childConfiguration</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfResourceConfigSpec">
+      <ResourceConfigSpec>
+        <entity type="VirtualMachine">vm-2080</entity>
+        <cpuAllocation>
+          <reservation>0</reservation>
+          <expandableReservation>false</expandableReservation>
+          <limit>-1</limit>
+          <shares>
+            <shares>2000</shares>
+            <level>normal</level>
+          </shares>
+        </cpuAllocation>
+        <memoryAllocation>
+          <reservation>0</reservation>
+          <expandableReservation>false</expandableReservation>
+          <limit>-1</limit>
+          <shares>
+            <shares>20480</shares>
+            <level>normal</level>
+          </shares>
+          <overheadLimit>59</overheadLimit>
+        </memoryAllocation>
+      </ResourceConfigSpec>
+      <ResourceConfigSpec>
+        <entity type="VirtualMachine">vm-2079</entity>
+        <cpuAllocation>
+          <reservation>0</reservation>
+          <expandableReservation>false</expandableReservation>
+          <limit>-1</limit>
+          <shares>
+            <shares>2000</shares>
+            <level>normal</level>
+          </shares>
+        </cpuAllocation>
+        <memoryAllocation>
+          <reservation>0</reservation>
+          <expandableReservation>false</expandableReservation>
+          <limit>-1</limit>
+          <shares>
+            <shares>20480</shares>
+            <level>normal</level>
+          </shares>
+          <overheadLimit>76</overheadLimit>
+        </memoryAllocation>
+      </ResourceConfigSpec>
+      <ResourceConfigSpec>
+        <entity type="VirtualMachine">vm-2069</entity>
+        <cpuAllocation>
+          <reservation>0</reservation>
+          <expandableReservation>false</expandableReservation>
+          <limit>-1</limit>
+          <shares>
+            <shares>2000</shares>
+            <level>normal</level>
+          </shares>
+        </cpuAllocation>
+        <memoryAllocation>
+          <reservation>0</reservation>
+          <expandableReservation>false</expandableReservation>
+          <limit>-1</limit>
+          <shares>
+            <shares>20480</shares>
+            <level>normal</level>
+          </shares>
+          <overheadLimit>76</overheadLimit>
+        </memoryAllocation>
+      </ResourceConfigSpec>
+      <ResourceConfigSpec>
+        <entity type="VirtualMachine">vm-2070</entity>
+        <cpuAllocation>
+          <reservation>0</reservation>
+          <expandableReservation>false</expandableReservation>
+          <limit>-1</limit>
+          <shares>
+            <shares>2000</shares>
+            <level>normal</level>
+          </shares>
+        </cpuAllocation>
+        <memoryAllocation>
+          <reservation>0</reservation>
+          <expandableReservation>false</expandableReservation>
+          <limit>-1</limit>
+          <shares>
+            <shares>20480</shares>
+            <level>normal</level>
+          </shares>
+          <overheadLimit>76</overheadLimit>
+        </memoryAllocation>
+      </ResourceConfigSpec>
+    </val>
+  </propSet>
+  <propSet>
+    <name>config</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ResourceConfigSpec">
+      <entity type="ResourcePool">resgroup-2064</entity>
+      <cpuAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>true</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>4000</shares>
+          <level>normal</level>
+        </shares>
+      </cpuAllocation>
+      <memoryAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>true</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>163840</shares>
+          <level>normal</level>
+        </shares>
+      </memoryAllocation>
+      <scaleDescendantsShares>disabled</scaleDescendantsShares>
+    </val>
+  </propSet>
+  <propSet>
+    <name>configIssue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfEvent"></val>
+  </propSet>
+  <propSet>
+    <name>configStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>customValue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>declaredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState">
+      <AlarmState>
+        <key>alarm-10.resgroup-2064</key>
+        <entity type="ResourcePool">resgroup-2064</entity>
+        <alarm type="Alarm">alarm-10</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-01T22:37:58.110649Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-112.resgroup-2064</key>
+        <entity type="ResourcePool">resgroup-2064</entity>
+        <alarm type="Alarm">alarm-112</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-01T22:37:58.110761Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-12.resgroup-2064</key>
+        <entity type="ResourcePool">resgroup-2064</entity>
+        <alarm type="Alarm">alarm-12</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-01T22:37:58.110821Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-128.resgroup-2064</key>
+        <entity type="ResourcePool">resgroup-2064</entity>
+        <alarm type="Alarm">alarm-128</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-01T22:37:58.11084Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-15.resgroup-2064</key>
+        <entity type="ResourcePool">resgroup-2064</entity>
+        <alarm type="Alarm">alarm-15</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-01T22:37:58.110855Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-19.resgroup-2064</key>
+        <entity type="ResourcePool">resgroup-2064</entity>
+        <alarm type="Alarm">alarm-19</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-01T22:37:58.110873Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-2.resgroup-2064</key>
+        <entity type="ResourcePool">resgroup-2064</entity>
+        <alarm type="Alarm">alarm-2</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-01T22:37:58.110906Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-38.resgroup-2064</key>
+        <entity type="ResourcePool">resgroup-2064</entity>
+        <alarm type="Alarm">alarm-38</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-01T22:37:58.110935Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-39.resgroup-2064</key>
+        <entity type="ResourcePool">resgroup-2064</entity>
+        <alarm type="Alarm">alarm-39</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-01T22:37:58.110952Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-40.resgroup-2064</key>
+        <entity type="ResourcePool">resgroup-2064</entity>
+        <alarm type="Alarm">alarm-40</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-01T22:37:58.110967Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-47.resgroup-2064</key>
+        <entity type="ResourcePool">resgroup-2064</entity>
+        <alarm type="Alarm">alarm-47</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-01T22:37:58.110987Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-5.resgroup-2064</key>
+        <entity type="ResourcePool">resgroup-2064</entity>
+        <alarm type="Alarm">alarm-5</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-01T22:37:58.111003Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-52.resgroup-2064</key>
+        <entity type="ResourcePool">resgroup-2064</entity>
+        <alarm type="Alarm">alarm-52</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-01T22:37:58.111019Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-54.resgroup-2064</key>
+        <entity type="ResourcePool">resgroup-2064</entity>
+        <alarm type="Alarm">alarm-54</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-01T22:37:58.111034Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-6.resgroup-2064</key>
+        <entity type="ResourcePool">resgroup-2064</entity>
+        <alarm type="Alarm">alarm-6</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-01T22:37:58.11106Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-81.resgroup-2064</key>
+        <entity type="ResourcePool">resgroup-2064</entity>
+        <alarm type="Alarm">alarm-81</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-01T22:37:58.111078Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-9.resgroup-2064</key>
+        <entity type="ResourcePool">resgroup-2064</entity>
+        <alarm type="Alarm">alarm-9</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-01T22:37:58.111092Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+    </val>
+  </propSet>
+  <propSet>
+    <name>disabledMethod</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfString">
+      <string>CreateChildVM_Task</string>
+      <string>RegisterChildVM_Task</string>
+    </val>
+  </propSet>
+  <propSet>
+    <name>effectiveRole</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfInt">
+      <int>-1</int>
+    </val>
+  </propSet>
+  <propSet>
+    <name>name</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:string">TKG</val>
+  </propSet>
+  <propSet>
+    <name>overallStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>owner</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="ClusterComputeResource">domain-c8</val>
+  </propSet>
+  <propSet>
+    <name>parent</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="ResourcePool">resgroup-9</val>
+  </propSet>
+  <propSet>
+    <name>permission</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfPermission"></val>
+  </propSet>
+  <propSet>
+    <name>recentTask</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>resourcePool</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>runtime</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ResourcePoolRuntimeInfo">
+      <memory>
+        <reservationUsed>300941312</reservationUsed>
+        <reservationUsedForVm>300941312</reservationUsedForVm>
+        <unreservedForPool>110678245376</unreservedForPool>
+        <unreservedForVm>110678245376</unreservedForVm>
+        <overallUsage>8730443776</overallUsage>
+        <maxUsage>111781347328</maxUsage>
+      </memory>
+      <cpu>
+        <reservationUsed>0</reservationUsed>
+        <reservationUsedForVm>0</reservationUsedForVm>
+        <unreservedForPool>8678</unreservedForPool>
+        <unreservedForVm>8678</unreservedForVm>
+        <overallUsage>1421</overallUsage>
+        <maxUsage>8678</maxUsage>
+      </cpu>
+      <overallStatus>green</overallStatus>
+      <sharesScalable>disabled</sharesScalable>
+    </val>
+  </propSet>
+  <propSet>
+    <name>summary</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ResourcePoolSummary">
+      <name>TKG</name>
+      <config>
+        <entity type="ResourcePool">resgroup-2064</entity>
+        <cpuAllocation>
+          <reservation>0</reservation>
+          <expandableReservation>true</expandableReservation>
+          <limit>-1</limit>
+          <shares>
+            <shares>4000</shares>
+            <level>normal</level>
+          </shares>
+        </cpuAllocation>
+        <memoryAllocation>
+          <reservation>0</reservation>
+          <expandableReservation>true</expandableReservation>
+          <limit>-1</limit>
+          <shares>
+            <shares>163840</shares>
+            <level>normal</level>
+          </shares>
+        </memoryAllocation>
+        <scaleDescendantsShares>disabled</scaleDescendantsShares>
+      </config>
+      <runtime>
+        <memory>
+          <reservationUsed>300941312</reservationUsed>
+          <reservationUsedForVm>300941312</reservationUsedForVm>
+          <unreservedForPool>110678245376</unreservedForPool>
+          <unreservedForVm>110678245376</unreservedForVm>
+          <overallUsage>8730443776</overallUsage>
+          <maxUsage>111781347328</maxUsage>
+        </memory>
+        <cpu>
+          <reservationUsed>0</reservationUsed>
+          <reservationUsedForVm>0</reservationUsedForVm>
+          <unreservedForPool>8678</unreservedForPool>
+          <unreservedForVm>8678</unreservedForVm>
+          <overallUsage>1421</overallUsage>
+          <maxUsage>8678</maxUsage>
+        </cpu>
+        <overallStatus>green</overallStatus>
+        <sharesScalable>disabled</sharesScalable>
+      </runtime>
+      <quickStats>
+        <overallCpuUsage>1421</overallCpuUsage>
+        <overallCpuDemand>1535</overallCpuDemand>
+        <guestMemoryUsage>3029</guestMemoryUsage>
+        <hostMemoryUsage>8326</hostMemoryUsage>
+        <distributedCpuEntitlement>1535</distributedCpuEntitlement>
+        <distributedMemoryEntitlement>6945</distributedMemoryEntitlement>
+        <staticCpuEntitlement>2892</staticCpuEntitlement>
+        <staticMemoryEntitlement>10899</staticMemoryEntitlement>
+        <privateMemory>8166</privateMemory>
+        <overheadMemory>152</overheadMemory>
+        <consumedOverheadMemory>160</consumedOverheadMemory>
+      </quickStats>
+      <configuredMemoryMB>8192</configuredMemoryMB>
+    </val>
+  </propSet>
+  <propSet>
+    <name>tag</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfTag"></val>
+  </propSet>
+  <propSet>
+    <name>triggeredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState"></val>
+  </propSet>
+  <propSet>
+    <name>value</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>vm</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="VirtualMachine">vm-2080</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-2079</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-2069</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-2070</ManagedObjectReference>
+    </val>
+  </propSet>
+</ObjectContent>

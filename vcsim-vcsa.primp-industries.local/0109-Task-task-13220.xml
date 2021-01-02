@@ -1,0 +1,32 @@
+<ObjectContent>
+  <obj type="Task">task-13220</obj>
+  <propSet>
+    <name>availableField</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldDef"></val>
+  </propSet>
+  <propSet>
+    <name>info</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="TaskInfo">
+      <key>task-13220</key>
+      <task type="Task">task-13220</task>
+      <name>MoveIntoFolder_Task</name>
+      <descriptionId>Folder.moveInto</descriptionId>
+      <entity type="Folder">group-v1041</entity>
+      <entityName>Workloads</entityName>
+      <state>success</state>
+      <cancelled>false</cancelled>
+      <cancelable>false</cancelable>
+      <reason XMLSchema-instance:type="TaskReasonUser">
+        <userName>VSPHERE.LOCAL\Administrator</userName>
+      </reason>
+      <queueTime>2021-01-02T17:25:22.352328Z</queueTime>
+      <startTime>2021-01-02T17:25:22.360191Z</startTime>
+      <completeTime>2021-01-02T17:25:22.395859Z</completeTime>
+      <eventChainId>378401</eventChainId>
+    </val>
+  </propSet>
+  <propSet>
+    <name>value</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+</ObjectContent>

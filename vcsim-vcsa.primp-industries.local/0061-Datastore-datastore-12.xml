@@ -1,0 +1,245 @@
+<ObjectContent>
+  <obj type="Datastore">datastore-12</obj>
+  <propSet>
+    <name>alarmActionsEnabled</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:boolean">true</val>
+  </propSet>
+  <propSet>
+    <name>availableField</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldDef"></val>
+  </propSet>
+  <propSet>
+    <name>browser</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="HostDatastoreBrowser">datastoreBrowser-datastore-12</val>
+  </propSet>
+  <propSet>
+    <name>capability</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="DatastoreCapability">
+      <directoryHierarchySupported>true</directoryHierarchySupported>
+      <rawDiskMappingsSupported>true</rawDiskMappingsSupported>
+      <perFileThinProvisioningSupported>true</perFileThinProvisioningSupported>
+      <storageIORMSupported>true</storageIORMSupported>
+      <nativeSnapshotSupported>false</nativeSnapshotSupported>
+      <topLevelDirectoryCreateSupported>true</topLevelDirectoryCreateSupported>
+      <seSparseSupported>true</seSparseSupported>
+      <vmfsSparseSupported>false</vmfsSparseSupported>
+      <vsanSparseSupported>false</vsanSparseSupported>
+      <vmdkExpandSupported>true</vmdkExpandSupported>
+      <clusteredVmdkSupported>false</clusteredVmdkSupported>
+    </val>
+  </propSet>
+  <propSet>
+    <name>configIssue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfEvent"></val>
+  </propSet>
+  <propSet>
+    <name>configStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">gray</val>
+  </propSet>
+  <propSet>
+    <name>customValue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>declaredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState">
+      <AlarmState>
+        <key>alarm-109.datastore-12</key>
+        <entity type="Datastore">datastore-12</entity>
+        <alarm type="Alarm">alarm-109</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-18T14:13:47.067179Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-24.datastore-12</key>
+        <entity type="Datastore">datastore-12</entity>
+        <alarm type="Alarm">alarm-24</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-18T14:13:47.067179Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-28.datastore-12</key>
+        <entity type="Datastore">datastore-12</entity>
+        <alarm type="Alarm">alarm-28</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-18T14:13:47.067179Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-29.datastore-12</key>
+        <entity type="Datastore">datastore-12</entity>
+        <alarm type="Alarm">alarm-29</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-18T14:13:47.067179Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-53.datastore-12</key>
+        <entity type="Datastore">datastore-12</entity>
+        <alarm type="Alarm">alarm-53</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-18T14:13:47.067179Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-7.datastore-12</key>
+        <entity type="Datastore">datastore-12</entity>
+        <alarm type="Alarm">alarm-7</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-08T02:16:31.593Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-79.datastore-12</key>
+        <entity type="Datastore">datastore-12</entity>
+        <alarm type="Alarm">alarm-79</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-18T14:13:47.067179Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-80.datastore-12</key>
+        <entity type="Datastore">datastore-12</entity>
+        <alarm type="Alarm">alarm-80</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-18T14:13:47.067179Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-84.datastore-12</key>
+        <entity type="Datastore">datastore-12</entity>
+        <alarm type="Alarm">alarm-84</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-18T14:13:47.067179Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+    </val>
+  </propSet>
+  <propSet>
+    <name>disabledMethod</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfString">
+      <string>DatastoreExitMaintenanceMode_Task</string>
+    </val>
+  </propSet>
+  <propSet>
+    <name>effectiveRole</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfInt">
+      <int>-1</int>
+    </val>
+  </propSet>
+  <propSet>
+    <name>host</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfDatastoreHostMount">
+      <DatastoreHostMount>
+        <key type="HostSystem">host-11</key>
+        <mountInfo>
+          <path>/vmfs/volumes/5bea843b-38514660-fb37-ac1f6b752afc</path>
+          <accessMode>readWrite</accessMode>
+          <mounted>true</mounted>
+          <accessible>true</accessible>
+        </mountInfo>
+      </DatastoreHostMount>
+    </val>
+  </propSet>
+  <propSet>
+    <name>info</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VmfsDatastoreInfo">
+      <name>esxi-local-datastore</name>
+      <url>ds:///vmfs/volumes/5bea843b-38514660-fb37-ac1f6b752afc/</url>
+      <freeSpace>49740251136</freeSpace>
+      <maxFileSize>70368744177664</maxFileSize>
+      <maxVirtualDiskCapacity>68169720922112</maxVirtualDiskCapacity>
+      <maxMemoryFileSize>70368744177664</maxMemoryFileSize>
+      <timestamp>2021-01-02T15:41:51.612846Z</timestamp>
+      <maxPhysicalRDMFileSize>70368744177664</maxPhysicalRDMFileSize>
+      <maxVirtualRDMFileSize>68169720922112</maxVirtualRDMFileSize>
+      <vmfs>
+        <type>VMFS</type>
+        <name>esxi-local-datastore</name>
+        <capacity>55297703936</capacity>
+        <blockSizeMb>1</blockSizeMb>
+        <blockSize>1024</blockSize>
+        <unmapGranularity>1024</unmapGranularity>
+        <unmapPriority>low</unmapPriority>
+        <maxBlocks>63963136</maxBlocks>
+        <majorVersion>6</majorVersion>
+        <version>6.82</version>
+        <uuid>5bea843b-38514660-fb37-ac1f6b752afc</uuid>
+        <extent>
+          <diskName>t10.ATA_____SuperMicro_SSD__________________________SMC0515D90717C6E5244</diskName>
+          <partition>8</partition>
+        </extent>
+        <vmfsUpgradable>false</vmfsUpgradable>
+        <ssd>true</ssd>
+        <local>true</local>
+      </vmfs>
+    </val>
+  </propSet>
+  <propSet>
+    <name>iormConfiguration</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="StorageIORMInfo">
+      <enabled>false</enabled>
+      <congestionThresholdMode>automatic</congestionThresholdMode>
+      <congestionThreshold>30</congestionThreshold>
+      <percentOfPeakThroughput>90</percentOfPeakThroughput>
+      <statsCollectionEnabled>false</statsCollectionEnabled>
+      <reservationEnabled>true</reservationEnabled>
+      <statsAggregationDisabled>false</statsAggregationDisabled>
+    </val>
+  </propSet>
+  <propSet>
+    <name>name</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:string">esxi-local-datastore</val>
+  </propSet>
+  <propSet>
+    <name>overallStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>parent</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="Folder">group-s6</val>
+  </propSet>
+  <propSet>
+    <name>permission</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfPermission"></val>
+  </propSet>
+  <propSet>
+    <name>recentTask</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>summary</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="DatastoreSummary">
+      <datastore type="Datastore">datastore-12</datastore>
+      <name>esxi-local-datastore</name>
+      <url>ds:///vmfs/volumes/5bea843b-38514660-fb37-ac1f6b752afc/</url>
+      <capacity>55297703936</capacity>
+      <freeSpace>49740251136</freeSpace>
+      <uncommitted>1783628303</uncommitted>
+      <accessible>true</accessible>
+      <multipleHostAccess>false</multipleHostAccess>
+      <type>VMFS</type>
+      <maintenanceMode>normal</maintenanceMode>
+    </val>
+  </propSet>
+  <propSet>
+    <name>tag</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfTag"></val>
+  </propSet>
+  <propSet>
+    <name>triggeredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState"></val>
+  </propSet>
+  <propSet>
+    <name>value</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>vm</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="VirtualMachine">vm-2001</ManagedObjectReference>
+    </val>
+  </propSet>
+</ObjectContent>

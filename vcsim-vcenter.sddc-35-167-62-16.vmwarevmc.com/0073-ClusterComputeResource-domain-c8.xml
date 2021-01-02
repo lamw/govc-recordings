@@ -1,0 +1,2958 @@
+<ObjectContent>
+  <obj type="ClusterComputeResource">domain-c8</obj>
+  <propSet>
+    <name>actionHistory</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfClusterActionHistory">
+      <ClusterActionHistory>
+        <action XMLSchema-instance:type="ClusterInitialPlacementAction">
+          <type>VmPowerV1</type>
+          <target type="VirtualMachine">vm-1092</target>
+          <targetHost type="HostSystem">host-16</targetHost>
+        </action>
+        <time>2021-01-02T03:59:42.433116Z</time>
+      </ClusterActionHistory>
+    </val>
+  </propSet>
+  <propSet>
+    <name>alarmActionsEnabled</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:boolean">true</val>
+  </propSet>
+  <propSet>
+    <name>availableField</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldDef"></val>
+  </propSet>
+  <propSet>
+    <name>configIssue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfEvent"></val>
+  </propSet>
+  <propSet>
+    <name>configStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>configuration</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ClusterConfigInfo">
+      <dasConfig>
+        <enabled>true</enabled>
+        <vmMonitoring>vmAndAppMonitoring</vmMonitoring>
+        <hostMonitoring>enabled</hostMonitoring>
+        <vmComponentProtecting>enabled</vmComponentProtecting>
+        <failoverLevel>1</failoverLevel>
+        <admissionControlPolicy XMLSchema-instance:type="ClusterFailoverResourcesAdmissionControlPolicy">
+          <resourceReductionToToleratePercent>100</resourceReductionToToleratePercent>
+          <cpuFailoverResourcesPercent>100</cpuFailoverResourcesPercent>
+          <memoryFailoverResourcesPercent>100</memoryFailoverResourcesPercent>
+          <failoverLevel>1</failoverLevel>
+          <autoComputePercentages>true</autoComputePercentages>
+        </admissionControlPolicy>
+        <admissionControlEnabled>false</admissionControlEnabled>
+        <defaultVmSettings>
+          <restartPriority>medium</restartPriority>
+          <restartPriorityTimeout>600</restartPriorityTimeout>
+          <isolationResponse>powerOff</isolationResponse>
+          <vmToolsMonitoringSettings>
+            <enabled>true</enabled>
+            <vmMonitoring>vmAndAppMonitoring</vmMonitoring>
+            <clusterSettings>true</clusterSettings>
+            <failureInterval>120</failureInterval>
+            <minUpTime>480</minUpTime>
+            <maxFailures>3</maxFailures>
+            <maxFailureWindow>24</maxFailureWindow>
+          </vmToolsMonitoringSettings>
+          <vmComponentProtectionSettings>
+            <vmStorageProtectionForAPD>restartConservative</vmStorageProtectionForAPD>
+            <enableAPDTimeoutForHosts>true</enableAPDTimeoutForHosts>
+            <vmTerminateDelayForAPDSec>180</vmTerminateDelayForAPDSec>
+            <vmReactionOnAPDCleared>none</vmReactionOnAPDCleared>
+            <vmStorageProtectionForPDL>restartAggressive</vmStorageProtectionForPDL>
+          </vmComponentProtectionSettings>
+        </defaultVmSettings>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>das.ignoreInsufficientHbDatastore</key>
+          <value XMLSchema-instance:type="xsd:string">true</value>
+        </option>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>das.ignoreRedundantNetWarning</key>
+          <value XMLSchema-instance:type="xsd:string">true</value>
+        </option>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>das.includeFTcomplianceChecks</key>
+          <value XMLSchema-instance:type="xsd:string">false</value>
+        </option>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>das.slotCpuInMHz</key>
+          <value XMLSchema-instance:type="xsd:string">13794</value>
+        </option>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>das.slotMemInMB</key>
+          <value XMLSchema-instance:type="xsd:string">28672</value>
+        </option>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>das.useDefaultIsolationAddress</key>
+          <value XMLSchema-instance:type="xsd:string">true</value>
+        </option>
+        <hBDatastoreCandidatePolicy>allFeasibleDsWithUserPreference</hBDatastoreCandidatePolicy>
+      </dasConfig>
+      <dasVmConfig>
+        <key type="VirtualMachine">vm-39</key>
+        <restartPriority>high</restartPriority>
+        <dasSettings>
+          <restartPriority>high</restartPriority>
+          <isolationResponse>clusterIsolationResponse</isolationResponse>
+          <vmToolsMonitoringSettings></vmToolsMonitoringSettings>
+          <vmComponentProtectionSettings></vmComponentProtectionSettings>
+        </dasSettings>
+      </dasVmConfig>
+      <dasVmConfig>
+        <key type="VirtualMachine">vm-38</key>
+        <restartPriority>high</restartPriority>
+        <dasSettings>
+          <restartPriority>high</restartPriority>
+          <isolationResponse>clusterIsolationResponse</isolationResponse>
+          <vmToolsMonitoringSettings></vmToolsMonitoringSettings>
+          <vmComponentProtectionSettings></vmComponentProtectionSettings>
+        </dasSettings>
+      </dasVmConfig>
+      <dasVmConfig>
+        <key type="VirtualMachine">vm-40</key>
+        <restartPriority>high</restartPriority>
+        <dasSettings>
+          <restartPriority>high</restartPriority>
+          <isolationResponse>clusterIsolationResponse</isolationResponse>
+          <vmToolsMonitoringSettings></vmToolsMonitoringSettings>
+          <vmComponentProtectionSettings></vmComponentProtectionSettings>
+        </dasSettings>
+      </dasVmConfig>
+      <dasVmConfig>
+        <key type="VirtualMachine">vm-36</key>
+        <restartPriority>high</restartPriority>
+        <dasSettings>
+          <restartPriority>high</restartPriority>
+          <isolationResponse>clusterIsolationResponse</isolationResponse>
+          <vmToolsMonitoringSettings></vmToolsMonitoringSettings>
+          <vmComponentProtectionSettings></vmComponentProtectionSettings>
+        </dasSettings>
+      </dasVmConfig>
+      <dasVmConfig>
+        <key type="VirtualMachine">vm-41</key>
+        <restartPriority>high</restartPriority>
+        <dasSettings>
+          <restartPriority>highest</restartPriority>
+          <isolationResponse>clusterIsolationResponse</isolationResponse>
+          <vmToolsMonitoringSettings></vmToolsMonitoringSettings>
+          <vmComponentProtectionSettings></vmComponentProtectionSettings>
+        </dasSettings>
+      </dasVmConfig>
+      <dasVmConfig>
+        <key type="VirtualMachine">vm-37</key>
+        <restartPriority>high</restartPriority>
+        <dasSettings>
+          <restartPriority>high</restartPriority>
+          <isolationResponse>clusterIsolationResponse</isolationResponse>
+          <vmToolsMonitoringSettings></vmToolsMonitoringSettings>
+          <vmComponentProtectionSettings></vmComponentProtectionSettings>
+        </dasSettings>
+      </dasVmConfig>
+      <drsConfig>
+        <enabled>true</enabled>
+        <enableVmBehaviorOverrides>true</enableVmBehaviorOverrides>
+        <defaultVmBehavior>fullyAutomated</defaultVmBehavior>
+        <vmotionRate>3</vmotionRate>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>CapRpCpuReservationAtDemand</key>
+          <value XMLSchema-instance:type="xsd:string">0</value>
+        </option>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>SlotVcpuCount</key>
+          <value XMLSchema-instance:type="xsd:string">8</value>
+        </option>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>SlotsForPctAdmPolicy</key>
+          <value XMLSchema-instance:type="xsd:string">1</value>
+        </option>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>VmcManagementResourcePoolMoNum</key>
+          <value XMLSchema-instance:type="xsd:string">46</value>
+        </option>
+      </drsConfig>
+      <rule XMLSchema-instance:type="ClusterAntiAffinityRuleSpec">
+        <key>1</key>
+        <enabled>false</enabled>
+        <name>nsx-edge-anti-affinity-rule</name>
+        <mandatory>false</mandatory>
+        <ruleUuid>52641a47-e765-fc29-98cc-e0081e525f15</ruleUuid>
+        <vm type="VirtualMachine">vm-36</vm>
+        <vm type="VirtualMachine">vm-37</vm>
+      </rule>
+      <rule XMLSchema-instance:type="ClusterAntiAffinityRuleSpec">
+        <key>2</key>
+        <enabled>false</enabled>
+        <name>nsx-unified-appliance-anti-affinity-rule-2-node</name>
+        <ruleUuid>5221f03f-1324-7d35-0064-6386610f7266</ruleUuid>
+        <vm type="VirtualMachine">vm-39</vm>
+        <vm type="VirtualMachine">vm-40</vm>
+      </rule>
+      <rule XMLSchema-instance:type="ClusterAntiAffinityRuleSpec">
+        <key>3</key>
+        <enabled>false</enabled>
+        <name>nsx-unified-appliance-anti-affinity-rule</name>
+        <mandatory>false</mandatory>
+        <ruleUuid>52a287fc-38d4-0544-3450-8b6d745cef9b</ruleUuid>
+        <vm type="VirtualMachine">vm-39</vm>
+        <vm type="VirtualMachine">vm-40</vm>
+        <vm type="VirtualMachine">vm-38</vm>
+      </rule>
+    </val>
+  </propSet>
+  <propSet>
+    <name>configurationEx</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ClusterConfigInfoEx">
+      <vmSwapPlacement>vmDirectory</vmSwapPlacement>
+      <spbmEnabled>true</spbmEnabled>
+      <dasConfig>
+        <enabled>true</enabled>
+        <vmMonitoring>vmAndAppMonitoring</vmMonitoring>
+        <hostMonitoring>enabled</hostMonitoring>
+        <vmComponentProtecting>enabled</vmComponentProtecting>
+        <failoverLevel>1</failoverLevel>
+        <admissionControlPolicy XMLSchema-instance:type="ClusterFailoverResourcesAdmissionControlPolicy">
+          <resourceReductionToToleratePercent>100</resourceReductionToToleratePercent>
+          <cpuFailoverResourcesPercent>100</cpuFailoverResourcesPercent>
+          <memoryFailoverResourcesPercent>100</memoryFailoverResourcesPercent>
+          <failoverLevel>1</failoverLevel>
+          <autoComputePercentages>true</autoComputePercentages>
+        </admissionControlPolicy>
+        <admissionControlEnabled>false</admissionControlEnabled>
+        <defaultVmSettings>
+          <restartPriority>medium</restartPriority>
+          <restartPriorityTimeout>600</restartPriorityTimeout>
+          <isolationResponse>powerOff</isolationResponse>
+          <vmToolsMonitoringSettings>
+            <enabled>true</enabled>
+            <vmMonitoring>vmAndAppMonitoring</vmMonitoring>
+            <clusterSettings>true</clusterSettings>
+            <failureInterval>120</failureInterval>
+            <minUpTime>480</minUpTime>
+            <maxFailures>3</maxFailures>
+            <maxFailureWindow>24</maxFailureWindow>
+          </vmToolsMonitoringSettings>
+          <vmComponentProtectionSettings>
+            <vmStorageProtectionForAPD>restartConservative</vmStorageProtectionForAPD>
+            <enableAPDTimeoutForHosts>true</enableAPDTimeoutForHosts>
+            <vmTerminateDelayForAPDSec>180</vmTerminateDelayForAPDSec>
+            <vmReactionOnAPDCleared>none</vmReactionOnAPDCleared>
+            <vmStorageProtectionForPDL>restartAggressive</vmStorageProtectionForPDL>
+          </vmComponentProtectionSettings>
+        </defaultVmSettings>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>das.ignoreInsufficientHbDatastore</key>
+          <value XMLSchema-instance:type="xsd:string">true</value>
+        </option>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>das.ignoreRedundantNetWarning</key>
+          <value XMLSchema-instance:type="xsd:string">true</value>
+        </option>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>das.includeFTcomplianceChecks</key>
+          <value XMLSchema-instance:type="xsd:string">false</value>
+        </option>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>das.slotCpuInMHz</key>
+          <value XMLSchema-instance:type="xsd:string">13794</value>
+        </option>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>das.slotMemInMB</key>
+          <value XMLSchema-instance:type="xsd:string">28672</value>
+        </option>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>das.useDefaultIsolationAddress</key>
+          <value XMLSchema-instance:type="xsd:string">true</value>
+        </option>
+        <hBDatastoreCandidatePolicy>allFeasibleDsWithUserPreference</hBDatastoreCandidatePolicy>
+      </dasConfig>
+      <dasVmConfig>
+        <key type="VirtualMachine">vm-39</key>
+        <restartPriority>high</restartPriority>
+        <dasSettings>
+          <restartPriority>high</restartPriority>
+          <isolationResponse>clusterIsolationResponse</isolationResponse>
+          <vmToolsMonitoringSettings></vmToolsMonitoringSettings>
+          <vmComponentProtectionSettings></vmComponentProtectionSettings>
+        </dasSettings>
+      </dasVmConfig>
+      <dasVmConfig>
+        <key type="VirtualMachine">vm-38</key>
+        <restartPriority>high</restartPriority>
+        <dasSettings>
+          <restartPriority>high</restartPriority>
+          <isolationResponse>clusterIsolationResponse</isolationResponse>
+          <vmToolsMonitoringSettings></vmToolsMonitoringSettings>
+          <vmComponentProtectionSettings></vmComponentProtectionSettings>
+        </dasSettings>
+      </dasVmConfig>
+      <dasVmConfig>
+        <key type="VirtualMachine">vm-40</key>
+        <restartPriority>high</restartPriority>
+        <dasSettings>
+          <restartPriority>high</restartPriority>
+          <isolationResponse>clusterIsolationResponse</isolationResponse>
+          <vmToolsMonitoringSettings></vmToolsMonitoringSettings>
+          <vmComponentProtectionSettings></vmComponentProtectionSettings>
+        </dasSettings>
+      </dasVmConfig>
+      <dasVmConfig>
+        <key type="VirtualMachine">vm-36</key>
+        <restartPriority>high</restartPriority>
+        <dasSettings>
+          <restartPriority>high</restartPriority>
+          <isolationResponse>clusterIsolationResponse</isolationResponse>
+          <vmToolsMonitoringSettings></vmToolsMonitoringSettings>
+          <vmComponentProtectionSettings></vmComponentProtectionSettings>
+        </dasSettings>
+      </dasVmConfig>
+      <dasVmConfig>
+        <key type="VirtualMachine">vm-41</key>
+        <restartPriority>high</restartPriority>
+        <dasSettings>
+          <restartPriority>highest</restartPriority>
+          <isolationResponse>clusterIsolationResponse</isolationResponse>
+          <vmToolsMonitoringSettings></vmToolsMonitoringSettings>
+          <vmComponentProtectionSettings></vmComponentProtectionSettings>
+        </dasSettings>
+      </dasVmConfig>
+      <dasVmConfig>
+        <key type="VirtualMachine">vm-37</key>
+        <restartPriority>high</restartPriority>
+        <dasSettings>
+          <restartPriority>high</restartPriority>
+          <isolationResponse>clusterIsolationResponse</isolationResponse>
+          <vmToolsMonitoringSettings></vmToolsMonitoringSettings>
+          <vmComponentProtectionSettings></vmComponentProtectionSettings>
+        </dasSettings>
+      </dasVmConfig>
+      <drsConfig>
+        <enabled>true</enabled>
+        <enableVmBehaviorOverrides>true</enableVmBehaviorOverrides>
+        <defaultVmBehavior>fullyAutomated</defaultVmBehavior>
+        <vmotionRate>3</vmotionRate>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>CapRpCpuReservationAtDemand</key>
+          <value XMLSchema-instance:type="xsd:string">0</value>
+        </option>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>SlotVcpuCount</key>
+          <value XMLSchema-instance:type="xsd:string">8</value>
+        </option>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>SlotsForPctAdmPolicy</key>
+          <value XMLSchema-instance:type="xsd:string">1</value>
+        </option>
+        <option XMLSchema-instance:type="OptionValue">
+          <key>VmcManagementResourcePoolMoNum</key>
+          <value XMLSchema-instance:type="xsd:string">46</value>
+        </option>
+      </drsConfig>
+      <rule XMLSchema-instance:type="ClusterAntiAffinityRuleSpec">
+        <key>1</key>
+        <enabled>false</enabled>
+        <name>nsx-edge-anti-affinity-rule</name>
+        <mandatory>false</mandatory>
+        <ruleUuid>52641a47-e765-fc29-98cc-e0081e525f15</ruleUuid>
+        <vm type="VirtualMachine">vm-36</vm>
+        <vm type="VirtualMachine">vm-37</vm>
+      </rule>
+      <rule XMLSchema-instance:type="ClusterAntiAffinityRuleSpec">
+        <key>2</key>
+        <enabled>false</enabled>
+        <name>nsx-unified-appliance-anti-affinity-rule-2-node</name>
+        <ruleUuid>5221f03f-1324-7d35-0064-6386610f7266</ruleUuid>
+        <vm type="VirtualMachine">vm-39</vm>
+        <vm type="VirtualMachine">vm-40</vm>
+      </rule>
+      <rule XMLSchema-instance:type="ClusterAntiAffinityRuleSpec">
+        <key>3</key>
+        <enabled>false</enabled>
+        <name>nsx-unified-appliance-anti-affinity-rule</name>
+        <mandatory>false</mandatory>
+        <ruleUuid>52a287fc-38d4-0544-3450-8b6d745cef9b</ruleUuid>
+        <vm type="VirtualMachine">vm-39</vm>
+        <vm type="VirtualMachine">vm-40</vm>
+        <vm type="VirtualMachine">vm-38</vm>
+      </rule>
+      <orchestration>
+        <defaultVmReadiness>
+          <readyCondition>none</readyCondition>
+        </defaultVmReadiness>
+      </orchestration>
+      <dpmConfigInfo>
+        <enabled>false</enabled>
+        <defaultDpmBehavior>automated</defaultDpmBehavior>
+        <hostPowerActionRate>3</hostPowerActionRate>
+      </dpmConfigInfo>
+      <vsanConfigInfo>
+        <enabled>true</enabled>
+        <defaultConfig>
+          <uuid>522e9011-fea3-4cad-a9cd-94e93ab5eb92</uuid>
+          <autoClaimStorage>false</autoClaimStorage>
+        </defaultConfig>
+      </vsanConfigInfo>
+      <vsanHostConfig>
+        <enabled>true</enabled>
+        <hostSystem type="HostSystem">host-16</hostSystem>
+        <clusterInfo>
+          <uuid>522e9011-fea3-4cad-a9cd-94e93ab5eb92</uuid>
+          <nodeUuid>5fcd327a-c349-0863-0535-06dedeaf760b</nodeUuid>
+        </clusterInfo>
+        <storageInfo>
+          <autoClaimStorage>false</autoClaimStorage>
+          <diskMapping>
+            <ssd>
+              <deviceName>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS216571E084BE120E800000001</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-0508de5fd06b519df96d3f8ccb57c17ff7fa98c4113d0da92feedfd780ed14fc79</key>
+              <uuid>0508de5fd06b519df96d3f8ccb57c17ff7fa98c4113d0da92feedfd780ed14fc79</uuid>
+              <canonicalName>t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS216571E084BE120E800000001</canonicalName>
+              <displayName>Local NVMe Disk (t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS216571E084BE120E800000001)</displayName>
+              <lunType>disk</lunType>
+              <vendor>NVMe    </vendor>
+              <model>Amazon EC2 NVMe </model>
+              <revision>0</revision>
+              <scsiLevel>7</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>254</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnsupported</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <perenniallyReserved>false</perenniallyReserved>
+              <clusteredVmdkSupported>false</clusteredVmdkSupported>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>3710937500</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS216571E084BE120E800000001</devicePath>
+              <ssd>true</ssd>
+              <localDisk>true</localDisk>
+              <physicalLocation>Chassis slot 1; function 1</physicalLocation>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>5241714e-a506-d26d-5d5f-0daedd011914</vsanUuid>
+                <formatVersion>13</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>emulated512</scsiDiskType>
+            </ssd>
+            <nonSsd>
+              <deviceName>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS2130FB87611AD7FDC00000001</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-053f8965fab556c74975a6d2d769482dd357d610c1bc966dcfe3e1b0e3a122fd23</key>
+              <uuid>053f8965fab556c74975a6d2d769482dd357d610c1bc966dcfe3e1b0e3a122fd23</uuid>
+              <canonicalName>t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS2130FB87611AD7FDC00000001</canonicalName>
+              <displayName>Local NVMe Disk (t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS2130FB87611AD7FDC00000001)</displayName>
+              <lunType>disk</lunType>
+              <vendor>NVMe    </vendor>
+              <model>Amazon EC2 NVMe </model>
+              <revision>0</revision>
+              <scsiLevel>7</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>254</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnsupported</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <perenniallyReserved>false</perenniallyReserved>
+              <clusteredVmdkSupported>false</clusteredVmdkSupported>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>3710937500</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS2130FB87611AD7FDC00000001</devicePath>
+              <ssd>true</ssd>
+              <localDisk>true</localDisk>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>5281a1f5-1052-72bf-2419-0a7a28e62cb9</vsanUuid>
+                <formatVersion>13</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>emulated512</scsiDiskType>
+            </nonSsd>
+            <nonSsd>
+              <deviceName>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS0CE0FC253115073F700000001</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-05bd380f04f3f46e9d4edc48cbe22d59ec12f8ef9573de611f23cebc91ff8b95ba</key>
+              <uuid>05bd380f04f3f46e9d4edc48cbe22d59ec12f8ef9573de611f23cebc91ff8b95ba</uuid>
+              <canonicalName>t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS0CE0FC253115073F700000001</canonicalName>
+              <displayName>Local NVMe Disk (t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS0CE0FC253115073F700000001)</displayName>
+              <lunType>disk</lunType>
+              <vendor>NVMe    </vendor>
+              <model>Amazon EC2 NVMe </model>
+              <revision>0</revision>
+              <scsiLevel>7</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>254</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnsupported</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <perenniallyReserved>false</perenniallyReserved>
+              <clusteredVmdkSupported>false</clusteredVmdkSupported>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>3710937500</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS0CE0FC253115073F700000001</devicePath>
+              <ssd>true</ssd>
+              <localDisk>true</localDisk>
+              <physicalLocation>Chassis slot 1; function 0</physicalLocation>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>5250db57-7609-122c-66c8-52d0cbb173eb</vsanUuid>
+                <formatVersion>13</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>emulated512</scsiDiskType>
+            </nonSsd>
+            <nonSsd>
+              <deviceName>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS21688049B68CFDA7900000001</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-0594a3bf791423c7e7ec8edbfa00866e455d223676b25da67f9f288b8ee4b2c9af</key>
+              <uuid>0594a3bf791423c7e7ec8edbfa00866e455d223676b25da67f9f288b8ee4b2c9af</uuid>
+              <canonicalName>t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS21688049B68CFDA7900000001</canonicalName>
+              <displayName>Local NVMe Disk (t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS21688049B68CFDA7900000001)</displayName>
+              <lunType>disk</lunType>
+              <vendor>NVMe    </vendor>
+              <model>Amazon EC2 NVMe </model>
+              <revision>0</revision>
+              <scsiLevel>7</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>254</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnsupported</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <perenniallyReserved>false</perenniallyReserved>
+              <clusteredVmdkSupported>false</clusteredVmdkSupported>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>3710937500</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS21688049B68CFDA7900000001</devicePath>
+              <ssd>true</ssd>
+              <localDisk>true</localDisk>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>52dd39e0-f6c2-d363-f67e-924f748d417d</vsanUuid>
+                <formatVersion>13</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>emulated512</scsiDiskType>
+            </nonSsd>
+          </diskMapping>
+          <diskMapping>
+            <ssd>
+              <deviceName>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS05F7A47C6A137760300000001</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-056ebd5fbbaeedea8f090fbe06efbb7c2a9a53b302a645b25a7591a0d42927a18d</key>
+              <uuid>056ebd5fbbaeedea8f090fbe06efbb7c2a9a53b302a645b25a7591a0d42927a18d</uuid>
+              <canonicalName>t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS05F7A47C6A137760300000001</canonicalName>
+              <displayName>Local NVMe Disk (t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS05F7A47C6A137760300000001)</displayName>
+              <lunType>disk</lunType>
+              <vendor>NVMe    </vendor>
+              <model>Amazon EC2 NVMe </model>
+              <revision>0</revision>
+              <scsiLevel>7</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>254</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnsupported</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <perenniallyReserved>false</perenniallyReserved>
+              <clusteredVmdkSupported>false</clusteredVmdkSupported>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>3710937500</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS05F7A47C6A137760300000001</devicePath>
+              <ssd>true</ssd>
+              <localDisk>true</localDisk>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>52488987-eda9-e402-4d59-d29103cb0e80</vsanUuid>
+                <formatVersion>13</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>emulated512</scsiDiskType>
+            </ssd>
+            <nonSsd>
+              <deviceName>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS212D61E5A7C0E7B8D00000001</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-05e7c4ff9d43ebbaed54ae70fbb2b0e859eb1d29b8cc144a02352c8b65c96a2978</key>
+              <uuid>05e7c4ff9d43ebbaed54ae70fbb2b0e859eb1d29b8cc144a02352c8b65c96a2978</uuid>
+              <canonicalName>t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS212D61E5A7C0E7B8D00000001</canonicalName>
+              <displayName>Local NVMe Disk (t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS212D61E5A7C0E7B8D00000001)</displayName>
+              <lunType>disk</lunType>
+              <vendor>NVMe    </vendor>
+              <model>Amazon EC2 NVMe </model>
+              <revision>0</revision>
+              <scsiLevel>7</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>254</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnsupported</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <perenniallyReserved>false</perenniallyReserved>
+              <clusteredVmdkSupported>false</clusteredVmdkSupported>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>3710937500</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS212D61E5A7C0E7B8D00000001</devicePath>
+              <ssd>true</ssd>
+              <localDisk>true</localDisk>
+              <physicalLocation>Chassis slot 4; function 1</physicalLocation>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>5246d2a2-aaca-cc57-76f1-1a69de508dcc</vsanUuid>
+                <formatVersion>13</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>emulated512</scsiDiskType>
+            </nonSsd>
+            <nonSsd>
+              <deviceName>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS00BDCA0CE70518C1200000001</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-05f09e836a37809004d991aeac9ed75cbd1320b59d1dde7e0321c8bc1622985d65</key>
+              <uuid>05f09e836a37809004d991aeac9ed75cbd1320b59d1dde7e0321c8bc1622985d65</uuid>
+              <canonicalName>t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS00BDCA0CE70518C1200000001</canonicalName>
+              <displayName>Local NVMe Disk (t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS00BDCA0CE70518C1200000001)</displayName>
+              <lunType>disk</lunType>
+              <vendor>NVMe    </vendor>
+              <model>Amazon EC2 NVMe </model>
+              <revision>0</revision>
+              <scsiLevel>7</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>254</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnsupported</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <perenniallyReserved>false</perenniallyReserved>
+              <clusteredVmdkSupported>false</clusteredVmdkSupported>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>3710937500</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS00BDCA0CE70518C1200000001</devicePath>
+              <ssd>true</ssd>
+              <localDisk>true</localDisk>
+              <physicalLocation>Chassis slot 4; function 0</physicalLocation>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>5229328c-4871-2b1b-03c9-1f23e538c6e8</vsanUuid>
+                <formatVersion>13</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>emulated512</scsiDiskType>
+            </nonSsd>
+            <nonSsd>
+              <deviceName>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS0CA5BC8B47DF1CF0000000001</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-052ec0b26d9811c0007c386e9c55ec56dac15ecebd140f2c23c5d444f830556550</key>
+              <uuid>052ec0b26d9811c0007c386e9c55ec56dac15ecebd140f2c23c5d444f830556550</uuid>
+              <canonicalName>t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS0CA5BC8B47DF1CF0000000001</canonicalName>
+              <displayName>Local NVMe Disk (t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS0CA5BC8B47DF1CF0000000001)</displayName>
+              <lunType>disk</lunType>
+              <vendor>NVMe    </vendor>
+              <model>Amazon EC2 NVMe </model>
+              <revision>0</revision>
+              <scsiLevel>7</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>254</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnsupported</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <perenniallyReserved>false</perenniallyReserved>
+              <clusteredVmdkSupported>false</clusteredVmdkSupported>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>3710937500</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS0CA5BC8B47DF1CF0000000001</devicePath>
+              <ssd>true</ssd>
+              <localDisk>true</localDisk>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>527f907a-f69d-c61b-c778-c12d267c6ef7</vsanUuid>
+                <formatVersion>13</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>emulated512</scsiDiskType>
+            </nonSsd>
+          </diskMapping>
+          <diskMapInfo>
+            <mapping>
+              <ssd>
+                <deviceName>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS216571E084BE120E800000001</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-0508de5fd06b519df96d3f8ccb57c17ff7fa98c4113d0da92feedfd780ed14fc79</key>
+                <uuid>0508de5fd06b519df96d3f8ccb57c17ff7fa98c4113d0da92feedfd780ed14fc79</uuid>
+                <canonicalName>t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS216571E084BE120E800000001</canonicalName>
+                <displayName>Local NVMe Disk (t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS216571E084BE120E800000001)</displayName>
+                <lunType>disk</lunType>
+                <vendor>NVMe    </vendor>
+                <model>Amazon EC2 NVMe </model>
+                <revision>0</revision>
+                <scsiLevel>7</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>254</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnsupported</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <perenniallyReserved>false</perenniallyReserved>
+                <clusteredVmdkSupported>false</clusteredVmdkSupported>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>3710937500</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS216571E084BE120E800000001</devicePath>
+                <ssd>true</ssd>
+                <localDisk>true</localDisk>
+                <physicalLocation>Chassis slot 1; function 1</physicalLocation>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>5241714e-a506-d26d-5d5f-0daedd011914</vsanUuid>
+                  <formatVersion>13</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>emulated512</scsiDiskType>
+              </ssd>
+              <nonSsd>
+                <deviceName>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS2130FB87611AD7FDC00000001</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-053f8965fab556c74975a6d2d769482dd357d610c1bc966dcfe3e1b0e3a122fd23</key>
+                <uuid>053f8965fab556c74975a6d2d769482dd357d610c1bc966dcfe3e1b0e3a122fd23</uuid>
+                <canonicalName>t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS2130FB87611AD7FDC00000001</canonicalName>
+                <displayName>Local NVMe Disk (t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS2130FB87611AD7FDC00000001)</displayName>
+                <lunType>disk</lunType>
+                <vendor>NVMe    </vendor>
+                <model>Amazon EC2 NVMe </model>
+                <revision>0</revision>
+                <scsiLevel>7</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>254</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnsupported</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <perenniallyReserved>false</perenniallyReserved>
+                <clusteredVmdkSupported>false</clusteredVmdkSupported>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>3710937500</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS2130FB87611AD7FDC00000001</devicePath>
+                <ssd>true</ssd>
+                <localDisk>true</localDisk>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>5281a1f5-1052-72bf-2419-0a7a28e62cb9</vsanUuid>
+                  <formatVersion>13</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>emulated512</scsiDiskType>
+              </nonSsd>
+              <nonSsd>
+                <deviceName>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS0CE0FC253115073F700000001</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-05bd380f04f3f46e9d4edc48cbe22d59ec12f8ef9573de611f23cebc91ff8b95ba</key>
+                <uuid>05bd380f04f3f46e9d4edc48cbe22d59ec12f8ef9573de611f23cebc91ff8b95ba</uuid>
+                <canonicalName>t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS0CE0FC253115073F700000001</canonicalName>
+                <displayName>Local NVMe Disk (t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS0CE0FC253115073F700000001)</displayName>
+                <lunType>disk</lunType>
+                <vendor>NVMe    </vendor>
+                <model>Amazon EC2 NVMe </model>
+                <revision>0</revision>
+                <scsiLevel>7</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>254</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnsupported</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <perenniallyReserved>false</perenniallyReserved>
+                <clusteredVmdkSupported>false</clusteredVmdkSupported>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>3710937500</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS0CE0FC253115073F700000001</devicePath>
+                <ssd>true</ssd>
+                <localDisk>true</localDisk>
+                <physicalLocation>Chassis slot 1; function 0</physicalLocation>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>5250db57-7609-122c-66c8-52d0cbb173eb</vsanUuid>
+                  <formatVersion>13</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>emulated512</scsiDiskType>
+              </nonSsd>
+              <nonSsd>
+                <deviceName>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS21688049B68CFDA7900000001</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-0594a3bf791423c7e7ec8edbfa00866e455d223676b25da67f9f288b8ee4b2c9af</key>
+                <uuid>0594a3bf791423c7e7ec8edbfa00866e455d223676b25da67f9f288b8ee4b2c9af</uuid>
+                <canonicalName>t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS21688049B68CFDA7900000001</canonicalName>
+                <displayName>Local NVMe Disk (t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS21688049B68CFDA7900000001)</displayName>
+                <lunType>disk</lunType>
+                <vendor>NVMe    </vendor>
+                <model>Amazon EC2 NVMe </model>
+                <revision>0</revision>
+                <scsiLevel>7</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>254</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnsupported</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <perenniallyReserved>false</perenniallyReserved>
+                <clusteredVmdkSupported>false</clusteredVmdkSupported>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>3710937500</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS21688049B68CFDA7900000001</devicePath>
+                <ssd>true</ssd>
+                <localDisk>true</localDisk>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>52dd39e0-f6c2-d363-f67e-924f748d417d</vsanUuid>
+                  <formatVersion>13</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>emulated512</scsiDiskType>
+              </nonSsd>
+            </mapping>
+            <mounted>true</mounted>
+          </diskMapInfo>
+          <diskMapInfo>
+            <mapping>
+              <ssd>
+                <deviceName>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS05F7A47C6A137760300000001</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-056ebd5fbbaeedea8f090fbe06efbb7c2a9a53b302a645b25a7591a0d42927a18d</key>
+                <uuid>056ebd5fbbaeedea8f090fbe06efbb7c2a9a53b302a645b25a7591a0d42927a18d</uuid>
+                <canonicalName>t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS05F7A47C6A137760300000001</canonicalName>
+                <displayName>Local NVMe Disk (t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS05F7A47C6A137760300000001)</displayName>
+                <lunType>disk</lunType>
+                <vendor>NVMe    </vendor>
+                <model>Amazon EC2 NVMe </model>
+                <revision>0</revision>
+                <scsiLevel>7</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>254</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnsupported</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <perenniallyReserved>false</perenniallyReserved>
+                <clusteredVmdkSupported>false</clusteredVmdkSupported>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>3710937500</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS05F7A47C6A137760300000001</devicePath>
+                <ssd>true</ssd>
+                <localDisk>true</localDisk>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>52488987-eda9-e402-4d59-d29103cb0e80</vsanUuid>
+                  <formatVersion>13</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>emulated512</scsiDiskType>
+              </ssd>
+              <nonSsd>
+                <deviceName>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS212D61E5A7C0E7B8D00000001</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-05e7c4ff9d43ebbaed54ae70fbb2b0e859eb1d29b8cc144a02352c8b65c96a2978</key>
+                <uuid>05e7c4ff9d43ebbaed54ae70fbb2b0e859eb1d29b8cc144a02352c8b65c96a2978</uuid>
+                <canonicalName>t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS212D61E5A7C0E7B8D00000001</canonicalName>
+                <displayName>Local NVMe Disk (t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS212D61E5A7C0E7B8D00000001)</displayName>
+                <lunType>disk</lunType>
+                <vendor>NVMe    </vendor>
+                <model>Amazon EC2 NVMe </model>
+                <revision>0</revision>
+                <scsiLevel>7</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>254</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnsupported</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <perenniallyReserved>false</perenniallyReserved>
+                <clusteredVmdkSupported>false</clusteredVmdkSupported>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>3710937500</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS212D61E5A7C0E7B8D00000001</devicePath>
+                <ssd>true</ssd>
+                <localDisk>true</localDisk>
+                <physicalLocation>Chassis slot 4; function 1</physicalLocation>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>5246d2a2-aaca-cc57-76f1-1a69de508dcc</vsanUuid>
+                  <formatVersion>13</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>emulated512</scsiDiskType>
+              </nonSsd>
+              <nonSsd>
+                <deviceName>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS00BDCA0CE70518C1200000001</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-05f09e836a37809004d991aeac9ed75cbd1320b59d1dde7e0321c8bc1622985d65</key>
+                <uuid>05f09e836a37809004d991aeac9ed75cbd1320b59d1dde7e0321c8bc1622985d65</uuid>
+                <canonicalName>t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS00BDCA0CE70518C1200000001</canonicalName>
+                <displayName>Local NVMe Disk (t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS00BDCA0CE70518C1200000001)</displayName>
+                <lunType>disk</lunType>
+                <vendor>NVMe    </vendor>
+                <model>Amazon EC2 NVMe </model>
+                <revision>0</revision>
+                <scsiLevel>7</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>254</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnsupported</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <perenniallyReserved>false</perenniallyReserved>
+                <clusteredVmdkSupported>false</clusteredVmdkSupported>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>3710937500</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS00BDCA0CE70518C1200000001</devicePath>
+                <ssd>true</ssd>
+                <localDisk>true</localDisk>
+                <physicalLocation>Chassis slot 4; function 0</physicalLocation>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>5229328c-4871-2b1b-03c9-1f23e538c6e8</vsanUuid>
+                  <formatVersion>13</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>emulated512</scsiDiskType>
+              </nonSsd>
+              <nonSsd>
+                <deviceName>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS0CA5BC8B47DF1CF0000000001</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-052ec0b26d9811c0007c386e9c55ec56dac15ecebd140f2c23c5d444f830556550</key>
+                <uuid>052ec0b26d9811c0007c386e9c55ec56dac15ecebd140f2c23c5d444f830556550</uuid>
+                <canonicalName>t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS0CA5BC8B47DF1CF0000000001</canonicalName>
+                <displayName>Local NVMe Disk (t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS0CA5BC8B47DF1CF0000000001)</displayName>
+                <lunType>disk</lunType>
+                <vendor>NVMe    </vendor>
+                <model>Amazon EC2 NVMe </model>
+                <revision>0</revision>
+                <scsiLevel>7</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>254</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnsupported</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <perenniallyReserved>false</perenniallyReserved>
+                <clusteredVmdkSupported>false</clusteredVmdkSupported>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>3710937500</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/t10.NVMe____Amazon_EC2_NVMe_Instance_Storage________AWS0CA5BC8B47DF1CF0000000001</devicePath>
+                <ssd>true</ssd>
+                <localDisk>true</localDisk>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>527f907a-f69d-c61b-c778-c12d267c6ef7</vsanUuid>
+                  <formatVersion>13</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>emulated512</scsiDiskType>
+              </nonSsd>
+            </mapping>
+            <mounted>true</mounted>
+          </diskMapInfo>
+        </storageInfo>
+        <networkInfo>
+          <port>
+            <ipConfig>
+              <upstreamIpAddress>224.1.2.3</upstreamIpAddress>
+              <downstreamIpAddress>224.2.3.4</downstreamIpAddress>
+            </ipConfig>
+            <device>vmk1</device>
+          </port>
+        </networkInfo>
+        <faultDomainInfo>
+          <name></name>
+        </faultDomainInfo>
+      </vsanHostConfig>
+      <infraUpdateHaConfig>
+        <enabled>false</enabled>
+        <behavior>Manual</behavior>
+        <moderateRemediation>QuarantineMode</moderateRemediation>
+        <severeRemediation>QuarantineMode</severeRemediation>
+      </infraUpdateHaConfig>
+      <proactiveDrsConfig>
+        <enabled>false</enabled>
+      </proactiveDrsConfig>
+      <cryptoConfig>
+        <cryptoMode>onDemand</cryptoMode>
+      </cryptoConfig>
+    </val>
+  </propSet>
+  <propSet>
+    <name>customValue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>datastore</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="Datastore">datastore-48</ManagedObjectReference>
+      <ManagedObjectReference type="Datastore">datastore-17</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>declaredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState">
+      <AlarmState>
+        <key>alarm-1.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-1</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-10.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-10</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-108.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-108</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-11.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-11</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-112.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-112</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-113.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-113</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-114.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-114</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-115.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-115</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-116.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-116</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-117.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-117</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-118.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-118</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-119.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-119</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-12.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-12</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-120.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-120</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-121.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-121</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-122.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-122</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-123.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-123</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-124.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-124</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-128.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-128</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-129.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-129</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-13.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-13</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-130.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-130</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-131.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-131</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-134.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-134</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-14.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-14</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-140.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-140</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:38:03.286999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>1002</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-141.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-141</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-142.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-142</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-143.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-143</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-144.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-144</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-145.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-145</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:35:20.263999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>931</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-146.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-146</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-147.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-147</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:38:03.285Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>1001</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-148.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-148</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-149.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-149</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-15.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-15</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-150.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-150</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-151.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-151</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-152.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-152</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:34:35.25Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>732</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-153.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-153</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-154.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-154</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-155.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-155</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-156.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-156</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-157.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-157</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-158.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-158</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:38:03.286999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>1003</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-159.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-159</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-16.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-16</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-160.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-160</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:34:35.247999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>724</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-161.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-161</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:38:03.286999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>1005</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-162.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-162</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-163.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-163</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:34:35.25Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>728</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-164.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-164</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-165.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-165</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-166.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-166</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-167.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-167</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:59:23.207004Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>2223</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-168.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-168</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-169.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-169</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-17.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-17</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-170.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-170</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-171.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-171</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:38:03.286999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>1004</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-172.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-172</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-173.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-173</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-174.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-174</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:34:35.25Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>731</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-175.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-175</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-176.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-176</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:35:20.265Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>932</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-177.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-177</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-178.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-178</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-179.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-179</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-180.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-180</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:35:20.265Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>933</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-181.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-181</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-182.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-182</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:34:35.250999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>733</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-183.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-183</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:34:35.250999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>735</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-184.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-184</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-185.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-185</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-186.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-186</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-187.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-187</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:35:20.263999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>930</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-188.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-188</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-189.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-189</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-19.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-19</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-190.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-190</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-191.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-191</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-192.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-192</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-193.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-193</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-194.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-194</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:38:03.285Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>998</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-195.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-195</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-196.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-196</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:38:03.285Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>1000</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-197.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-197</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-198.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-198</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-199.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-199</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:34:35.250999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>734</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-2.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-2</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-20.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-20</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-200.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-200</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-201.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-201</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-202.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-202</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-203.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-203</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-204.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-204</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-205.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-205</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-206.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-206</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:38:03.287999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>1006</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-207.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-207</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-208.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-208</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-209.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-209</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-21.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-21</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-210.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-210</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-211.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-211</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-212.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-212</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-213.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-213</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-214.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-214</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-215.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-215</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-216.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-216</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-217.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-217</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:34:35.249Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>725</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-218.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-218</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-219.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-219</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-22.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-22</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-220.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-220</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-221.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-221</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-222.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-222</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-223.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-223</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:34:15.243999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>687</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-224.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-224</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-225.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-225</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-226.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-226</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-227.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-227</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-228.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-228</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-229.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-229</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-23.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-23</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-230.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-230</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-231.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-231</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-232.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-232</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-233.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-233</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-234.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-234</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-235.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-235</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-236.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-236</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-237.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-237</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:38:03.285Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>999</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-238.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-238</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:34:35.25Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>730</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-239.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-239</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-240.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-240</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-241.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-241</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-242.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-242</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-243.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-243</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-244.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-244</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-245.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-245</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2021-01-02T17:08:59.404986Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>277052</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-246.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-246</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-247.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-247</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-248.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-248</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-249.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-249</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-25.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-25</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-250.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-250</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-251.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-251</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-252.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-252</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-253.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-253</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-254.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-254</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-255.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-255</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-256.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-256</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-258.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-258</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-259.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-259</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-26.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-26</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-260.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-260</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-261.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-261</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-262.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-262</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-263.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-263</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-264.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-264</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-265.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-265</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-266.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-266</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-267.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-267</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-268.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-268</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-269.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-269</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-270.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-270</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-271.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-271</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-272.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-272</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-273.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-273</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-274.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-274</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-09T23:14:49.521187Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-275.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-275</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-276.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-276</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T21:03:43.236473Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>2305</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-277.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-277</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-278.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-278</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:34:35.25Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>727</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-279.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-279</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-280.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-280</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-281.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-281</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-3.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-3</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-301.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-301</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T21:00:16.315948Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-34.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-34</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-35.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-35</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-36.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-36</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-06T20:39:25.298999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>1092</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-37.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-37</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-38.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-38</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-39.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-39</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-4.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-4</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-40.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-40</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-42.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-42</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-43.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-43</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-44.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-44</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-45.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-45</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-46.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-46</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-47.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-47</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-48.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-48</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-49.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-49</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-5.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-5</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-50.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-50</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-51.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-51</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-52.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-52</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-54.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-54</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-6.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-6</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-77.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-77</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-81.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-81</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-82.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-82</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-85.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-85</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-86.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-86</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-88.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-88</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-9.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-9</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-90.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-90</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-91.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-91</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-93.domain-c8</key>
+        <entity type="ClusterComputeResource">domain-c8</entity>
+        <alarm type="Alarm">alarm-93</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-12-06T20:56:07.088938Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+    </val>
+  </propSet>
+  <propSet>
+    <name>disabledMethod</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfString"></val>
+  </propSet>
+  <propSet>
+    <name>drsFault</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfClusterDrsFaults"></val>
+  </propSet>
+  <propSet>
+    <name>drsRecommendation</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfClusterDrsRecommendation"></val>
+  </propSet>
+  <propSet>
+    <name>effectiveRole</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfInt">
+      <int>-568960247</int>
+    </val>
+  </propSet>
+  <propSet>
+    <name>environmentBrowser</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="EnvironmentBrowser">envbrowser-8</val>
+  </propSet>
+  <propSet>
+    <name>host</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="HostSystem">host-16</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>lifecycleManaged</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:boolean">false</val>
+  </propSet>
+  <propSet>
+    <name>migrationHistory</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfClusterDrsMigration"></val>
+  </propSet>
+  <propSet>
+    <name>name</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:string">Cluster-1</val>
+  </propSet>
+  <propSet>
+    <name>network</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="OpaqueNetwork">network-o23</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o26</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o30</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o22</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o29</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o32</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o33</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o27</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o1001</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o31</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o34</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o20</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o25</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o21</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o35</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o28</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o24</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>overallStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>parent</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="Folder">group-h5</val>
+  </propSet>
+  <propSet>
+    <name>permission</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfPermission"></val>
+  </propSet>
+  <propSet>
+    <name>recentTask</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>recommendation</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfClusterRecommendation"></val>
+  </propSet>
+  <propSet>
+    <name>resourcePool</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="ResourcePool">resgroup-9</val>
+  </propSet>
+  <propSet>
+    <name>summary</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ClusterComputeResourceSummary">
+      <totalCpu>82764</totalCpu>
+      <totalMemory>549604532224</totalMemory>
+      <numCpuCores>36</numCpuCores>
+      <numCpuThreads>36</numCpuThreads>
+      <effectiveCpu>74719</effectiveCpu>
+      <effectiveMemory>460959</effectiveMemory>
+      <numHosts>1</numHosts>
+      <numEffectiveHosts>1</numEffectiveHosts>
+      <overallStatus>green</overallStatus>
+      <currentFailoverLevel>1</currentFailoverLevel>
+      <admissionControlInfo XMLSchema-instance:type="ClusterFailoverResourcesAdmissionControlInfo">
+        <currentCpuFailoverResourcesPercent>19</currentCpuFailoverResourcesPercent>
+        <currentMemoryFailoverResourcesPercent>73</currentMemoryFailoverResourcesPercent>
+      </admissionControlInfo>
+      <numVmotions>0</numVmotions>
+      <targetBalance>282</targetBalance>
+      <drsScore>99</drsScore>
+      <numVmsPerDrsScoreBucket>14</numVmsPerDrsScoreBucket>
+      <usageSummary>
+        <totalCpuCapacityMhz>74719</totalCpuCapacityMhz>
+        <totalMemCapacityMB>460959</totalMemCapacityMB>
+        <cpuReservationMhz>59774</cpuReservationMhz>
+        <memReservationMB>120461</memReservationMB>
+        <cpuDemandMhz>62844</cpuDemandMhz>
+        <memDemandMB>125669</memDemandMB>
+        <statsGenNumber>38670</statsGenNumber>
+        <cpuEntitledMhz>13877</cpuEntitledMhz>
+        <memEntitledMB>137701</memEntitledMB>
+        <poweredOffVmCount>3</poweredOffVmCount>
+        <totalVmCount>17</totalVmCount>
+      </usageSummary>
+      <dasData XMLSchema-instance:type="ClusterDasDataSummary">
+        <hostListVersion>3</hostListVersion>
+        <clusterConfigVersion>17</clusterConfigVersion>
+        <compatListVersion>124</compatListVersion>
+      </dasData>
+      <clusterMaintenanceModeStatus>notInMaintenanceMode</clusterMaintenanceModeStatus>
+      <vcsHealthStatus>healthy</vcsHealthStatus>
+      <vcsSlots>
+        <host type="HostSystem">host-16</host>
+        <totalSlots>1</totalSlots>
+      </vcsSlots>
+    </val>
+  </propSet>
+  <propSet>
+    <name>summaryEx</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ClusterComputeResourceSummary">
+      <totalCpu>82764</totalCpu>
+      <totalMemory>549604532224</totalMemory>
+      <numCpuCores>36</numCpuCores>
+      <numCpuThreads>36</numCpuThreads>
+      <effectiveCpu>74719</effectiveCpu>
+      <effectiveMemory>460965</effectiveMemory>
+      <numHosts>1</numHosts>
+      <numEffectiveHosts>1</numEffectiveHosts>
+      <overallStatus>green</overallStatus>
+      <currentFailoverLevel>1</currentFailoverLevel>
+      <admissionControlInfo XMLSchema-instance:type="ClusterFailoverResourcesAdmissionControlInfo">
+        <currentCpuFailoverResourcesPercent>19</currentCpuFailoverResourcesPercent>
+        <currentMemoryFailoverResourcesPercent>73</currentMemoryFailoverResourcesPercent>
+      </admissionControlInfo>
+      <numVmotions>0</numVmotions>
+      <targetBalance>282</targetBalance>
+      <drsScore>99</drsScore>
+      <numVmsPerDrsScoreBucket>14</numVmsPerDrsScoreBucket>
+      <usageSummary>
+        <totalCpuCapacityMhz>74719</totalCpuCapacityMhz>
+        <totalMemCapacityMB>460965</totalMemCapacityMB>
+        <cpuReservationMhz>59774</cpuReservationMhz>
+        <memReservationMB>120461</memReservationMB>
+        <cpuDemandMhz>62844</cpuDemandMhz>
+        <memDemandMB>125669</memDemandMB>
+        <statsGenNumber>38670</statsGenNumber>
+        <cpuEntitledMhz>13877</cpuEntitledMhz>
+        <memEntitledMB>137701</memEntitledMB>
+        <poweredOffVmCount>3</poweredOffVmCount>
+        <totalVmCount>17</totalVmCount>
+      </usageSummary>
+      <dasData XMLSchema-instance:type="ClusterDasDataSummary">
+        <hostListVersion>3</hostListVersion>
+        <clusterConfigVersion>17</clusterConfigVersion>
+        <compatListVersion>124</compatListVersion>
+      </dasData>
+      <clusterMaintenanceModeStatus>notInMaintenanceMode</clusterMaintenanceModeStatus>
+      <vcsHealthStatus>healthy</vcsHealthStatus>
+      <vcsSlots>
+        <host type="HostSystem">host-16</host>
+        <totalSlots>1</totalSlots>
+      </vcsSlots>
+    </val>
+  </propSet>
+  <propSet>
+    <name>tag</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfTag"></val>
+  </propSet>
+  <propSet>
+    <name>triggeredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState"></val>
+  </propSet>
+  <propSet>
+    <name>value</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+</ObjectContent>

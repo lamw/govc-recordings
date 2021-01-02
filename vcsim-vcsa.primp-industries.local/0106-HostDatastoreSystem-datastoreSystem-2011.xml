@@ -1,0 +1,18 @@
+<ObjectContent>
+  <obj type="HostDatastoreSystem">datastoreSystem-2011</obj>
+  <propSet>
+    <name>capabilities</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="HostDatastoreSystemCapabilities">
+      <nfsMountCreationRequired>true</nfsMountCreationRequired>
+      <nfsMountCreationSupported>true</nfsMountCreationSupported>
+      <localDatastoreSupported>false</localDatastoreSupported>
+      <vmfsExtentExpansionSupported>true</vmfsExtentExpansionSupported>
+    </val>
+  </propSet>
+  <propSet>
+    <name>datastore</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="Datastore">datastore-1011</ManagedObjectReference>
+    </val>
+  </propSet>
+</ObjectContent>
