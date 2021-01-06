@@ -1,0 +1,531 @@
+<ObjectContent>
+  <obj type="VirtualApp">resgroup-v8478</obj>
+  <propSet>
+    <name>alarmActionsEnabled</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:boolean">true</val>
+  </propSet>
+  <propSet>
+    <name>availableField</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldDef"></val>
+  </propSet>
+  <propSet>
+    <name>childConfiguration</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfResourceConfigSpec">
+      <ResourceConfigSpec>
+        <entity type="VirtualMachine">vm-8481</entity>
+        <cpuAllocation>
+          <reservation>0</reservation>
+          <expandableReservation>false</expandableReservation>
+          <limit>-1</limit>
+          <shares>
+            <shares>2000</shares>
+            <level>normal</level>
+          </shares>
+        </cpuAllocation>
+        <memoryAllocation>
+          <reservation>0</reservation>
+          <expandableReservation>false</expandableReservation>
+          <limit>-1</limit>
+          <shares>
+            <shares>61440</shares>
+            <level>normal</level>
+          </shares>
+          <overheadLimit>359</overheadLimit>
+        </memoryAllocation>
+      </ResourceConfigSpec>
+      <ResourceConfigSpec>
+        <entity type="VirtualMachine">vm-8482</entity>
+        <cpuAllocation>
+          <reservation>0</reservation>
+          <expandableReservation>false</expandableReservation>
+          <limit>-1</limit>
+          <shares>
+            <shares>2000</shares>
+            <level>normal</level>
+          </shares>
+        </cpuAllocation>
+        <memoryAllocation>
+          <reservation>0</reservation>
+          <expandableReservation>false</expandableReservation>
+          <limit>-1</limit>
+          <shares>
+            <shares>61440</shares>
+            <level>normal</level>
+          </shares>
+          <overheadLimit>386</overheadLimit>
+        </memoryAllocation>
+      </ResourceConfigSpec>
+      <ResourceConfigSpec>
+        <entity type="VirtualMachine">vm-8480</entity>
+        <cpuAllocation>
+          <reservation>0</reservation>
+          <expandableReservation>false</expandableReservation>
+          <limit>-1</limit>
+          <shares>
+            <shares>2000</shares>
+            <level>normal</level>
+          </shares>
+        </cpuAllocation>
+        <memoryAllocation>
+          <reservation>0</reservation>
+          <expandableReservation>false</expandableReservation>
+          <limit>-1</limit>
+          <shares>
+            <shares>40960</shares>
+            <level>normal</level>
+          </shares>
+          <overheadLimit>55</overheadLimit>
+        </memoryAllocation>
+      </ResourceConfigSpec>
+    </val>
+  </propSet>
+  <propSet>
+    <name>childLink</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfVirtualAppLinkInfo"></val>
+  </propSet>
+  <propSet>
+    <name>config</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ResourceConfigSpec">
+      <entity type="VirtualApp">resgroup-v8478</entity>
+      <cpuAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>true</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>4000</shares>
+          <level>normal</level>
+        </shares>
+      </cpuAllocation>
+      <memoryAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>true</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>163840</shares>
+          <level>normal</level>
+        </shares>
+      </memoryAllocation>
+    </val>
+  </propSet>
+  <propSet>
+    <name>configIssue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfEvent"></val>
+  </propSet>
+  <propSet>
+    <name>configStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>customValue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>datastore</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="Datastore">datastore-81</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>declaredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState">
+      <AlarmState>
+        <key>alarm-10.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-10</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-113.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-113</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-12.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-12</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-15.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-15</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-19.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-19</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-2.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-2</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-302.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-302</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-305.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-305</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-306.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-306</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-38.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-38</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-39.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-39</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-40.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-40</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-47.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-47</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-5.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-5</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-52.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-52</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-54.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-54</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-6.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-6</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-601.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-601</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-602.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-602</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-603.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-603</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-81.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-81</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-9.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-9</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-907.resgroup-v8478</key>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <alarm type="Alarm">alarm-907</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+    </val>
+  </propSet>
+  <propSet>
+    <name>disabledMethod</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfString">
+      <string>unregisterVApp_Task</string>
+      <string>Destroy_Task</string>
+      <string>PowerOnVApp_Task</string>
+      <string>ExportVApp</string>
+      <string>CloneVApp_Task</string>
+    </val>
+  </propSet>
+  <propSet>
+    <name>effectiveRole</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfInt">
+      <int>-1</int>
+      <int>4</int>
+    </val>
+  </propSet>
+  <propSet>
+    <name>name</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:string">zPod-static-opsmgmt</val>
+  </propSet>
+  <propSet>
+    <name>network</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-8479</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>overallStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>owner</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="ClusterComputeResource">domain-c7</val>
+  </propSet>
+  <propSet>
+    <name>parent</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="ResourcePool">resgroup-8</val>
+  </propSet>
+  <propSet>
+    <name>parentFolder</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="Folder">group-v702</val>
+  </propSet>
+  <propSet>
+    <name>permission</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfPermission"></val>
+  </propSet>
+  <propSet>
+    <name>recentTask</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>resourcePool</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>runtime</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ResourcePoolRuntimeInfo">
+      <memory>
+        <reservationUsed>838860800</reservationUsed>
+        <reservationUsedForVm>838860800</reservationUsedForVm>
+        <unreservedForPool>1428495007744</unreservedForPool>
+        <unreservedForVm>1428495007744</unreservedForVm>
+        <overallUsage>56217305088</overallUsage>
+        <maxUsage>1478518374400</maxUsage>
+      </memory>
+      <cpu>
+        <reservationUsed>0</reservationUsed>
+        <reservationUsedForVm>0</reservationUsedForVm>
+        <unreservedForPool>219754</unreservedForPool>
+        <unreservedForVm>219754</unreservedForVm>
+        <overallUsage>3499</overallUsage>
+        <maxUsage>219760</maxUsage>
+      </cpu>
+      <overallStatus>green</overallStatus>
+    </val>
+  </propSet>
+  <propSet>
+    <name>summary</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualAppSummary">
+      <name></name>
+      <config>
+        <entity type="VirtualApp">resgroup-v8478</entity>
+        <cpuAllocation>
+          <reservation>0</reservation>
+          <expandableReservation>true</expandableReservation>
+          <limit>-1</limit>
+          <shares>
+            <shares>4000</shares>
+            <level>normal</level>
+          </shares>
+        </cpuAllocation>
+        <memoryAllocation>
+          <reservation>0</reservation>
+          <expandableReservation>true</expandableReservation>
+          <limit>-1</limit>
+          <shares>
+            <shares>163840</shares>
+            <level>normal</level>
+          </shares>
+          <overheadLimit>0</overheadLimit>
+        </memoryAllocation>
+      </config>
+      <runtime>
+        <memory>
+          <reservationUsed>838860800</reservationUsed>
+          <reservationUsedForVm>838860800</reservationUsedForVm>
+          <unreservedForPool>1428495007744</unreservedForPool>
+          <unreservedForVm>1428495007744</unreservedForVm>
+          <overallUsage>56217305088</overallUsage>
+          <maxUsage>1478518374400</maxUsage>
+        </memory>
+        <cpu>
+          <reservationUsed>0</reservationUsed>
+          <reservationUsedForVm>0</reservationUsedForVm>
+          <unreservedForPool>219754</unreservedForPool>
+          <unreservedForVm>219754</unreservedForVm>
+          <overallUsage>3499</overallUsage>
+          <maxUsage>219760</maxUsage>
+        </cpu>
+        <overallStatus>green</overallStatus>
+      </runtime>
+      <quickStats>
+        <overallCpuUsage>3499</overallCpuUsage>
+        <overallCpuDemand>3550</overallCpuDemand>
+        <guestMemoryUsage>8764</guestMemoryUsage>
+        <hostMemoryUsage>53613</hostMemoryUsage>
+        <distributedCpuEntitlement>3550</distributedCpuEntitlement>
+        <distributedMemoryEntitlement>23214</distributedMemoryEntitlement>
+        <staticCpuEntitlement>7640</staticCpuEntitlement>
+        <staticMemoryEntitlement>71031</staticMemoryEntitlement>
+        <privateMemory>49228</privateMemory>
+        <sharedMemory>15638</sharedMemory>
+        <swappedMemory>2067</swappedMemory>
+        <overheadMemory>743</overheadMemory>
+        <consumedOverheadMemory>698</consumedOverheadMemory>
+        <compressedMemory>2492060</compressedMemory>
+      </quickStats>
+      <configuredMemoryMB>69632</configuredMemoryMB>
+      <product>
+        <key>0</key>
+      </product>
+      <vAppState>started</vAppState>
+      <suspended>false</suspended>
+      <installBootRequired>false</installBootRequired>
+      <instanceUuid>5005db64-ca98-0fb4-0542-1494d9342763</instanceUuid>
+    </val>
+  </propSet>
+  <propSet>
+    <name>tag</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfTag"></val>
+  </propSet>
+  <propSet>
+    <name>triggeredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState"></val>
+  </propSet>
+  <propSet>
+    <name>vAppConfig</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VAppConfigInfo">
+      <product>
+        <key>0</key>
+      </product>
+      <ipAssignment>
+        <ipAllocationPolicy>fixedPolicy</ipAllocationPolicy>
+        <ipProtocol>IPv4</ipProtocol>
+      </ipAssignment>
+      <installBootRequired>false</installBootRequired>
+      <installBootStopDelay>0</installBootStopDelay>
+      <entityConfig>
+        <key type="VirtualMachine">vm-8480</key>
+        <tag>zrouter.opsmgmt.zpod.io</tag>
+        <startOrder>1</startOrder>
+        <startDelay>120</startDelay>
+        <waitingForGuest>false</waitingForGuest>
+        <startAction>powerOn</startAction>
+        <stopDelay>120</stopDelay>
+        <stopAction>powerOff</stopAction>
+      </entityConfig>
+      <entityConfig>
+        <key type="VirtualMachine">vm-8481</key>
+        <tag>esx-11.opsmgmt.zpod.io</tag>
+        <startOrder>2</startOrder>
+        <startDelay>120</startDelay>
+        <waitingForGuest>false</waitingForGuest>
+        <startAction>powerOn</startAction>
+        <stopDelay>120</stopDelay>
+        <stopAction>powerOff</stopAction>
+      </entityConfig>
+      <entityConfig>
+        <key type="VirtualMachine">vm-8482</key>
+        <tag>esx-12.opsmgmt.zpod.io</tag>
+        <startOrder>3</startOrder>
+        <startDelay>120</startDelay>
+        <waitingForGuest>false</waitingForGuest>
+        <startAction>powerOn</startAction>
+        <stopDelay>120</stopDelay>
+        <stopAction>powerOff</stopAction>
+      </entityConfig>
+      <annotation>{&#34;podname&#34;: &#34;opsmgmt&#34;, &#34;zpodvappname&#34;: &#34;zPod-static-opsmgmt&#34;, &#34;password&#34;: &#34;amazingpassword&#34;, &#34;subnet&#34;: &#34;10.96.50.0/24&#34;, &#34;lsname&#34;: &#34;LS-zPod-opsmgmt-10.96.50.0/24&#34;, &#34;lifname&#34;: &#34;LIF-internal-zPod-opsmgmt-10.96.50.0/24&#34;, &#34;domain&#34;: &#34;opsmgmt.zpod.io&#34;, &#34;netmask&#34;: &#34;255.255.255.0&#34;, &#34;netmask_cidr&#34;: 24, &#34;network_three_octet&#34;: &#34;10.96.50&#34;, &#34;network_gw&#34;: &#34;10.96.50.1&#34;, &#34;zrouter_ip&#34;: &#34;10.96.50.2&#34;, &#34;vcsa_ip&#34;: &#34;10.96.50.10&#34;, &#34;profile&#34;: {&#34;zrouter&#34;: {&#34;template&#34;: &#34;zPodRouter-9.9.0&#34;, &#34;dns&#34;: &#34;10.96.42.10&#34;, &#34;nfssize&#34;: &#34;500&#34;, &#34;component&#34;: &#34;components/zrouter-9.9.json&#34;}, &#34;esxi&#34;: [{&#34;template&#34;: &#34;Nested_ESXi6.7u3_Appliance_Template_v1.0&#34;, &#34;name&#34;: &#34;esx-11&#34;, &#34;cpu&#34;: &#34;4&#34;, &#34;mem&#34;: &#34;32&#34;, &#34;nics&#34;: [], &#34;disks&#34;: [], &#34;mgmt_ip&#34;: &#34;ZPOD_NET.11&#34;, &#34;createvmfs&#34;: false, &#34;ssh&#34;: true, &#34;component&#34;: &#34;components/esxi-6.7u3-4cpu-32mem.json&#34;}, {&#34;template&#34;: &#34;Nested_ESXi6.7u3_Appliance_Template_v1.0&#34;, &#34;name&#34;: &#34;esx-12&#34;, &#34;cpu&#34;: &#34;4&#34;, &#34;mem&#34;: &#34;32&#34;, &#34;nics&#34;: [], &#34;disks&#34;: [], &#34;mgmt_ip&#34;: &#34;ZPOD_NET.12&#34;, &#34;createvmfs&#34;: false, &#34;ssh&#34;: true, &#34;component&#34;: &#34;components/esxi-6.7u3-4cpu-32mem.json&#34;}], &#34;vcsa&#34;: {&#34;version&#34;: &#34;VMwarevCenterServer6.7U3&#34;, &#34;installer-options&#34;: [&#34;--no-ssl-certificate-verification&#34;, &#34;--accept-eula&#34;, &#34;--acknowledge-ceip&#34;], &#34;config&#34;: {&#34;__version&#34;: &#34;2.13.0&#34;, &#34;new_vcsa&#34;: {&#34;esxi&#34;: {&#34;hostname&#34;: &#34;esx-11.{domain}&#34;, &#34;username&#34;: &#34;root&#34;, &#34;password&#34;: &#34;{password}&#34;, &#34;deployment_network&#34;: &#34;VM Network&#34;, &#34;datastore&#34;: &#34;NFS-01&#34;}, &#34;appliance&#34;: {&#34;thin_disk_mode&#34;: true, &#34;deployment_option&#34;: &#34;tiny&#34;, &#34;name&#34;: &#34;vcsa&#34;}, &#34;network&#34;: {&#34;ip_family&#34;: &#34;ipv4&#34;, &#34;mode&#34;: &#34;static&#34;, &#34;ip&#34;: &#34;{vcsa_ip}&#34;, &#34;dns_servers&#34;: &#34;{zrouter_ip}&#34;, &#34;prefix&#34;: &#34;{netmask_cidr}&#34;, &#34;gateway&#34;: &#34;{network_gw}&#34;, &#34;system_name&#34;: &#34;vcsa.{domain}&#34;}, &#34;os&#34;: {&#34;password&#34;: &#34;{password}&#34;, &#34;ntp_servers&#34;: &#34;{zrouter_ip},{vmc_ad}&#34;, &#34;ssh_enable&#34;: true}, &#34;sso&#34;: {&#34;password&#34;: &#34;{password}&#34;, &#34;domain_name&#34;: &#34;{domain}&#34;}}, &#34;ceip&#34;: {&#34;settings&#34;: {&#34;ceip_enabled&#34;: true}}}, &#34;component&#34;: &#34;components/vcsa-6.7u3.json&#34;}, &#34;nsxv&#34;: {}, &#34;nsxt&#34;: {}, &#34;vcd&#34;: {}, &#34;vrops&#34;: {&#34;version&#34;: &#34;VMwarevRealizeOperations-8.0.0&#34;, &#34;ova&#34;: &#34;vRealize-Operations-Manager-Appliance-8.0.0.14857692_OVF10.ova&#34;, &#34;deploy_cmd&#34;: [&#34;ovftool &#34;, &#34;--name=vrops &#34;, &#34;--X:injectOvfEnv &#34;, &#34;--X:logFile={ZPOD_LOG} &#34;, &#34;--X:logLevel=verbose &#34;, &#34;--allowExtraConfig &#34;, &#34;--datastore=NFS-01 &#34;, &#34;--network=\&#34;VM Network\&#34; &#34;, &#34;--acceptAllEulas &#34;, &#34;--noSSLVerify &#34;, &#34;--diskMode=thin &#34;, &#34;--powerOn &#34;, &#34;--prop:forceIpv6=False &#34;, &#34;--prop:vamitimezone=Etc/UTC &#34;, &#34;--prop:vami.ip0.vRealize_Operations_Manager_Appliance={ZPOD_NET}.30 &#34;, &#34;--prop:vami.netmask0.vRealize_Operations_Manager_Appliance={ZPOD_NETMASK} &#34;, &#34;--prop:vami.gateway.vRealize_Operations_Manager_Appliance={ZPOD_GW} &#34;, &#34;--prop:vami.DNS.vRealize_Operations_Manager_Appliance={ZPOD_ZROUTER} &#34;, &#34;--prop:vami.domain.vRealize_Operations_Manager_Appliance={ZPOD_DOMAIN} &#34;, &#34;--prop:vami.searchpath.vRealize_Operations_Manager_Appliance={ZPOD_DOMAIN} &#34;, &#34;--deploymentOption=\&#34;xsmall\&#34; &#34;, &#34;{ZPOD_VROPS_OVA} &#34;, &#34;vi://administrator@{ZPOD_DOMAIN}:\&#34;{ZPOD_PASSWORD}\&#34;@vcsa.{ZPOD_DOMAIN}/?ip={ZPOD_NET}.11&#34;], &#34;component&#34;: &#34;components/vrops-8.0.0.json&#34;}, &#34;vrli&#34;: {&#34;version&#34;: &#34;VMwarevRealizeLogInsight-8.0.0&#34;, &#34;ova&#34;: &#34;VMware-vRealize-Log-Insight-8.0.0.0-14870409_OVF10.ova&#34;, &#34;deploy_cmd&#34;: [&#34;ovftool &#34;, &#34;--name=vrli &#34;, &#34;--X:injectOvfEnv &#34;, &#34;--X:logFile={ZPOD_LOG} &#34;, &#34;--X:logLevel=verbose &#34;, &#34;--allowExtraConfig &#34;, &#34;--datastore=NFS-01 &#34;, &#34;--network=\&#34;VM Network\&#34; &#34;, &#34;--acceptAllEulas &#34;, &#34;--noSSLVerify &#34;, &#34;--diskMode=thin &#34;, &#34;--powerOn &#34;, &#34;--prop:vm.rootpw=\&#34;{ZPOD_PASSWORD}\&#34; &#34;, &#34;--prop:vami.ip0.VMware_vCenter_Log_Insight={ZPOD_NET}.40 &#34;, &#34;--prop:vami.netmask0.VMware_vCenter_Log_Insight={ZPOD_NETMASK} &#34;, &#34;--prop:vami.gateway.VMware_vCenter_Log_Insight={ZPOD_GW} &#34;, &#34;--prop:vami.DNS.VMware_vCenter_Log_Insight={ZPOD_ZROUTER} &#34;, &#34;--prop:vami.domain.VMware_vCenter_Log_Insight={ZPOD_DOMAIN} &#34;, &#34;--prop:vami.searchpath.VMware_vCenter_Log_Insight={ZPOD_DOMAIN} &#34;, &#34;--deploymentOption=\&#34;xsmall\&#34; &#34;, &#34;{ZPOD_VRLI_OVA} &#34;, &#34;vi://administrator@{ZPOD_DOMAIN}:\&#34;{ZPOD_PASSWORD}\&#34;@vcsa.{ZPOD_DOMAIN}/?ip={ZPOD_NET}.11&#34;], &#34;component&#34;: &#34;components/vrli-8.0.0.json&#34;}}}</annotation>
+      <instanceUuid>5005db64-ca98-0fb4-0542-1494d9342763</instanceUuid>
+    </val>
+  </propSet>
+  <propSet>
+    <name>value</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>vm</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="VirtualMachine">vm-8481</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-8482</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-8480</ManagedObjectReference>
+    </val>
+  </propSet>
+</ObjectContent>
