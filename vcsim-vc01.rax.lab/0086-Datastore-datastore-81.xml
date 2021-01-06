@@ -1,0 +1,347 @@
+<ObjectContent>
+  <obj type="Datastore">datastore-81</obj>
+  <propSet>
+    <name>alarmActionsEnabled</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:boolean">true</val>
+  </propSet>
+  <propSet>
+    <name>availableField</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldDef"></val>
+  </propSet>
+  <propSet>
+    <name>browser</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="HostDatastoreBrowser">datastoreBrowser-datastore-81</val>
+  </propSet>
+  <propSet>
+    <name>capability</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="DatastoreCapability">
+      <directoryHierarchySupported>true</directoryHierarchySupported>
+      <rawDiskMappingsSupported>true</rawDiskMappingsSupported>
+      <perFileThinProvisioningSupported>true</perFileThinProvisioningSupported>
+      <storageIORMSupported>false</storageIORMSupported>
+      <nativeSnapshotSupported>false</nativeSnapshotSupported>
+      <topLevelDirectoryCreateSupported>false</topLevelDirectoryCreateSupported>
+      <seSparseSupported>false</seSparseSupported>
+      <vmfsSparseSupported>false</vmfsSparseSupported>
+      <vsanSparseSupported>true</vsanSparseSupported>
+      <vmdkExpandSupported>true</vmdkExpandSupported>
+    </val>
+  </propSet>
+  <propSet>
+    <name>configIssue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfEvent"></val>
+  </propSet>
+  <propSet>
+    <name>configStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">gray</val>
+  </propSet>
+  <propSet>
+    <name>customValue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>declaredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState">
+      <AlarmState>
+        <key>alarm-110.datastore-81</key>
+        <entity type="Datastore">datastore-81</entity>
+        <alarm type="Alarm">alarm-110</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-24.datastore-81</key>
+        <entity type="Datastore">datastore-81</entity>
+        <alarm type="Alarm">alarm-24</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-28.datastore-81</key>
+        <entity type="Datastore">datastore-81</entity>
+        <alarm type="Alarm">alarm-28</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-29.datastore-81</key>
+        <entity type="Datastore">datastore-81</entity>
+        <alarm type="Alarm">alarm-29</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-53.datastore-81</key>
+        <entity type="Datastore">datastore-81</entity>
+        <alarm type="Alarm">alarm-53</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-7.datastore-81</key>
+        <entity type="Datastore">datastore-81</entity>
+        <alarm type="Alarm">alarm-7</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-02-12T16:16:02.664Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-79.datastore-81</key>
+        <entity type="Datastore">datastore-81</entity>
+        <alarm type="Alarm">alarm-79</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-80.datastore-81</key>
+        <entity type="Datastore">datastore-81</entity>
+        <alarm type="Alarm">alarm-80</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-84.datastore-81</key>
+        <entity type="Datastore">datastore-81</entity>
+        <alarm type="Alarm">alarm-84</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+    </val>
+  </propSet>
+  <propSet>
+    <name>disabledMethod</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfString">
+      <string>DatastoreExitMaintenanceMode_Task</string>
+    </val>
+  </propSet>
+  <propSet>
+    <name>effectiveRole</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfInt">
+      <int>-1</int>
+      <int>4</int>
+    </val>
+  </propSet>
+  <propSet>
+    <name>host</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfDatastoreHostMount">
+      <DatastoreHostMount>
+        <key type="HostSystem">host-26</key>
+        <mountInfo>
+          <path>/vmfs/volumes/vsan:5254437fa0eaaf38-4d2c1eb8e4bd3abc</path>
+          <accessMode>readWrite</accessMode>
+          <mounted>true</mounted>
+          <accessible>true</accessible>
+        </mountInfo>
+      </DatastoreHostMount>
+      <DatastoreHostMount>
+        <key type="HostSystem">host-30</key>
+        <mountInfo>
+          <path>/vmfs/volumes/vsan:5254437fa0eaaf38-4d2c1eb8e4bd3abc</path>
+          <accessMode>readWrite</accessMode>
+          <mounted>true</mounted>
+          <accessible>true</accessible>
+        </mountInfo>
+      </DatastoreHostMount>
+      <DatastoreHostMount>
+        <key type="HostSystem">host-19</key>
+        <mountInfo>
+          <path>/vmfs/volumes/vsan:5254437fa0eaaf38-4d2c1eb8e4bd3abc</path>
+          <accessMode>readWrite</accessMode>
+          <mounted>true</mounted>
+          <accessible>true</accessible>
+        </mountInfo>
+      </DatastoreHostMount>
+      <DatastoreHostMount>
+        <key type="HostSystem">host-10</key>
+        <mountInfo>
+          <path>/vmfs/volumes/vsan:5254437fa0eaaf38-4d2c1eb8e4bd3abc</path>
+          <accessMode>readWrite</accessMode>
+          <mounted>true</mounted>
+          <accessible>true</accessible>
+        </mountInfo>
+      </DatastoreHostMount>
+    </val>
+  </propSet>
+  <propSet>
+    <name>info</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="DatastoreInfo">
+      <name>vsanDatastore</name>
+      <url>ds:///vmfs/volumes/vsan:5254437fa0eaaf38-4d2c1eb8e4bd3abc/</url>
+      <freeSpace>11161153525748</freeSpace>
+      <maxFileSize>140737488355328</maxFileSize>
+      <maxVirtualDiskCapacity>68169720922112</maxVirtualDiskCapacity>
+      <maxMemoryFileSize>9223372036854775807</maxMemoryFileSize>
+      <timestamp>2021-01-05T18:21:08.232003Z</timestamp>
+      <containerId>5254437fa0eaaf38-4d2c1eb8e4bd3abc</containerId>
+    </val>
+  </propSet>
+  <propSet>
+    <name>iormConfiguration</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="StorageIORMInfo">
+      <enabled>false</enabled>
+      <congestionThresholdMode>automatic</congestionThresholdMode>
+      <congestionThreshold>30</congestionThreshold>
+      <percentOfPeakThroughput>90</percentOfPeakThroughput>
+      <statsCollectionEnabled>false</statsCollectionEnabled>
+      <reservationEnabled>true</reservationEnabled>
+      <statsAggregationDisabled>false</statsAggregationDisabled>
+    </val>
+  </propSet>
+  <propSet>
+    <name>name</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:string">vsanDatastore</val>
+  </propSet>
+  <propSet>
+    <name>overallStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>parent</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="Folder">group-s679</val>
+  </propSet>
+  <propSet>
+    <name>permission</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfPermission"></val>
+  </propSet>
+  <propSet>
+    <name>recentTask</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>summary</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="DatastoreSummary">
+      <datastore type="Datastore">datastore-81</datastore>
+      <name>vsanDatastore</name>
+      <url>ds:///vmfs/volumes/vsan:5254437fa0eaaf38-4d2c1eb8e4bd3abc/</url>
+      <capacity>25605090377728</capacity>
+      <freeSpace>11161153525748</freeSpace>
+      <uncommitted>10469054111744</uncommitted>
+      <accessible>true</accessible>
+      <multipleHostAccess>true</multipleHostAccess>
+      <type>vsan</type>
+      <maintenanceMode>normal</maintenanceMode>
+    </val>
+  </propSet>
+  <propSet>
+    <name>tag</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfTag"></val>
+  </propSet>
+  <propSet>
+    <name>triggeredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState"></val>
+  </propSet>
+  <propSet>
+    <name>value</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>vm</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="VirtualMachine">vm-9890</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9889</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-745</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9052</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-666</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9754</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-6652</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9864</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-326</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9382</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9761</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-717</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-3979</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-6655</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-5839</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9053</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-677</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-470</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-5838</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-109</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-408</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-281</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-110</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9662</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9050</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9840</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-40</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-99</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9611</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-88</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-5523</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-6035</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-8480</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9689</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9870</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9846</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-6036</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-665</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9051</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-407</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9753</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-2702</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-8971</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9842</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-25</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9811</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-6037</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9663</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9812</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-2703</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9455</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9861</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-409</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9843</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-8972</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9009</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-8431</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-668</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9456</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9862</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9745</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-105</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-8481</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9201</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9010</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-90</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9750</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9796</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9865</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9177</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-1090</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-703</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9743</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9751</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-741</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9742</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-742</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-8482</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-743</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9296</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9752</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9813</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9744</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9758</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9759</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9746</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-2356</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-106</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9126</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9749</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-5840</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9661</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9863</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-327</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9457</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9458</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-9841</ManagedObjectReference>
+    </val>
+  </propSet>
+</ObjectContent>

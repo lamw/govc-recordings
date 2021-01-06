@@ -1,9 +1,10 @@
 # Community Repository of govc vSphere Inventory Recordings
 
-* [Description](#description)
-* [Usage](#usage)
-* [Contributions](#contributions)
-* [Recordings](#recordings)
+- [Community Repository of govc vSphere Inventory Recordings](#community-repository-of-govc-vsphere-inventory-recordings)
+  - [Description](#description)
+  - [Usage](#usage)
+  - [Contributions](#contributions)
+  - [Recordings](#recordings)
 
 ## Description
 
@@ -61,8 +62,8 @@ VirtualMachine: 20
 
 ## Recordings
 
-| Submitter   | Date     | Version                                | Directory                                                                                      |
-|-------------|----------|----------------------------------------|------------------------------------------------------------------------------------------------|
-| William Lam | 01/02/21 | VMware Cloud on AWS 1.13               | [vcsim-vcenter.sddc-35-167-62-16.vmwarevmc.com](vcsim-vcenter.sddc-35-167-62-16.vmwarevmc.com) |
-| William Lam | 01/02/21 | vSphere 7.0 Update 1c (Build 17327586) | [vcsim-vcsa.primp-industries.local](vcsim-vcsa.primp-industries.local)                         |
-|             |          |                                        |                                                                                                |
+| Submitter     | Date     | Version                                | Directory                                                                                      |
+|---------------|----------|----------------------------------------|------------------------------------------------------------------------------------------------|
+| William Lam   | 01/02/21 | VMware Cloud on AWS 1.13               | [vcsim-vcenter.sddc-35-167-62-16.vmwarevmc.com](vcsim-vcenter.sddc-35-167-62-16.vmwarevmc.com) |
+| William Lam   | 01/02/21 | vSphere 7.0 Update 1c (Build 17327586) | [vcsim-vcsa.primp-industries.local](vcsim-vcsa.primp-industries.local)                         |
+| Timo Sugliani | 01/06/21 | vSphere 6.7 Update 3  (Build 17138064) | [vcsim-vc01.rax.lab](vcsim-vc01.rax.lab)                                                       |

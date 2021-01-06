@@ -1,0 +1,1313 @@
+<ObjectContent>
+  <obj type="VmwareDistributedVirtualSwitch">dvs-61</obj>
+  <propSet>
+    <name>alarmActionsEnabled</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:boolean">true</val>
+  </propSet>
+  <propSet>
+    <name>availableField</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldDef"></val>
+  </propSet>
+  <propSet>
+    <name>capability</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="DVSCapability">
+      <dvsOperationSupported>true</dvsOperationSupported>
+      <dvPortGroupOperationSupported>true</dvPortGroupOperationSupported>
+      <dvPortOperationSupported>true</dvPortOperationSupported>
+      <compatibleHostComponentProductInfo>
+        <productLineId>embeddedEsx</productLineId>
+        <version>e.x.p</version>
+      </compatibleHostComponentProductInfo>
+      <compatibleHostComponentProductInfo>
+        <productLineId>embeddedEsx</productLineId>
+        <version>6.6&lt;</version>
+      </compatibleHostComponentProductInfo>
+      <featuresSupported XMLSchema-instance:type="VMwareDVSFeatureCapability">
+        <networkResourceManagementSupported>true</networkResourceManagementSupported>
+        <vmDirectPathGen2Supported>true</vmDirectPathGen2Supported>
+        <nicTeamingPolicy>loadbalance_ip</nicTeamingPolicy>
+        <nicTeamingPolicy>loadbalance_srcmac</nicTeamingPolicy>
+        <nicTeamingPolicy>loadbalance_srcid</nicTeamingPolicy>
+        <nicTeamingPolicy>failover_explicit</nicTeamingPolicy>
+        <nicTeamingPolicy>loadbalance_loadbased</nicTeamingPolicy>
+        <networkResourcePoolHighShareValue>100</networkResourcePoolHighShareValue>
+        <networkResourceManagementCapability>
+          <networkResourceManagementSupported>true</networkResourceManagementSupported>
+          <networkResourcePoolHighShareValue>100</networkResourcePoolHighShareValue>
+          <qosSupported>true</qosSupported>
+          <userDefinedNetworkResourcePoolsSupported>true</userDefinedNetworkResourcePoolsSupported>
+          <networkResourceControlVersion3Supported>true</networkResourceControlVersion3Supported>
+          <userDefinedInfraTrafficPoolSupported>true</userDefinedInfraTrafficPoolSupported>
+        </networkResourceManagementCapability>
+        <healthCheckCapability XMLSchema-instance:type="VMwareDVSHealthCheckCapability">
+          <vlanMtuSupported>true</vlanMtuSupported>
+          <teamingSupported>true</teamingSupported>
+        </healthCheckCapability>
+        <rollbackCapability>
+          <rollbackSupported>true</rollbackSupported>
+        </rollbackCapability>
+        <backupRestoreCapability>
+          <backupRestoreSupported>true</backupRestoreSupported>
+        </backupRestoreCapability>
+        <networkFilterSupported>true</networkFilterSupported>
+        <macLearningSupported>true</macLearningSupported>
+        <vspanSupported>true</vspanSupported>
+        <lldpSupported>true</lldpSupported>
+        <ipfixSupported>true</ipfixSupported>
+        <ipfixCapability>
+          <ipfixSupported>true</ipfixSupported>
+          <ipv6ForIpfixSupported>true</ipv6ForIpfixSupported>
+          <observationDomainIdSupported>true</observationDomainIdSupported>
+        </ipfixCapability>
+        <multicastSnoopingSupported>true</multicastSnoopingSupported>
+        <vspanCapability>
+          <mixedDestSupported>true</mixedDestSupported>
+          <dvportSupported>true</dvportSupported>
+          <remoteSourceSupported>true</remoteSourceSupported>
+          <remoteDestSupported>true</remoteDestSupported>
+          <encapRemoteSourceSupported>true</encapRemoteSourceSupported>
+          <erspanProtocolSupported>true</erspanProtocolSupported>
+          <mirrorNetstackSupported>true</mirrorNetstackSupported>
+        </vspanCapability>
+        <lacpCapability>
+          <lacpSupported>true</lacpSupported>
+          <multiLacpGroupSupported>true</multiLacpGroupSupported>
+        </lacpCapability>
+      </featuresSupported>
+    </val>
+  </propSet>
+  <propSet>
+    <name>config</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VMwareDVSConfigInfo">
+      <uuid>50 05 18 90 93 24 9e 5c-69 63 f2 a0 e2 8f d9 9a</uuid>
+      <name>DSwitch-NSX</name>
+      <numStandalonePorts>0</numStandalonePorts>
+      <numPorts>348</numPorts>
+      <maxPorts>2147483647</maxPorts>
+      <uplinkPortPolicy XMLSchema-instance:type="DVSNameArrayUplinkPortPolicy">
+        <uplinkPortName>Uplink 1</uplinkPortName>
+        <uplinkPortName>Uplink 2</uplinkPortName>
+      </uplinkPortPolicy>
+      <uplinkPortgroup type="DistributedVirtualPortgroup">dvportgroup-62</uplinkPortgroup>
+      <defaultPortConfig XMLSchema-instance:type="VMwareDVSPortSetting">
+        <blocked>
+          <inherited>false</inherited>
+          <value>false</value>
+        </blocked>
+        <vmDirectPathGen2Allowed>
+          <inherited>false</inherited>
+          <value>false</value>
+        </vmDirectPathGen2Allowed>
+        <inShapingPolicy>
+          <inherited>false</inherited>
+          <enabled>
+            <inherited>false</inherited>
+            <value>false</value>
+          </enabled>
+          <averageBandwidth>
+            <inherited>false</inherited>
+            <value>100000000</value>
+          </averageBandwidth>
+          <peakBandwidth>
+            <inherited>false</inherited>
+            <value>100000000</value>
+          </peakBandwidth>
+          <burstSize>
+            <inherited>false</inherited>
+            <value>104857600</value>
+          </burstSize>
+        </inShapingPolicy>
+        <outShapingPolicy>
+          <inherited>false</inherited>
+          <enabled>
+            <inherited>false</inherited>
+            <value>false</value>
+          </enabled>
+          <averageBandwidth>
+            <inherited>false</inherited>
+            <value>100000000</value>
+          </averageBandwidth>
+          <peakBandwidth>
+            <inherited>false</inherited>
+            <value>100000000</value>
+          </peakBandwidth>
+          <burstSize>
+            <inherited>false</inherited>
+            <value>104857600</value>
+          </burstSize>
+        </outShapingPolicy>
+        <vendorSpecificConfig>
+          <inherited>false</inherited>
+        </vendorSpecificConfig>
+        <networkResourcePoolKey>
+          <inherited>false</inherited>
+          <value>-1</value>
+        </networkResourcePoolKey>
+        <filterPolicy>
+          <inherited>false</inherited>
+        </filterPolicy>
+        <vlan XMLSchema-instance:type="VmwareDistributedVirtualSwitchVlanIdSpec">
+          <inherited>false</inherited>
+          <vlanId>0</vlanId>
+        </vlan>
+        <qosTag>
+          <inherited>false</inherited>
+          <value>-1</value>
+        </qosTag>
+        <uplinkTeamingPolicy>
+          <inherited>false</inherited>
+          <policy>
+            <inherited>false</inherited>
+            <value>loadbalance_srcid</value>
+          </policy>
+          <reversePolicy>
+            <inherited>false</inherited>
+            <value>true</value>
+          </reversePolicy>
+          <notifySwitches>
+            <inherited>false</inherited>
+            <value>true</value>
+          </notifySwitches>
+          <rollingOrder>
+            <inherited>false</inherited>
+            <value>false</value>
+          </rollingOrder>
+          <failureCriteria>
+            <inherited>false</inherited>
+            <checkSpeed>
+              <inherited>false</inherited>
+              <value>minimum</value>
+            </checkSpeed>
+            <speed>
+              <inherited>false</inherited>
+              <value>10</value>
+            </speed>
+            <checkDuplex>
+              <inherited>false</inherited>
+              <value>false</value>
+            </checkDuplex>
+            <fullDuplex>
+              <inherited>false</inherited>
+              <value>false</value>
+            </fullDuplex>
+            <checkErrorPercent>
+              <inherited>false</inherited>
+              <value>false</value>
+            </checkErrorPercent>
+            <percentage>
+              <inherited>false</inherited>
+            </percentage>
+            <checkBeacon>
+              <inherited>false</inherited>
+              <value>false</value>
+            </checkBeacon>
+          </failureCriteria>
+          <uplinkPortOrder>
+            <inherited>false</inherited>
+            <activeUplinkPort>Uplink 1</activeUplinkPort>
+            <activeUplinkPort>Uplink 2</activeUplinkPort>
+          </uplinkPortOrder>
+        </uplinkTeamingPolicy>
+        <securityPolicy>
+          <inherited>false</inherited>
+          <allowPromiscuous>
+            <inherited>false</inherited>
+            <value>false</value>
+          </allowPromiscuous>
+          <macChanges>
+            <inherited>false</inherited>
+            <value>false</value>
+          </macChanges>
+          <forgedTransmits>
+            <inherited>false</inherited>
+            <value>false</value>
+          </forgedTransmits>
+        </securityPolicy>
+        <ipfixEnabled>
+          <inherited>false</inherited>
+          <value>false</value>
+        </ipfixEnabled>
+        <txUplink>
+          <inherited>false</inherited>
+          <value>false</value>
+        </txUplink>
+        <lacpPolicy>
+          <inherited>false</inherited>
+          <enable>
+            <inherited>false</inherited>
+            <value>false</value>
+          </enable>
+          <mode>
+            <inherited>false</inherited>
+            <value>passive</value>
+          </mode>
+        </lacpPolicy>
+        <macManagementPolicy>
+          <inherited>false</inherited>
+          <macLearningPolicy>
+            <inherited>false</inherited>
+            <enabled>false</enabled>
+          </macLearningPolicy>
+        </macManagementPolicy>
+      </defaultPortConfig>
+      <host>
+        <runtimeState>
+          <currentMaxProxySwitchPorts>9216</currentMaxProxySwitchPorts>
+        </runtimeState>
+        <config>
+          <host type="HostSystem">host-30</host>
+          <maxProxySwitchPorts>512</maxProxySwitchPorts>
+          <backing XMLSchema-instance:type="DistributedVirtualSwitchHostMemberPnicBacking">
+            <pnicSpec>
+              <pnicDevice>vmnic1</pnicDevice>
+              <uplinkPortKey>48</uplinkPortKey>
+              <uplinkPortgroupKey>dvportgroup-62</uplinkPortgroupKey>
+              <connectionCookie>2106984649</connectionCookie>
+            </pnicSpec>
+            <pnicSpec>
+              <pnicDevice>vmnic5</pnicDevice>
+              <uplinkPortKey>49</uplinkPortKey>
+              <uplinkPortgroupKey>dvportgroup-62</uplinkPortgroupKey>
+              <connectionCookie>1029766045</connectionCookie>
+            </pnicSpec>
+          </backing>
+        </config>
+        <uplinkPortKey>48</uplinkPortKey>
+        <uplinkPortKey>49</uplinkPortKey>
+        <status>up</status>
+      </host>
+      <host>
+        <runtimeState>
+          <currentMaxProxySwitchPorts>9216</currentMaxProxySwitchPorts>
+        </runtimeState>
+        <config>
+          <host type="HostSystem">host-19</host>
+          <maxProxySwitchPorts>512</maxProxySwitchPorts>
+          <backing XMLSchema-instance:type="DistributedVirtualSwitchHostMemberPnicBacking">
+            <pnicSpec>
+              <pnicDevice>vmnic1</pnicDevice>
+              <uplinkPortKey>52</uplinkPortKey>
+              <uplinkPortgroupKey>dvportgroup-62</uplinkPortgroupKey>
+              <connectionCookie>2083459966</connectionCookie>
+            </pnicSpec>
+            <pnicSpec>
+              <pnicDevice>vmnic5</pnicDevice>
+              <uplinkPortKey>53</uplinkPortKey>
+              <uplinkPortgroupKey>dvportgroup-62</uplinkPortgroupKey>
+              <connectionCookie>1824744383</connectionCookie>
+            </pnicSpec>
+          </backing>
+        </config>
+        <uplinkPortKey>52</uplinkPortKey>
+        <uplinkPortKey>53</uplinkPortKey>
+        <status>up</status>
+      </host>
+      <host>
+        <runtimeState>
+          <currentMaxProxySwitchPorts>9216</currentMaxProxySwitchPorts>
+        </runtimeState>
+        <config>
+          <host type="HostSystem">host-10</host>
+          <maxProxySwitchPorts>512</maxProxySwitchPorts>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.feature.cap.supportVmotionFromOpaqueNetwork</key>
+            <opaqueData>1</opaqueData>
+          </vendorSpecificConfig>
+          <vendorSpecificConfig>
+            <key>com.vmware.net.vdr.dvptracking</key>
+            <opaqueData>%01</opaqueData>
+          </vendorSpecificConfig>
+          <backing XMLSchema-instance:type="DistributedVirtualSwitchHostMemberPnicBacking">
+            <pnicSpec>
+              <pnicDevice>vmnic1</pnicDevice>
+              <uplinkPortKey>54</uplinkPortKey>
+              <uplinkPortgroupKey>dvportgroup-62</uplinkPortgroupKey>
+              <connectionCookie>2071686881</connectionCookie>
+            </pnicSpec>
+            <pnicSpec>
+              <pnicDevice>vmnic5</pnicDevice>
+              <uplinkPortKey>55</uplinkPortKey>
+              <uplinkPortgroupKey>dvportgroup-62</uplinkPortgroupKey>
+              <connectionCookie>1814298604</connectionCookie>
+            </pnicSpec>
+          </backing>
+        </config>
+        <uplinkPortKey>54</uplinkPortKey>
+        <uplinkPortKey>55</uplinkPortKey>
+        <status>up</status>
+      </host>
+      <host>
+        <runtimeState>
+          <currentMaxProxySwitchPorts>9216</currentMaxProxySwitchPorts>
+        </runtimeState>
+        <config>
+          <host type="HostSystem">host-26</host>
+          <maxProxySwitchPorts>512</maxProxySwitchPorts>
+          <backing XMLSchema-instance:type="DistributedVirtualSwitchHostMemberPnicBacking">
+            <pnicSpec>
+              <pnicDevice>vmnic1</pnicDevice>
+              <uplinkPortKey>50</uplinkPortKey>
+              <uplinkPortgroupKey>dvportgroup-62</uplinkPortgroupKey>
+              <connectionCookie>2094102320</connectionCookie>
+            </pnicSpec>
+            <pnicSpec>
+              <pnicDevice>vmnic5</pnicDevice>
+              <uplinkPortKey>51</uplinkPortKey>
+              <uplinkPortgroupKey>dvportgroup-62</uplinkPortgroupKey>
+              <connectionCookie>1039466355</connectionCookie>
+            </pnicSpec>
+          </backing>
+        </config>
+        <uplinkPortKey>50</uplinkPortKey>
+        <uplinkPortKey>51</uplinkPortKey>
+        <status>up</status>
+      </host>
+      <productInfo>
+        <name>DVS</name>
+        <vendor>VMware, Inc.</vendor>
+        <version>6.6.0</version>
+        <build>00000</build>
+        <forwardingClass>cswitch</forwardingClass>
+      </productInfo>
+      <vendorSpecificConfig>
+        <key>com.vmware.vrdma.uuid</key>
+        <opaqueData>52 57 ed 51 33 85 1d d2-72 48 12 c4 2b e6 ee 65</opaqueData>
+      </vendorSpecificConfig>
+      <policy>
+        <autoPreInstallAllowed>true</autoPreInstallAllowed>
+        <autoUpgradeAllowed>true</autoUpgradeAllowed>
+        <partialUpgradeAllowed>true</partialUpgradeAllowed>
+      </policy>
+      <configVersion>4</configVersion>
+      <contact></contact>
+      <createTime>2018-07-30T11:43:59.536999Z</createTime>
+      <networkResourceManagementEnabled>true</networkResourceManagementEnabled>
+      <defaultProxySwitchMaxNumPorts>512</defaultProxySwitchMaxNumPorts>
+      <healthCheckConfig XMLSchema-instance:type="VMwareDVSVlanMtuHealthCheckConfig">
+        <enable>false</enable>
+      </healthCheckConfig>
+      <healthCheckConfig XMLSchema-instance:type="VMwareDVSTeamingHealthCheckConfig">
+        <enable>false</enable>
+      </healthCheckConfig>
+      <infrastructureTrafficResourceConfig>
+        <key>management</key>
+        <description>Management Traffic Type</description>
+        <allocationInfo>
+          <limit>-1</limit>
+          <shares>
+            <shares>50</shares>
+            <level>normal</level>
+          </shares>
+          <reservation>0</reservation>
+        </allocationInfo>
+      </infrastructureTrafficResourceConfig>
+      <infrastructureTrafficResourceConfig>
+        <key>faultTolerance</key>
+        <description>Fault Tolerance (FT) Traffic Type</description>
+        <allocationInfo>
+          <limit>-1</limit>
+          <shares>
+            <shares>50</shares>
+            <level>normal</level>
+          </shares>
+          <reservation>0</reservation>
+        </allocationInfo>
+      </infrastructureTrafficResourceConfig>
+      <infrastructureTrafficResourceConfig>
+        <key>vmotion</key>
+        <description>vMotion Traffic Type</description>
+        <allocationInfo>
+          <limit>-1</limit>
+          <shares>
+            <shares>50</shares>
+            <level>normal</level>
+          </shares>
+          <reservation>0</reservation>
+        </allocationInfo>
+      </infrastructureTrafficResourceConfig>
+      <infrastructureTrafficResourceConfig>
+        <key>virtualMachine</key>
+        <description>Virtual Machine Traffic Type</description>
+        <allocationInfo>
+          <limit>-1</limit>
+          <shares>
+            <shares>100</shares>
+            <level>high</level>
+          </shares>
+          <reservation>0</reservation>
+        </allocationInfo>
+      </infrastructureTrafficResourceConfig>
+      <infrastructureTrafficResourceConfig>
+        <key>iSCSI</key>
+        <description>iSCSI Traffic Type</description>
+        <allocationInfo>
+          <limit>-1</limit>
+          <shares>
+            <shares>50</shares>
+            <level>normal</level>
+          </shares>
+          <reservation>0</reservation>
+        </allocationInfo>
+      </infrastructureTrafficResourceConfig>
+      <infrastructureTrafficResourceConfig>
+        <key>nfs</key>
+        <description>NFS Traffic Type</description>
+        <allocationInfo>
+          <limit>-1</limit>
+          <shares>
+            <shares>50</shares>
+            <level>normal</level>
+          </shares>
+          <reservation>0</reservation>
+        </allocationInfo>
+      </infrastructureTrafficResourceConfig>
+      <infrastructureTrafficResourceConfig>
+        <key>hbr</key>
+        <description>vSphere Replication (VR) Traffic Type</description>
+        <allocationInfo>
+          <limit>-1</limit>
+          <shares>
+            <shares>50</shares>
+            <level>normal</level>
+          </shares>
+          <reservation>0</reservation>
+        </allocationInfo>
+      </infrastructureTrafficResourceConfig>
+      <infrastructureTrafficResourceConfig>
+        <key>vsan</key>
+        <description>vSAN Traffic Type</description>
+        <allocationInfo>
+          <limit>-1</limit>
+          <shares>
+            <shares>50</shares>
+            <level>normal</level>
+          </shares>
+          <reservation>0</reservation>
+        </allocationInfo>
+      </infrastructureTrafficResourceConfig>
+      <infrastructureTrafficResourceConfig>
+        <key>vdp</key>
+        <description>vSphere Data Protection Backup Traffic Type</description>
+        <allocationInfo>
+          <limit>-1</limit>
+          <shares>
+            <shares>50</shares>
+            <level>normal</level>
+          </shares>
+          <reservation>0</reservation>
+        </allocationInfo>
+      </infrastructureTrafficResourceConfig>
+      <networkResourceControlVersion>version3</networkResourceControlVersion>
+      <pnicCapacityRatioForReservation>75</pnicCapacityRatioForReservation>
+      <maxMtu>9000</maxMtu>
+      <linkDiscoveryProtocolConfig>
+        <protocol>cdp</protocol>
+        <operation>none</operation>
+      </linkDiscoveryProtocolConfig>
+      <ipfixConfig>
+        <activeFlowTimeout>60</activeFlowTimeout>
+        <idleFlowTimeout>15</idleFlowTimeout>
+        <samplingRate>0</samplingRate>
+        <internalFlowsOnly>false</internalFlowsOnly>
+      </ipfixConfig>
+      <lacpApiVersion>multipleLag</lacpApiVersion>
+      <multicastFilteringMode>legacyFiltering</multicastFilteringMode>
+    </val>
+  </propSet>
+  <propSet>
+    <name>configIssue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfEvent"></val>
+  </propSet>
+  <propSet>
+    <name>configStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>customValue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>declaredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState"></val>
+  </propSet>
+  <propSet>
+    <name>disabledMethod</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfString"></val>
+  </propSet>
+  <propSet>
+    <name>effectiveRole</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfInt">
+      <int>-1</int>
+      <int>4</int>
+    </val>
+  </propSet>
+  <propSet>
+    <name>name</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:string">DSwitch-NSX</val>
+  </propSet>
+  <propSet>
+    <name>networkResourcePool</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfDVSNetworkResourcePool"></val>
+  </propSet>
+  <propSet>
+    <name>overallStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>parent</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="Folder">group-n6</val>
+  </propSet>
+  <propSet>
+    <name>permission</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfPermission"></val>
+  </propSet>
+  <propSet>
+    <name>portgroup</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-2701</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-9049</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-9839</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-9748</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-62</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-126</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-441</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-330</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-9860</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-9741</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-125</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-94</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-8479</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-93</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-8970</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-562</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-454</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-704</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-9203</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-83</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-9454</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-6034</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-2391</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-186</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-9810</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-669</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-5837</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-321</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-9660</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>recentTask</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>runtime</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="DVSRuntimeInfo">
+      <hostMemberRuntime>
+        <host type="HostSystem">host-30</host>
+        <status>up</status>
+        <statusDetail>Status:green, com.vmware.common.host.volatile.overlay.status:green</statusDetail>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSTeamingHealthCheckResult">
+          <summary>nonIphashMatch</summary>
+          <teamingStatus>nonIphashMatch</teamingStatus>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSMtuHealthCheckResult">
+          <uplinkPortKey>49</uplinkPortKey>
+          <mtuMismatch>false</mtuMismatch>
+          <vlanSupportSwitchMtu>
+            <start>0</start>
+            <end>0</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>21</start>
+            <end>21</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>201</start>
+            <end>202</end>
+          </vlanSupportSwitchMtu>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSVlanHealthCheckResult">
+          <uplinkPortKey>49</uplinkPortKey>
+          <trunkedVlan>
+            <start>0</start>
+            <end>0</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>21</start>
+            <end>21</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>201</start>
+            <end>202</end>
+          </trunkedVlan>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSMtuHealthCheckResult">
+          <uplinkPortKey>48</uplinkPortKey>
+          <mtuMismatch>false</mtuMismatch>
+          <vlanSupportSwitchMtu>
+            <start>0</start>
+            <end>0</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>21</start>
+            <end>21</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>201</start>
+            <end>202</end>
+          </vlanSupportSwitchMtu>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSVlanHealthCheckResult">
+          <uplinkPortKey>48</uplinkPortKey>
+          <trunkedVlan>
+            <start>0</start>
+            <end>0</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>21</start>
+            <end>21</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>201</start>
+            <end>202</end>
+          </trunkedVlan>
+        </healthCheckResult>
+      </hostMemberRuntime>
+      <hostMemberRuntime>
+        <host type="HostSystem">host-19</host>
+        <status>up</status>
+        <statusDetail>Status:green, com.vmware.common.host.volatile.overlay.status:green</statusDetail>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSMtuHealthCheckResult">
+          <uplinkPortKey>73</uplinkPortKey>
+          <mtuMismatch>false</mtuMismatch>
+          <vlanSupportSwitchMtu>
+            <start>0</start>
+            <end>0</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>21</start>
+            <end>22</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>200</start>
+            <end>204</end>
+          </vlanSupportSwitchMtu>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSVlanHealthCheckResult">
+          <uplinkPortKey>73</uplinkPortKey>
+          <trunkedVlan>
+            <start>0</start>
+            <end>0</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>21</start>
+            <end>22</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>200</start>
+            <end>204</end>
+          </trunkedVlan>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSTeamingHealthCheckResult">
+          <summary>nonIphashMatch</summary>
+          <teamingStatus>nonIphashMatch</teamingStatus>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSMtuHealthCheckResult">
+          <uplinkPortKey>52</uplinkPortKey>
+          <mtuMismatch>false</mtuMismatch>
+          <vlanSupportSwitchMtu>
+            <start>0</start>
+            <end>0</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>21</start>
+            <end>21</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>201</start>
+            <end>202</end>
+          </vlanSupportSwitchMtu>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSVlanHealthCheckResult">
+          <uplinkPortKey>52</uplinkPortKey>
+          <trunkedVlan>
+            <start>0</start>
+            <end>0</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>21</start>
+            <end>21</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>201</start>
+            <end>202</end>
+          </trunkedVlan>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSMtuHealthCheckResult">
+          <uplinkPortKey>53</uplinkPortKey>
+          <mtuMismatch>false</mtuMismatch>
+          <vlanSupportSwitchMtu>
+            <start>0</start>
+            <end>0</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>21</start>
+            <end>21</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>201</start>
+            <end>202</end>
+          </vlanSupportSwitchMtu>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSVlanHealthCheckResult">
+          <uplinkPortKey>53</uplinkPortKey>
+          <trunkedVlan>
+            <start>0</start>
+            <end>0</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>21</start>
+            <end>21</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>201</start>
+            <end>202</end>
+          </trunkedVlan>
+        </healthCheckResult>
+      </hostMemberRuntime>
+      <hostMemberRuntime>
+        <host type="HostSystem">host-10</host>
+        <status>up</status>
+        <statusDetail>Status:green, com.vmware.common.host.volatile.overlay.status:green</statusDetail>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSTeamingHealthCheckResult">
+          <summary>nonIphashMatch</summary>
+          <teamingStatus>nonIphashMatch</teamingStatus>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSMtuHealthCheckResult">
+          <uplinkPortKey>55</uplinkPortKey>
+          <mtuMismatch>false</mtuMismatch>
+          <vlanSupportSwitchMtu>
+            <start>0</start>
+            <end>0</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>21</start>
+            <end>21</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>201</start>
+            <end>202</end>
+          </vlanSupportSwitchMtu>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSVlanHealthCheckResult">
+          <uplinkPortKey>55</uplinkPortKey>
+          <trunkedVlan>
+            <start>0</start>
+            <end>0</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>21</start>
+            <end>21</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>201</start>
+            <end>202</end>
+          </trunkedVlan>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSMtuHealthCheckResult">
+          <uplinkPortKey>54</uplinkPortKey>
+          <mtuMismatch>false</mtuMismatch>
+          <vlanSupportSwitchMtu>
+            <start>0</start>
+            <end>0</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>21</start>
+            <end>21</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>201</start>
+            <end>202</end>
+          </vlanSupportSwitchMtu>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSVlanHealthCheckResult">
+          <uplinkPortKey>54</uplinkPortKey>
+          <trunkedVlan>
+            <start>0</start>
+            <end>0</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>21</start>
+            <end>21</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>201</start>
+            <end>202</end>
+          </trunkedVlan>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSMtuHealthCheckResult">
+          <uplinkPortKey>72</uplinkPortKey>
+          <mtuMismatch>false</mtuMismatch>
+          <vlanSupportSwitchMtu>
+            <start>0</start>
+            <end>0</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>21</start>
+            <end>22</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>200</start>
+            <end>204</end>
+          </vlanSupportSwitchMtu>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSVlanHealthCheckResult">
+          <uplinkPortKey>72</uplinkPortKey>
+          <trunkedVlan>
+            <start>0</start>
+            <end>0</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>21</start>
+            <end>22</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>200</start>
+            <end>204</end>
+          </trunkedVlan>
+        </healthCheckResult>
+      </hostMemberRuntime>
+      <hostMemberRuntime>
+        <host type="HostSystem">host-26</host>
+        <status>up</status>
+        <statusDetail>Status:green, com.vmware.common.host.volatile.overlay.status:green</statusDetail>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSMtuHealthCheckResult">
+          <uplinkPortKey>74</uplinkPortKey>
+          <mtuMismatch>false</mtuMismatch>
+          <vlanSupportSwitchMtu>
+            <start>0</start>
+            <end>0</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>21</start>
+            <end>22</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>201</start>
+            <end>204</end>
+          </vlanSupportSwitchMtu>
+          <vlanNotSupportSwitchMtu>
+            <start>200</start>
+            <end>200</end>
+          </vlanNotSupportSwitchMtu>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSVlanHealthCheckResult">
+          <uplinkPortKey>74</uplinkPortKey>
+          <trunkedVlan>
+            <start>0</start>
+            <end>0</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>21</start>
+            <end>22</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>201</start>
+            <end>204</end>
+          </trunkedVlan>
+          <untrunkedVlan>
+            <start>200</start>
+            <end>200</end>
+          </untrunkedVlan>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSMtuHealthCheckResult">
+          <uplinkPortKey>50</uplinkPortKey>
+          <mtuMismatch>false</mtuMismatch>
+          <vlanSupportSwitchMtu>
+            <start>0</start>
+            <end>0</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>21</start>
+            <end>21</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>201</start>
+            <end>202</end>
+          </vlanSupportSwitchMtu>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSVlanHealthCheckResult">
+          <uplinkPortKey>50</uplinkPortKey>
+          <trunkedVlan>
+            <start>0</start>
+            <end>0</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>21</start>
+            <end>21</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>201</start>
+            <end>202</end>
+          </trunkedVlan>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSMtuHealthCheckResult">
+          <uplinkPortKey>51</uplinkPortKey>
+          <mtuMismatch>false</mtuMismatch>
+          <vlanSupportSwitchMtu>
+            <start>0</start>
+            <end>0</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>21</start>
+            <end>21</end>
+          </vlanSupportSwitchMtu>
+          <vlanSupportSwitchMtu>
+            <start>201</start>
+            <end>202</end>
+          </vlanSupportSwitchMtu>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSVlanHealthCheckResult">
+          <uplinkPortKey>51</uplinkPortKey>
+          <trunkedVlan>
+            <start>0</start>
+            <end>0</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>21</start>
+            <end>21</end>
+          </trunkedVlan>
+          <trunkedVlan>
+            <start>201</start>
+            <end>202</end>
+          </trunkedVlan>
+        </healthCheckResult>
+        <healthCheckResult XMLSchema-instance:type="VMwareDVSTeamingHealthCheckResult">
+          <summary>nonIphashMatch</summary>
+          <teamingStatus>nonIphashMatch</teamingStatus>
+        </healthCheckResult>
+      </hostMemberRuntime>
+      <resourceRuntimeInfo></resourceRuntimeInfo>
+    </val>
+  </propSet>
+  <propSet>
+    <name>summary</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="DVSSummary">
+      <name>DSwitch-NSX</name>
+      <uuid>50 05 18 90 93 24 9e 5c-69 63 f2 a0 e2 8f d9 9a</uuid>
+      <numPorts>348</numPorts>
+      <productInfo>
+        <name>DVS</name>
+        <vendor>VMware, Inc.</vendor>
+        <version>6.6.0</version>
+        <build>00000</build>
+        <forwardingClass>cswitch</forwardingClass>
+      </productInfo>
+      <hostMember type="HostSystem">host-30</hostMember>
+      <hostMember type="HostSystem">host-19</hostMember>
+      <hostMember type="HostSystem">host-10</hostMember>
+      <hostMember type="HostSystem">host-26</hostMember>
+      <vm type="VirtualMachine">vm-9890</vm>
+      <vm type="VirtualMachine">vm-9889</vm>
+      <vm type="VirtualMachine">vm-9796</vm>
+      <vm type="VirtualMachine">vm-9754</vm>
+      <vm type="VirtualMachine">vm-3979</vm>
+      <vm type="VirtualMachine">vm-5840</vm>
+      <vm type="VirtualMachine">vm-9865</vm>
+      <vm type="VirtualMachine">vm-9746</vm>
+      <vm type="VirtualMachine">vm-9455</vm>
+      <vm type="VirtualMachine">vm-9843</vm>
+      <vm type="VirtualMachine">vm-2356</vm>
+      <vm type="VirtualMachine">vm-9661</vm>
+      <vm type="VirtualMachine">vm-9758</vm>
+      <vm type="VirtualMachine">vm-9841</vm>
+      <vm type="VirtualMachine">vm-9744</vm>
+      <vm type="VirtualMachine">vm-9813</vm>
+      <vm type="VirtualMachine">vm-742</vm>
+      <vm type="VirtualMachine">vm-741</vm>
+      <vm type="VirtualMachine">vm-717</vm>
+      <vm type="VirtualMachine">vm-8480</vm>
+      <vm type="VirtualMachine">vm-6036</vm>
+      <vm type="VirtualMachine">vm-9458</vm>
+      <vm type="VirtualMachine">vm-9846</vm>
+      <vm type="VirtualMachine">vm-9749</vm>
+      <vm type="VirtualMachine">vm-9053</vm>
+      <vm type="VirtualMachine">vm-106</vm>
+      <vm type="VirtualMachine">vm-9761</vm>
+      <vm type="VirtualMachine">vm-6035</vm>
+      <vm type="VirtualMachine">vm-677</vm>
+      <vm type="VirtualMachine">vm-9742</vm>
+      <vm type="VirtualMachine">vm-8481</vm>
+      <vm type="VirtualMachine">vm-9750</vm>
+      <vm type="VirtualMachine">vm-9050</vm>
+      <vm type="VirtualMachine">vm-9201</vm>
+      <vm type="VirtualMachine">vm-665</vm>
+      <vm type="VirtualMachine">vm-2702</vm>
+      <vm type="VirtualMachine">vm-9126</vm>
+      <vm type="VirtualMachine">vm-9611</vm>
+      <vm type="VirtualMachine">vm-9752</vm>
+      <vm type="VirtualMachine">vm-5838</vm>
+      <vm type="VirtualMachine">vm-9689</vm>
+      <vm type="VirtualMachine">vm-668</vm>
+      <vm type="VirtualMachine">vm-745</vm>
+      <vm type="VirtualMachine">vm-9863</vm>
+      <vm type="VirtualMachine">vm-9862</vm>
+      <vm type="VirtualMachine">vm-5839</vm>
+      <vm type="VirtualMachine">vm-327</vm>
+      <vm type="VirtualMachine">vm-703</vm>
+      <vm type="VirtualMachine">vm-9051</vm>
+      <vm type="VirtualMachine">vm-5523</vm>
+      <vm type="VirtualMachine">vm-9753</vm>
+      <vm type="VirtualMachine">vm-743</vm>
+      <vm type="VirtualMachine">vm-9861</vm>
+      <vm type="VirtualMachine">vm-9662</vm>
+      <vm type="VirtualMachine">vm-9177</vm>
+      <vm type="VirtualMachine">vm-9759</vm>
+      <vm type="VirtualMachine">vm-6655</vm>
+      <vm type="VirtualMachine">vm-9052</vm>
+      <vm type="VirtualMachine">vm-9663</vm>
+      <vm type="VirtualMachine">vm-326</vm>
+      <vm type="VirtualMachine">vm-6652</vm>
+      <vm type="VirtualMachine">vm-9811</vm>
+      <vm type="VirtualMachine">vm-9812</vm>
+      <vm type="VirtualMachine">vm-9457</vm>
+      <vm type="VirtualMachine">vm-8972</vm>
+      <vm type="VirtualMachine">vm-9870</vm>
+      <vm type="VirtualMachine">vm-8971</vm>
+      <vm type="VirtualMachine">vm-9456</vm>
+      <vm type="VirtualMachine">vm-6037</vm>
+      <vm type="VirtualMachine">vm-1090</vm>
+      <vm type="VirtualMachine">vm-2703</vm>
+      <vm type="VirtualMachine">vm-666</vm>
+      <vm type="VirtualMachine">vm-9840</vm>
+      <vm type="VirtualMachine">vm-9743</vm>
+      <vm type="VirtualMachine">vm-8482</vm>
+      <vm type="VirtualMachine">vm-9751</vm>
+      <vm type="VirtualMachine">vm-9842</vm>
+      <vm type="VirtualMachine">vm-9745</vm>
+      <portgroupName>vxw-dvs-61-virtualwire-361-sid-5024-LS-zPod-apj-10.96.49.0%2f24</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-475-sid-5018-LS-zPod-gemini-10.96.73.0%2f24</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-600-sid-5015-LS-zPod-HDaaS-10.96.64.0%2f24</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-591-sid-5021-LS-zPod-net-sec-10.96.97.0%2f24</portgroupName>
+      <portgroupName>DSwitch-NSX-DVUplinks-61</portgroupName>
+      <portgroupName>Mgmt-172.20.0.0%2f24</portgroupName>
+      <portgroupName>vMotion-172.20.5.0%2f24</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-32-sid-5009-LS-Horizon-DMZ</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-603-sid-5003-LS-zPod-tanzu-10.96.91.0%2f24</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-590-sid-5020-LS-zPod-netsec-10.96.60.0%2f24</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-2-sid-5001-LS-DemoNetwork</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-1-sid-5000-LS-TransitNetwork</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-428-sid-5012-LS-zPod-opsmgmt-10.96.50.0%2f24</portgroupName>
+      <portgroupName>vxw-vmknicPg-dvs-61-201-a0447a8d-9798-4307-beea-2a0ff57b3c5b</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-461-sid-5002-LS-zPod-packer-10.96.58.0%2f24</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-51-sid-5017-LS-SDDC-VMC-Routed-10.96.1.0%2f24</portgroupName>
+      <portgroupName>L2E-DSwitch-NSX-Trunk</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-58-sid-5013-LS-zPodAdmin-10.96.42.0%2f24</portgroupName>
+      <portgroupName>DX-RAX-VLAN100</portgroupName>
+      <portgroupName>Internet-161.47.144.128%2f27</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-542-sid-5010-LS-zPod-globex-10.96.67.0%2f24</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-392-sid-5030-LS-zPod-dp-pod-b-10.96.85.0%2f24</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-356-sid-5022-LS-Rubrik-Routed-10.96.10.0%2f24</portgroupName>
+      <portgroupName>Dummy</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-596-sid-5006-LS-zPod-corp-dc-10.96.89.0%2f24</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-56-sid-5005-LS-VMCAdmin</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-387-sid-5029-LS-zPod-dp-pod-10.96.88.0%2f24</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-30-sid-5007-LS-Horizon-WWCP</portgroupName>
+      <portgroupName>vxw-dvs-61-virtualwire-581-sid-5019-LS-zPod-vcpp-10.96.77.0%2f24</portgroupName>
+      <contact></contact>
+      <numHosts>4</numHosts>
+    </val>
+  </propSet>
+  <propSet>
+    <name>tag</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfTag"></val>
+  </propSet>
+  <propSet>
+    <name>triggeredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState"></val>
+  </propSet>
+  <propSet>
+    <name>uuid</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:string">50 05 18 90 93 24 9e 5c-69 63 f2 a0 e2 8f d9 9a</val>
+  </propSet>
+  <propSet>
+    <name>value</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+</ObjectContent>

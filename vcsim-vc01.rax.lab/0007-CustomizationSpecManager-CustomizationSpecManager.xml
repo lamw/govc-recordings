@@ -1,0 +1,70 @@
+<ObjectContent>
+  <obj type="CustomizationSpecManager">CustomizationSpecManager</obj>
+  <propSet>
+    <name>encryptionKey</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfByte">
+      <byte>32</byte>
+    </val>
+  </propSet>
+  <propSet>
+    <name>info</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomizationSpecInfo">
+      <CustomizationSpecInfo>
+        <name>Windows Horizon Spec</name>
+        <description></description>
+        <type>Windows</type>
+        <changeVersion>1536584548</changeVersion>
+        <lastUpdateTime>2018-09-10T13:02:28Z</lastUpdateTime>
+      </CustomizationSpecInfo>
+      <CustomizationSpecInfo>
+        <name>Windows Horizon Static Spec</name>
+        <description></description>
+        <type>Windows</type>
+        <changeVersion>1536586199</changeVersion>
+        <lastUpdateTime>2018-09-10T13:29:59Z</lastUpdateTime>
+      </CustomizationSpecInfo>
+      <CustomizationSpecInfo>
+        <name>Debian</name>
+        <description></description>
+        <type>Linux</type>
+        <changeVersion>1540392016</changeVersion>
+        <lastUpdateTime>2018-10-24T14:40:16Z</lastUpdateTime>
+      </CustomizationSpecInfo>
+      <CustomizationSpecInfo>
+        <name>Windows Spec</name>
+        <description></description>
+        <type>Windows</type>
+        <changeVersion>1540392366</changeVersion>
+        <lastUpdateTime>2018-10-24T14:46:06Z</lastUpdateTime>
+      </CustomizationSpecInfo>
+      <CustomizationSpecInfo>
+        <name>Windows Spec-01</name>
+        <description></description>
+        <type>Windows</type>
+        <changeVersion>1543160210</changeVersion>
+        <lastUpdateTime>2018-11-25T15:36:50Z</lastUpdateTime>
+      </CustomizationSpecInfo>
+      <CustomizationSpecInfo>
+        <name>windows-spec-new</name>
+        <description></description>
+        <type>Windows</type>
+        <changeVersion>1543160692</changeVersion>
+        <lastUpdateTime>2018-11-25T15:44:52Z</lastUpdateTime>
+      </CustomizationSpecInfo>
+      <CustomizationSpecInfo>
+        <name>Benoit-TestDeploy</name>
+        <description></description>
+        <type>Windows</type>
+        <changeVersion>1547804623</changeVersion>
+        <lastUpdateTime>2019-01-18T09:43:43Z</lastUpdateTime>
+      </CustomizationSpecInfo>
+      <CustomizationSpecInfo>
+        <name>Windows Spec - VMC.lab</name>
+        <description></description>
+        <type>Windows</type>
+        <changeVersion>1562380888</changeVersion>
+        <lastUpdateTime>2019-07-06T02:41:28Z</lastUpdateTime>
+      </CustomizationSpecInfo>
+    </val>
+  </propSet>
+</ObjectContent>

@@ -1,0 +1,2303 @@
+<ObjectContent>
+  <obj type="VirtualMachine">vm-6036</obj>
+  <propSet>
+    <name>alarmActionsEnabled</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:boolean">true</val>
+  </propSet>
+  <propSet>
+    <name>availableField</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldDef"></val>
+  </propSet>
+  <propSet>
+    <name>capability</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineCapability">
+      <snapshotOperationsSupported>true</snapshotOperationsSupported>
+      <multipleSnapshotsSupported>true</multipleSnapshotsSupported>
+      <snapshotConfigSupported>true</snapshotConfigSupported>
+      <poweredOffSnapshotsSupported>true</poweredOffSnapshotsSupported>
+      <memorySnapshotsSupported>true</memorySnapshotsSupported>
+      <revertToSnapshotSupported>true</revertToSnapshotSupported>
+      <quiescedSnapshotsSupported>true</quiescedSnapshotsSupported>
+      <disableSnapshotsSupported>false</disableSnapshotsSupported>
+      <lockSnapshotsSupported>true</lockSnapshotsSupported>
+      <consolePreferencesSupported>false</consolePreferencesSupported>
+      <cpuFeatureMaskSupported>true</cpuFeatureMaskSupported>
+      <s1AcpiManagementSupported>true</s1AcpiManagementSupported>
+      <settingScreenResolutionSupported>false</settingScreenResolutionSupported>
+      <toolsAutoUpdateSupported>false</toolsAutoUpdateSupported>
+      <vmNpivWwnSupported>true</vmNpivWwnSupported>
+      <npivWwnOnNonRdmVmSupported>true</npivWwnOnNonRdmVmSupported>
+      <vmNpivWwnDisableSupported>true</vmNpivWwnDisableSupported>
+      <vmNpivWwnUpdateSupported>true</vmNpivWwnUpdateSupported>
+      <swapPlacementSupported>true</swapPlacementSupported>
+      <toolsSyncTimeSupported>true</toolsSyncTimeSupported>
+      <virtualMmuUsageSupported>true</virtualMmuUsageSupported>
+      <diskSharesSupported>true</diskSharesSupported>
+      <bootOptionsSupported>true</bootOptionsSupported>
+      <bootRetryOptionsSupported>true</bootRetryOptionsSupported>
+      <settingVideoRamSizeSupported>true</settingVideoRamSizeSupported>
+      <settingDisplayTopologySupported>false</settingDisplayTopologySupported>
+      <recordReplaySupported>false</recordReplaySupported>
+      <changeTrackingSupported>true</changeTrackingSupported>
+      <multipleCoresPerSocketSupported>true</multipleCoresPerSocketSupported>
+      <hostBasedReplicationSupported>true</hostBasedReplicationSupported>
+      <guestAutoLockSupported>true</guestAutoLockSupported>
+      <memoryReservationLockSupported>true</memoryReservationLockSupported>
+      <featureRequirementSupported>true</featureRequirementSupported>
+      <poweredOnMonitorTypeChangeSupported>true</poweredOnMonitorTypeChangeSupported>
+      <seSparseDiskSupported>true</seSparseDiskSupported>
+      <nestedHVSupported>true</nestedHVSupported>
+      <vPMCSupported>true</vPMCSupported>
+      <secureBootSupported>true</secureBootSupported>
+      <perVmEvcSupported>false</perVmEvcSupported>
+      <virtualMmuUsageIgnored>false</virtualMmuUsageIgnored>
+      <virtualExecUsageIgnored>false</virtualExecUsageIgnored>
+      <diskOnlySnapshotOnSuspendedVMSupported>true</diskOnlySnapshotOnSuspendedVMSupported>
+    </val>
+  </propSet>
+  <propSet>
+    <name>config</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineConfigInfo">
+      <changeVersion>2021-01-05T17:57:01.795561Z</changeVersion>
+      <modified>1970-01-01T00:00:00Z</modified>
+      <name>esx-11.dp-pod-b.zpod.io</name>
+      <guestFullName>VMware ESXi 6.5 or later</guestFullName>
+      <version>vmx-13</version>
+      <uuid>420592f1-d431-3248-8257-f4319f014b1b</uuid>
+      <createDate>2019-09-27T14:37:58.154256Z</createDate>
+      <instanceUuid>5005d4d5-d8af-a3ba-4dbd-977705c6e121</instanceUuid>
+      <npivTemporaryDisabled>true</npivTemporaryDisabled>
+      <locationId>564d413b-49ff-f2f3-6990-e16f460e1649</locationId>
+      <template>false</template>
+      <guestId>vmkernel65Guest</guestId>
+      <alternateGuestName></alternateGuestName>
+      <annotation>Nested ESXi 6.7 Update 3 Appliance (Build 14320388) www.virtuallyghetto.com</annotation>
+      <files>
+        <vmPathName>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/esx-11.dp-pod-b.zpod.io.vmx</vmPathName>
+        <snapshotDirectory>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/</snapshotDirectory>
+        <suspendDirectory>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/</suspendDirectory>
+        <logDirectory>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/</logDirectory>
+      </files>
+      <tools>
+        <toolsVersion>10346</toolsVersion>
+        <toolsInstallType>guestToolsTypeTar</toolsInstallType>
+        <afterPowerOn>true</afterPowerOn>
+        <afterResume>true</afterResume>
+        <beforeGuestStandby>true</beforeGuestStandby>
+        <beforeGuestShutdown>true</beforeGuestShutdown>
+        <toolsUpgradePolicy>manual</toolsUpgradePolicy>
+        <syncTimeWithHost>false</syncTimeWithHost>
+        <lastInstallInfo>
+          <counter>0</counter>
+        </lastInstallInfo>
+      </tools>
+      <flags>
+        <disableAcceleration>false</disableAcceleration>
+        <enableLogging>true</enableLogging>
+        <useToe>false</useToe>
+        <runWithDebugInfo>false</runWithDebugInfo>
+        <monitorType>release</monitorType>
+        <htSharing>any</htSharing>
+        <snapshotDisabled>false</snapshotDisabled>
+        <snapshotLocked>false</snapshotLocked>
+        <diskUuidEnabled>true</diskUuidEnabled>
+        <virtualMmuUsage>automatic</virtualMmuUsage>
+        <virtualExecUsage>hvAuto</virtualExecUsage>
+        <snapshotPowerOffBehavior>powerOff</snapshotPowerOffBehavior>
+        <recordReplayEnabled>false</recordReplayEnabled>
+        <faultToleranceType>unset</faultToleranceType>
+        <cbrcCacheEnabled>false</cbrcCacheEnabled>
+        <vvtdEnabled>false</vvtdEnabled>
+        <vbsEnabled>false</vbsEnabled>
+      </flags>
+      <defaultPowerOps>
+        <powerOffType>soft</powerOffType>
+        <suspendType>hard</suspendType>
+        <resetType>soft</resetType>
+        <defaultPowerOffType>soft</defaultPowerOffType>
+        <defaultSuspendType>hard</defaultSuspendType>
+        <defaultResetType>soft</defaultResetType>
+        <standbyAction>checkpoint</standbyAction>
+      </defaultPowerOps>
+      <hardware>
+        <numCPU>4</numCPU>
+        <numCoresPerSocket>1</numCoresPerSocket>
+        <memoryMB>32768</memoryMB>
+        <virtualICH7MPresent>false</virtualICH7MPresent>
+        <virtualSMCPresent>false</virtualSMCPresent>
+        <device XMLSchema-instance:type="VirtualIDEController">
+          <key>200</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>IDE 0</label>
+            <summary>IDE 0</summary>
+          </deviceInfo>
+          <busNumber>0</busNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualIDEController">
+          <key>201</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>IDE 1</label>
+            <summary>IDE 1</summary>
+          </deviceInfo>
+          <busNumber>1</busNumber>
+          <device>3002</device>
+        </device>
+        <device XMLSchema-instance:type="VirtualPS2Controller">
+          <key>300</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>PS2 controller 0</label>
+            <summary>PS2 controller 0</summary>
+          </deviceInfo>
+          <busNumber>0</busNumber>
+          <device>600</device>
+          <device>700</device>
+        </device>
+        <device XMLSchema-instance:type="VirtualPCIController">
+          <key>100</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>PCI controller 0</label>
+            <summary>PCI controller 0</summary>
+          </deviceInfo>
+          <busNumber>0</busNumber>
+          <device>500</device>
+          <device>12000</device>
+          <device>1000</device>
+          <device>4000</device>
+          <device>4001</device>
+        </device>
+        <device XMLSchema-instance:type="VirtualSIOController">
+          <key>400</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>SIO controller 0</label>
+            <summary>SIO controller 0</summary>
+          </deviceInfo>
+          <busNumber>0</busNumber>
+          <device>8000</device>
+        </device>
+        <device XMLSchema-instance:type="VirtualKeyboard">
+          <key>600</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Keyboard </label>
+            <summary>Keyboard</summary>
+          </deviceInfo>
+          <controllerKey>300</controllerKey>
+          <unitNumber>0</unitNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualPointingDevice">
+          <key>700</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Pointing device</label>
+            <summary>Pointing device; Device</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualPointingDeviceDeviceBackingInfo">
+            <deviceName></deviceName>
+            <useAutoDetect>false</useAutoDetect>
+            <hostPointingDevice>autodetect</hostPointingDevice>
+          </backing>
+          <controllerKey>300</controllerKey>
+          <unitNumber>1</unitNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualMachineVideoCard">
+          <key>500</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Video card </label>
+            <summary>Video card</summary>
+          </deviceInfo>
+          <controllerKey>100</controllerKey>
+          <unitNumber>0</unitNumber>
+          <videoRamSizeInKB>4096</videoRamSizeInKB>
+          <numDisplays>1</numDisplays>
+          <useAutoDetect>false</useAutoDetect>
+          <enable3DSupport>false</enable3DSupport>
+          <use3dRenderer>automatic</use3dRenderer>
+          <graphicsMemorySizeInKB>262144</graphicsMemorySizeInKB>
+        </device>
+        <device XMLSchema-instance:type="VirtualMachineVMCIDevice">
+          <key>12000</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>VMCI device</label>
+            <summary>Device on the virtual machine PCI bus that provides support for the virtual machine communication interface</summary>
+          </deviceInfo>
+          <slotInfo XMLSchema-instance:type="VirtualDevicePciBusSlotInfo">
+            <pciSlotNumber>32</pciSlotNumber>
+          </slotInfo>
+          <controllerKey>100</controllerKey>
+          <unitNumber>17</unitNumber>
+          <id>-1627305189</id>
+          <allowUnrestrictedCommunication>false</allowUnrestrictedCommunication>
+          <filterEnable>true</filterEnable>
+        </device>
+        <device XMLSchema-instance:type="ParaVirtualSCSIController">
+          <key>1000</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>SCSI controller 0</label>
+            <summary>VMware paravirtual SCSI</summary>
+          </deviceInfo>
+          <slotInfo XMLSchema-instance:type="VirtualDevicePciBusSlotInfo">
+            <pciSlotNumber>160</pciSlotNumber>
+          </slotInfo>
+          <controllerKey>100</controllerKey>
+          <unitNumber>3</unitNumber>
+          <busNumber>0</busNumber>
+          <device>2000</device>
+          <device>2001</device>
+          <device>2002</device>
+          <hotAddRemove>true</hotAddRemove>
+          <sharedBus>noSharing</sharedBus>
+          <scsiCtlrUnitNumber>7</scsiCtlrUnitNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualCdrom">
+          <key>3002</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>CD/DVD drive 1</label>
+            <summary>Remote ATAPI</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualCdromRemoteAtapiBackingInfo">
+            <deviceName></deviceName>
+            <useAutoDetect>true</useAutoDetect>
+          </backing>
+          <connectable>
+            <startConnected>false</startConnected>
+            <allowGuestControl>true</allowGuestControl>
+            <connected>false</connected>
+            <status>ok</status>
+          </connectable>
+          <controllerKey>201</controllerKey>
+          <unitNumber>0</unitNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualDisk">
+          <key>2000</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Hard disk 1</label>
+            <summary>2,097,152 KB</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualDiskFlatVer2BackingInfo">
+            <fileName>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/esx-11.dp-pod-b.zpod.io.vmdk</fileName>
+            <datastore type="Datastore">datastore-81</datastore>
+            <backingObjectId>c31e8e5d-d8c8-3605-8d74-246e96ac6584</backingObjectId>
+            <diskMode>persistent</diskMode>
+            <split>false</split>
+            <writeThrough>false</writeThrough>
+            <thinProvisioned>true</thinProvisioned>
+            <uuid>6000C29e-3b68-11f5-df10-99a0b37a71fc</uuid>
+            <contentId>61abde7ced28ba4032ad806a8581ddd1</contentId>
+            <digestEnabled>false</digestEnabled>
+            <sharing>sharingNone</sharing>
+          </backing>
+          <controllerKey>1000</controllerKey>
+          <unitNumber>0</unitNumber>
+          <capacityInKB>2097152</capacityInKB>
+          <capacityInBytes>2147483648</capacityInBytes>
+          <shares>
+            <shares>1000</shares>
+            <level>normal</level>
+          </shares>
+          <storageIOAllocation>
+            <limit>-1</limit>
+            <shares>
+              <shares>1000</shares>
+              <level>normal</level>
+            </shares>
+            <reservation>0</reservation>
+          </storageIOAllocation>
+          <diskObjectId>1108-2000</diskObjectId>
+          <nativeUnmanagedLinkedClone>false</nativeUnmanagedLinkedClone>
+        </device>
+        <device XMLSchema-instance:type="VirtualDisk">
+          <key>2001</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Hard disk 2</label>
+            <summary>4,194,304 KB</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualDiskFlatVer2BackingInfo">
+            <fileName>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/esx-11.dp-pod-b.zpod.io_1.vmdk</fileName>
+            <datastore type="Datastore">datastore-81</datastore>
+            <backingObjectId>c51e8e5d-7059-34ee-7beb-246e96ac6584</backingObjectId>
+            <diskMode>persistent</diskMode>
+            <split>false</split>
+            <writeThrough>false</writeThrough>
+            <thinProvisioned>true</thinProvisioned>
+            <uuid>6000C299-b637-d111-f0dd-3df233165753</uuid>
+            <contentId>cc5bcd4308e19cab1101f70ffffffffe</contentId>
+            <digestEnabled>false</digestEnabled>
+            <sharing>sharingNone</sharing>
+          </backing>
+          <controllerKey>1000</controllerKey>
+          <unitNumber>1</unitNumber>
+          <capacityInKB>4194304</capacityInKB>
+          <capacityInBytes>4294967296</capacityInBytes>
+          <shares>
+            <shares>1000</shares>
+            <level>normal</level>
+          </shares>
+          <storageIOAllocation>
+            <limit>-1</limit>
+            <shares>
+              <shares>1000</shares>
+              <level>normal</level>
+            </shares>
+            <reservation>0</reservation>
+          </storageIOAllocation>
+          <diskObjectId>1108-2001</diskObjectId>
+          <nativeUnmanagedLinkedClone>false</nativeUnmanagedLinkedClone>
+        </device>
+        <device XMLSchema-instance:type="VirtualDisk">
+          <key>2002</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Hard disk 3</label>
+            <summary>8,388,608 KB</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualDiskFlatVer2BackingInfo">
+            <fileName>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/esx-11.dp-pod-b.zpod.io_2.vmdk</fileName>
+            <datastore type="Datastore">datastore-81</datastore>
+            <backingObjectId>c51e8e5d-d6ce-f825-e1ba-246e96ac6584</backingObjectId>
+            <diskMode>persistent</diskMode>
+            <split>false</split>
+            <writeThrough>false</writeThrough>
+            <thinProvisioned>true</thinProvisioned>
+            <uuid>6000C29a-8025-e117-6cbe-6f6b8a4bf677</uuid>
+            <contentId>ca9dc5ea32f9b7bd2184ff66fffffffe</contentId>
+            <digestEnabled>false</digestEnabled>
+            <sharing>sharingNone</sharing>
+          </backing>
+          <controllerKey>1000</controllerKey>
+          <unitNumber>2</unitNumber>
+          <capacityInKB>8388608</capacityInKB>
+          <capacityInBytes>8589934592</capacityInBytes>
+          <shares>
+            <shares>1000</shares>
+            <level>normal</level>
+          </shares>
+          <storageIOAllocation>
+            <limit>-1</limit>
+            <shares>
+              <shares>1000</shares>
+              <level>normal</level>
+            </shares>
+            <reservation>0</reservation>
+          </storageIOAllocation>
+          <diskObjectId>1108-2002</diskObjectId>
+          <nativeUnmanagedLinkedClone>false</nativeUnmanagedLinkedClone>
+        </device>
+        <device XMLSchema-instance:type="VirtualFloppy">
+          <key>8000</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Floppy drive 1</label>
+            <summary>Remote</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualFloppyRemoteDeviceBackingInfo">
+            <deviceName></deviceName>
+            <useAutoDetect>true</useAutoDetect>
+          </backing>
+          <connectable>
+            <startConnected>false</startConnected>
+            <allowGuestControl>true</allowGuestControl>
+            <connected>false</connected>
+            <status>ok</status>
+          </connectable>
+          <controllerKey>400</controllerKey>
+          <unitNumber>0</unitNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualVmxnet3">
+          <key>4000</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Network adapter 1</label>
+            <summary>DVSwitch: 50 05 18 90 93 24 9e 5c-69 63 f2 a0 e2 8f d9 9a</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualEthernetCardDistributedVirtualPortBackingInfo">
+            <port>
+              <switchUuid>50 05 18 90 93 24 9e 5c-69 63 f2 a0 e2 8f d9 9a</switchUuid>
+              <portgroupKey>dvportgroup-6034</portgroupKey>
+              <portKey>4432</portKey>
+              <connectionCookie>1429715659</connectionCookie>
+            </port>
+          </backing>
+          <connectable>
+            <migrateConnect>unset</migrateConnect>
+            <startConnected>true</startConnected>
+            <allowGuestControl>true</allowGuestControl>
+            <connected>true</connected>
+            <status>ok</status>
+          </connectable>
+          <slotInfo XMLSchema-instance:type="VirtualDevicePciBusSlotInfo">
+            <pciSlotNumber>192</pciSlotNumber>
+          </slotInfo>
+          <controllerKey>100</controllerKey>
+          <unitNumber>7</unitNumber>
+          <addressType>assigned</addressType>
+          <macAddress>00:50:56:85:a2:a6</macAddress>
+          <wakeOnLanEnabled>true</wakeOnLanEnabled>
+          <resourceAllocation>
+            <reservation>0</reservation>
+            <share>
+              <shares>50</shares>
+              <level>normal</level>
+            </share>
+            <limit>-1</limit>
+          </resourceAllocation>
+          <uptCompatibilityEnabled>true</uptCompatibilityEnabled>
+        </device>
+        <device XMLSchema-instance:type="VirtualVmxnet3">
+          <key>4001</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Network adapter 2</label>
+            <summary>DVSwitch: 50 05 18 90 93 24 9e 5c-69 63 f2 a0 e2 8f d9 9a</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualEthernetCardDistributedVirtualPortBackingInfo">
+            <port>
+              <switchUuid>50 05 18 90 93 24 9e 5c-69 63 f2 a0 e2 8f d9 9a</switchUuid>
+              <portgroupKey>dvportgroup-6034</portgroupKey>
+              <portKey>4431</portKey>
+              <connectionCookie>1430152279</connectionCookie>
+            </port>
+          </backing>
+          <connectable>
+            <migrateConnect>unset</migrateConnect>
+            <startConnected>true</startConnected>
+            <allowGuestControl>true</allowGuestControl>
+            <connected>true</connected>
+            <status>ok</status>
+          </connectable>
+          <slotInfo XMLSchema-instance:type="VirtualDevicePciBusSlotInfo">
+            <pciSlotNumber>224</pciSlotNumber>
+          </slotInfo>
+          <controllerKey>100</controllerKey>
+          <unitNumber>8</unitNumber>
+          <addressType>assigned</addressType>
+          <macAddress>00:50:56:85:da:34</macAddress>
+          <wakeOnLanEnabled>true</wakeOnLanEnabled>
+          <resourceAllocation>
+            <reservation>0</reservation>
+            <share>
+              <shares>50</shares>
+              <level>normal</level>
+            </share>
+            <limit>-1</limit>
+          </resourceAllocation>
+          <uptCompatibilityEnabled>true</uptCompatibilityEnabled>
+        </device>
+      </hardware>
+      <cpuAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>false</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>2000</shares>
+          <level>normal</level>
+        </shares>
+      </cpuAllocation>
+      <memoryAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>false</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>61440</shares>
+          <level>normal</level>
+        </shares>
+        <overheadLimit>359</overheadLimit>
+      </memoryAllocation>
+      <latencySensitivity>
+        <level>normal</level>
+      </latencySensitivity>
+      <memoryHotAddEnabled>false</memoryHotAddEnabled>
+      <cpuHotAddEnabled>false</cpuHotAddEnabled>
+      <cpuHotRemoveEnabled>false</cpuHotRemoveEnabled>
+      <hotPlugMemoryLimit>32768</hotPlugMemoryLimit>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>nvram</key>
+        <value XMLSchema-instance:type="xsd:string">esx-11.dp-pod-b.zpod.io.nvram</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>ide1:0.autodetect</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vmotion.checkpointSVGAPrimarySize</key>
+        <value XMLSchema-instance:type="xsd:string">4194304</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge0.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge6.functions</key>
+        <value XMLSchema-instance:type="xsd:string">8</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>floppy0.autodetect</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>ethernet1.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">224</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge5.virtualDev</key>
+        <value XMLSchema-instance:type="xsd:string">pcieRootPort</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge4.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge5.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>disk.enableUUID</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>tools.guest.desktop.autolock</key>
+        <value XMLSchema-instance:type="xsd:string">FALSE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>scsi0:1.virtualSSD</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge6.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">23</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>scsi0.sasWWID</key>
+        <value XMLSchema-instance:type="xsd:string">50 05 05 61 d4 31 32 40</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge7.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>checkpoint.vmState.readOnly</key>
+        <value XMLSchema-instance:type="xsd:string">FALSE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge6.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge4.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">21</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge6.virtualDev</key>
+        <value XMLSchema-instance:type="xsd:string">pcieRootPort</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>hpet0.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>numa.autosize.cookie</key>
+        <value XMLSchema-instance:type="xsd:string">40001</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge5.functions</key>
+        <value XMLSchema-instance:type="xsd:string">8</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>monitor.phys_bits_used</key>
+        <value XMLSchema-instance:type="xsd:string">43</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>svga.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>scsi0:2.virtualSSD</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>featMask.vm.hv.capable</key>
+        <value XMLSchema-instance:type="xsd:string">Min:1</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge7.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">24</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>ethernet1.filter4.name</key>
+        <value XMLSchema-instance:type="xsd:string">dvfilter-maclearn</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>ethernet0.filter4.name</key>
+        <value XMLSchema-instance:type="xsd:string">dvfilter-maclearn</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>ethernet1.filter4.onFailure</key>
+        <value XMLSchema-instance:type="xsd:string">failOpen</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge0.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">17</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>ethernet0.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">192</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge7.functions</key>
+        <value XMLSchema-instance:type="xsd:string">8</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>scsi0.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">160</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge7.virtualDev</key>
+        <value XMLSchema-instance:type="xsd:string">pcieRootPort</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge5.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">22</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>softPowerOff</key>
+        <value XMLSchema-instance:type="xsd:string">FALSE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>ethernet0.filter4.onFailure</key>
+        <value XMLSchema-instance:type="xsd:string">failOpen</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>numa.autosize.vcpu.maxPerVirtualNode</key>
+        <value XMLSchema-instance:type="xsd:string">4</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vmci0.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">32</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>sched.cpu.latencySensitivity</key>
+        <value XMLSchema-instance:type="xsd:string">normal</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge4.virtualDev</key>
+        <value XMLSchema-instance:type="xsd:string">pcieRootPort</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge4.functions</key>
+        <value XMLSchema-instance:type="xsd:string">8</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vmotion.checkpointFBSize</key>
+        <value XMLSchema-instance:type="xsd:string">4194304</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>sched.swap.derivedName</key>
+        <value XMLSchema-instance:type="xsd:string">/vmfs/volumes/vsan:5254437fa0eaaf38-4d2c1eb8e4bd3abc/c21e8e5d-62e3-9870-d3d4-246e96ac6584/esx-11.dp-pod-b.zpod.io-88e91780.vswp</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>scsi0:2.redo</key>
+        <value XMLSchema-instance:type="xsd:string"></value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>scsi0:1.redo</key>
+        <value XMLSchema-instance:type="xsd:string"></value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>scsi0:0.redo</key>
+        <value XMLSchema-instance:type="xsd:string"></value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vmware.tools.internalversion</key>
+        <value XMLSchema-instance:type="xsd:string">10346</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vmware.tools.requiredversion</key>
+        <value XMLSchema-instance:type="xsd:string">11269</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>migrate.hostLogState</key>
+        <value XMLSchema-instance:type="xsd:string">none</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>migrate.migrationId</key>
+        <value XMLSchema-instance:type="xsd:string">8756265686777469853</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>migrate.hostLog</key>
+        <value XMLSchema-instance:type="xsd:string">esx-11.dp-pod-b.zpod.io-734c667e.hlog</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>guestinfo.vmtools.buildNumber</key>
+        <value XMLSchema-instance:type="xsd:string">12406962</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>guestinfo.vmtools.description</key>
+        <value XMLSchema-instance:type="xsd:string">VMware Tools 10.3.10 build 12406962</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>guestinfo.vmtools.versionNumber</key>
+        <value XMLSchema-instance:type="xsd:string">10346</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>guestinfo.vmtools.versionString</key>
+        <value XMLSchema-instance:type="xsd:string">10.3.10</value>
+      </extraConfig>
+      <datastoreUrl>
+        <name>vsanDatastore</name>
+        <url>/vmfs/volumes/vsan:5254437fa0eaaf38-4d2c1eb8e4bd3abc</url>
+      </datastoreUrl>
+      <swapPlacement>inherit</swapPlacement>
+      <bootOptions>
+        <enterBIOSSetup>false</enterBIOSSetup>
+        <efiSecureBootEnabled>false</efiSecureBootEnabled>
+        <bootRetryEnabled>false</bootRetryEnabled>
+        <bootRetryDelay>10000</bootRetryDelay>
+        <networkBootProtocol>ipv4</networkBootProtocol>
+      </bootOptions>
+      <vAppConfig XMLSchema-instance:type="VmConfigInfo">
+        <product>
+          <key>0</key>
+          <name>Nested_ESXi6.7u3_Appliance</name>
+          <vendor>virtuallyGhetto</vendor>
+          <version>1.0</version>
+          <fullVersion>6.7u3</fullVersion>
+          <vendorUrl>http://www.virtuallyghetto.com</vendorUrl>
+        </product>
+        <property>
+          <key>0</key>
+          <id>guestinfo.syslog</id>
+          <label>Syslog Server</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <defaultValue>192.168.1.200</defaultValue>
+          <value>10.96.85.2</value>
+          <description>Syslog Server</description>
+        </property>
+        <property>
+          <key>1</key>
+          <id>guestinfo.debug</id>
+          <label>Debug</label>
+          <type>boolean</type>
+          <userConfigurable>false</userConfigurable>
+          <defaultValue>False</defaultValue>
+          <description>Enable for debugging purposes</description>
+        </property>
+        <property>
+          <key>2</key>
+          <id>guestinfo.domain</id>
+          <label>DNS Domain</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <value>dp-pod-b.zpod.io</value>
+          <description>DNS Domain (DHCP if left blank)</description>
+        </property>
+        <property>
+          <key>3</key>
+          <id>guestinfo.gateway</id>
+          <label>Gateway</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <value>10.96.85.1</value>
+          <description>Gateway of vmk0 (DHCP if left blank)</description>
+        </property>
+        <property>
+          <key>4</key>
+          <id>guestinfo.createvmfs</id>
+          <label>VMFS</label>
+          <type>boolean</type>
+          <userConfigurable>true</userConfigurable>
+          <defaultValue>False</defaultValue>
+          <value>False</value>
+          <description>Automatically create local VMFS Datastore (datastore1)</description>
+        </property>
+        <property>
+          <key>5</key>
+          <id>guestinfo.ntp</id>
+          <label>NTP Servers</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <defaultValue>pool.ntp.org</defaultValue>
+          <value>10.96.85.2</value>
+          <description>NTP Server</description>
+        </property>
+        <property>
+          <key>6</key>
+          <id>guestinfo.password</id>
+          <label>Password</label>
+          <type>password</type>
+          <userConfigurable>true</userConfigurable>
+          <description>ESXi Root Password (default VMware1!)</description>
+        </property>
+        <property>
+          <key>7</key>
+          <id>guestinfo.hostname</id>
+          <label>Hostname</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <value>esx-11.dp-pod-b.zpod.io</value>
+          <description>ESXi Hostname (DHCP if left blank)</description>
+        </property>
+        <property>
+          <key>8</key>
+          <id>guestinfo.dns</id>
+          <label>DNS</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <value>10.96.85.2</value>
+          <description>DNS Server (DHCP if left blank)</description>
+        </property>
+        <property>
+          <key>9</key>
+          <id>guestinfo.ipaddress</id>
+          <label>IP Address</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <value>10.96.85.11</value>
+          <description>IP Address of vmk0 (DHCP if left blank)</description>
+        </property>
+        <property>
+          <key>10</key>
+          <id>guestinfo.ssh</id>
+          <label>SSH</label>
+          <type>boolean</type>
+          <userConfigurable>true</userConfigurable>
+          <defaultValue>True</defaultValue>
+          <value>True</value>
+          <description>Enable SSH</description>
+        </property>
+        <property>
+          <key>11</key>
+          <id>guestinfo.vlan</id>
+          <label>VLAN ID</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <description>VLAN ID of vmk0 (DHCP if left blank)</description>
+        </property>
+        <property>
+          <key>12</key>
+          <id>guestinfo.netmask</id>
+          <label>Netmask</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <value>255.255.255.0</value>
+          <description>Netmask of vmk0 (DHCP if left blank)</description>
+        </property>
+        <ipAssignment>
+          <ipAllocationPolicy>fixedPolicy</ipAllocationPolicy>
+          <supportedIpProtocol>IPv4</supportedIpProtocol>
+          <ipProtocol>IPv4</ipProtocol>
+        </ipAssignment>
+        <eula>﻿VMWARE END USER LICENSE AGREEMENT&#xA;&#xA;PLEASE NOTE THAT THE TERMS OF THIS END USER LICENSE&#xA;AGREEMENT SHALL GOVERN YOUR USE OF THE SOFTWARE,&#xA;REGARDLESS OF ANY TERMS THAT MAY APPEAR DURING THE&#xA;INSTALLATION OF THE SOFTWARE.&#xA;&#xA;IMPORTANT-READ CAREFULLY:   BY DOWNLOADING,&#xA;INSTALLING, OR USING THE SOFTWARE, YOU (THE INDIVIDUAL OR&#xA;LEGAL ENTITY) AGREE TO BE BOUND BY THE TERMS OF THIS END&#xA;USER LICENSE AGREEMENT (&#34;EULA&#34;).  IF YOU DO NOT AGREE TO&#xA;THE TERMS OF THIS EULA, YOU MUST NOT DOWNLOAD, INSTALL,&#xA;OR USE THE SOFTWARE, AND YOU MUST DELETE OR RETURN THE&#xA;UNUSED SOFTWARE TO THE VENDOR FROM WHICH YOU&#xA;ACQUIRED IT WITHIN THIRTY (30) DAYS AND REQUEST A REFUND&#xA;OF THE LICENSE FEE, IF ANY, THAT YOU PAID FOR THE&#xA;SOFTWARE.&#xA;&#xA;EVALUATION LICENSE.  If You are licensing the Software for&#xA;evaluation purposes, Your use of the Software is only permitted in a&#xA;non-production environment and for the period limited by the License&#xA;Key.  Notwithstanding any other provision in this EULA, an Evaluation&#xA;License of the Software is provided &#34;AS-IS&#34; without indemnification,&#xA;support or warranty of any kind, expressed or implied.&#xA;&#xA;1.&#x9;DEFINITIONS.&#xA;&#xA;1.1&#x9; &#34;Affiliate&#34; means, with respect to a party at a given time, an entity&#xA;that then is directly or indirectly controlled by, is under common control&#xA;with, or controls that party, and here &#34;control&#34; means an ownership, voting&#xA;or similar interest representing fifty percent (50%) or more of the total&#xA;interests then outstanding of that entity.&#xA;&#xA;1.2&#x9;&#34;Documentation&#34; means that documentation that is generally&#xA;provided to You by VMware with the Software, as revised by VMware from&#xA;time to time, and which may include end user manuals, operation&#xA;instructions, installation guides, release notes, and on-line help files&#xA;regarding the use of the Software.&#xA;&#xA;1.3&#x9;&#34;Guest Operating Systems&#34; means instances of third-party&#xA;operating systems licensed by You, installed in a Virtual Machine and run&#xA;using the Software.&#xA;&#xA;1.4&#x9;&#34;Intellectual Property Rights&#34; means all worldwide intellectual&#xA;property rights, including without limitation, copyrights, trademarks,&#xA;service marks, trade secrets, know how, inventions, patents, patent&#xA;applications, moral rights and all other proprietary rights, whether&#xA;registered or unregistered.&#xA;&#xA;1.5&#x9;&#34;License&#34; means a license granted under Section 2.1 (General&#xA;License Grant).&#xA;&#xA;1.6    &#x9;&#34;License Key&#34; means a serial number that enables You to&#xA;activate and use the Software.&#xA;&#xA;1.7&#x9;&#34;License Term&#34; means the duration of a License as specified in the&#xA;Order.&#xA;&#xA;1.8&#x9;&#34;License Type&#34; means the type of License applicable to the&#xA;Software, as more fully described in the Order.&#xA;&#xA;1.9&#x9;&#34;Open Source Software&#34; or &#34;OSS&#34; means software components&#xA;embedded in the Software and provided under separate license terms,&#xA;which can be found either in the open_source_licenses.txt file (or similar&#xA;file) provided within the Software or at&#xA;www.vmware.com/download/open_source.html.&#xA;&#xA;1.10&#x9;&#34;Order&#34; means a purchase order, enterprise license agreement, or&#xA;other ordering document issued by You to VMware or a VMware&#xA;authorized reseller that references and incorporates this EULA and is&#xA;accepted by VMware as set forth in Section 4 (Order).&#xA;1.11&#x9;&#34;Product Guide&#34; means the current version of the VMware Product&#xA;Guide at the time of Your Order, copies of which are found at&#xA;www.vmware.com/download/eula.&#xA;&#xA;1.12&#x9;&#34;Support Services Terms&#34; means VMware&#39;s then-current support&#xA;policies, copies of which are posted at www.vmware.com/support/policies.&#xA;&#xA;1.13&#x9;&#34;Software&#34; means the VMware Tools and the VMware computer&#xA;programs listed on VMware&#39;s commercial price list to which You acquire a&#xA;license under an Order, together with any software code relating to the&#xA;foregoing that is provided to You pursuant to a support and subscription&#xA;service contract and that is not subject to a separate license agreement.&#xA;&#xA;1.14&#x9;&#34;Territory&#34; means the country or countries in which You have been&#xA;invoiced; provided, however, that if You have been invoiced within any of&#xA;the European Economic Area member states, You may deploy the&#xA;corresponding Software throughout the European Economic Area.&#xA;&#xA;1.15&#x9;&#34;Third Party Agent&#34; means a third party delivering information&#xA;technology services to You pursuant to a written contract with You.&#xA;&#xA;1.16&#x9;&#34;Virtual Machine&#34; means a software container that can run its own&#xA;operating system and execute applications like a physical machine.&#xA;&#xA;1.17&#x9;&#34;VMware&#34; means VMware, Inc., a Delaware corporation, if You are&#xA;purchasing Licenses or services for use in the United States and VMware&#xA;International Limited, a company organized and existing under the laws&#xA;of Ireland, for all other purchases.&#xA;1.18&#x9;&#34;VMware Tools&#34; means the suite of utilities and drivers, Licensed&#xA;by VMware under the &#34;VMware Tools&#34; name, that can be installed in a&#xA;Guest Operating System to enhance the performance and functionality of&#xA;a Guest Operating System when running in a Virtual Machine.&#xA;&#xA;2.&#x9;&#x9;LICENSE GRANT.&#xA;&#xA;2.1&#x9;General License Grant.  VMware grants to You a non-exclusive,&#xA;non-transferable (except as set forth in Section 12.1 (Transfers;&#xA;Assignment)) license to use the Software and the Documentation during&#xA;the period of the license and within the Territory, solely for Your internal&#xA;business operations, and subject to the provisions of the Product Guide.&#xA;Unless otherwise indicated in the Order, licenses granted to You will be&#xA;perpetual, will be for use of object code only, and will commence on either&#xA;delivery of the physical media or the date You are notified of availability&#xA;for electronic download.&#xA;&#xA;2.2&#x9;Third Party Agents.  Under the License granted to You in Section&#xA;2.1 (General License Grant) above, You may permit Your Third Party&#xA;Agents to access, use and/or operate the Software on Your behalf for the&#xA;sole purpose of delivering services to You, provided that You will be fully&#xA;responsible for Your Third Party Agents&#39; compliance with terms and&#xA;conditions of this EULA and any breach of this EULA by a Third Party&#xA;Agent shall be deemed to be a breach by You.&#xA;&#xA;2.3       Copying Permitted.  You may copy the Software and&#xA;Documentation as necessary to install and run the quantity of copies&#xA;licensed, but otherwise for archival purposes only.&#xA;&#xA;2.4&#x9;Benchmarking.  You may use the Software to conduct internal&#xA;performance testing and benchmarking studies. You may only publish or&#xA;otherwise distribute the results of such studies to third parties as follows:&#xA;(a) if with respect to VMware&#39;s Workstation or Fusion products, only if You&#xA;provide a copy of Your study to benchmark@vmware.com prior to&#xA;distribution;   (b) if with respect to any other Software, only if VMware has&#xA;reviewed and approved of the methodology, assumptions and other&#xA;parameters of the study  (please contact VMware at&#xA;benchmark@vmware.com to request such review and approval) prior to&#xA;such publication and distribution.&#xA;&#xA;2.5&#x9;VMware Tools.  You may distribute the VMware Tools to third&#xA;parties solely when installed in a Guest Operating System within a Virtual&#xA;Machine. You are liable for compliance by those third parties with the&#xA;terms and conditions of this EULA.&#xA;&#xA;2.6&#x9;Open Source Software.  Notwithstanding anything herein to the&#xA;contrary, Open Source Software is licensed to You under such OSS&#39;s&#xA;own applicable license terms, which can be found in the&#xA;open_source_licenses.txt file, the Documentation or as applicable, the&#xA;corresponding source files for the Software available at&#xA;www.vmware.com/download/open_source.html. These OSS license terms&#xA;are consistent with the license granted in Section 2 (License Grant), and&#xA;may contain additional rights benefiting You.  The OSS license terms&#xA;shall take precedence over this EULA to the extent that this EULA&#xA;imposes greater restrictions on You than the applicable OSS license&#xA;terms. To the extent the license for any Open Source Software requires&#xA;VMware to make available to You the corresponding source code and/or&#xA;modifications (the &#34;Source Files&#34;), You may obtain a copy of the&#xA;applicable Source Files from VMware&#39;s website at&#xA;www.vmware.com/download/open_source.html or by sending a written&#xA;request, with Your name and address to: VMware, Inc., 3401 Hillview&#xA;Avenue, Palo Alto, CA 94304, United States of America. All requests&#xA;should clearly specify:  Open Source Files Request, Attention: General&#xA;Counsel.  This offer to obtain a copy of the Source Files is valid for three&#xA;years from the date You acquired this Software.&#xA;&#xA;3.&#x9;RESTRICTIONS; OWNERSHIP.&#xA;&#xA;3.1&#x9;License Restrictions.  Without VMware&#39;s prior written consent,&#xA;You must not, and must not allow any third party to: (a) use Software in an&#xA;application services provider, service bureau, or similar capacity for third&#xA;parties, except that You may use the Software to deliver hosted services to&#xA;Your Affiliates; (b) disclose to any third party the results of any&#xA;benchmarking testing or comparative or competitive analyses of VMware&#39;s&#xA;Software done by or on behalf of You, except as specified in Section 2.4&#xA;(Benchmarking); (c) make available Software in any form to anyone other&#xA;than Your employees or contractors reasonably acceptable to VMware&#xA;and require access to use Software on behalf of You in a matter permitted&#xA;by this EULA, except as specified in Section 2.2 (Third Party Agents); (d)&#xA;transfer or sublicense Software or Documentation to an Affiliate or any&#xA;third party, except as expressly permitted in Section 12.1 (Transfers;&#xA;Assignment); (e) use Software in conflict with the terms and restrictions of&#xA;the Software&#39;s licensing model and other requirements specified in&#xA;Product Guide and/or VMware quote; (f) except to the extent permitted by&#xA;applicable mandatory law, modify, translate, enhance, or create derivative&#xA;works from the Software, or  reverse engineer, decompile, or otherwise&#xA;attempt to derive source code from the Software, except as specified in&#xA;Section 3.2 (Decompilation); (g) remove any copyright or other proprietary&#xA;notices on or in any copies of Software; or (h) violate or circumvent any&#xA;technological restrictions within the Software or specified in this EULA,&#xA;such as via software or services.&#xA;&#xA;3.2&#x9;Decompilation.  Notwithstanding the foregoing, decompiling the&#xA;Software is permitted to the extent the laws of the Territory give You the&#xA;express right to do so to obtain information necessary to render the&#xA;Software interoperable with other software; provided, however, You must&#xA;first request such information from VMware, provide all reasonably&#xA;requested information to allow VMware to assess Your claim, and&#xA;VMware may, in its discretion, either provide such interoperability&#xA;information to You, impose reasonable conditions, including a&#xA;reasonable fee, on such use of the Software, or offer to provide&#xA;alternatives to ensure that VMware&#39;s proprietary rights in the Software are&#xA;protected and to reduce any adverse impact on VMware&#39;s proprietary&#xA;rights.&#xA;&#xA;3.3&#x9;Ownership.  The Software and Documentation, all copies and&#xA;portions thereof, and all improvements, enhancements, modifications and&#xA;derivative works thereof, and all Intellectual Property Rights therein, are&#xA;and shall remain the sole and exclusive property of VMware and its&#xA;licensors. Your rights to use the Software and Documentation shall be&#xA;limited to those expressly granted in this EULA and any applicable Order.&#xA;No other rights with respect to the Software or any related Intellectual&#xA;Property Rights are implied.  You are not authorized to use (and shall not&#xA;permit any third party to use) the Software, Documentation or any portion&#xA;thereof except as expressly authorized by this EULA or the applicable&#xA;Order.  VMware reserves all rights not expressly granted to You. VMware&#xA;does not transfer any ownership rights in any Software.&#xA;&#xA;3.4&#x9;Guest Operating Systems.  Certain Software allows Guest&#xA;Operating Systems and application programs to run on a computer&#xA;system. You acknowledge that You are responsible for obtaining and&#xA;complying with any licenses necessary to operate any such third-party&#xA;software.&#xA;&#xA;4.&#x9;ORDER.  Your Order is subject to this EULA.  No Orders are&#xA;binding on VMware until accepted by VMware.  Orders for Software are&#xA;deemed to be accepted upon VMware&#39;s delivery of the Software included&#xA;in such Order. Orders issued to VMware do not have to be signed to be&#xA;valid and enforceable.&#xA;&#xA;5.&#x9;RECORDS AND AUDIT.  During the License Term for Software&#xA;and for two (2) years after its expiration or termination, You will maintain&#xA;accurate records of Your use of the Software sufficient to show&#xA;compliance with the terms of this EULA. During this period, VMware will&#xA;have the right to audit Your use of the Software to confirm compliance&#xA;with the terms of this EULA. That audit is subject to reasonable notice by&#xA;VMware and will not unreasonably interfere with Your business activities.&#xA;VMware may conduct no more than one (1) audit in any twelve (12)&#xA;month period, and only during normal business hours. You will&#xA;reasonably cooperate with VMware and any third party auditor and will,&#xA;without prejudice to other rights of VMware, address any non-compliance&#xA;identified by the audit by promptly paying additional fees. You will&#xA;promptly reimburse VMware for all reasonable costs of the audit if the&#xA;audit reveals either underpayment of more than five (5%) percent of the&#xA;Software fees payable by You for the period audited, or that You have&#xA;materially failed to maintain accurate records of Software use.&#xA;&#xA;6.&#x9;SUPPORT AND SUBSCRIPTION SERVICES.  Except as&#xA;expressly specified in the Product Guide, VMware does not provide any&#xA;support or subscription services for the Software under this EULA.  You&#xA;have no rights to any updates, upgrades or extensions or enhancements&#xA;to the Software developed by VMware unless you separately purchase&#xA;VMware support or subscription services.  These support or subscription&#xA;services are subject to the Support Services Terms.&#xA;&#xA;7.&#x9;   WARRANTIES.&#xA;&#xA;7.1&#x9;Software Warranty, Duration and Remedy.  VMware warrants to&#xA;You that the Software will, for a period of ninety (90) days following notice&#xA;of availability for electronic download or delivery (&#34;Warranty Period&#34;),&#xA;substantially conform to the applicable Documentation, provided that the&#xA;Software: (a) has been properly installed and used at all times in&#xA;accordance with the applicable Documentation; and (b) has not been&#xA;modified or added to by persons other than VMware or its authorized&#xA;representative. VMware will, at its own expense and as its sole obligation&#xA;and Your exclusive remedy for any breach of this warranty, either replace&#xA;that Software or correct any reproducible error in that Software reported to&#xA;VMware by You in writing during the Warranty Period. If VMware&#xA;determines that it is unable to correct the error or replace the Software,&#xA;VMware will refund to You the amount paid by You for that Software, in&#xA;which case the License for that Software will terminate.&#xA;&#xA;7.2&#x9;Software Disclaimer of Warranty.  OTHER THAN THE&#xA;WARRANTY ABOVE, AND TO THE MAXIMUM EXTENT PERMITTED BY&#xA;APPLICABLE LAW, VMWARE AND ITS SUPPLIERS MAKE NO OTHER&#xA;EXPRESS WARRANTIES UNDER THIS EULA, AND DISCLAIM ALL&#xA;IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A&#xA;PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT, AND ANY&#xA;WARRANTY ARISING BY STATUTE, OPERATION OF LAW, COURSE&#xA;OF DEALING OR PERFORMANCE, OR USAGE OF TRADE. VMWARE&#xA;AND ITS LICENSORS DO NOT WARRANT THAT THE SOFTWARE WILL&#xA;OPERATE UNINTERRUPTED OR THAT IT WILL BE FREE FROM&#xA;DEFECTS OR THAT IT WILL MEET YOUR REQUIREMENTS.&#xA;&#xA;8.&#x9;    INTELLECTUAL PROPERTY INDEMNIFICATION.&#xA;&#xA;8.1&#x9;Defense and Indemnification.  Subject to the remainder of this&#xA;Section 8 (Intellectual Property Indemnification), VMware shall defend&#xA;You against any third party claim that the Software infringes any patent,&#xA;trademark or copyright of such third party, or misappropriates a trade&#xA;secret (but only to the extent that the misappropriation is not a result of&#xA;Your actions) under the laws of: (a) the United States and Canada; (b) the&#xA;European Economic Area; (c) Australia; (d) New Zealand; (e) Japan; or (f)&#xA;the People&#39;s Republic of China, to the extent that such countries are part&#xA;of the Territory for the License (&#34;Infringement Claim&#34;) and indemnify You&#xA;from the resulting costs and damages finally awarded against You to&#xA;such third party by a court of competent jurisdiction or agreed to in&#xA;settlement. The foregoing obligations are applicable only if You:  (i)&#xA;promptly notify VMware in writing of the Infringement Claim; (ii) allow&#xA;VMware sole control over the defense for the claim and any settlement&#xA;negotiations; and (iii) reasonably cooperate in response to VMware&#xA;requests for assistance.  You may not settle or compromise any&#xA;Infringement Claim without the prior written consent of VMware.&#xA;8.2&#x9;Remedies.  If the alleged infringing Software become, or in&#xA;VMware&#39;s opinion be likely to become, the subject of an Infringement&#xA;Claim, VMware will, at VMware&#39;s option and expense, do one of the&#xA;following:  (a) procure the rights necessary for You to make continued&#xA;use of the affected Software; (b) replace or modify the affected Software to&#xA;make it non-infringing; or (c) terminate the License to the affected&#xA;Software and discontinue the related support services, and, upon Your&#xA;certified deletion of the affected Software, refund: (i) the fees paid by You&#xA;for the License to the affected Software, less straight-line depreciation&#xA;over a three (3) year useful life beginning on the date such Software was&#xA;delivered; and (ii) any pre-paid service fee attributable to related support&#xA;services to be delivered after the date such service is stopped. Nothing in&#xA;this Section 8.2 (Remedies) shall limit VMware&#39;s obligation under Section&#xA;8.1 (Defense and Indemnification) to defend and indemnify You, provided&#xA;that You replace the allegedly infringing Software upon VMware&#39;s making&#xA;alternate Software available to You and/or You discontinue using the&#xA;allegedly infringing Software upon receiving VMware&#39;s notice terminating&#xA;the affected License.&#xA;8.3&#x9;Exclusions.  Notwithstanding the foregoing, VMware will have no&#xA;obligation under this Section 8 (Intellectual Property Indemnification) or&#xA;otherwise with respect to any claim based on:  (a) a combination of&#xA;Software with non-VMware products (other than non-VMware products&#xA;that are listed on the Order and used in an unmodified form); (b) use for a&#xA;purpose or in a manner for which the Software was not designed; (c) use&#xA;of any older version of the Software when use of a newer VMware&#xA;version would have avoided the infringement; (d) any modification to the&#xA;Software made without VMware&#39;s express written approval; (e) any claim&#xA;that relates to open source software or freeware technology or any&#xA;derivatives or other adaptations thereof that is not embedded by VMware&#xA;into Software listed on VMware&#39;s commercial price list; or (f) any Software&#xA;provided on a no charge, beta or evaluation basis.  THIS SECTION 8&#xA;(INTELLECTUAL PROPERTY INDEMNIFICATION) STATES YOUR&#xA;SOLE AND EXCLUSIVE REMEDY AND VMWARE&#39;S ENTIRE LIABILITY&#xA;FOR ANY INFRINGEMENT CLAIMS OR ACTIONS.&#xA;&#xA;9.&#x9;LIMITATION OF LIABILITY.&#xA;&#xA;9.1&#x9;Limitation of Liability.  TO THE MAXIMUM EXTENT MANDATED&#xA;BY LAW, IN NO EVENT WILL VMWARE AND ITS LICENSORS BE&#xA;LIABLE FOR ANY LOST PROFITS OR BUSINESS OPPORTUNITIES,&#xA;LOSS OF USE, LOSS OF REVENUE, LOSS OF GOODWILL, BUSINESS&#xA;INTERRUPTION, LOSS OF DATA, OR ANY INDIRECT, SPECIAL,&#xA;INCIDENTAL, OR CONSEQUENTIAL DAMAGES UNDER ANY THEORY&#xA;OF LIABILITY, WHETHER BASED IN CONTRACT, TORT, NEGLIGENCE,&#xA;PRODUCT LIABILITY, OR OTHERWISE.  BECAUSE SOME&#xA;JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF&#xA;LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, THE&#xA;PRECEDING LIMITATION MAY NOT APPLY TO YOU.  VMWARE&#39;S AND&#xA;ITS LICENSORS&#39; LIABILITY UNDER THIS EULA WILL NOT, IN ANY&#xA;EVENT, REGARDLESS OF WHETHER THE CLAIM IS BASED IN&#xA;CONTRACT, TORT, STRICT LIABILITY, OR OTHERWISE, EXCEED THE&#xA;GREATER OF THE LICENSE FEES YOU PAID FOR THE SOFTWARE&#xA;GIVING RISE TO THE CLAIM OR $5000. THE FOREGOING&#xA;LIMITATIONS SHALL APPLY REGARDLESS OF WHETHER VMWARE&#xA;OR ITS LICENSORS HAVE BEEN ADVISED OF THE POSSIBILITY OF&#xA;SUCH DAMAGES AND REGARDLESS OF WHETHER ANY REMEDY&#xA;FAILS OF ITS ESSENTIAL PURPOSE.&#xA;&#xA;9.2&#x9;Further Limitations.  VMware&#39;s licensors shall have no liability of&#xA;any kind under this EULA and VMware&#39;s liability with respect to any third&#xA;party software embedded in the Software shall be subject to Section 9.1&#xA;(Limitation of Liability).  You may not bring a claim under this EULA more&#xA;than eighteen (18) months after the cause of action arises.&#xA;&#xA;10.&#x9;    TERMINATION.&#xA;10.1&#x9;EULA Term. The term of this EULA begins on the notice of&#xA;availability for electronic download or delivery of the Software and&#xA;continues until this EULA is terminated in accordance with this Section&#xA;10.&#xA;10.2&#x9;Termination for Breach.  VMware may terminate this EULA&#xA;effective immediately upon written notice to You if: (a) You fail to pay any&#xA;portion of the fees under an applicable Order within ten (10) days after&#xA;receiving written notice from VMware that payment is past due; or (b) You&#xA;breach any other provision of this EULA and fail to cure within thirty (30)&#xA;days after receipt of VMware&#39;s written notice thereof.&#xA;10.3&#x9;Termination for Insolvency.  VMware may terminate this EULA&#xA;effective immediately upon written notice to You if You: (a) terminate or&#xA;suspend your business; (b) become insolvent, admit in writing Your&#xA;inability to pay Your debts as they mature, make an assignment for the&#xA;benefit of creditors; or become subject to control of a trustee, receiver or&#xA;similar authority; or (c) become subject to any bankruptcy or insolvency&#xA;proceeding.&#xA;10.4&#x9;Effect of Termination.  Upon VMware&#39;s termination of this EULA:&#xA;(a) all Licensed rights to all Software granted to You under this EULA will&#xA;immediately cease; and (b) You must cease all use of all Software, and&#xA;return or certify destruction of all Software and License Keys (including&#xA;copies) to VMware, and return, or if requested by VMware, destroy, any&#xA;related VMware Confidential Information in Your possession or control&#xA;and certify in writing to VMware that You have fully complied with these&#xA;requirements. Any provision will survive any termination or expiration if by&#xA;its nature and context it is intended to survive, including Sections 1&#xA;(Definitions), 2.6 (Open Source Software), 3 (Restrictions; Ownership), 5&#xA;(Records and Audit), 7.2 (Software Disclaimer of Warranty), 9 (Limitation&#xA;of Liability), 10 (Termination), 11 (Confidential Information) and 12&#xA;(General).&#xA;&#xA;11.&#x9;CONFIDENTIAL INFORMATION.&#xA;&#xA;11.1&#x9;Definition.  &#34;Confidential Information&#34;  means information or&#xA;materials provided by one party (&#34;Discloser&#34;) to the other party&#xA;(&#34;Recipient&#34;) which are in tangible form and labelled &#34;confidential&#34; or the&#xA;like, or, information which a reasonable person knew or should have&#xA;known to be confidential.  The following information shall be considered&#xA;Confidential Information whether or not marked or identified as such:  (a)&#xA;License Keys; (b) information regarding VMware&#39;s pricing, product&#xA;roadmaps or strategic marketing plans; and (c) non-public materials&#xA;relating to the Software.&#xA;&#xA;11.2&#x9;Protection.  Recipient may use Confidential Information of&#xA;Discloser; (a) to exercise its rights and perform its obligations under this&#xA;EULA; or (b) in connection with the parties&#39; ongoing business&#xA;relationship.  Recipient will not use any Confidential Information of&#xA;Discloser for any purpose not expressly permitted by this EULA, and will&#xA;disclose the Confidential Information of Discloser only to the employees&#xA;or contractors of Recipient who have a need to know such Confidential&#xA;Information for purposes of this EULA and who are under a duty of&#xA;confidentiality no less restrictive than Recipient&#39;s duty hereunder.&#xA;Recipient will protect Confidential Information from unauthorized use,&#xA;access, or disclosure in the same manner as Recipient protects its own&#xA;confidential or proprietary information of a similar nature but with no less&#xA;than reasonable care.&#xA;11.3&#x9;Exceptions.  Recipient&#39;s obligations under Section 11.2&#xA;(Protection) with respect to any Confidential Information will terminate if&#xA;Recipient can show by written records that such information:  (a) was&#xA;already known to Recipient at the time of disclosure by Discloser; (b) was&#xA;disclosed to Recipient by a third party who had the right to make such&#xA;disclosure without any confidentiality restrictions; (c) is, or through no&#xA;fault of Recipient has become, generally available to the public; or (d) was&#xA;independently developed by Recipient without access to, or use of,&#xA;Discloser&#39;s Information.  In addition, Recipient will be allowed to disclose&#xA;Confidential Information to the extent that such disclosure is required by&#xA;law or by the order of a court of similar judicial or administrative body,&#xA;provided that Recipient notifies Discloser of such required disclosure&#xA;promptly and in writing and cooperates with Discloser, at Discloser&#39;s&#xA;request and expense, in any lawful action to contest or limit the scope of&#xA;such required disclosure.&#xA;11.4&#x9;Data Privacy.  You agree that VMware may process technical and&#xA;related information about Your use of the Software which may include&#xA;internet protocol address, hardware identification, operating system,&#xA;application software, peripheral hardware, and non-personally identifiable&#xA;Software usage statistics to facilitate the provisioning of updates, support,&#xA;invoicing or online services and may transfer such information to other&#xA;companies in the VMware worldwide group of companies from time to&#xA;time. To the extent that this information constitutes personal data, VMware&#xA;shall be the controller of such personal data. To the extent that it acts as a&#xA;controller, each party shall comply at all times with its obligations under&#xA;applicable data protection legislation.&#xA;&#xA;12.&#x9;GENERAL.&#xA;&#xA;12.1&#x9;Transfers; Assignment.  Except to the extent transfer may not&#xA;legally be restricted or as permitted by VMware&#39;s transfer and assignment&#xA;policies, in all cases following the process set forth at&#xA;www.vmware.com/support/policies/licensingpolicies.html, You will not&#xA;assign this EULA, any Order, or any right or obligation herein or delegate&#xA;any performance without VMware&#39;s prior written consent, which consent&#xA;will not be unreasonably withheld. Any other attempted assignment or&#xA;transfer by You will be void. VMware may use its Affiliates or other&#xA;sufficiently qualified subcontractors to provide services to You, provided&#xA;that VMware remains responsible to You for the performance of the&#xA;services.&#xA;&#xA;12.2&#x9;Notices.  Any notice delivered by VMware to You under this EULA&#xA;will be delivered via mail, email or fax.&#xA;&#xA;12.3&#x9;Waiver.  Failure to enforce a provision of this EULA will not&#xA;constitute a waiver.&#xA;12.4     Severability.  If any part of this EULA is held unenforceable,&#xA;the validity of all remaining parts will not be affected.&#xA;12.5&#x9;Compliance with Laws; Export Control; Government&#xA;Regulations. Each party shall comply with all laws applicable to the&#xA;actions contemplated by this EULA. You acknowledge that the Software&#xA;is of United States origin, is provided subject to the U.S. Export&#xA;Administration Regulations, may be subject to the export control laws of&#xA;the applicable territory, and that diversion contrary to applicable export&#xA;control laws is prohibited. You represent that (1) you are not, and are not&#xA;acting on behalf of, (a) any person who is a citizen, national, or resident&#xA;of, or who is controlled by the government of any country to which the&#xA;United States has prohibited export transactions; or (b) any person or&#xA;entity listed on the U.S. Treasury Department list of Specially Designated&#xA;Nationals and Blocked Persons, or the U.S. Commerce Department&#xA;Denied Persons List or Entity List; and (2) you will not permit the Software&#xA;to be used for, any purposes prohibited by law, including, any prohibited&#xA;development, design, manufacture or production of missiles or nuclear,&#xA;chemical or biological weapons. The Software and accompanying&#xA;documentation are deemed to be &#34;commercial computer software&#34; and&#xA;&#34;commercial computer software documentation&#34;, respectively, pursuant to&#xA;DFARS Section 227.7202 and FAR Section 12.212(b), as applicable.&#xA;Any use, modification, reproduction, release, performing, displaying or&#xA;disclosing of the Software and documentation by or for the U.S.&#xA;Government shall be governed solely by the terms and conditions of this&#xA;EULA.&#xA;12.6&#x9;Construction.  The headings of sections of this EULA are for&#xA;convenience and are not to be used in interpreting this EULA. As used in&#xA;this EULA, the word &#39;including&#39; means &#34;including but not limited to&#34;.&#xA;12.7&#x9;Governing Law.  This EULA is governed by the laws of the State of&#xA;California, United States of America (excluding its conflict of law rules),&#xA;and the federal laws of the United States. To the extent permitted by law,&#xA;the state and federal courts located in Santa Clara County, California will&#xA;be the exclusive jurisdiction for disputes arising out of or in connection&#xA;with this EULA. The U.N. Convention on Contracts for the International&#xA;Sale of Goods does not apply.&#xA;12.8&#x9;Third Party Rights.  Other than as expressly set out in this EULA,&#xA;this EULA does not create any rights for any person who is not a party to&#xA;it, and no person who is not a party to this EULA may enforce any of its&#xA;terms or rely on any exclusion or limitation contained in it.&#xA;12.9&#x9;Order of Precedence.  In the event of conflict or inconsistency&#xA;among the Product Guide, this EULA and the Order, the following order of&#xA;precedence shall apply: (a) the Product Guide, (b) this EULA and (c) the&#xA;Order. With respect to any inconsistency between this EULA and an&#xA;Order, the terms of this EULA shall supersede and control over any&#xA;conflicting or additional terms and conditions of any Order,&#xA;acknowledgement or confirmation or other document issued by You.&#xA;12.10  Entire Agreement.  This EULA, including accepted Orders and&#xA;any amendments hereto, and the Product Guide contain the entire&#xA;agreement of the parties with respect to the subject matter of this EULA&#xA;and supersede all previous or contemporaneous communications,&#xA;representations, proposals, commitments, understandings and&#xA;agreements, whether written or oral, between the parties regarding the&#xA;subject matter hereof.  This EULA may be amended only in writing&#xA;signed by authorized representatives of both parties.&#xA;12.11  Contact Information.  Please direct legal notices or other&#xA;correspondence to VMware, Inc., 3401 Hillview Avenue, Palo Alto,&#xA;California 94304, United States of America, Attention: Legal Department.</eula>
+        <eula>Copyright © 2015 VMware, Inc. All rights reserved. This product is protected by copyright and intellectual property laws in the United States and other countries as well as by international treaties. VMware products are covered by one or more patents listed at http://www.vmware.com/go/patents.</eula>
+        <ovfEnvironmentTransport>com.vmware.guestInfo</ovfEnvironmentTransport>
+        <installBootRequired>false</installBootRequired>
+        <installBootStopDelay>0</installBootStopDelay>
+      </vAppConfig>
+      <vAssertsEnabled>false</vAssertsEnabled>
+      <changeTrackingEnabled>false</changeTrackingEnabled>
+      <firmware>efi</firmware>
+      <maxMksConnections>40</maxMksConnections>
+      <guestAutoLockEnabled>false</guestAutoLockEnabled>
+      <memoryReservationLockedToMax>false</memoryReservationLockedToMax>
+      <initialOverhead>
+        <initialMemoryReservation>383234048</initialMemoryReservation>
+        <initialSwapReservation>210026496</initialSwapReservation>
+      </initialOverhead>
+      <nestedHVEnabled>true</nestedHVEnabled>
+      <vPMCEnabled>false</vPMCEnabled>
+      <scheduledHardwareUpgradeInfo>
+        <upgradePolicy>never</upgradePolicy>
+        <scheduledHardwareUpgradeStatus>none</scheduledHardwareUpgradeStatus>
+      </scheduledHardwareUpgradeInfo>
+      <vmxConfigChecksum>OyR1xjBOEURu8eNxSv7sji/n+Lk=</vmxConfigChecksum>
+      <messageBusTunnelEnabled>false</messageBusTunnelEnabled>
+      <vmStorageObjectId>c21e8e5d-62e3-9870-d3d4-246e96ac6584</vmStorageObjectId>
+      <swapStorageObjectId>db1e8e5d-6629-e85c-7d63-246e96acad3c</swapStorageObjectId>
+      <guestIntegrityInfo>
+        <enabled>false</enabled>
+      </guestIntegrityInfo>
+      <migrateEncryption>opportunistic</migrateEncryption>
+    </val>
+  </propSet>
+  <propSet>
+    <name>configIssue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfEvent"></val>
+  </propSet>
+  <propSet>
+    <name>configStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>customValue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>datastore</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="Datastore">datastore-81</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>declaredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState">
+      <AlarmState>
+        <key>alarm-10.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-10</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-113.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-113</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-12.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-12</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-15.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-15</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-19.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-19</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-2.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-2</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-302.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-302</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-305.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-305</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-306.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-306</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-38.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-38</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-09-27T14:38:19.911999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>118743505</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-39.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-39</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-40.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-40</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-47.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-47</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-5.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-5</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2021-01-05T18:01:29.735328Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-52.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-52</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-54.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-54</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-6.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-6</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2021-01-05T18:01:29.735332Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-601.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-601</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-602.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-602</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-603.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-603</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-81.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-81</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-9.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-9</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-907.vm-6036</key>
+        <entity type="VirtualMachine">vm-6036</entity>
+        <alarm type="Alarm">alarm-907</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T16:56:47.219446Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+    </val>
+  </propSet>
+  <propSet>
+    <name>disabledMethod</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfString">
+      <string>Destroy_Task</string>
+      <string>UnregisterVM</string>
+      <string>UnmountToolsInstaller</string>
+      <string>AnswerVM</string>
+      <string>UpgradeVM_Task</string>
+      <string>UpgradeTools_Task</string>
+      <string>UpgradeToolsFromImage_Task</string>
+      <string>ApplyEvcModeVM_Task</string>
+      <string>StartRecording_Task</string>
+      <string>StopRecording_Task</string>
+      <string>StartReplaying_Task</string>
+      <string>StopReplaying_Task</string>
+      <string>TurnOffFaultToleranceForVM_Task</string>
+      <string>MakePrimaryVM_Task</string>
+      <string>TerminateFaultTolerantVM_Task</string>
+      <string>DisableSecondaryVM_Task</string>
+      <string>EnableSecondaryVM_Task</string>
+      <string>StopRecording_Task</string>
+      <string>StopReplaying_Task</string>
+      <string>CustomizeVM_Task</string>
+      <string>MarkAsTemplate</string>
+      <string>ResetGuestInformation</string>
+      <string>ExportVm</string>
+      <string>PowerOnVM_Task</string>
+      <string>MarkAsVirtualMachine</string>
+    </val>
+  </propSet>
+  <propSet>
+    <name>effectiveRole</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfInt">
+      <int>-1</int>
+      <int>4</int>
+    </val>
+  </propSet>
+  <propSet>
+    <name>environmentBrowser</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="EnvironmentBrowser">envbrowser-6036</val>
+  </propSet>
+  <propSet>
+    <name>guest</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="GuestInfo">
+      <toolsStatus>toolsOk</toolsStatus>
+      <toolsVersionStatus>guestToolsUnmanaged</toolsVersionStatus>
+      <toolsVersionStatus2>guestToolsUnmanaged</toolsVersionStatus2>
+      <toolsRunningStatus>guestToolsRunning</toolsRunningStatus>
+      <toolsVersion>10346</toolsVersion>
+      <toolsInstallType>guestToolsTypeTar</toolsInstallType>
+      <guestId>vmkernel65Guest</guestId>
+      <guestFamily>otherGuestFamily</guestFamily>
+      <guestFullName>VMware ESXi 6.5 or later</guestFullName>
+      <hostName>esx-11.dp-pod-b.zpod.io</hostName>
+      <ipAddress>10.96.85.11</ipAddress>
+      <net>
+        <network>vxw-dvs-61-virtualwire-392-sid-5030-LS-zPod-dp-pod-b-10.96.85.0%2f24</network>
+        <ipAddress>10.96.85.11</ipAddress>
+        <ipAddress>fe80::250:56ff:fe85:a2a6</ipAddress>
+        <macAddress>00:50:56:85:a2:a6</macAddress>
+        <connected>true</connected>
+        <deviceConfigId>4000</deviceConfigId>
+        <ipConfig>
+          <ipAddress>
+            <ipAddress>10.96.85.11</ipAddress>
+            <prefixLength>24</prefixLength>
+            <state>preferred</state>
+          </ipAddress>
+          <ipAddress>
+            <ipAddress>fe80::250:56ff:fe85:a2a6</ipAddress>
+            <prefixLength>64</prefixLength>
+            <state>unknown</state>
+          </ipAddress>
+        </ipConfig>
+      </net>
+      <ipStack>
+        <dnsConfig>
+          <dhcp>false</dhcp>
+          <hostName>esx-11.dp-pod-b.zpod.io</hostName>
+          <domainName>dp-pod-b.zpod.io</domainName>
+          <ipAddress>10.96.85.2</ipAddress>
+          <searchDomain>dp-pod-b.zpod.io</searchDomain>
+        </dnsConfig>
+        <ipRouteConfig></ipRouteConfig>
+      </ipStack>
+      <screen>
+        <width>1024</width>
+        <height>768</height>
+      </screen>
+      <guestState>running</guestState>
+      <appHeartbeatStatus>appStatusGray</appHeartbeatStatus>
+      <guestKernelCrashed>false</guestKernelCrashed>
+      <appState>none</appState>
+      <guestOperationsReady>true</guestOperationsReady>
+      <interactiveGuestOperationsReady>false</interactiveGuestOperationsReady>
+      <guestStateChangeSupported>true</guestStateChangeSupported>
+    </val>
+  </propSet>
+  <propSet>
+    <name>guestHeartbeatStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>layout</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineFileLayout">
+      <configFile>esx-11.dp-pod-b.zpod.io.nvram</configFile>
+      <configFile>esx-11.dp-pod-b.zpod.io.vmsd</configFile>
+      <logFile>vmware-23.log</logFile>
+      <logFile>vmware-22.log</logFile>
+      <logFile>vmware-21.log</logFile>
+      <logFile>vmware-20.log</logFile>
+      <logFile>vmware.log</logFile>
+      <logFile>vmware-19.log</logFile>
+      <logFile>vmware-18.log</logFile>
+      <disk>
+        <key>2000</key>
+        <diskFile>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/esx-11.dp-pod-b.zpod.io.vmdk</diskFile>
+      </disk>
+      <disk>
+        <key>2001</key>
+        <diskFile>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/esx-11.dp-pod-b.zpod.io_1.vmdk</diskFile>
+      </disk>
+      <disk>
+        <key>2002</key>
+        <diskFile>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/esx-11.dp-pod-b.zpod.io_2.vmdk</diskFile>
+      </disk>
+      <swapFile>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/esx-11.dp-pod-b.zpod.io-88e91780.vswp</swapFile>
+    </val>
+  </propSet>
+  <propSet>
+    <name>layoutEx</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineFileLayoutEx">
+      <file>
+        <key>0</key>
+        <name>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/esx-11.dp-pod-b.zpod.io.vmx</name>
+        <type>config</type>
+        <size>4339</size>
+        <uniqueSize>4339</uniqueSize>
+        <backingObjectId>c21e8e5d-62e3-9870-d3d4-246e96ac6584</backingObjectId>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>1</key>
+        <name>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/esx-11.dp-pod-b.zpod.io.nvram</name>
+        <type>nvram</type>
+        <size>74232</size>
+        <uniqueSize>74232</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>2</key>
+        <name>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/esx-11.dp-pod-b.zpod.io.vmsd</name>
+        <type>snapshotList</type>
+        <size>0</size>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>3</key>
+        <name>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/esx-11.dp-pod-b.zpod.io.vmdk</name>
+        <type>diskDescriptor</type>
+        <size>1245708288</size>
+        <uniqueSize>1245708288</uniqueSize>
+        <backingObjectId>c31e8e5d-d8c8-3605-8d74-246e96ac6584</backingObjectId>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>4</key>
+        <name>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/esx-11.dp-pod-b.zpod.io_1.vmdk</name>
+        <type>diskDescriptor</type>
+        <size>50331648</size>
+        <uniqueSize>50331648</uniqueSize>
+        <backingObjectId>c51e8e5d-7059-34ee-7beb-246e96ac6584</backingObjectId>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>5</key>
+        <name>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/esx-11.dp-pod-b.zpod.io_2.vmdk</name>
+        <type>diskDescriptor</type>
+        <size>50331648</size>
+        <uniqueSize>50331648</uniqueSize>
+        <backingObjectId>c51e8e5d-d6ce-f825-e1ba-246e96ac6584</backingObjectId>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>6</key>
+        <name>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/esx-11.dp-pod-b.zpod.io-88e91780.vswp</name>
+        <type>swap</type>
+        <size>34359738368</size>
+        <uniqueSize>34359738368</uniqueSize>
+        <backingObjectId>db1e8e5d-6629-e85c-7d63-246e96acad3c</backingObjectId>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>7</key>
+        <name>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/vmx-esx-11.dp-pod-b.zpod.io-2296977280-2.vswp</name>
+        <type>uwswap</type>
+        <size>90177536</size>
+        <uniqueSize>90177536</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>8</key>
+        <name>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/vmware-23.log</name>
+        <type>log</type>
+        <size>271469</size>
+        <uniqueSize>271469</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>9</key>
+        <name>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/vmware-22.log</name>
+        <type>log</type>
+        <size>280074</size>
+        <uniqueSize>280074</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>10</key>
+        <name>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/vmware-21.log</name>
+        <type>log</type>
+        <size>269998</size>
+        <uniqueSize>269998</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>11</key>
+        <name>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/vmware-20.log</name>
+        <type>log</type>
+        <size>279803</size>
+        <uniqueSize>279803</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>12</key>
+        <name>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/vmware.log</name>
+        <type>log</type>
+        <size>240201</size>
+        <uniqueSize>240201</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>13</key>
+        <name>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/vmware-19.log</name>
+        <type>log</type>
+        <size>269634</size>
+        <uniqueSize>269634</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>14</key>
+        <name>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/vmware-18.log</name>
+        <type>log</type>
+        <size>269930</size>
+        <uniqueSize>269930</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <disk>
+        <key>2000</key>
+        <chain>
+          <fileKey>3</fileKey>
+        </chain>
+      </disk>
+      <disk>
+        <key>2001</key>
+        <chain>
+          <fileKey>4</fileKey>
+        </chain>
+      </disk>
+      <disk>
+        <key>2002</key>
+        <chain>
+          <fileKey>5</fileKey>
+        </chain>
+      </disk>
+      <timestamp>2021-01-06T16:39:20.075833Z</timestamp>
+    </val>
+  </propSet>
+  <propSet>
+    <name>name</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:string">esx-11.dp-pod-b.zpod.io</val>
+  </propSet>
+  <propSet>
+    <name>network</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-6034</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>overallStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>parentVApp</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="VirtualApp">resgroup-v6033</val>
+  </propSet>
+  <propSet>
+    <name>permission</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfPermission"></val>
+  </propSet>
+  <propSet>
+    <name>recentTask</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>resourceConfig</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ResourceConfigSpec">
+      <entity type="VirtualMachine">vm-6036</entity>
+      <cpuAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>false</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>2000</shares>
+          <level>normal</level>
+        </shares>
+      </cpuAllocation>
+      <memoryAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>false</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>61440</shares>
+          <level>normal</level>
+        </shares>
+        <overheadLimit>359</overheadLimit>
+      </memoryAllocation>
+    </val>
+  </propSet>
+  <propSet>
+    <name>resourcePool</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="VirtualApp">resgroup-v6033</val>
+  </propSet>
+  <propSet>
+    <name>rootSnapshot</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>runtime</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineRuntimeInfo">
+      <device>
+        <runtimeState XMLSchema-instance:type="VirtualMachineDeviceRuntimeInfoVirtualEthernetCardRuntimeState">
+          <vmDirectPathGen2Active>false</vmDirectPathGen2Active>
+          <vmDirectPathGen2InactiveReasonOther>vmNptIncompatibleHost</vmDirectPathGen2InactiveReasonOther>
+          <attachmentStatus>green</attachmentStatus>
+        </runtimeState>
+        <key>4000</key>
+      </device>
+      <device>
+        <runtimeState XMLSchema-instance:type="VirtualMachineDeviceRuntimeInfoVirtualEthernetCardRuntimeState">
+          <vmDirectPathGen2Active>false</vmDirectPathGen2Active>
+          <vmDirectPathGen2InactiveReasonOther>vmNptIncompatibleHost</vmDirectPathGen2InactiveReasonOther>
+          <attachmentStatus>green</attachmentStatus>
+        </runtimeState>
+        <key>4001</key>
+      </device>
+      <host type="HostSystem">host-19</host>
+      <connectionState>connected</connectionState>
+      <powerState>poweredOn</powerState>
+      <faultToleranceState>notConfigured</faultToleranceState>
+      <dasVmProtection>
+        <dasProtected>true</dasProtected>
+      </dasVmProtection>
+      <toolsInstallerMounted>false</toolsInstallerMounted>
+      <maxCpuUsage>10372</maxCpuUsage>
+      <maxMemoryUsage>32768</maxMemoryUsage>
+      <numMksConnections>0</numMksConnections>
+      <recordReplayState>inactive</recordReplayState>
+      <onlineStandby>false</onlineStandby>
+      <minRequiredEVCModeKey>intel-skylake</minRequiredEVCModeKey>
+      <consolidationNeeded>false</consolidationNeeded>
+      <offlineFeatureRequirement>
+        <key>cpuid.lm</key>
+        <featureName>cpuid.lm</featureName>
+        <value>Bool:Min:1</value>
+      </offlineFeatureRequirement>
+      <offlineFeatureRequirement>
+        <key>hv.capable</key>
+        <featureName>hv.capable</featureName>
+        <value>Bool:Min:1</value>
+      </offlineFeatureRequirement>
+      <featureRequirement>
+        <key>cpuid.SSE3</key>
+        <featureName>cpuid.SSE3</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.PCLMULQDQ</key>
+        <featureName>cpuid.PCLMULQDQ</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.MWAIT</key>
+        <featureName>cpuid.MWAIT</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.VMX</key>
+        <featureName>cpuid.VMX</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.SSSE3</key>
+        <featureName>cpuid.SSSE3</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.FMA</key>
+        <featureName>cpuid.FMA</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.CMPXCHG16B</key>
+        <featureName>cpuid.CMPXCHG16B</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.PCID</key>
+        <featureName>cpuid.PCID</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.SSE41</key>
+        <featureName>cpuid.SSE41</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.SSE42</key>
+        <featureName>cpuid.SSE42</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.MOVBE</key>
+        <featureName>cpuid.MOVBE</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.POPCNT</key>
+        <featureName>cpuid.POPCNT</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.AES</key>
+        <featureName>cpuid.AES</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.XSAVE</key>
+        <featureName>cpuid.XSAVE</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.AVX</key>
+        <featureName>cpuid.AVX</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.F16C</key>
+        <featureName>cpuid.F16C</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.RDRAND</key>
+        <featureName>cpuid.RDRAND</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.DS</key>
+        <featureName>cpuid.DS</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.SS</key>
+        <featureName>cpuid.SS</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.FSGSBASE</key>
+        <featureName>cpuid.FSGSBASE</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.BMI1</key>
+        <featureName>cpuid.BMI1</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.HLE</key>
+        <featureName>cpuid.HLE</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.AVX2</key>
+        <featureName>cpuid.AVX2</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.SMEP</key>
+        <featureName>cpuid.SMEP</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.BMI2</key>
+        <featureName>cpuid.BMI2</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.ENFSTRG</key>
+        <featureName>cpuid.ENFSTRG</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.INVPCID</key>
+        <featureName>cpuid.INVPCID</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.RTM</key>
+        <featureName>cpuid.RTM</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.AVX512F</key>
+        <featureName>cpuid.AVX512F</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.AVX512DQ</key>
+        <featureName>cpuid.AVX512DQ</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.RDSEED</key>
+        <featureName>cpuid.RDSEED</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.ADX</key>
+        <featureName>cpuid.ADX</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.SMAP</key>
+        <featureName>cpuid.SMAP</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.CLFLUSHOPT</key>
+        <featureName>cpuid.CLFLUSHOPT</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.CLWB</key>
+        <featureName>cpuid.CLWB</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.AVX512CD</key>
+        <featureName>cpuid.AVX512CD</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.AVX512BW</key>
+        <featureName>cpuid.AVX512BW</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.AVX512VL</key>
+        <featureName>cpuid.AVX512VL</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.PKU</key>
+        <featureName>cpuid.PKU</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.MDCLEAR</key>
+        <featureName>cpuid.MDCLEAR</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.STIBP</key>
+        <featureName>cpuid.STIBP</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.FCMD</key>
+        <featureName>cpuid.FCMD</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.SSBD</key>
+        <featureName>cpuid.SSBD</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.XCR0_MASTER_SSE</key>
+        <featureName>cpuid.XCR0_MASTER_SSE</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.XCR0_MASTER_YMM_H</key>
+        <featureName>cpuid.XCR0_MASTER_YMM_H</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.XCR0_MASTER_OPMASK</key>
+        <featureName>cpuid.XCR0_MASTER_OPMASK</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.XCR0_MASTER_ZMM_H</key>
+        <featureName>cpuid.XCR0_MASTER_ZMM_H</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.XCR0_MASTER_HI16_ZMM</key>
+        <featureName>cpuid.XCR0_MASTER_HI16_ZMM</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.XCR0_MASTER_PKRU</key>
+        <featureName>cpuid.XCR0_MASTER_PKRU</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.XSAVEOPT</key>
+        <featureName>cpuid.XSAVEOPT</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.XSAVEC</key>
+        <featureName>cpuid.XSAVEC</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.XSAVES</key>
+        <featureName>cpuid.XSAVES</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.LAHF64</key>
+        <featureName>cpuid.LAHF64</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.ABM</key>
+        <featureName>cpuid.ABM</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.3DNPREFETCH</key>
+        <featureName>cpuid.3DNPREFETCH</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.NX</key>
+        <featureName>cpuid.NX</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.PDPE1GB</key>
+        <featureName>cpuid.PDPE1GB</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.RDTSCP</key>
+        <featureName>cpuid.RDTSCP</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.LM</key>
+        <featureName>cpuid.LM</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.Intel</key>
+        <featureName>cpuid.Intel</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.IBRS</key>
+        <featureName>cpuid.IBRS</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.IBPB</key>
+        <featureName>cpuid.IBPB</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>hv.capable</key>
+        <featureName>hv.capable</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>vt.realmode</key>
+        <featureName>vt.realmode</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>misc.cpuidFaulting</key>
+        <featureName>misc.cpuidFaulting</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureMask>
+        <key>hv.capable</key>
+        <featureName>hv.capable</featureName>
+        <value>Min:1</value>
+      </featureMask>
+      <paused>false</paused>
+      <snapshotInBackground>false</snapshotInBackground>
+      <instantCloneFrozen>false</instantCloneFrozen>
+    </val>
+  </propSet>
+  <propSet>
+    <name>storage</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineStorageInfo">
+      <perDatastoreUsage>
+        <datastore type="Datastore">datastore-81</datastore>
+        <committed>35798247168</committed>
+        <uncommitted>13686013952</uncommitted>
+        <unshared>1346371584</unshared>
+      </perDatastoreUsage>
+      <timestamp>2021-01-06T16:39:20.076Z</timestamp>
+    </val>
+  </propSet>
+  <propSet>
+    <name>summary</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineSummary">
+      <vm type="VirtualMachine">vm-6036</vm>
+      <runtime>
+        <device>
+          <runtimeState XMLSchema-instance:type="VirtualMachineDeviceRuntimeInfoVirtualEthernetCardRuntimeState">
+            <vmDirectPathGen2Active>false</vmDirectPathGen2Active>
+            <vmDirectPathGen2InactiveReasonOther>vmNptIncompatibleHost</vmDirectPathGen2InactiveReasonOther>
+            <attachmentStatus>green</attachmentStatus>
+          </runtimeState>
+          <key>4000</key>
+        </device>
+        <device>
+          <runtimeState XMLSchema-instance:type="VirtualMachineDeviceRuntimeInfoVirtualEthernetCardRuntimeState">
+            <vmDirectPathGen2Active>false</vmDirectPathGen2Active>
+            <vmDirectPathGen2InactiveReasonOther>vmNptIncompatibleHost</vmDirectPathGen2InactiveReasonOther>
+            <attachmentStatus>green</attachmentStatus>
+          </runtimeState>
+          <key>4001</key>
+        </device>
+        <host type="HostSystem">host-19</host>
+        <connectionState>connected</connectionState>
+        <powerState>poweredOn</powerState>
+        <faultToleranceState>notConfigured</faultToleranceState>
+        <dasVmProtection>
+          <dasProtected>true</dasProtected>
+        </dasVmProtection>
+        <toolsInstallerMounted>false</toolsInstallerMounted>
+        <maxCpuUsage>10372</maxCpuUsage>
+        <maxMemoryUsage>32768</maxMemoryUsage>
+        <numMksConnections>0</numMksConnections>
+        <recordReplayState>inactive</recordReplayState>
+        <onlineStandby>false</onlineStandby>
+        <minRequiredEVCModeKey>intel-skylake</minRequiredEVCModeKey>
+        <consolidationNeeded>false</consolidationNeeded>
+        <offlineFeatureRequirement>
+          <key>cpuid.lm</key>
+          <featureName>cpuid.lm</featureName>
+          <value>Bool:Min:1</value>
+        </offlineFeatureRequirement>
+        <offlineFeatureRequirement>
+          <key>hv.capable</key>
+          <featureName>hv.capable</featureName>
+          <value>Bool:Min:1</value>
+        </offlineFeatureRequirement>
+        <featureRequirement>
+          <key>cpuid.SSE3</key>
+          <featureName>cpuid.SSE3</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.PCLMULQDQ</key>
+          <featureName>cpuid.PCLMULQDQ</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.MWAIT</key>
+          <featureName>cpuid.MWAIT</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.VMX</key>
+          <featureName>cpuid.VMX</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.SSSE3</key>
+          <featureName>cpuid.SSSE3</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.FMA</key>
+          <featureName>cpuid.FMA</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.CMPXCHG16B</key>
+          <featureName>cpuid.CMPXCHG16B</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.PCID</key>
+          <featureName>cpuid.PCID</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.SSE41</key>
+          <featureName>cpuid.SSE41</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.SSE42</key>
+          <featureName>cpuid.SSE42</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.MOVBE</key>
+          <featureName>cpuid.MOVBE</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.POPCNT</key>
+          <featureName>cpuid.POPCNT</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.AES</key>
+          <featureName>cpuid.AES</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.XSAVE</key>
+          <featureName>cpuid.XSAVE</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.AVX</key>
+          <featureName>cpuid.AVX</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.F16C</key>
+          <featureName>cpuid.F16C</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.RDRAND</key>
+          <featureName>cpuid.RDRAND</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.DS</key>
+          <featureName>cpuid.DS</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.SS</key>
+          <featureName>cpuid.SS</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.FSGSBASE</key>
+          <featureName>cpuid.FSGSBASE</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.BMI1</key>
+          <featureName>cpuid.BMI1</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.HLE</key>
+          <featureName>cpuid.HLE</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.AVX2</key>
+          <featureName>cpuid.AVX2</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.SMEP</key>
+          <featureName>cpuid.SMEP</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.BMI2</key>
+          <featureName>cpuid.BMI2</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.ENFSTRG</key>
+          <featureName>cpuid.ENFSTRG</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.INVPCID</key>
+          <featureName>cpuid.INVPCID</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.RTM</key>
+          <featureName>cpuid.RTM</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.AVX512F</key>
+          <featureName>cpuid.AVX512F</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.AVX512DQ</key>
+          <featureName>cpuid.AVX512DQ</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.RDSEED</key>
+          <featureName>cpuid.RDSEED</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.ADX</key>
+          <featureName>cpuid.ADX</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.SMAP</key>
+          <featureName>cpuid.SMAP</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.CLFLUSHOPT</key>
+          <featureName>cpuid.CLFLUSHOPT</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.CLWB</key>
+          <featureName>cpuid.CLWB</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.AVX512CD</key>
+          <featureName>cpuid.AVX512CD</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.AVX512BW</key>
+          <featureName>cpuid.AVX512BW</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.AVX512VL</key>
+          <featureName>cpuid.AVX512VL</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.PKU</key>
+          <featureName>cpuid.PKU</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.MDCLEAR</key>
+          <featureName>cpuid.MDCLEAR</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.STIBP</key>
+          <featureName>cpuid.STIBP</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.FCMD</key>
+          <featureName>cpuid.FCMD</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.SSBD</key>
+          <featureName>cpuid.SSBD</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.XCR0_MASTER_SSE</key>
+          <featureName>cpuid.XCR0_MASTER_SSE</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.XCR0_MASTER_YMM_H</key>
+          <featureName>cpuid.XCR0_MASTER_YMM_H</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.XCR0_MASTER_OPMASK</key>
+          <featureName>cpuid.XCR0_MASTER_OPMASK</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.XCR0_MASTER_ZMM_H</key>
+          <featureName>cpuid.XCR0_MASTER_ZMM_H</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.XCR0_MASTER_HI16_ZMM</key>
+          <featureName>cpuid.XCR0_MASTER_HI16_ZMM</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.XCR0_MASTER_PKRU</key>
+          <featureName>cpuid.XCR0_MASTER_PKRU</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.XSAVEOPT</key>
+          <featureName>cpuid.XSAVEOPT</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.XSAVEC</key>
+          <featureName>cpuid.XSAVEC</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.XSAVES</key>
+          <featureName>cpuid.XSAVES</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.LAHF64</key>
+          <featureName>cpuid.LAHF64</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.ABM</key>
+          <featureName>cpuid.ABM</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.3DNPREFETCH</key>
+          <featureName>cpuid.3DNPREFETCH</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.NX</key>
+          <featureName>cpuid.NX</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.PDPE1GB</key>
+          <featureName>cpuid.PDPE1GB</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.RDTSCP</key>
+          <featureName>cpuid.RDTSCP</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.LM</key>
+          <featureName>cpuid.LM</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.Intel</key>
+          <featureName>cpuid.Intel</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.IBRS</key>
+          <featureName>cpuid.IBRS</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.IBPB</key>
+          <featureName>cpuid.IBPB</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>hv.capable</key>
+          <featureName>hv.capable</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>vt.realmode</key>
+          <featureName>vt.realmode</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>misc.cpuidFaulting</key>
+          <featureName>misc.cpuidFaulting</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureMask>
+          <key>hv.capable</key>
+          <featureName>hv.capable</featureName>
+          <value>Min:1</value>
+        </featureMask>
+        <paused>false</paused>
+        <snapshotInBackground>false</snapshotInBackground>
+        <instantCloneFrozen>false</instantCloneFrozen>
+      </runtime>
+      <guest>
+        <guestId>vmkernel65Guest</guestId>
+        <guestFullName>VMware ESXi 6.5 or later</guestFullName>
+        <toolsStatus>toolsOk</toolsStatus>
+        <toolsVersionStatus>guestToolsUnmanaged</toolsVersionStatus>
+        <toolsVersionStatus2>guestToolsUnmanaged</toolsVersionStatus2>
+        <toolsRunningStatus>guestToolsRunning</toolsRunningStatus>
+        <hostName>esx-11.dp-pod-b.zpod.io</hostName>
+        <ipAddress>10.96.85.11</ipAddress>
+      </guest>
+      <config>
+        <name>esx-11.dp-pod-b.zpod.io</name>
+        <template>false</template>
+        <vmPathName>[vsanDatastore] c21e8e5d-62e3-9870-d3d4-246e96ac6584/esx-11.dp-pod-b.zpod.io.vmx</vmPathName>
+        <memorySizeMB>32768</memorySizeMB>
+        <numCpu>4</numCpu>
+        <numEthernetCards>2</numEthernetCards>
+        <numVirtualDisks>3</numVirtualDisks>
+        <uuid>420592f1-d431-3248-8257-f4319f014b1b</uuid>
+        <instanceUuid>5005d4d5-d8af-a3ba-4dbd-977705c6e121</instanceUuid>
+        <guestId>vmkernel65Guest</guestId>
+        <guestFullName>VMware ESXi 6.5 or later</guestFullName>
+        <annotation>Nested ESXi 6.7 Update 3 Appliance (Build 14320388) www.virtuallyghetto.com</annotation>
+        <product>
+          <key>0</key>
+          <name>Nested_ESXi6.7u3_Appliance</name>
+          <vendor>virtuallyGhetto</vendor>
+          <version>1.0</version>
+          <fullVersion>6.7u3</fullVersion>
+          <vendorUrl>http://www.virtuallyghetto.com</vendorUrl>
+        </product>
+        <installBootRequired>false</installBootRequired>
+        <tpmPresent>false</tpmPresent>
+      </config>
+      <storage>
+        <committed>35798247168</committed>
+        <uncommitted>13686013952</uncommitted>
+        <unshared>1346371584</unshared>
+        <timestamp>2021-01-06T16:39:20.076542Z</timestamp>
+      </storage>
+      <quickStats>
+        <overallCpuUsage>2437</overallCpuUsage>
+        <overallCpuDemand>2489</overallCpuDemand>
+        <guestMemoryUsage>8519</guestMemoryUsage>
+        <hostMemoryUsage>28903</hostMemoryUsage>
+        <guestHeartbeatStatus>green</guestHeartbeatStatus>
+        <distributedCpuEntitlement>2489</distributedCpuEntitlement>
+        <distributedMemoryEntitlement>14461</distributedMemoryEntitlement>
+        <staticCpuEntitlement>3056</staticCpuEntitlement>
+        <staticMemoryEntitlement>33328</staticMemoryEntitlement>
+        <privateMemory>26655</privateMemory>
+        <sharedMemory>5843</sharedMemory>
+        <consumedOverheadMemory>327</consumedOverheadMemory>
+        <ftLogBandwidth>-1</ftLogBandwidth>
+        <ftSecondaryLatency>-1</ftSecondaryLatency>
+        <ftLatencyStatus>gray</ftLatencyStatus>
+        <uptimeSeconds>86328</uptimeSeconds>
+      </quickStats>
+      <overallStatus>green</overallStatus>
+    </val>
+  </propSet>
+  <propSet>
+    <name>tag</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfTag"></val>
+  </propSet>
+  <propSet>
+    <name>triggeredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState"></val>
+  </propSet>
+  <propSet>
+    <name>value</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+</ObjectContent>
