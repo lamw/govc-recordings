@@ -67,3 +67,4 @@ VirtualMachine: 20
 | William Lam   | 01/02/21 | VMware Cloud on AWS 1.13               | [vcsim-vcenter.sddc-35-167-62-16.vmwarevmc.com](vcsim-vcenter.sddc-35-167-62-16.vmwarevmc.com) |
 | William Lam   | 01/02/21 | vSphere 7.0 Update 1c (Build 17327586) | [vcsim-vcsa.primp-industries.local](vcsim-vcsa.primp-industries.local)                         |
 | Timo Sugliani | 01/06/21 | vSphere 6.7 Update 3  (Build 17138064) | [vcsim-vc01.rax.lab](vcsim-vc01.rax.lab)                                                       |
+| Romain Decker | 01/07/21 | vSphere 7.0 Update 1c (Build 17327586) | [vcsim-vcsa01-z67.sddc.lab](vcsim-vcsa01-z67.sddc.lab)                                         |
