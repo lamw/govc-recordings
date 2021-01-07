@@ -1,0 +1,48 @@
+<ObjectContent>
+  <obj type="OvfManager">OvfManager</obj>
+  <propSet>
+    <name>ovfExportOption</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfOvfOptionInfo">
+      <OvfOptionInfo>
+        <option>mac</option>
+        <description>
+          <key>com.vmware.vim.ovfManager.ovfParserOption.mac</key>
+          <message>The MAC address is exported for all ethernet devices.</message>
+        </description>
+      </OvfOptionInfo>
+      <OvfOptionInfo>
+        <option>uuid</option>
+        <description>
+          <key>com.vmware.vim.ovfManager.ovfParserOption.uuid</key>
+          <message>The UUID is exported for all virtual machines.</message>
+        </description>
+      </OvfOptionInfo>
+      <OvfOptionInfo>
+        <option>extraconfig</option>
+        <description>
+          <key>com.vmware.vim.ovfManager.ovfParserOption.extraconf</key>
+          <message>All extra configuration options are exported for a virtual machine.</message>
+        </description>
+      </OvfOptionInfo>
+      <OvfOptionInfo>
+        <option>nodevicesubtypes</option>
+        <description>
+          <key>com.vmware.vim.ovfManager.ovfParserOption.nodevicesubtypes</key>
+          <message>Resource subtypes for CD/DVD drives, floppy drives, and serial and parallel ports are not exported.</message>
+        </description>
+      </OvfOptionInfo>
+    </val>
+  </propSet>
+  <propSet>
+    <name>ovfImportOption</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfOvfOptionInfo">
+      <OvfOptionInfo>
+        <option>lax</option>
+        <description>
+          <key>com.vmware.vim.ovfManager.ovfParserOption.lax</key>
+          <message>Errors are treated as warnings, all sections are considered optional, and non-supported hardware is ignored.</message>
+        </description>
+      </OvfOptionInfo>
+    </val>
+  </propSet>
+</ObjectContent>

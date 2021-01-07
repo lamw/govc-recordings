@@ -1,0 +1,10 @@
+<ObjectContent>
+  <obj type="HostProfileManager">HostProfileManager</obj>
+  <propSet>
+    <name>profile</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="HostProfile">hostprofile-1</ManagedObjectReference>
+      <ManagedObjectReference type="HostProfile">hostprofile-101</ManagedObjectReference>
+    </val>
+  </propSet>
+</ObjectContent>

@@ -1,0 +1,3602 @@
+<ObjectContent>
+  <obj type="ClusterComputeResource">domain-c7</obj>
+  <propSet>
+    <name>actionHistory</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfClusterActionHistory">
+      <ClusterActionHistory>
+        <action XMLSchema-instance:type="ClusterMigrationAction">
+          <type>MigrationV1</type>
+          <target type="VirtualMachine">vm-6960</target>
+          <drsMigration>
+            <key>160017539</key>
+            <time>2021-01-06T19:12:20.131709Z</time>
+            <vm type="VirtualMachine">vm-6960</vm>
+            <source type="HostSystem">host-71</source>
+            <destination type="HostSystem">host-15</destination>
+          </drsMigration>
+        </action>
+        <time>2021-01-06T19:12:20.131709Z</time>
+      </ClusterActionHistory>
+      <ClusterActionHistory>
+        <action XMLSchema-instance:type="ClusterMigrationAction">
+          <type>MigrationV1</type>
+          <target type="VirtualMachine">vm-11949</target>
+          <drsMigration>
+            <key>160017536</key>
+            <time>2021-01-06T19:12:17.14857Z</time>
+            <vm type="VirtualMachine">vm-11949</vm>
+            <source type="HostSystem">host-12</source>
+            <destination type="HostSystem">host-71</destination>
+          </drsMigration>
+        </action>
+        <time>2021-01-06T19:12:17.14857Z</time>
+      </ClusterActionHistory>
+    </val>
+  </propSet>
+  <propSet>
+    <name>alarmActionsEnabled</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:boolean">true</val>
+  </propSet>
+  <propSet>
+    <name>availableField</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldDef">
+      <CustomFieldDef>
+        <key>201</key>
+        <name>com.vmware.vcenter.cluster.edrs.upgradeHostAdded</name>
+        <type>string</type>
+        <managedObjectType>ClusterComputeResource</managedObjectType>
+        <fieldDefPrivileges>
+          <createPrivilege>Host.Inventory.EditCluster</createPrivilege>
+          <readPrivilege>Host.Inventory.EditCluster</readPrivilege>
+          <updatePrivilege>Host.Inventory.EditCluster</updatePrivilege>
+          <deletePrivilege>Host.Inventory.EditCluster</deletePrivilege>
+        </fieldDefPrivileges>
+        <fieldInstancePrivileges>
+          <createPrivilege>Host.Inventory.EditCluster</createPrivilege>
+          <readPrivilege>Host.Inventory.EditCluster</readPrivilege>
+          <updatePrivilege>Host.Inventory.EditCluster</updatePrivilege>
+          <deletePrivilege>Host.Inventory.EditCluster</deletePrivilege>
+        </fieldInstancePrivileges>
+      </CustomFieldDef>
+    </val>
+  </propSet>
+  <propSet>
+    <name>configIssue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfEvent"></val>
+  </propSet>
+  <propSet>
+    <name>configStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>configuration</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ClusterConfigInfo">
+      <dasConfig>
+        <enabled>false</enabled>
+        <vmMonitoring>vmMonitoringDisabled</vmMonitoring>
+        <hostMonitoring>enabled</hostMonitoring>
+        <vmComponentProtecting>disabled</vmComponentProtecting>
+        <failoverLevel>1</failoverLevel>
+        <admissionControlPolicy XMLSchema-instance:type="ClusterFailoverResourcesAdmissionControlPolicy">
+          <resourceReductionToToleratePercent>100</resourceReductionToToleratePercent>
+          <cpuFailoverResourcesPercent>33</cpuFailoverResourcesPercent>
+          <memoryFailoverResourcesPercent>33</memoryFailoverResourcesPercent>
+          <failoverLevel>1</failoverLevel>
+          <autoComputePercentages>true</autoComputePercentages>
+        </admissionControlPolicy>
+        <admissionControlEnabled>false</admissionControlEnabled>
+        <defaultVmSettings>
+          <restartPriority>medium</restartPriority>
+          <restartPriorityTimeout>600</restartPriorityTimeout>
+          <isolationResponse>shutdown</isolationResponse>
+          <vmToolsMonitoringSettings>
+            <enabled>false</enabled>
+            <vmMonitoring>vmMonitoringDisabled</vmMonitoring>
+            <clusterSettings>true</clusterSettings>
+            <failureInterval>30</failureInterval>
+            <minUpTime>120</minUpTime>
+            <maxFailures>3</maxFailures>
+            <maxFailureWindow>-1</maxFailureWindow>
+          </vmToolsMonitoringSettings>
+          <vmComponentProtectionSettings>
+            <vmStorageProtectionForAPD>disabled</vmStorageProtectionForAPD>
+            <enableAPDTimeoutForHosts>true</enableAPDTimeoutForHosts>
+            <vmTerminateDelayForAPDSec>180</vmTerminateDelayForAPDSec>
+            <vmReactionOnAPDCleared>none</vmReactionOnAPDCleared>
+            <vmStorageProtectionForPDL>disabled</vmStorageProtectionForPDL>
+          </vmComponentProtectionSettings>
+        </defaultVmSettings>
+        <hBDatastoreCandidatePolicy>userSelectedDs</hBDatastoreCandidatePolicy>
+      </dasConfig>
+      <drsConfig>
+        <enabled>true</enabled>
+        <enableVmBehaviorOverrides>true</enableVmBehaviorOverrides>
+        <defaultVmBehavior>fullyAutomated</defaultVmBehavior>
+        <vmotionRate>3</vmotionRate>
+      </drsConfig>
+      <rule XMLSchema-instance:type="ClusterAntiAffinityRuleSpec">
+        <key>201</key>
+        <enabled>true</enabled>
+        <name>SEP-AVI</name>
+        <userCreated>true</userCreated>
+        <ruleUuid>5222412c-cc54-a5cd-074a-4be10cc9b795</ruleUuid>
+        <vm type="VirtualMachine">vm-759</vm>
+        <vm type="VirtualMachine">vm-635</vm>
+        <vm type="VirtualMachine">vm-758</vm>
+      </rule>
+      <rule XMLSchema-instance:type="ClusterAntiAffinityRuleSpec">
+        <key>401</key>
+        <enabled>true</enabled>
+        <name>SEP-NSXT</name>
+        <userCreated>true</userCreated>
+        <ruleUuid>52d04dce-982d-546d-db16-b478957fac82</ruleUuid>
+        <vm type="VirtualMachine">vm-901</vm>
+        <vm type="VirtualMachine">vm-902</vm>
+        <vm type="VirtualMachine">vm-903</vm>
+      </rule>
+    </val>
+  </propSet>
+  <propSet>
+    <name>configurationEx</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ClusterConfigInfoEx">
+      <vmSwapPlacement>vmDirectory</vmSwapPlacement>
+      <spbmEnabled>true</spbmEnabled>
+      <dasConfig>
+        <enabled>false</enabled>
+        <vmMonitoring>vmMonitoringDisabled</vmMonitoring>
+        <hostMonitoring>enabled</hostMonitoring>
+        <vmComponentProtecting>disabled</vmComponentProtecting>
+        <failoverLevel>1</failoverLevel>
+        <admissionControlPolicy XMLSchema-instance:type="ClusterFailoverResourcesAdmissionControlPolicy">
+          <resourceReductionToToleratePercent>100</resourceReductionToToleratePercent>
+          <cpuFailoverResourcesPercent>33</cpuFailoverResourcesPercent>
+          <memoryFailoverResourcesPercent>33</memoryFailoverResourcesPercent>
+          <failoverLevel>1</failoverLevel>
+          <autoComputePercentages>true</autoComputePercentages>
+        </admissionControlPolicy>
+        <admissionControlEnabled>false</admissionControlEnabled>
+        <defaultVmSettings>
+          <restartPriority>medium</restartPriority>
+          <restartPriorityTimeout>600</restartPriorityTimeout>
+          <isolationResponse>shutdown</isolationResponse>
+          <vmToolsMonitoringSettings>
+            <enabled>false</enabled>
+            <vmMonitoring>vmMonitoringDisabled</vmMonitoring>
+            <clusterSettings>true</clusterSettings>
+            <failureInterval>30</failureInterval>
+            <minUpTime>120</minUpTime>
+            <maxFailures>3</maxFailures>
+            <maxFailureWindow>-1</maxFailureWindow>
+          </vmToolsMonitoringSettings>
+          <vmComponentProtectionSettings>
+            <vmStorageProtectionForAPD>disabled</vmStorageProtectionForAPD>
+            <enableAPDTimeoutForHosts>true</enableAPDTimeoutForHosts>
+            <vmTerminateDelayForAPDSec>180</vmTerminateDelayForAPDSec>
+            <vmReactionOnAPDCleared>none</vmReactionOnAPDCleared>
+            <vmStorageProtectionForPDL>disabled</vmStorageProtectionForPDL>
+          </vmComponentProtectionSettings>
+        </defaultVmSettings>
+        <hBDatastoreCandidatePolicy>userSelectedDs</hBDatastoreCandidatePolicy>
+      </dasConfig>
+      <drsConfig>
+        <enabled>true</enabled>
+        <enableVmBehaviorOverrides>true</enableVmBehaviorOverrides>
+        <defaultVmBehavior>fullyAutomated</defaultVmBehavior>
+        <vmotionRate>3</vmotionRate>
+      </drsConfig>
+      <rule XMLSchema-instance:type="ClusterAntiAffinityRuleSpec">
+        <key>201</key>
+        <enabled>true</enabled>
+        <name>SEP-AVI</name>
+        <userCreated>true</userCreated>
+        <ruleUuid>5222412c-cc54-a5cd-074a-4be10cc9b795</ruleUuid>
+        <vm type="VirtualMachine">vm-759</vm>
+        <vm type="VirtualMachine">vm-635</vm>
+        <vm type="VirtualMachine">vm-758</vm>
+      </rule>
+      <rule XMLSchema-instance:type="ClusterAntiAffinityRuleSpec">
+        <key>401</key>
+        <enabled>true</enabled>
+        <name>SEP-NSXT</name>
+        <userCreated>true</userCreated>
+        <ruleUuid>52d04dce-982d-546d-db16-b478957fac82</ruleUuid>
+        <vm type="VirtualMachine">vm-901</vm>
+        <vm type="VirtualMachine">vm-902</vm>
+        <vm type="VirtualMachine">vm-903</vm>
+      </rule>
+      <orchestration>
+        <defaultVmReadiness>
+          <readyCondition>none</readyCondition>
+        </defaultVmReadiness>
+      </orchestration>
+      <dpmConfigInfo>
+        <enabled>false</enabled>
+        <defaultDpmBehavior>automated</defaultDpmBehavior>
+        <hostPowerActionRate>3</hostPowerActionRate>
+      </dpmConfigInfo>
+      <vsanConfigInfo>
+        <enabled>true</enabled>
+        <defaultConfig>
+          <uuid>524a34ea-936d-7bd3-901a-685c0d4d6c1e</uuid>
+          <autoClaimStorage>false</autoClaimStorage>
+        </defaultConfig>
+      </vsanConfigInfo>
+      <vsanHostConfig>
+        <enabled>true</enabled>
+        <hostSystem type="HostSystem">host-12</hostSystem>
+        <clusterInfo>
+          <uuid>524a34ea-936d-7bd3-901a-685c0d4d6c1e</uuid>
+          <nodeUuid>5aa5cab9-bb2b-6a80-294b-f0921c0d2db8</nodeUuid>
+        </clusterInfo>
+        <storageInfo>
+          <autoClaimStorage>false</autoClaimStorage>
+          <diskMapping>
+            <ssd>
+              <deviceName>/vmfs/devices/disks/t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CCDB1815C382500</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-0100000000394343445f423138315f354333385f323530300053616d73756e</key>
+              <uuid>0100000000394343445f423138315f354333385f323530300053616d73756e</uuid>
+              <descriptor>
+                <quality>highQuality</quality>
+                <id>t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CCDB1815C382500</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>vml.0100000000394343445f423138315f354333385f323530300053616d73756e</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>0100000000394343445f423138315f354333385f323530300053616d73756e</id>
+              </descriptor>
+              <canonicalName>t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CCDB1815C382500</canonicalName>
+              <displayName>Local NVMe Disk (t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CCDB1815C382500)</displayName>
+              <lunType>disk</lunType>
+              <vendor>NVMe    </vendor>
+              <model>Samsung SSD 970 </model>
+              <revision>1B2Q</revision>
+              <scsiLevel>6</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>2046</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnknown</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>1000215216</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CCDB1815C382500</devicePath>
+              <ssd>true</ssd>
+              <localDisk>true</localDisk>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>52376cb1-3596-416d-9d64-0c48845ec4fc</vsanUuid>
+                <formatVersion>10</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>emulated512</scsiDiskType>
+            </ssd>
+            <nonSsd>
+              <deviceName>/vmfs/devices/disks/naa.5000cca01dbbca34</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-02000000005000cca01dbbca34485543313031</key>
+              <uuid>02000000005000cca01dbbca34485543313031</uuid>
+              <descriptor>
+                <quality>highQuality</quality>
+                <id>naa.5000cca01dbbca34</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>vml.02000000005000cca01dbbca34485543313031</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>02000000005000cca01dbbca34485543313031</id>
+              </descriptor>
+              <canonicalName>naa.5000cca01dbbca34</canonicalName>
+              <displayName>Local HGST Disk (naa.5000cca01dbbca34)</displayName>
+              <lunType>disk</lunType>
+              <vendor>HGST    </vendor>
+              <model>HUC101212CSS600 </model>
+              <revision>A469</revision>
+              <scsiLevel>6</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>30</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnsupported</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>2344225968</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/naa.5000cca01dbbca34</devicePath>
+              <ssd>false</ssd>
+              <localDisk>true</localDisk>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>52188740-ccf3-f20b-c0b6-3843f551c688</vsanUuid>
+                <formatVersion>10</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>native512</scsiDiskType>
+            </nonSsd>
+            <nonSsd>
+              <deviceName>/vmfs/devices/disks/naa.5000cca07230e31c</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-02000000005000cca07230e31c485543313031</key>
+              <uuid>02000000005000cca07230e31c485543313031</uuid>
+              <descriptor>
+                <quality>highQuality</quality>
+                <id>naa.5000cca07230e31c</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>vml.02000000005000cca07230e31c485543313031</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>02000000005000cca07230e31c485543313031</id>
+              </descriptor>
+              <canonicalName>naa.5000cca07230e31c</canonicalName>
+              <displayName>Local HGST Disk (naa.5000cca07230e31c)</displayName>
+              <lunType>disk</lunType>
+              <vendor>HGST    </vendor>
+              <model>HUC101212CSS600 </model>
+              <revision>A469</revision>
+              <scsiLevel>6</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>30</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnsupported</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>2344225968</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/naa.5000cca07230e31c</devicePath>
+              <ssd>false</ssd>
+              <localDisk>true</localDisk>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>52faa439-7c9c-bc1d-b7b4-d97bb875a2ce</vsanUuid>
+                <formatVersion>10</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>native512</scsiDiskType>
+            </nonSsd>
+            <nonSsd>
+              <deviceName>/vmfs/devices/disks/naa.5000cca072331e3c</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-02000000005000cca072331e3c485543313031</key>
+              <uuid>02000000005000cca072331e3c485543313031</uuid>
+              <descriptor>
+                <quality>highQuality</quality>
+                <id>naa.5000cca072331e3c</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>vml.02000000005000cca072331e3c485543313031</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>02000000005000cca072331e3c485543313031</id>
+              </descriptor>
+              <canonicalName>naa.5000cca072331e3c</canonicalName>
+              <displayName>Local HGST Disk (naa.5000cca072331e3c)</displayName>
+              <lunType>disk</lunType>
+              <vendor>HGST    </vendor>
+              <model>HUC101212CSS600 </model>
+              <revision>A469</revision>
+              <scsiLevel>6</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>30</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnsupported</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>2344225968</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/naa.5000cca072331e3c</devicePath>
+              <ssd>false</ssd>
+              <localDisk>true</localDisk>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>5220c77f-96fd-6a2f-f8f2-812b2eb33839</vsanUuid>
+                <formatVersion>10</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>native512</scsiDiskType>
+            </nonSsd>
+            <nonSsd>
+              <deviceName>/vmfs/devices/disks/naa.5000cca01d883c84</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-02000000005000cca01d883c84485543313031</key>
+              <uuid>02000000005000cca01d883c84485543313031</uuid>
+              <descriptor>
+                <quality>highQuality</quality>
+                <id>naa.5000cca01d883c84</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>vml.02000000005000cca01d883c84485543313031</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>02000000005000cca01d883c84485543313031</id>
+              </descriptor>
+              <canonicalName>naa.5000cca01d883c84</canonicalName>
+              <displayName>Local HGST Disk (naa.5000cca01d883c84)</displayName>
+              <lunType>disk</lunType>
+              <vendor>HGST    </vendor>
+              <model>HUC101212CSS600 </model>
+              <revision>A469</revision>
+              <scsiLevel>6</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>30</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnsupported</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>2344225968</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/naa.5000cca01d883c84</devicePath>
+              <ssd>false</ssd>
+              <localDisk>true</localDisk>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>52d3712a-c62a-5a77-0a4b-e21cb4855041</vsanUuid>
+                <formatVersion>10</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>native512</scsiDiskType>
+            </nonSsd>
+          </diskMapping>
+          <diskMapInfo>
+            <mapping>
+              <ssd>
+                <deviceName>/vmfs/devices/disks/t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CCDB1815C382500</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-0100000000394343445f423138315f354333385f323530300053616d73756e</key>
+                <uuid>0100000000394343445f423138315f354333385f323530300053616d73756e</uuid>
+                <descriptor>
+                  <quality>highQuality</quality>
+                  <id>t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CCDB1815C382500</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>vml.0100000000394343445f423138315f354333385f323530300053616d73756e</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>0100000000394343445f423138315f354333385f323530300053616d73756e</id>
+                </descriptor>
+                <canonicalName>t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CCDB1815C382500</canonicalName>
+                <displayName>Local NVMe Disk (t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CCDB1815C382500)</displayName>
+                <lunType>disk</lunType>
+                <vendor>NVMe    </vendor>
+                <model>Samsung SSD 970 </model>
+                <revision>1B2Q</revision>
+                <scsiLevel>6</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>2046</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnknown</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>1000215216</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CCDB1815C382500</devicePath>
+                <ssd>true</ssd>
+                <localDisk>true</localDisk>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>52376cb1-3596-416d-9d64-0c48845ec4fc</vsanUuid>
+                  <formatVersion>10</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>emulated512</scsiDiskType>
+              </ssd>
+              <nonSsd>
+                <deviceName>/vmfs/devices/disks/naa.5000cca01dbbca34</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-02000000005000cca01dbbca34485543313031</key>
+                <uuid>02000000005000cca01dbbca34485543313031</uuid>
+                <descriptor>
+                  <quality>highQuality</quality>
+                  <id>naa.5000cca01dbbca34</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>vml.02000000005000cca01dbbca34485543313031</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>02000000005000cca01dbbca34485543313031</id>
+                </descriptor>
+                <canonicalName>naa.5000cca01dbbca34</canonicalName>
+                <displayName>Local HGST Disk (naa.5000cca01dbbca34)</displayName>
+                <lunType>disk</lunType>
+                <vendor>HGST    </vendor>
+                <model>HUC101212CSS600 </model>
+                <revision>A469</revision>
+                <scsiLevel>6</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>30</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnsupported</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>2344225968</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/naa.5000cca01dbbca34</devicePath>
+                <ssd>false</ssd>
+                <localDisk>true</localDisk>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>52188740-ccf3-f20b-c0b6-3843f551c688</vsanUuid>
+                  <formatVersion>10</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>native512</scsiDiskType>
+              </nonSsd>
+              <nonSsd>
+                <deviceName>/vmfs/devices/disks/naa.5000cca07230e31c</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-02000000005000cca07230e31c485543313031</key>
+                <uuid>02000000005000cca07230e31c485543313031</uuid>
+                <descriptor>
+                  <quality>highQuality</quality>
+                  <id>naa.5000cca07230e31c</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>vml.02000000005000cca07230e31c485543313031</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>02000000005000cca07230e31c485543313031</id>
+                </descriptor>
+                <canonicalName>naa.5000cca07230e31c</canonicalName>
+                <displayName>Local HGST Disk (naa.5000cca07230e31c)</displayName>
+                <lunType>disk</lunType>
+                <vendor>HGST    </vendor>
+                <model>HUC101212CSS600 </model>
+                <revision>A469</revision>
+                <scsiLevel>6</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>30</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnsupported</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>2344225968</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/naa.5000cca07230e31c</devicePath>
+                <ssd>false</ssd>
+                <localDisk>true</localDisk>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>52faa439-7c9c-bc1d-b7b4-d97bb875a2ce</vsanUuid>
+                  <formatVersion>10</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>native512</scsiDiskType>
+              </nonSsd>
+              <nonSsd>
+                <deviceName>/vmfs/devices/disks/naa.5000cca072331e3c</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-02000000005000cca072331e3c485543313031</key>
+                <uuid>02000000005000cca072331e3c485543313031</uuid>
+                <descriptor>
+                  <quality>highQuality</quality>
+                  <id>naa.5000cca072331e3c</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>vml.02000000005000cca072331e3c485543313031</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>02000000005000cca072331e3c485543313031</id>
+                </descriptor>
+                <canonicalName>naa.5000cca072331e3c</canonicalName>
+                <displayName>Local HGST Disk (naa.5000cca072331e3c)</displayName>
+                <lunType>disk</lunType>
+                <vendor>HGST    </vendor>
+                <model>HUC101212CSS600 </model>
+                <revision>A469</revision>
+                <scsiLevel>6</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>30</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnsupported</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>2344225968</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/naa.5000cca072331e3c</devicePath>
+                <ssd>false</ssd>
+                <localDisk>true</localDisk>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>5220c77f-96fd-6a2f-f8f2-812b2eb33839</vsanUuid>
+                  <formatVersion>10</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>native512</scsiDiskType>
+              </nonSsd>
+              <nonSsd>
+                <deviceName>/vmfs/devices/disks/naa.5000cca01d883c84</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-02000000005000cca01d883c84485543313031</key>
+                <uuid>02000000005000cca01d883c84485543313031</uuid>
+                <descriptor>
+                  <quality>highQuality</quality>
+                  <id>naa.5000cca01d883c84</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>vml.02000000005000cca01d883c84485543313031</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>02000000005000cca01d883c84485543313031</id>
+                </descriptor>
+                <canonicalName>naa.5000cca01d883c84</canonicalName>
+                <displayName>Local HGST Disk (naa.5000cca01d883c84)</displayName>
+                <lunType>disk</lunType>
+                <vendor>HGST    </vendor>
+                <model>HUC101212CSS600 </model>
+                <revision>A469</revision>
+                <scsiLevel>6</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>30</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnsupported</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>2344225968</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/naa.5000cca01d883c84</devicePath>
+                <ssd>false</ssd>
+                <localDisk>true</localDisk>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>52d3712a-c62a-5a77-0a4b-e21cb4855041</vsanUuid>
+                  <formatVersion>10</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>native512</scsiDiskType>
+              </nonSsd>
+            </mapping>
+            <mounted>true</mounted>
+          </diskMapInfo>
+        </storageInfo>
+        <networkInfo>
+          <port>
+            <ipConfig>
+              <upstreamIpAddress>224.1.2.3</upstreamIpAddress>
+              <downstreamIpAddress>224.2.3.4</downstreamIpAddress>
+            </ipConfig>
+            <device>vmk2</device>
+          </port>
+        </networkInfo>
+        <faultDomainInfo>
+          <name></name>
+        </faultDomainInfo>
+      </vsanHostConfig>
+      <vsanHostConfig>
+        <enabled>true</enabled>
+        <hostSystem type="HostSystem">host-15</hostSystem>
+        <clusterInfo>
+          <uuid>524a34ea-936d-7bd3-901a-685c0d4d6c1e</uuid>
+          <nodeUuid>5aa71172-1344-19dc-b574-1458d0413628</nodeUuid>
+        </clusterInfo>
+        <storageInfo>
+          <autoClaimStorage>false</autoClaimStorage>
+          <diskMapping>
+            <ssd>
+              <deviceName>/vmfs/devices/disks/t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CBDB1815C382500</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-0100000000394342445f423138315f354333385f323530300053616d73756e</key>
+              <uuid>0100000000394342445f423138315f354333385f323530300053616d73756e</uuid>
+              <descriptor>
+                <quality>highQuality</quality>
+                <id>t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CBDB1815C382500</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>vml.0100000000394342445f423138315f354333385f323530300053616d73756e</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>0100000000394342445f423138315f354333385f323530300053616d73756e</id>
+              </descriptor>
+              <canonicalName>t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CBDB1815C382500</canonicalName>
+              <displayName>Local NVMe Disk (t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CBDB1815C382500)</displayName>
+              <lunType>disk</lunType>
+              <vendor>NVMe    </vendor>
+              <model>Samsung SSD 970 </model>
+              <revision>1B2Q</revision>
+              <scsiLevel>6</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>2046</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnknown</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>1000215216</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CBDB1815C382500</devicePath>
+              <ssd>true</ssd>
+              <localDisk>true</localDisk>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>521a5663-0826-c845-0d8a-f9096405f2f9</vsanUuid>
+                <formatVersion>10</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>emulated512</scsiDiskType>
+            </ssd>
+            <nonSsd>
+              <deviceName>/vmfs/devices/disks/naa.5000cca01db590e0</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-02000000005000cca01db590e0485543313031</key>
+              <uuid>02000000005000cca01db590e0485543313031</uuid>
+              <descriptor>
+                <quality>highQuality</quality>
+                <id>naa.5000cca01db590e0</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>vml.02000000005000cca01db590e0485543313031</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>02000000005000cca01db590e0485543313031</id>
+              </descriptor>
+              <canonicalName>naa.5000cca01db590e0</canonicalName>
+              <displayName>Local HGST Disk (naa.5000cca01db590e0)</displayName>
+              <lunType>disk</lunType>
+              <vendor>HGST    </vendor>
+              <model>HUC101212CSS600 </model>
+              <revision>A469</revision>
+              <scsiLevel>6</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>30</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnsupported</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>2344225968</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/naa.5000cca01db590e0</devicePath>
+              <ssd>false</ssd>
+              <localDisk>true</localDisk>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>52e656f9-66c1-589f-4e36-d55a817f6b34</vsanUuid>
+                <formatVersion>10</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>native512</scsiDiskType>
+            </nonSsd>
+            <nonSsd>
+              <deviceName>/vmfs/devices/disks/naa.5000cca01dd204f8</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-02000000005000cca01dd204f8485543313031</key>
+              <uuid>02000000005000cca01dd204f8485543313031</uuid>
+              <descriptor>
+                <quality>highQuality</quality>
+                <id>naa.5000cca01dd204f8</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>vml.02000000005000cca01dd204f8485543313031</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>02000000005000cca01dd204f8485543313031</id>
+              </descriptor>
+              <canonicalName>naa.5000cca01dd204f8</canonicalName>
+              <displayName>Local HGST Disk (naa.5000cca01dd204f8)</displayName>
+              <lunType>disk</lunType>
+              <vendor>HGST    </vendor>
+              <model>HUC101212CSS600 </model>
+              <revision>A469</revision>
+              <scsiLevel>6</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>30</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnsupported</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>2344225968</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/naa.5000cca01dd204f8</devicePath>
+              <ssd>false</ssd>
+              <localDisk>true</localDisk>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>520706ae-51c2-798d-3480-f5a1e235c6bf</vsanUuid>
+                <formatVersion>10</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>native512</scsiDiskType>
+            </nonSsd>
+            <nonSsd>
+              <deviceName>/vmfs/devices/disks/naa.5000cca01d7a5d1c</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-02000000005000cca01d7a5d1c485543313031</key>
+              <uuid>02000000005000cca01d7a5d1c485543313031</uuid>
+              <descriptor>
+                <quality>highQuality</quality>
+                <id>naa.5000cca01d7a5d1c</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>vml.02000000005000cca01d7a5d1c485543313031</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>02000000005000cca01d7a5d1c485543313031</id>
+              </descriptor>
+              <canonicalName>naa.5000cca01d7a5d1c</canonicalName>
+              <displayName>Local HGST Disk (naa.5000cca01d7a5d1c)</displayName>
+              <lunType>disk</lunType>
+              <vendor>HGST    </vendor>
+              <model>HUC101212CSS600 </model>
+              <revision>A469</revision>
+              <scsiLevel>6</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>30</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnsupported</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>2344225968</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/naa.5000cca01d7a5d1c</devicePath>
+              <ssd>false</ssd>
+              <localDisk>true</localDisk>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>52ab2472-4387-d1e6-60ee-742013bd401e</vsanUuid>
+                <formatVersion>10</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>native512</scsiDiskType>
+            </nonSsd>
+            <nonSsd>
+              <deviceName>/vmfs/devices/disks/naa.5000cca072bf0ac0</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-02000000005000cca072bf0ac0485543313031</key>
+              <uuid>02000000005000cca072bf0ac0485543313031</uuid>
+              <descriptor>
+                <quality>highQuality</quality>
+                <id>naa.5000cca072bf0ac0</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>vml.02000000005000cca072bf0ac0485543313031</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>02000000005000cca072bf0ac0485543313031</id>
+              </descriptor>
+              <canonicalName>naa.5000cca072bf0ac0</canonicalName>
+              <displayName>Local HGST Disk (naa.5000cca072bf0ac0)</displayName>
+              <lunType>disk</lunType>
+              <vendor>HGST    </vendor>
+              <model>HUC101212CSS600 </model>
+              <revision>A469</revision>
+              <scsiLevel>6</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>30</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnsupported</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>2344225968</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/naa.5000cca072bf0ac0</devicePath>
+              <ssd>false</ssd>
+              <localDisk>true</localDisk>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>520ad3dc-e9b3-30a7-eb35-5382f464eb80</vsanUuid>
+                <formatVersion>10</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>native512</scsiDiskType>
+            </nonSsd>
+          </diskMapping>
+          <diskMapInfo>
+            <mapping>
+              <ssd>
+                <deviceName>/vmfs/devices/disks/t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CBDB1815C382500</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-0100000000394342445f423138315f354333385f323530300053616d73756e</key>
+                <uuid>0100000000394342445f423138315f354333385f323530300053616d73756e</uuid>
+                <descriptor>
+                  <quality>highQuality</quality>
+                  <id>t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CBDB1815C382500</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>vml.0100000000394342445f423138315f354333385f323530300053616d73756e</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>0100000000394342445f423138315f354333385f323530300053616d73756e</id>
+                </descriptor>
+                <canonicalName>t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CBDB1815C382500</canonicalName>
+                <displayName>Local NVMe Disk (t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CBDB1815C382500)</displayName>
+                <lunType>disk</lunType>
+                <vendor>NVMe    </vendor>
+                <model>Samsung SSD 970 </model>
+                <revision>1B2Q</revision>
+                <scsiLevel>6</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>2046</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnknown</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>1000215216</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/t10.NVMe____Samsung_SSD_970_PRO_512GB_______________9CBDB1815C382500</devicePath>
+                <ssd>true</ssd>
+                <localDisk>true</localDisk>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>521a5663-0826-c845-0d8a-f9096405f2f9</vsanUuid>
+                  <formatVersion>10</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>emulated512</scsiDiskType>
+              </ssd>
+              <nonSsd>
+                <deviceName>/vmfs/devices/disks/naa.5000cca01db590e0</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-02000000005000cca01db590e0485543313031</key>
+                <uuid>02000000005000cca01db590e0485543313031</uuid>
+                <descriptor>
+                  <quality>highQuality</quality>
+                  <id>naa.5000cca01db590e0</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>vml.02000000005000cca01db590e0485543313031</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>02000000005000cca01db590e0485543313031</id>
+                </descriptor>
+                <canonicalName>naa.5000cca01db590e0</canonicalName>
+                <displayName>Local HGST Disk (naa.5000cca01db590e0)</displayName>
+                <lunType>disk</lunType>
+                <vendor>HGST    </vendor>
+                <model>HUC101212CSS600 </model>
+                <revision>A469</revision>
+                <scsiLevel>6</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>30</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnsupported</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>2344225968</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/naa.5000cca01db590e0</devicePath>
+                <ssd>false</ssd>
+                <localDisk>true</localDisk>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>52e656f9-66c1-589f-4e36-d55a817f6b34</vsanUuid>
+                  <formatVersion>10</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>native512</scsiDiskType>
+              </nonSsd>
+              <nonSsd>
+                <deviceName>/vmfs/devices/disks/naa.5000cca01dd204f8</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-02000000005000cca01dd204f8485543313031</key>
+                <uuid>02000000005000cca01dd204f8485543313031</uuid>
+                <descriptor>
+                  <quality>highQuality</quality>
+                  <id>naa.5000cca01dd204f8</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>vml.02000000005000cca01dd204f8485543313031</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>02000000005000cca01dd204f8485543313031</id>
+                </descriptor>
+                <canonicalName>naa.5000cca01dd204f8</canonicalName>
+                <displayName>Local HGST Disk (naa.5000cca01dd204f8)</displayName>
+                <lunType>disk</lunType>
+                <vendor>HGST    </vendor>
+                <model>HUC101212CSS600 </model>
+                <revision>A469</revision>
+                <scsiLevel>6</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>30</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnsupported</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>2344225968</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/naa.5000cca01dd204f8</devicePath>
+                <ssd>false</ssd>
+                <localDisk>true</localDisk>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>520706ae-51c2-798d-3480-f5a1e235c6bf</vsanUuid>
+                  <formatVersion>10</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>native512</scsiDiskType>
+              </nonSsd>
+              <nonSsd>
+                <deviceName>/vmfs/devices/disks/naa.5000cca01d7a5d1c</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-02000000005000cca01d7a5d1c485543313031</key>
+                <uuid>02000000005000cca01d7a5d1c485543313031</uuid>
+                <descriptor>
+                  <quality>highQuality</quality>
+                  <id>naa.5000cca01d7a5d1c</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>vml.02000000005000cca01d7a5d1c485543313031</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>02000000005000cca01d7a5d1c485543313031</id>
+                </descriptor>
+                <canonicalName>naa.5000cca01d7a5d1c</canonicalName>
+                <displayName>Local HGST Disk (naa.5000cca01d7a5d1c)</displayName>
+                <lunType>disk</lunType>
+                <vendor>HGST    </vendor>
+                <model>HUC101212CSS600 </model>
+                <revision>A469</revision>
+                <scsiLevel>6</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>30</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnsupported</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>2344225968</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/naa.5000cca01d7a5d1c</devicePath>
+                <ssd>false</ssd>
+                <localDisk>true</localDisk>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>52ab2472-4387-d1e6-60ee-742013bd401e</vsanUuid>
+                  <formatVersion>10</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>native512</scsiDiskType>
+              </nonSsd>
+              <nonSsd>
+                <deviceName>/vmfs/devices/disks/naa.5000cca072bf0ac0</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-02000000005000cca072bf0ac0485543313031</key>
+                <uuid>02000000005000cca072bf0ac0485543313031</uuid>
+                <descriptor>
+                  <quality>highQuality</quality>
+                  <id>naa.5000cca072bf0ac0</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>vml.02000000005000cca072bf0ac0485543313031</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>02000000005000cca072bf0ac0485543313031</id>
+                </descriptor>
+                <canonicalName>naa.5000cca072bf0ac0</canonicalName>
+                <displayName>Local HGST Disk (naa.5000cca072bf0ac0)</displayName>
+                <lunType>disk</lunType>
+                <vendor>HGST    </vendor>
+                <model>HUC101212CSS600 </model>
+                <revision>A469</revision>
+                <scsiLevel>6</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>30</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnsupported</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>2344225968</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/naa.5000cca072bf0ac0</devicePath>
+                <ssd>false</ssd>
+                <localDisk>true</localDisk>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>520ad3dc-e9b3-30a7-eb35-5382f464eb80</vsanUuid>
+                  <formatVersion>10</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>native512</scsiDiskType>
+              </nonSsd>
+            </mapping>
+            <mounted>true</mounted>
+          </diskMapInfo>
+        </storageInfo>
+        <networkInfo>
+          <port>
+            <ipConfig>
+              <upstreamIpAddress>224.1.2.3</upstreamIpAddress>
+              <downstreamIpAddress>224.2.3.4</downstreamIpAddress>
+            </ipConfig>
+            <device>vmk2</device>
+          </port>
+        </networkInfo>
+        <faultDomainInfo>
+          <name></name>
+        </faultDomainInfo>
+      </vsanHostConfig>
+      <vsanHostConfig>
+        <enabled>true</enabled>
+        <hostSystem type="HostSystem">host-71</hostSystem>
+        <clusterInfo>
+          <uuid>524a34ea-936d-7bd3-901a-685c0d4d6c1e</uuid>
+          <nodeUuid>5ab18114-b1ff-96d8-2cef-6c3be5bd72c0</nodeUuid>
+        </clusterInfo>
+        <storageInfo>
+          <autoClaimStorage>false</autoClaimStorage>
+          <diskMapping>
+            <ssd>
+              <deviceName>/vmfs/devices/disks/t10.NVMe____Samsung_SSD_970_PRO_512GB_______________22BDB1815C382500</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-0100000000323242445f423138315f354333385f323530300053616d73756e</key>
+              <uuid>0100000000323242445f423138315f354333385f323530300053616d73756e</uuid>
+              <descriptor>
+                <quality>highQuality</quality>
+                <id>t10.NVMe____Samsung_SSD_970_PRO_512GB_______________22BDB1815C382500</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>vml.0100000000323242445f423138315f354333385f323530300053616d73756e</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>0100000000323242445f423138315f354333385f323530300053616d73756e</id>
+              </descriptor>
+              <canonicalName>t10.NVMe____Samsung_SSD_970_PRO_512GB_______________22BDB1815C382500</canonicalName>
+              <displayName>Local NVMe Disk (t10.NVMe____Samsung_SSD_970_PRO_512GB_______________22BDB1815C382500)</displayName>
+              <lunType>disk</lunType>
+              <vendor>NVMe    </vendor>
+              <model>Samsung SSD 970 </model>
+              <revision>1B2Q</revision>
+              <scsiLevel>6</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>2046</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnknown</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>1000215216</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/t10.NVMe____Samsung_SSD_970_PRO_512GB_______________22BDB1815C382500</devicePath>
+              <ssd>true</ssd>
+              <localDisk>true</localDisk>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>528af9ed-ebc4-2a56-2d0e-91d5cc19410b</vsanUuid>
+                <formatVersion>10</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>emulated512</scsiDiskType>
+            </ssd>
+            <nonSsd>
+              <deviceName>/vmfs/devices/disks/naa.5000cca07227e5c4</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-02000000005000cca07227e5c4485543313031</key>
+              <uuid>02000000005000cca07227e5c4485543313031</uuid>
+              <descriptor>
+                <quality>highQuality</quality>
+                <id>naa.5000cca07227e5c4</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>vml.02000000005000cca07227e5c4485543313031</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>02000000005000cca07227e5c4485543313031</id>
+              </descriptor>
+              <canonicalName>naa.5000cca07227e5c4</canonicalName>
+              <displayName>Local HGST Disk (naa.5000cca07227e5c4)</displayName>
+              <lunType>disk</lunType>
+              <vendor>HGST    </vendor>
+              <model>HUC101212CSS600 </model>
+              <revision>A469</revision>
+              <scsiLevel>6</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>30</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnsupported</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>2344225968</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/naa.5000cca07227e5c4</devicePath>
+              <ssd>false</ssd>
+              <localDisk>true</localDisk>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>52097688-cdb3-6996-1534-ec4360489eb6</vsanUuid>
+                <formatVersion>10</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>native512</scsiDiskType>
+            </nonSsd>
+            <nonSsd>
+              <deviceName>/vmfs/devices/disks/naa.5000cca072346ec4</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-02000000005000cca072346ec4485543313031</key>
+              <uuid>02000000005000cca072346ec4485543313031</uuid>
+              <descriptor>
+                <quality>highQuality</quality>
+                <id>naa.5000cca072346ec4</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>vml.02000000005000cca072346ec4485543313031</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>02000000005000cca072346ec4485543313031</id>
+              </descriptor>
+              <canonicalName>naa.5000cca072346ec4</canonicalName>
+              <displayName>Local HGST Disk (naa.5000cca072346ec4)</displayName>
+              <lunType>disk</lunType>
+              <vendor>HGST    </vendor>
+              <model>HUC101212CSS600 </model>
+              <revision>A469</revision>
+              <scsiLevel>6</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>30</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnsupported</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>2344225968</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/naa.5000cca072346ec4</devicePath>
+              <ssd>false</ssd>
+              <localDisk>true</localDisk>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>5241c640-d919-fa17-ed95-759502bed48e</vsanUuid>
+                <formatVersion>10</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>native512</scsiDiskType>
+            </nonSsd>
+            <nonSsd>
+              <deviceName>/vmfs/devices/disks/naa.5000cca01db59c20</deviceName>
+              <deviceType>disk</deviceType>
+              <key>key-vim.host.ScsiDisk-02000000005000cca01db59c20485543313031</key>
+              <uuid>02000000005000cca01db59c20485543313031</uuid>
+              <descriptor>
+                <quality>highQuality</quality>
+                <id>naa.5000cca01db59c20</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>vml.02000000005000cca01db59c20485543313031</id>
+              </descriptor>
+              <descriptor>
+                <quality>mediumQuality</quality>
+                <id>02000000005000cca01db59c20485543313031</id>
+              </descriptor>
+              <canonicalName>naa.5000cca01db59c20</canonicalName>
+              <displayName>Local HGST Disk (naa.5000cca01db59c20)</displayName>
+              <lunType>disk</lunType>
+              <vendor>HGST    </vendor>
+              <model>HUC101212CSS600 </model>
+              <revision>A469</revision>
+              <scsiLevel>6</scsiLevel>
+              <serialNumber>unavailable</serialNumber>
+              <queueDepth>30</queueDepth>
+              <operationalState>ok</operationalState>
+              <capabilities>
+                <updateDisplayNameSupported>true</updateDisplayNameSupported>
+              </capabilities>
+              <vStorageSupport>vStorageUnsupported</vStorageSupport>
+              <protocolEndpoint>false</protocolEndpoint>
+              <capacity>
+                <blockSize>512</blockSize>
+                <block>2344225968</block>
+              </capacity>
+              <devicePath>/vmfs/devices/disks/naa.5000cca01db59c20</devicePath>
+              <ssd>false</ssd>
+              <localDisk>true</localDisk>
+              <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+              <vsanDiskInfo>
+                <vsanUuid>52ac2722-ac93-5e83-a3c6-1220f0110d0b</vsanUuid>
+                <formatVersion>10</formatVersion>
+              </vsanDiskInfo>
+              <scsiDiskType>native512</scsiDiskType>
+            </nonSsd>
+          </diskMapping>
+          <diskMapInfo>
+            <mapping>
+              <ssd>
+                <deviceName>/vmfs/devices/disks/t10.NVMe____Samsung_SSD_970_PRO_512GB_______________22BDB1815C382500</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-0100000000323242445f423138315f354333385f323530300053616d73756e</key>
+                <uuid>0100000000323242445f423138315f354333385f323530300053616d73756e</uuid>
+                <descriptor>
+                  <quality>highQuality</quality>
+                  <id>t10.NVMe____Samsung_SSD_970_PRO_512GB_______________22BDB1815C382500</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>vml.0100000000323242445f423138315f354333385f323530300053616d73756e</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>0100000000323242445f423138315f354333385f323530300053616d73756e</id>
+                </descriptor>
+                <canonicalName>t10.NVMe____Samsung_SSD_970_PRO_512GB_______________22BDB1815C382500</canonicalName>
+                <displayName>Local NVMe Disk (t10.NVMe____Samsung_SSD_970_PRO_512GB_______________22BDB1815C382500)</displayName>
+                <lunType>disk</lunType>
+                <vendor>NVMe    </vendor>
+                <model>Samsung SSD 970 </model>
+                <revision>1B2Q</revision>
+                <scsiLevel>6</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>2046</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnknown</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>1000215216</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/t10.NVMe____Samsung_SSD_970_PRO_512GB_______________22BDB1815C382500</devicePath>
+                <ssd>true</ssd>
+                <localDisk>true</localDisk>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>528af9ed-ebc4-2a56-2d0e-91d5cc19410b</vsanUuid>
+                  <formatVersion>10</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>emulated512</scsiDiskType>
+              </ssd>
+              <nonSsd>
+                <deviceName>/vmfs/devices/disks/naa.5000cca07227e5c4</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-02000000005000cca07227e5c4485543313031</key>
+                <uuid>02000000005000cca07227e5c4485543313031</uuid>
+                <descriptor>
+                  <quality>highQuality</quality>
+                  <id>naa.5000cca07227e5c4</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>vml.02000000005000cca07227e5c4485543313031</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>02000000005000cca07227e5c4485543313031</id>
+                </descriptor>
+                <canonicalName>naa.5000cca07227e5c4</canonicalName>
+                <displayName>Local HGST Disk (naa.5000cca07227e5c4)</displayName>
+                <lunType>disk</lunType>
+                <vendor>HGST    </vendor>
+                <model>HUC101212CSS600 </model>
+                <revision>A469</revision>
+                <scsiLevel>6</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>30</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnsupported</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>2344225968</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/naa.5000cca07227e5c4</devicePath>
+                <ssd>false</ssd>
+                <localDisk>true</localDisk>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>52097688-cdb3-6996-1534-ec4360489eb6</vsanUuid>
+                  <formatVersion>10</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>native512</scsiDiskType>
+              </nonSsd>
+              <nonSsd>
+                <deviceName>/vmfs/devices/disks/naa.5000cca072346ec4</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-02000000005000cca072346ec4485543313031</key>
+                <uuid>02000000005000cca072346ec4485543313031</uuid>
+                <descriptor>
+                  <quality>highQuality</quality>
+                  <id>naa.5000cca072346ec4</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>vml.02000000005000cca072346ec4485543313031</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>02000000005000cca072346ec4485543313031</id>
+                </descriptor>
+                <canonicalName>naa.5000cca072346ec4</canonicalName>
+                <displayName>Local HGST Disk (naa.5000cca072346ec4)</displayName>
+                <lunType>disk</lunType>
+                <vendor>HGST    </vendor>
+                <model>HUC101212CSS600 </model>
+                <revision>A469</revision>
+                <scsiLevel>6</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>30</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnsupported</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>2344225968</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/naa.5000cca072346ec4</devicePath>
+                <ssd>false</ssd>
+                <localDisk>true</localDisk>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>5241c640-d919-fa17-ed95-759502bed48e</vsanUuid>
+                  <formatVersion>10</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>native512</scsiDiskType>
+              </nonSsd>
+              <nonSsd>
+                <deviceName>/vmfs/devices/disks/naa.5000cca01db59c20</deviceName>
+                <deviceType>disk</deviceType>
+                <key>key-vim.host.ScsiDisk-02000000005000cca01db59c20485543313031</key>
+                <uuid>02000000005000cca01db59c20485543313031</uuid>
+                <descriptor>
+                  <quality>highQuality</quality>
+                  <id>naa.5000cca01db59c20</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>vml.02000000005000cca01db59c20485543313031</id>
+                </descriptor>
+                <descriptor>
+                  <quality>mediumQuality</quality>
+                  <id>02000000005000cca01db59c20485543313031</id>
+                </descriptor>
+                <canonicalName>naa.5000cca01db59c20</canonicalName>
+                <displayName>Local HGST Disk (naa.5000cca01db59c20)</displayName>
+                <lunType>disk</lunType>
+                <vendor>HGST    </vendor>
+                <model>HUC101212CSS600 </model>
+                <revision>A469</revision>
+                <scsiLevel>6</scsiLevel>
+                <serialNumber>unavailable</serialNumber>
+                <queueDepth>30</queueDepth>
+                <operationalState>ok</operationalState>
+                <capabilities>
+                  <updateDisplayNameSupported>true</updateDisplayNameSupported>
+                </capabilities>
+                <vStorageSupport>vStorageUnsupported</vStorageSupport>
+                <protocolEndpoint>false</protocolEndpoint>
+                <capacity>
+                  <blockSize>512</blockSize>
+                  <block>2344225968</block>
+                </capacity>
+                <devicePath>/vmfs/devices/disks/naa.5000cca01db59c20</devicePath>
+                <ssd>false</ssd>
+                <localDisk>true</localDisk>
+                <emulatedDIXDIFEnabled>false</emulatedDIXDIFEnabled>
+                <vsanDiskInfo>
+                  <vsanUuid>52ac2722-ac93-5e83-a3c6-1220f0110d0b</vsanUuid>
+                  <formatVersion>10</formatVersion>
+                </vsanDiskInfo>
+                <scsiDiskType>native512</scsiDiskType>
+              </nonSsd>
+            </mapping>
+            <mounted>true</mounted>
+          </diskMapInfo>
+        </storageInfo>
+        <networkInfo>
+          <port>
+            <ipConfig>
+              <upstreamIpAddress>224.1.2.3</upstreamIpAddress>
+              <downstreamIpAddress>224.2.3.4</downstreamIpAddress>
+            </ipConfig>
+            <device>vmk2</device>
+          </port>
+        </networkInfo>
+        <faultDomainInfo>
+          <name></name>
+        </faultDomainInfo>
+      </vsanHostConfig>
+      <infraUpdateHaConfig>
+        <enabled>false</enabled>
+        <behavior>Manual</behavior>
+        <moderateRemediation>QuarantineMode</moderateRemediation>
+        <severeRemediation>QuarantineMode</severeRemediation>
+      </infraUpdateHaConfig>
+      <proactiveDrsConfig>
+        <enabled>false</enabled>
+      </proactiveDrsConfig>
+    </val>
+  </propSet>
+  <propSet>
+    <name>customValue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>datastore</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="Datastore">datastore-847</ManagedObjectReference>
+      <ManagedObjectReference type="Datastore">datastore-76</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>declaredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState">
+      <AlarmState>
+        <key>alarm-1.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-10.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-10</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1001.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1001</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-03-11T13:21:41.055999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>152536806</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1010.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1010</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-109.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-109</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-11.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-11</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1103.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1103</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1104.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1104</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1105.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1105</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1106.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1106</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1107.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1107</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1109.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1109</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-113.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-113</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-114.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-114</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-115.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-115</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-116.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-116</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-117.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-117</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-118.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-118</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-119.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-119</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-12.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-12</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-120.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-120</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1203.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1203</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1204.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1204</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1205.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1205</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1206.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1206</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1207.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1207</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1208.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1208</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1209.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1209</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-121.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-121</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1210.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1210</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-122.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-122</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-123.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-123</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-124.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-124</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-125.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-125</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-13.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-13</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-131.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-131</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-132.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-132</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-134.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-134</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-135.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-135</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-136.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-136</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-137.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-137</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-138.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-138</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-09-02T18:29:02.133Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>884888</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-139.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-139</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-11-19T16:33:56.948Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>158909544</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-14.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-14</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-140.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-140</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-141.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-141</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-11-19T17:22:16.439Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>158910581</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-142.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-142</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-143.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-143</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-144.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-144</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-145.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-145</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-04-13T13:22:00.963Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>5197</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-146.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-146</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-148.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-148</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-149.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-149</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-15.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-15</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-150.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-150</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-04-13T13:21:59.960999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>5177</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-151.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-151</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-152.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-152</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-153.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-153</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-154.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-154</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-155.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-155</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-11-19T17:22:16.439Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>158910582</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-156.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-156</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-09-02T14:22:10.006Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>884887</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-157.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-157</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-158.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-158</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-159.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-159</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-16.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-16</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-160.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-160</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-10-19T07:19:09.753Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>158212288</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1601.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1601</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1602.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1602</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-10-01T08:58:50.246Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>157778129</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1603.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1603</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1604.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1604</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1605.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1605</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-161.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-161</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-162.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-162</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-11-19T16:33:56.948999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>158909545</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-163.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-163</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-04-13T13:21:44.945999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>5152</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-164.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-164</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-04-13T13:31:46.2Z</time>
+        <acknowledged>true</acknowledged>
+        <acknowledgedByUser>VSPHERE.LOCAL\Administrator</acknowledgedByUser>
+        <acknowledgedTime>2019-04-13T13:30:40.762999Z</acknowledgedTime>
+        <eventKey>5182</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-165.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-165</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-166.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-166</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-167.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-167</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-168.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-168</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-169.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-169</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-04-13T13:21:59.972999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>5181</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-17.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-17</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-170.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-170</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1701.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1701</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1702.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1702</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1703.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1703</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1704.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1704</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1705.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1705</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1706.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1706</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1707.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1707</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1708.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1708</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1709.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1709</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-172.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-172</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-11-19T19:21:22.974Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>158911985</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-173.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-173</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-175.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-175</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-04-21T22:02:35.228Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>41145</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-177.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-177</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-10-19T07:19:09.756999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>158212294</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-178.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-178</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-10-19T07:19:09.753Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>158212287</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-179.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-179</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-180.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-180</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-181.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-181</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-182.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-182</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-09-16T15:58:11.233Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>157414646</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-183.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-183</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-184.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-184</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-185.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-185</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-186.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-186</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-187.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-187</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-188.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-188</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-19.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-19</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-190.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-190</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1901.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-1901</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-191.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-191</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-10-19T07:19:09.755Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>158212290</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-192.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-192</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-193.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-193</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-11-19T16:39:47.012999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>158909810</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-194.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-194</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-09-02T18:48:44.914Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>1011441</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-197.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-197</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-198.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-198</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-10-19T07:19:09.753999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>158212289</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-199.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-199</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-2.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-2</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-20.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-20</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-200.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-200</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-09-02T18:29:02.991Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>884889</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-201.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-201</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-04-20T00:54:05.661999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>153538758</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-202.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-202</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-203.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-203</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-204.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-204</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-205.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-205</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-09-02T18:44:27.843Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>1008984</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-206.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-206</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-11-19T18:43:16.835Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>158912635</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-209.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-209</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-21.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-21</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-210.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-210</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-04-13T13:22:10.968999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>5220</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-211.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-211</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-212.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-212</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-11-19T16:33:56.95Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>158909547</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-213.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-213</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-04-13T13:22:00.962Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>5195</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-214.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-214</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-215.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-215</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-216.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-216</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-217.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-217</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-218.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-218</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-219.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-219</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-04-13T13:22:00.963Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>5196</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-22.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-22</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-220.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-220</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-04-13T13:21:59.975Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>5185</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-221.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-221</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-222.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-222</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-04-30T12:19:30.658999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>80639</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-223.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-223</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-09-16T14:55:34.868Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>157379080</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-224.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-224</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-11-19T16:33:56.948999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>158909546</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-225.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-225</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-08-03T12:26:52.496Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>156246472</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-226.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-226</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-12-21T11:13:29.571Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>159642863</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-227.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-227</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-228.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-228</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-229.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-229</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-23.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-23</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-230.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-230</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-231.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-231</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-09-09T18:48:52.872999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>157124790</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-232.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-232</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-233.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-233</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-10-19T07:19:09.756999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>158212293</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-234.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-234</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-235.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-235</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-236.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-236</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-237.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-237</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-09-02T15:36:39.814999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>910544</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-239.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-239</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-10-19T08:31:06.613999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>158193297</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-240.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-240</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-04-29T19:15:54.636Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>153757926</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-241.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-241</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-242.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-242</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-04-13T13:21:59.962Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>5178</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-243.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-243</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-244.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-244</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-10-18T12:07:41.395Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>158193298</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-245.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-245</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-246.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-246</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-247.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-247</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-04-13T13:22:00.964Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>5198</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-248.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-248</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-04-13T13:21:59.973999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>5183</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-25.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-25</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-251.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-251</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-252.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-252</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-255.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-255</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-256.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-256</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-04-13T13:22:00.964Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>5199</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-257.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-257</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-258.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-258</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-259.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-259</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-26.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-26</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-261.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-261</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-262.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-262</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-3.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-3</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-34.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-34</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-05-22T13:36:28.123999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>154270697</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-35.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-35</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-08-03T12:32:50.917999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>156246815</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-36.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-36</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-08-03T12:17:57.963999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>156245972</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-37.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-37</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-38.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-38</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-39.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-39</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-4.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-4</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-40.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-40</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-403.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-403</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-405.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-405</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-407.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-407</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-408.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-408</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-42.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-42</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-43.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-43</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-44.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-44</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-45.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-45</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-46.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-46</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-47.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-47</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-48.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-48</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-49.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-49</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-5.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-5</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-50.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-50</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-51.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-51</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-04-20T14:26:02.637999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>153448192</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-52.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-52</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-54.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-54</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-6.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-6</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-601.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-601</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-602.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-602</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-603.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-603</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2021-01-06T19:17:24.970785Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>160017614</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-604.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-604</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-605.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-605</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-606.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-606</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-607.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-607</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-608.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-608</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-609.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-609</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-77.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-77</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-81.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-81</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-82.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-82</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-85.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-85</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-86.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-86</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-88.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-88</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-9.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-9</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-90.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-90</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-91.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-91</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-93.domain-c7</key>
+        <entity type="ClusterComputeResource">domain-c7</entity>
+        <alarm type="Alarm">alarm-93</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+    </val>
+  </propSet>
+  <propSet>
+    <name>disabledMethod</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfString"></val>
+  </propSet>
+  <propSet>
+    <name>drsFault</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfClusterDrsFaults"></val>
+  </propSet>
+  <propSet>
+    <name>drsRecommendation</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfClusterDrsRecommendation"></val>
+  </propSet>
+  <propSet>
+    <name>effectiveRole</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfInt">
+      <int>-1</int>
+    </val>
+  </propSet>
+  <propSet>
+    <name>environmentBrowser</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="EnvironmentBrowser">envbrowser-7</val>
+  </propSet>
+  <propSet>
+    <name>host</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="HostSystem">host-71</ManagedObjectReference>
+      <ManagedObjectReference type="HostSystem">host-15</ManagedObjectReference>
+      <ManagedObjectReference type="HostSystem">host-12</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>migrationHistory</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfClusterDrsMigration"></val>
+  </propSet>
+  <propSet>
+    <name>name</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:string">CL01-Z67</val>
+  </propSet>
+  <propSet>
+    <name>network</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="Network">network-915</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-22</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-466</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-406</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-405</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-595</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-465</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-1954</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-103</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-75</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-116</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-24</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-23</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-102</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-464</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-115</ManagedObjectReference>
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-404</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>overallStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>parent</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="Folder">group-h4</val>
+  </propSet>
+  <propSet>
+    <name>permission</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfPermission"></val>
+  </propSet>
+  <propSet>
+    <name>recentTask</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>recommendation</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfClusterRecommendation"></val>
+  </propSet>
+  <propSet>
+    <name>resourcePool</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="ResourcePool">resgroup-8</val>
+  </propSet>
+  <propSet>
+    <name>summary</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ClusterComputeResourceSummary">
+      <totalCpu>167580</totalCpu>
+      <totalMemory>824524259328</totalMemory>
+      <numCpuCores>60</numCpuCores>
+      <numCpuThreads>120</numCpuThreads>
+      <effectiveCpu>146147</effectiveCpu>
+      <effectiveMemory>694524</effectiveMemory>
+      <numHosts>3</numHosts>
+      <numEffectiveHosts>3</numEffectiveHosts>
+      <overallStatus>green</overallStatus>
+      <currentFailoverLevel>1</currentFailoverLevel>
+      <numVmotions>2996</numVmotions>
+      <targetBalance>163</targetBalance>
+      <currentBalance>46</currentBalance>
+      <usageSummary>
+        <totalCpuCapacityMhz>146147</totalCpuCapacityMhz>
+        <totalMemCapacityMB>694524</totalMemCapacityMB>
+        <cpuReservationMhz>29604</cpuReservationMhz>
+        <memReservationMB>239564</memReservationMB>
+        <cpuDemandMhz>106011</cpuDemandMhz>
+        <memDemandMB>269158</memDemandMB>
+        <statsGenNumber>2455</statsGenNumber>
+        <cpuEntitledMhz>88485</cpuEntitledMhz>
+        <memEntitledMB>315487</memEntitledMB>
+        <poweredOffVmCount>12</poweredOffVmCount>
+        <totalVmCount>63</totalVmCount>
+      </usageSummary>
+    </val>
+  </propSet>
+  <propSet>
+    <name>tag</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfTag"></val>
+  </propSet>
+  <propSet>
+    <name>triggeredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState"></val>
+  </propSet>
+  <propSet>
+    <name>value</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+</ObjectContent>

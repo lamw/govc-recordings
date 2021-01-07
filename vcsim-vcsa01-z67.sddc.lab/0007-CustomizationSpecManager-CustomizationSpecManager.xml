@@ -1,0 +1,21 @@
+<ObjectContent>
+  <obj type="CustomizationSpecManager">CustomizationSpecManager</obj>
+  <propSet>
+    <name>encryptionKey</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfByte">
+      <byte>-117</byte>
+    </val>
+  </propSet>
+  <propSet>
+    <name>info</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomizationSpecInfo">
+      <CustomizationSpecInfo>
+        <name>CUST-LINUX-FIXED</name>
+        <description></description>
+        <type>Linux</type>
+        <changeVersion>1558538485</changeVersion>
+        <lastUpdateTime>2019-05-22T15:21:25Z</lastUpdateTime>
+      </CustomizationSpecInfo>
+    </val>
+  </propSet>
+</ObjectContent>
