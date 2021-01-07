@@ -1,0 +1,13 @@
+<ObjectContent>
+  <obj type="HostSnmpSystem">SnmpSystem</obj>
+  <propSet>
+    <name>limits</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="HostSnmpSystemAgentLimits">
+      <maxReadOnlyCommunities>32690</maxReadOnlyCommunities>
+      <maxTrapDestinations>-735165184</maxTrapDestinations>
+      <maxCommunityLength>32690</maxCommunityLength>
+      <maxBufferSize>-735165600</maxBufferSize>
+      <capability>DIAGNOSTICS</capability>
+    </val>
+  </propSet>
+</ObjectContent>

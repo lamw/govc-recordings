@@ -1,0 +1,1542 @@
+<ObjectContent>
+  <obj type="VirtualMachine">vm-6961</obj>
+  <propSet>
+    <name>alarmActionsEnabled</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:boolean">true</val>
+  </propSet>
+  <propSet>
+    <name>availableField</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldDef"></val>
+  </propSet>
+  <propSet>
+    <name>capability</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineCapability">
+      <snapshotOperationsSupported>true</snapshotOperationsSupported>
+      <multipleSnapshotsSupported>true</multipleSnapshotsSupported>
+      <snapshotConfigSupported>true</snapshotConfigSupported>
+      <poweredOffSnapshotsSupported>true</poweredOffSnapshotsSupported>
+      <memorySnapshotsSupported>true</memorySnapshotsSupported>
+      <revertToSnapshotSupported>true</revertToSnapshotSupported>
+      <quiescedSnapshotsSupported>true</quiescedSnapshotsSupported>
+      <disableSnapshotsSupported>false</disableSnapshotsSupported>
+      <lockSnapshotsSupported>true</lockSnapshotsSupported>
+      <consolePreferencesSupported>false</consolePreferencesSupported>
+      <cpuFeatureMaskSupported>true</cpuFeatureMaskSupported>
+      <s1AcpiManagementSupported>true</s1AcpiManagementSupported>
+      <settingScreenResolutionSupported>false</settingScreenResolutionSupported>
+      <toolsAutoUpdateSupported>false</toolsAutoUpdateSupported>
+      <vmNpivWwnSupported>true</vmNpivWwnSupported>
+      <npivWwnOnNonRdmVmSupported>true</npivWwnOnNonRdmVmSupported>
+      <vmNpivWwnDisableSupported>true</vmNpivWwnDisableSupported>
+      <vmNpivWwnUpdateSupported>true</vmNpivWwnUpdateSupported>
+      <swapPlacementSupported>true</swapPlacementSupported>
+      <toolsSyncTimeSupported>true</toolsSyncTimeSupported>
+      <virtualMmuUsageSupported>true</virtualMmuUsageSupported>
+      <diskSharesSupported>true</diskSharesSupported>
+      <bootOptionsSupported>true</bootOptionsSupported>
+      <bootRetryOptionsSupported>true</bootRetryOptionsSupported>
+      <settingVideoRamSizeSupported>true</settingVideoRamSizeSupported>
+      <settingDisplayTopologySupported>false</settingDisplayTopologySupported>
+      <recordReplaySupported>false</recordReplaySupported>
+      <changeTrackingSupported>true</changeTrackingSupported>
+      <multipleCoresPerSocketSupported>true</multipleCoresPerSocketSupported>
+      <hostBasedReplicationSupported>true</hostBasedReplicationSupported>
+      <guestAutoLockSupported>true</guestAutoLockSupported>
+      <memoryReservationLockSupported>true</memoryReservationLockSupported>
+      <featureRequirementSupported>true</featureRequirementSupported>
+      <poweredOnMonitorTypeChangeSupported>true</poweredOnMonitorTypeChangeSupported>
+      <seSparseDiskSupported>true</seSparseDiskSupported>
+      <nestedHVSupported>true</nestedHVSupported>
+      <vPMCSupported>true</vPMCSupported>
+      <secureBootSupported>false</secureBootSupported>
+      <perVmEvcSupported>false</perVmEvcSupported>
+      <virtualMmuUsageIgnored>false</virtualMmuUsageIgnored>
+      <virtualExecUsageIgnored>false</virtualExecUsageIgnored>
+      <diskOnlySnapshotOnSuspendedVMSupported>true</diskOnlySnapshotOnSuspendedVMSupported>
+    </val>
+  </propSet>
+  <propSet>
+    <name>config</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineConfigInfo">
+      <changeVersion>2021-01-05T09:36:30.083316Z</changeVersion>
+      <modified>1970-01-01T00:00:00Z</modified>
+      <name>runecast</name>
+      <guestFullName>Ubuntu Linux (64-bit)</guestFullName>
+      <version>vmx-09</version>
+      <uuid>422fb8c3-c2c0-2bbc-9ac3-aae2e66c54ab</uuid>
+      <createDate>2020-09-09T20:05:29.698732Z</createDate>
+      <instanceUuid>502fd8c4-60c3-84e4-c8dd-5f46c607f5e3</instanceUuid>
+      <npivTemporaryDisabled>true</npivTemporaryDisabled>
+      <locationId>564d72a8-9192-63e8-6bb0-32489aeb8728</locationId>
+      <template>false</template>
+      <guestId>ubuntu64Guest</guestId>
+      <alternateGuestName></alternateGuestName>
+      <annotation>Runecast is a Proactive monitoring solution which is using the known issue profiles and best practices documented in the VMware Knowledge base and other sources to identify and expose potential issues within your infrastructure, before they manifest into outages.</annotation>
+      <files>
+        <vmPathName>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/runecast.vmx</vmPathName>
+        <snapshotDirectory>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/</snapshotDirectory>
+        <suspendDirectory>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/</suspendDirectory>
+        <logDirectory>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/</logDirectory>
+      </files>
+      <tools>
+        <toolsVersion>11269</toolsVersion>
+        <toolsInstallType>guestToolsTypeOpenVMTools</toolsInstallType>
+        <afterPowerOn>true</afterPowerOn>
+        <afterResume>true</afterResume>
+        <beforeGuestStandby>true</beforeGuestStandby>
+        <beforeGuestShutdown>true</beforeGuestShutdown>
+        <toolsUpgradePolicy>manual</toolsUpgradePolicy>
+        <syncTimeWithHost>false</syncTimeWithHost>
+        <lastInstallInfo>
+          <counter>0</counter>
+        </lastInstallInfo>
+      </tools>
+      <flags>
+        <disableAcceleration>false</disableAcceleration>
+        <enableLogging>true</enableLogging>
+        <useToe>false</useToe>
+        <runWithDebugInfo>false</runWithDebugInfo>
+        <monitorType>release</monitorType>
+        <htSharing>any</htSharing>
+        <snapshotDisabled>false</snapshotDisabled>
+        <snapshotLocked>false</snapshotLocked>
+        <diskUuidEnabled>false</diskUuidEnabled>
+        <virtualMmuUsage>automatic</virtualMmuUsage>
+        <virtualExecUsage>hvAuto</virtualExecUsage>
+        <snapshotPowerOffBehavior>powerOff</snapshotPowerOffBehavior>
+        <recordReplayEnabled>false</recordReplayEnabled>
+        <faultToleranceType>unset</faultToleranceType>
+        <cbrcCacheEnabled>false</cbrcCacheEnabled>
+        <vvtdEnabled>false</vvtdEnabled>
+        <vbsEnabled>false</vbsEnabled>
+      </flags>
+      <defaultPowerOps>
+        <powerOffType>soft</powerOffType>
+        <suspendType>hard</suspendType>
+        <resetType>soft</resetType>
+        <defaultPowerOffType>soft</defaultPowerOffType>
+        <defaultSuspendType>hard</defaultSuspendType>
+        <defaultResetType>soft</defaultResetType>
+        <standbyAction>checkpoint</standbyAction>
+      </defaultPowerOps>
+      <hardware>
+        <numCPU>2</numCPU>
+        <numCoresPerSocket>1</numCoresPerSocket>
+        <memoryMB>4096</memoryMB>
+        <virtualICH7MPresent>false</virtualICH7MPresent>
+        <virtualSMCPresent>false</virtualSMCPresent>
+        <device XMLSchema-instance:type="VirtualIDEController">
+          <key>200</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>IDE 0</label>
+            <summary>IDE 0</summary>
+          </deviceInfo>
+          <busNumber>0</busNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualIDEController">
+          <key>201</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>IDE 1</label>
+            <summary>IDE 1</summary>
+          </deviceInfo>
+          <busNumber>1</busNumber>
+          <device>3002</device>
+        </device>
+        <device XMLSchema-instance:type="VirtualPS2Controller">
+          <key>300</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>PS2 controller 0</label>
+            <summary>PS2 controller 0</summary>
+          </deviceInfo>
+          <busNumber>0</busNumber>
+          <device>600</device>
+          <device>700</device>
+        </device>
+        <device XMLSchema-instance:type="VirtualPCIController">
+          <key>100</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>PCI controller 0</label>
+            <summary>PCI controller 0</summary>
+          </deviceInfo>
+          <busNumber>0</busNumber>
+          <device>500</device>
+          <device>12000</device>
+          <device>1000</device>
+          <device>4000</device>
+        </device>
+        <device XMLSchema-instance:type="VirtualSIOController">
+          <key>400</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>SIO controller 0</label>
+            <summary>SIO controller 0</summary>
+          </deviceInfo>
+          <busNumber>0</busNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualKeyboard">
+          <key>600</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Keyboard </label>
+            <summary>Keyboard</summary>
+          </deviceInfo>
+          <controllerKey>300</controllerKey>
+          <unitNumber>0</unitNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualPointingDevice">
+          <key>700</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Pointing device</label>
+            <summary>Pointing device; Device</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualPointingDeviceDeviceBackingInfo">
+            <deviceName></deviceName>
+            <useAutoDetect>false</useAutoDetect>
+            <hostPointingDevice>autodetect</hostPointingDevice>
+          </backing>
+          <controllerKey>300</controllerKey>
+          <unitNumber>1</unitNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualMachineVideoCard">
+          <key>500</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Video card </label>
+            <summary>Video card</summary>
+          </deviceInfo>
+          <controllerKey>100</controllerKey>
+          <unitNumber>0</unitNumber>
+          <videoRamSizeInKB>4096</videoRamSizeInKB>
+          <numDisplays>1</numDisplays>
+          <useAutoDetect>false</useAutoDetect>
+          <enable3DSupport>false</enable3DSupport>
+          <use3dRenderer>automatic</use3dRenderer>
+          <graphicsMemorySizeInKB>262144</graphicsMemorySizeInKB>
+        </device>
+        <device XMLSchema-instance:type="VirtualMachineVMCIDevice">
+          <key>12000</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>VMCI device</label>
+            <summary>Device on the virtual machine PCI bus that provides support for the virtual machine communication interface</summary>
+          </deviceInfo>
+          <slotInfo XMLSchema-instance:type="VirtualDevicePciBusSlotInfo">
+            <pciSlotNumber>32</pciSlotNumber>
+          </slotInfo>
+          <controllerKey>100</controllerKey>
+          <unitNumber>17</unitNumber>
+          <id>-429108053</id>
+          <allowUnrestrictedCommunication>false</allowUnrestrictedCommunication>
+          <filterEnable>false</filterEnable>
+        </device>
+        <device XMLSchema-instance:type="VirtualLsiLogicController">
+          <key>1000</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>SCSI controller 0</label>
+            <summary>LSI Logic</summary>
+          </deviceInfo>
+          <slotInfo XMLSchema-instance:type="VirtualDevicePciBusSlotInfo">
+            <pciSlotNumber>16</pciSlotNumber>
+          </slotInfo>
+          <controllerKey>100</controllerKey>
+          <unitNumber>3</unitNumber>
+          <busNumber>0</busNumber>
+          <device>2000</device>
+          <device>2001</device>
+          <device>2002</device>
+          <hotAddRemove>true</hotAddRemove>
+          <sharedBus>noSharing</sharedBus>
+          <scsiCtlrUnitNumber>7</scsiCtlrUnitNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualCdrom">
+          <key>3002</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>CD/DVD drive 1</label>
+            <summary>Remote ATAPI</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualCdromRemoteAtapiBackingInfo">
+            <deviceName></deviceName>
+            <useAutoDetect>true</useAutoDetect>
+          </backing>
+          <connectable>
+            <startConnected>false</startConnected>
+            <allowGuestControl>true</allowGuestControl>
+            <connected>false</connected>
+            <status>untried</status>
+          </connectable>
+          <controllerKey>201</controllerKey>
+          <unitNumber>0</unitNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualDisk">
+          <key>2000</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Hard disk 1</label>
+            <summary>31,457,280 KB</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualDiskFlatVer2BackingInfo">
+            <fileName>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/runecast.vmdk</fileName>
+            <datastore type="Datastore">datastore-76</datastore>
+            <backingObjectId>8b35595f-e91e-5408-4a4e-6c3be5bd72c0</backingObjectId>
+            <diskMode>persistent</diskMode>
+            <split>false</split>
+            <writeThrough>false</writeThrough>
+            <thinProvisioned>true</thinProvisioned>
+            <uuid>6000C294-b980-cc0c-4f37-b90a6b11add4</uuid>
+            <contentId>0a4bda55ddbff7d6ef154ce3efa3e890</contentId>
+            <digestEnabled>false</digestEnabled>
+            <sharing>sharingNone</sharing>
+          </backing>
+          <controllerKey>1000</controllerKey>
+          <unitNumber>0</unitNumber>
+          <capacityInKB>31457280</capacityInKB>
+          <capacityInBytes>32212254720</capacityInBytes>
+          <shares>
+            <shares>1000</shares>
+            <level>normal</level>
+          </shares>
+          <storageIOAllocation>
+            <limit>-1</limit>
+            <shares>
+              <shares>1000</shares>
+              <level>normal</level>
+            </shares>
+            <reservation>0</reservation>
+          </storageIOAllocation>
+          <diskObjectId>751-2000</diskObjectId>
+          <nativeUnmanagedLinkedClone>false</nativeUnmanagedLinkedClone>
+        </device>
+        <device XMLSchema-instance:type="VirtualDisk">
+          <key>2001</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Hard disk 2</label>
+            <summary>41,943,040 KB</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualDiskFlatVer2BackingInfo">
+            <fileName>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/runecast_1.vmdk</fileName>
+            <datastore type="Datastore">datastore-76</datastore>
+            <backingObjectId>8b35595f-e500-fe27-9c21-6c3be5bd72c0</backingObjectId>
+            <diskMode>persistent</diskMode>
+            <split>false</split>
+            <writeThrough>false</writeThrough>
+            <thinProvisioned>true</thinProvisioned>
+            <uuid>6000C292-fea0-2e5f-9a66-f682ec9933c4</uuid>
+            <contentId>1900da2b9c17ed7c0c4189585068ac44</contentId>
+            <digestEnabled>false</digestEnabled>
+            <sharing>sharingNone</sharing>
+          </backing>
+          <controllerKey>1000</controllerKey>
+          <unitNumber>1</unitNumber>
+          <capacityInKB>41943040</capacityInKB>
+          <capacityInBytes>42949672960</capacityInBytes>
+          <shares>
+            <shares>1000</shares>
+            <level>normal</level>
+          </shares>
+          <storageIOAllocation>
+            <limit>-1</limit>
+            <shares>
+              <shares>1000</shares>
+              <level>normal</level>
+            </shares>
+            <reservation>0</reservation>
+          </storageIOAllocation>
+          <diskObjectId>751-2001</diskObjectId>
+          <nativeUnmanagedLinkedClone>false</nativeUnmanagedLinkedClone>
+        </device>
+        <device XMLSchema-instance:type="VirtualDisk">
+          <key>2002</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Hard disk 3</label>
+            <summary>52,428,800 KB</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualDiskFlatVer2BackingInfo">
+            <fileName>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/runecast_2.vmdk</fileName>
+            <datastore type="Datastore">datastore-76</datastore>
+            <backingObjectId>8b35595f-3dc7-ca40-8ef0-6c3be5bd72c0</backingObjectId>
+            <diskMode>persistent</diskMode>
+            <split>false</split>
+            <writeThrough>false</writeThrough>
+            <thinProvisioned>true</thinProvisioned>
+            <uuid>6000C295-3b66-92a1-598b-6b9fafa272f6</uuid>
+            <contentId>9abf02546d4dba2cf676180668e3050c</contentId>
+            <digestEnabled>false</digestEnabled>
+            <sharing>sharingNone</sharing>
+          </backing>
+          <controllerKey>1000</controllerKey>
+          <unitNumber>2</unitNumber>
+          <capacityInKB>52428800</capacityInKB>
+          <capacityInBytes>53687091200</capacityInBytes>
+          <shares>
+            <shares>1000</shares>
+            <level>normal</level>
+          </shares>
+          <storageIOAllocation>
+            <limit>-1</limit>
+            <shares>
+              <shares>1000</shares>
+              <level>normal</level>
+            </shares>
+            <reservation>0</reservation>
+          </storageIOAllocation>
+          <diskObjectId>751-2002</diskObjectId>
+          <nativeUnmanagedLinkedClone>false</nativeUnmanagedLinkedClone>
+        </device>
+        <device XMLSchema-instance:type="VirtualVmxnet3">
+          <key>4000</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Network adapter 1</label>
+            <summary>DVSwitch: 50 2f 99 c5 5b 74 8c ad-08 b6 93 b1 e3 0c 65 71</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualEthernetCardDistributedVirtualPortBackingInfo">
+            <port>
+              <switchUuid>50 2f 99 c5 5b 74 8c ad-08 b6 93 b1 e3 0c 65 71</switchUuid>
+              <portgroupKey>dvportgroup-23</portgroupKey>
+              <portKey>191</portKey>
+              <connectionCookie>2034608300</connectionCookie>
+            </port>
+          </backing>
+          <connectable>
+            <migrateConnect>unset</migrateConnect>
+            <startConnected>true</startConnected>
+            <allowGuestControl>true</allowGuestControl>
+            <connected>false</connected>
+            <status>untried</status>
+          </connectable>
+          <slotInfo XMLSchema-instance:type="VirtualDevicePciBusSlotInfo">
+            <pciSlotNumber>160</pciSlotNumber>
+          </slotInfo>
+          <controllerKey>100</controllerKey>
+          <unitNumber>7</unitNumber>
+          <addressType>assigned</addressType>
+          <macAddress>00:50:56:af:85:52</macAddress>
+          <wakeOnLanEnabled>true</wakeOnLanEnabled>
+          <resourceAllocation>
+            <reservation>0</reservation>
+            <share>
+              <shares>50</shares>
+              <level>normal</level>
+            </share>
+            <limit>-1</limit>
+          </resourceAllocation>
+          <uptCompatibilityEnabled>true</uptCompatibilityEnabled>
+        </device>
+      </hardware>
+      <cpuAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>false</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>2000</shares>
+          <level>normal</level>
+        </shares>
+      </cpuAllocation>
+      <memoryAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>false</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>40960</shares>
+          <level>normal</level>
+        </shares>
+      </memoryAllocation>
+      <latencySensitivity>
+        <level>normal</level>
+      </latencySensitivity>
+      <memoryHotAddEnabled>false</memoryHotAddEnabled>
+      <cpuHotAddEnabled>false</cpuHotAddEnabled>
+      <cpuHotRemoveEnabled>false</cpuHotRemoveEnabled>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>nvram</key>
+        <value XMLSchema-instance:type="xsd:string">runecast.nvram</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge0.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>svga.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge4.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge4.virtualDev</key>
+        <value XMLSchema-instance:type="xsd:string">pcieRootPort</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge4.functions</key>
+        <value XMLSchema-instance:type="xsd:string">8</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge5.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge5.virtualDev</key>
+        <value XMLSchema-instance:type="xsd:string">pcieRootPort</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge5.functions</key>
+        <value XMLSchema-instance:type="xsd:string">8</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge6.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge6.virtualDev</key>
+        <value XMLSchema-instance:type="xsd:string">pcieRootPort</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge6.functions</key>
+        <value XMLSchema-instance:type="xsd:string">8</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge7.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge7.virtualDev</key>
+        <value XMLSchema-instance:type="xsd:string">pcieRootPort</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge7.functions</key>
+        <value XMLSchema-instance:type="xsd:string">8</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>hpet0.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>scsi0.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">16</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>ide1:0.autodetect</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>ethernet0.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">160</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>keyboard.typematicMinDelay</key>
+        <value XMLSchema-instance:type="xsd:string">2000000</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>RemoteDisplay.maxConnections</key>
+        <value XMLSchema-instance:type="xsd:string">1</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.vixMessage.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.diskShrink.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.memSchedFakeSampleStats.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.monitor.control.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.ghi.host.shellAction.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.copy.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.device.connectable.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.getCreds.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.unity.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>log.keepOld</key>
+        <value XMLSchema-instance:type="xsd:string">10</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.device.edit.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>devices.hotplug</key>
+        <value XMLSchema-instance:type="xsd:string">false</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.unity.windowContents.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.trashFolderState.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.unity.push.update.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.dispTopoRequest.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.diskWiper.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.ghi.trayicon.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.ghi.launchmenu.change</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.unityInterlockOperation.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.vmxDnDVersionGet.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.autoInstall.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>log.rotateSize</key>
+        <value XMLSchema-instance:type="xsd:string">10000</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.bios.bbs.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.setGUIOptions.enable</key>
+        <value XMLSchema-instance:type="xsd:string">false</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.ghi.autologon.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.guestDnDVersionSet.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.ghi.protocolhandler.info.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.unityActive.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vmci0.unrestricted</key>
+        <value XMLSchema-instance:type="xsd:string">FALSE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.paste.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.dnd.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>isolation.tools.unity.taskbar.disable</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>numa.autosize.cookie</key>
+        <value XMLSchema-instance:type="xsd:string">20001</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>numa.autosize.vcpu.maxPerVirtualNode</key>
+        <value XMLSchema-instance:type="xsd:string">2</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>sched.swap.derivedName</key>
+        <value XMLSchema-instance:type="xsd:string">/vmfs/volumes/vsan:524a34ea936d7bd3-901a685c0d4d6c1e/8a35595f-0097-33f7-e454-6c3be5bd72c0/runecast-8ea27d7f.vswp</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>scsi0:0.redo</key>
+        <value XMLSchema-instance:type="xsd:string"></value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>scsi0:2.redo</key>
+        <value XMLSchema-instance:type="xsd:string"></value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>scsi0:1.redo</key>
+        <value XMLSchema-instance:type="xsd:string"></value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge0.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">17</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge4.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">21</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge5.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">22</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge6.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">23</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge7.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">24</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vmci0.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">32</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>monitor.phys_bits_used</key>
+        <value XMLSchema-instance:type="xsd:string">40</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vmotion.checkpointFBSize</key>
+        <value XMLSchema-instance:type="xsd:string">4194304</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>softPowerOff</key>
+        <value XMLSchema-instance:type="xsd:string">FALSE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>guestOS.detailed.data</key>
+        <value XMLSchema-instance:type="xsd:string">bitness=&#39;64&#39; distroName=&#39;Ubuntu&#39; distroVersion=&#39;18.04&#39; familyName=&#39;Linux&#39; kernelVersion=&#39;4.15.0-128-generic&#39; prettyName=&#39;Ubuntu 18.04.5 LTS&#39;</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vmware.tools.internalversion</key>
+        <value XMLSchema-instance:type="xsd:string">11269</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vmware.tools.requiredversion</key>
+        <value XMLSchema-instance:type="xsd:string">11265</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>migrate.hostLogState</key>
+        <value XMLSchema-instance:type="xsd:string">none</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>migrate.migrationId</key>
+        <value XMLSchema-instance:type="xsd:string">0</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>migrate.hostLog</key>
+        <value XMLSchema-instance:type="xsd:string">runecast-30328c5d.hlog</value>
+      </extraConfig>
+      <datastoreUrl>
+        <name>vsanDatastore</name>
+        <url>/vmfs/volumes/vsan:524a34ea936d7bd3-901a685c0d4d6c1e</url>
+      </datastoreUrl>
+      <swapPlacement>inherit</swapPlacement>
+      <bootOptions>
+        <enterBIOSSetup>false</enterBIOSSetup>
+        <efiSecureBootEnabled>false</efiSecureBootEnabled>
+        <bootRetryEnabled>false</bootRetryEnabled>
+        <bootRetryDelay>10000</bootRetryDelay>
+        <networkBootProtocol>ipv4</networkBootProtocol>
+      </bootOptions>
+      <vAppConfig XMLSchema-instance:type="VmConfigInfo">
+        <product>
+          <key>0</key>
+          <name>Runecast Analyzer</name>
+          <vendor>Runecast Solutions Ltd.</vendor>
+          <version>4.4.1.0</version>
+          <fullVersion>4.4.1.0</fullVersion>
+          <vendorUrl>https://www.runecast.com</vendorUrl>
+          <productUrl>https://www.runecast.com</productUrl>
+          <appUrl>https://${rc.ip0.Runecast_Analyzer}/rc2/</appUrl>
+        </product>
+        <product>
+          <key>1</key>
+          <classId>rc</classId>
+          <instanceId>Runecast_Analyzer</instanceId>
+        </product>
+        <property>
+          <key>0</key>
+          <classId>rc</classId>
+          <instanceId>Runecast_Analyzer</instanceId>
+          <id>hostname</id>
+          <category>Networking Properties</category>
+          <label>Hostname</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <description>Linux hostname or fully qualified domain name for VM</description>
+        </property>
+        <property>
+          <key>1</key>
+          <classId>rc</classId>
+          <instanceId>Runecast_Analyzer</instanceId>
+          <id>netmask0</id>
+          <category>Networking Properties</category>
+          <label>Netmask</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <description>The netmask or prefix for this interface. Leave blank if DHCP is desired</description>
+        </property>
+        <property>
+          <key>2</key>
+          <classId>rc</classId>
+          <instanceId>Runecast_Analyzer</instanceId>
+          <id>gateway</id>
+          <category>Networking Properties</category>
+          <label>Default Gateway</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <description>The default gateway address for this VM</description>
+        </property>
+        <property>
+          <key>3</key>
+          <classId>rc</classId>
+          <instanceId>Runecast_Analyzer</instanceId>
+          <id>DNS</id>
+          <category>Networking Properties</category>
+          <label>DNS</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <description>The domain name servers for this VM (comma separated)</description>
+        </property>
+        <property>
+          <key>4</key>
+          <classId>rc</classId>
+          <instanceId>Runecast_Analyzer</instanceId>
+          <id>ip0</id>
+          <category>Networking Properties</category>
+          <label>IP Address</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <description>The IP address for this interface. Leave blank if DHCP is desired</description>
+        </property>
+        <ipAssignment>
+          <ipAllocationPolicy>fixedPolicy</ipAllocationPolicy>
+          <supportedIpProtocol>IPv4</supportedIpProtocol>
+          <ipProtocol>IPv4</ipProtocol>
+        </ipAssignment>
+        <eula>RUNECAST ANALYZER&#xA;END USER LICENCE AGREEMENT&#xA;PLEASE READ CAREFULLY BEFORE INSTALLING OR DOWNLOADING RUNECAST ANALYZER SOFTWARE:&#xA;&#xA;This end user licence agreement (Contract) is a legal agreement between you (Licensee or you) and Runecast Solutions Limited of Kemp House, 152 City Road, London, EC1V 2NX (Licensor, us, our or we) for:&#xA;- our Runecast Analyzer computer software product and any release of the software that corrects faults, adds functionality or otherwise amends or upgrades the software, but which does not constitute a new version (meaning a version containing such significant differences from the previous versions as to be generally accepted in the marketplace as constituting a new product) (Software (and a licence to use the Software defined herein as Licence)); and&#xA;- an electronic copy of the user guide and any other official online user documentation or associated links pertaining to the Software (Documents).&#xA;We license use of the Software and Documents to you on the basis of this Contract. We do not sell the Software or Documents to you. We remain the owners of the Software and Documents at all times.&#xA;&#xA;The software specification and any operating system requirements for the software is detailed in the latest version of the user guide which may be updated from time to time and can be accessed within your Runecast user portal.&#xA;&#xA;IMPORTANT NOTICE TO ALL USERS:&#xA;&#xA;- BY CLICKING ON THE “ACCEPT” BUTTON AND INSTALLING/DEPLOYING THE SOFTWARE, YOU AGREE TO THE TERMS OF THIS CONTRACT WHICH WILL BIND YOU AND YOUR EMPLOYEES AND CONTRACTORS. THE TERMS OF THIS CONTRACT INCLUDE, IN PARTICULAR, LIMITATIONS ON LIABILITY IN CLAUSE 5.&#xA;- IF YOU DO NOT AGREE TO THE TERMS OF THIS CONTRACT, WE WILL NOT LICENSE THE SOFTWARE AND DOCUMENTS TO YOU AND YOU WILL NOT BE ABLE TO INSTALL/DEPLOY THE SOFTWARE.&#xA;You should print a copy of this Contract for future reference.&#xA;&#xA;1. GRANT AND SCOPE OF LICENCE&#xA;&#xA;1.1 The Software is commercially licensed software. It is not open-source, freeware or shareware. Any agreed licence fee payable for the Licence is set out in the relevant terms of sale or agreement you enter into for the Licence which may include but not necessarily be limited to the Service Provider Program Agreement, the Reseller Agreement, or Audit Licence Agreement (collectively Supplier Terms) which depend on the purpose and period for which the Software is intended to be used (Licence Fee).&#xA;&#xA;1.2 In consideration of payment by you of any Licence Fee and you agreeing to abide by the terms of this Contract, we hereby grant to you a non-exclusive, non-transferable licence to use the Software and the Documents for the period set out in the Supplier Terms and on the terms of this Contract. In this Contract, “use” shall be defined as including the installation of the Software by copying, transmitting or loading it into the permanent memory of a computer or other device for the processing of the system instructions or statements contained in the Software.&#xA;&#xA;1.3 You may:&#xA;&#xA;1.3.1 download, install and use the Software and Licence on the number of central processing units (CPUs) set out in the Supplier Terms and in accordance with the following additional restrictions (as applicable):&#xA;&#xA;a) if you are being supplied the Licence on a Reseller NFR basis, for self-educational and demonstration purposes only and not for any other commercial purpose, including without limitation for commercial audits of client infrastructure;&#xA;&#xA;b) if you are being supplied the Licence as a certified vExpert, for your self-educational personal home use only and not for any commercial purpose whatsoever, including without limitation use at your place of work, business or employment;&#xA;&#xA;c) if you are being supplied the Licence for any business which offers infrastructure management services for customers, you shall:&#xA;&#xA;(i) not deploy the Licence on any infrastructure or environment where you are not providing services to third parties without our express prior written approval;&#xA;(ii) not deploy the Licence more than once at any one time without our express prior written approval; and&#xA;(iii) only assign the Licence to the specific ESXi hosts to which the License was initially assigned and not reassign or copy the Licence to any new ESXi hosts for the duration of your subscription without our express prior written approval;&#xA;&#xA;d) if you are being supplied the Licence for internal business purposes only and your business does not offer infrastructure management services for customers, you shall:&#xA;&#xA;(i) not deploy the Licence more than once at any one time without our express prior written approval; and&#xA;(ii) only assign the Licence to the specific ESXi hosts to which the License was initially assigned and not reassign or copy the Licence to any new ESXi hosts for the duration of your subscription without our express prior written approval;&#xA;&#xA;e) in accordance with any other restrictions set out by us in the Supplier Terms.&#xA;&#xA;&#xA;1.3.2. provided you comply with the provisions in Clause 2, make up to two copies of the Software for back-up purposes only and shall record the number and location of all copies of the Software and take steps to prevent unauthorised copying; and&#xA;&#xA;1.3.3. receive and use any free supplementary software code or update of the Software incorporating “patches” and corrections of errors as may be provided by us from time to time during the term of your subscription (unless the Supplier Terms state otherwise, with an annual maintenance fee thereafter payable for future updates).&#xA;&#xA;1.4. In the event that the Licence is provided to you for evaluation or trial purposes, we grant you a non-exclusive, limited, revocable, royalty-free, non-transferable licence to use the Software solely for evaluation prior to purchase (Evaluation Licence). The Evaluation Licence shall terminate on the end date of the pre-determined evaluation period or immediately upon notice from us at our sole discretion. Notwithstanding any other provision contained herein, Software provided pursuant to an Evaluation Licence is provided to You &#34;as is&#34; without indemnification, support, or warranty of any kind, express or implied. Except to the extent such terms conflict with the specific Evaluation License terms, all other terms of this Contract shall apply to Software licensed under an Evaluation Licence.&#xA;&#xA;2. RESTRICTIONS&#xA;&#xA;Except as expressly set out in this Contract or the Supplier Terms, or as permitted by any local law, you undertake:&#xA;&#xA;a) not to copy the Licence at all, except to apply it to the Software in accordance with license activation procedure set forth in the Documents.&#xA;&#xA;b) not to copy the Software or Documents except where such copying is incidental to normal use of the Software, or where it is necessary for the purpose of back-up or operational security;&#xA;&#xA;c) not to rent, lease, sub-license, loan, translate, merge, adapt, vary or modify the Software or the Licence;&#xA;&#xA;d) not to make alterations to, or modifications of, the whole or any part of the Software, nor permit the Software or any part of it to be combined with, or become incorporated in, any other programs;&#xA;&#xA;e) not to disassemble, decompile, reverse-engineer, create derivative works based on the whole or any part of the Software, otherwise attempt to derive the source code based upon the Software or Documents, nor attempt to do any such thing except to the extent that (by virtue of section 296A of the Copyright, Designs and Patents Act 1988) such actions cannot be prohibited because they are essential for the purpose of achieving inter-operability of the Software with another software program, and provided that the information obtained by you during such activities:&#xA;&#xA;(i) is used only for the purpose of achieving inter-operability of the Software with another software program; and&#xA;(ii) is not unnecessarily disclosed or communicated without our prior written consent to any third party; and&#xA;(iii) is not used to create any software which is substantially similar to the Software;&#xA;&#xA;f) to supervise and control use of the Licence and ensure that the Software is used by your employees, contractors and representatives (if applicable) in accordance with the terms of this Contract;&#xA;&#xA;g) to include our copyright notice on all entire and partial copies you make of the Software on any medium;&#xA;&#xA;h) unless permitted under this Licence or the Supplier Terms, not to provide or otherwise make available the Software, in whole or in part, in any form to any person other than your employees without prior written consent from us;&#xA;&#xA;i) to comply with all applicable technology control or export laws and regulations; and&#xA;&#xA;j) not to use the Software for any purpose which may be deemed immoral, illegal, offensive, threatening, abusive or otherwise harmful.&#xA;&#xA;3. INTELLECTUAL PROPERTY RIGHTS&#xA;&#xA;3.1 In this clause, “Intellectual Property Rights” means patents, utility models, rights to inventions, copyright and related rights, trademarks and service marks, trade names and domain names, rights in get-up, goodwill and the right to sue for passing off or unfair competition, rights in designs, rights in computer software, database rights, rights to preserve the confidentiality of information (including know-how and trade secrets) and any other intellectual property rights, including all applications for (and rights to apply for and be granted), renewals or extensions of, and rights to claim priority from, such rights and all similar or equivalent rights or forms of protection which subsist or will subsist, now or in the future, in any part of the world.&#xA;&#xA;3.2 You acknowledge that all Intellectual Property Rights in the Software, Licence and the Documents (and all subsequent copies thereof) anywhere in the world belong to us, that rights to use the Software are licensed (not sold) to you, and that you have no rights in, or to, the Software, Licence or the Documents other than the right to use them in accordance with the terms of this Contract.&#xA;&#xA;3.3 You may not delete, remove, hide, move or alter any trademark, logo, icon, image, text or proprietary notice that appears as part of the Software, Licence or Documents, notwithstanding the absence of a trademark, copyright, or other intellectual property symbol or notice.&#xA;&#xA;3.4 You acknowledge that you have no right to have access to the Software in source code form.&#xA;&#xA;3.5 The integrity of the Software is protected by technical protection measures (TPMs) so that the intellectual property rights, including copyright, in the Software are not misappropriated. You must not attempt in any way to remove or circumvent any such TPM, nor apply or manufacture for sale or hire, import, distribute, sell or let for hire, offer or expose for sale or hire, advertise for sale or hire or have in your possession for private or commercial purposes for any means the sole intended purpose of which is to facilitate the unauthorised removal or circumvention of such TPM, provided that you may remove TPMs to the extent necessary for the purpose of exercising your rights under Clauses 2(b) or 2(e).&#xA;&#xA;4. LIMITED WARRANTY&#xA;&#xA;4.1 Subject to the limitations and exclusions of liability below, we warrant properly licensed Software will substantially conform with the valid Documentation for the duration of your subscription.&#xA;&#xA;4.2 Subject to Clause 4.1, the Software is provided “as is” without any warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, title and non-infringement.&#xA;&#xA;4.3 We do not warrant that the Software will meet your requirements or that the Software will be uninterrupted or error-free or that such errors will be corrected and you are solely responsible for all costs and expenses associated with the rectification, repair or damage caused by such errors.&#xA;&#xA;4.4 We shall not be liable if the Software fails to operate in accordance with the limited warranty set out in Clause 4.1 as a result of any modification, variation or addition to the Software not performed by us, or caused by any abuse, corruption or incorrect use of the Software (including use of the Software with equipment or other software which is incompatible), or as a result of you having used the Software in breach of the terms of this Contract.&#xA;&#xA;4.5 To the maximum extent permitted under applicable law and subject to the remainder of this Clause 4, your sole and exclusive remedy for any material defects in the Software shall be, at our sole option and expense, to repair or replace any such Software. Support level agreements for the Software are available on request.&#xA;&#xA;5. LIMITATION OF LIABILITY&#xA;&#xA;5.1 You acknowledge that the Software has not been developed to meet your specific individual requirements, and that it is therefore your responsibility to ensure that the facilities and functions of the Software as described in the Documents meet your requirements.&#xA;&#xA;5.2 Unless expressly agreed in writing by us you agree not to use the Software, Licence or Documents for any resale purposes.&#xA;&#xA;5.3 We shall not in any circumstances whatever be liable to you, whether in contract, tort (including negligence), breach of statutory duty, or otherwise, arising under or in connection with the Licence for:&#xA;&#xA;a) loss of profits, sales, business, or revenue;&#xA;&#xA;b) business interruption;&#xA;&#xA;c) loss of anticipated savings;&#xA;&#xA;d) loss or corruption of data or information;&#xA;&#xA;e) loss of business opportunity, goodwill or reputation; or&#xA;&#xA;f) any indirect or consequential loss or damage.&#xA;&#xA;5.4 Other than the losses set out in Clause 5.3 (for which we are not liable), our maximum aggregate liability under or in connection with this Contract whether in contract, tort (including negligence) or otherwise, shall in all circumstances be limited to a sum equal to the amount of Licence Fees that you have paid to us for the preceding 6-month period of your subscription or Licence. This maximum cap does not apply to Clause 5.5.&#xA;&#xA;5.5 Nothing in this Contract shall limit or exclude our liability for:&#xA;&#xA;a) death or personal injury resulting from our negligence;&#xA;&#xA;b) fraud or fraudulent misrepresentation;&#xA;&#xA;c) any other liability that cannot be excluded or limited by English law.&#xA;&#xA;5.6 This Contract sets out the full extent of our obligations and liabilities in respect of the supply of the Licence, Software and Documents. Except as expressly stated in this Contract, there are no conditions, warranties, representations or other terms, express or implied, that are binding on us. Any condition, warranty, representation or other term concerning the supply of the Licence, Software and Documents which might otherwise be implied into, or incorporated in, this Contract whether by statute, common law or otherwise, is excluded to the fullest extent permitted by law.&#xA;&#xA;6. TERMINATION&#xA;&#xA;6.1 We may terminate the Licence and your right to use the Software immediately by written notice to you if you:&#xA;&#xA;a) commit a material or persistent breach of this Contract or the Supplier Terms which you fail to remedy (if remediable) within 7 days after the service of written notice (including via email) requiring you to do so;&#xA;&#xA;b) fail to pay any amount due for the Licence on the due date for payment;&#xA;&#xA;c) are unable to pay your debts as they fall due or are the subject of bankruptcy or other insolvency procedures (such as the entry into a formal or informal arrangement with creditors) or any other event analogous to the foregoing in any jurisdiction; or&#xA;&#xA;d) suspend or cease, or threaten to suspend or cease, carrying on all or a substantial part of your business.&#xA;&#xA;6.2 Upon termination for any reason:&#xA;&#xA;a) all rights granted to you under the Licence shall cease;&#xA;&#xA;b) you must immediately cease all activities authorised by the Licence;&#xA;&#xA;c) you must immediately pay to us any outstanding sums due to us under the Licence; and&#xA;&#xA;d) you must immediately delete or remove the Software from all computer equipment in your possession, and immediately destroy or return to us (at our option) all copies of the Software and Documents then in your possession, custody or control and, in the case of destruction, certify to us that you have done so.&#xA;&#xA;7. CONFIDENTIALITY&#xA;&#xA;You shall, during the term of the Licence and thereafter, keep confidential all, and shall not use for your own purposes (other than implementation of this Contract) nor without our prior written consent disclose to any third party (except your professional advisors or as may be required by any law or any legal or regulatory authority) any, information of a confidential nature (including trade secrets and information of commercial value) which may become known to you from us and which relates to us or any of our affiliates, unless that information is public knowledge or already known to you at the time of disclosure, or subsequently becomes public knowledge other than by breach of the Licence, or subsequently comes lawfully into your possession from a third party. You shall use your reasonable endeavours to prevent the unauthorised disclosure of any such information.&#xA;&#xA;8. EXPORT AND APPLICABLE LAWS&#xA;&#xA;8.1 You shall not export, directly or indirectly, any Licence, Software, Documents or technical data acquired from us in breach of any applicable laws or regulations (Export Control Laws), including United States Export Control Laws, to any country for which the government or any agency thereof at the time of export requires an export licence or other governmental approval without first obtaining such licence or approval.&#xA;&#xA;8.2 You shall use the Licence, Software and Documents solely in a manner that complies with the terms and conditions of this Contract and with all applicable laws and regulations.&#xA;&#xA;9. COMMUNICATIONS BETWEEN US&#xA;&#xA;If we have to contact you or give you notice in writing, we will do so by e-mail to the address you provide in your Runecast user portal. Any notice given by you to us, or by us to you, will be deemed received and properly served 24 hours after an e-mail is sent. In proving the service of any notice, it will be sufficient to prove that such e-mail was sent to the specified e-mail address of the addressee.&#xA;&#xA;10. EVENTS OUTSIDE OUR CONTROL&#xA;&#xA;10.1 We will not be liable or responsible for any failure to perform, or delay in performance of, any of our obligations under this Contract that is caused by any act or event beyond our reasonable control, including without limitation failure of public or private telecommunications networks (Event Outside Our Control).&#xA;&#xA;10.2 If an Event Outside Our Control takes place that affects the performance of our obligations under this Contract:&#xA;&#xA;a) our obligations under this Contract will be suspended and the time for performance of our obligations will be extended for the duration of the Event Outside Our Control; and&#xA;&#xA;b) we will use our reasonable endeavours to find a solution by which our obligations under this Contract may be performed despite the Event Outside Our Control.&#xA;&#xA;11. OTHER IMPORTANT TERMS&#xA;&#xA;11.1 We may transfer our rights and obligations under this Contract to another organisation, but this will not affect your rights or our obligations under this Contract.&#xA;&#xA;11.2 You may only transfer your rights or your obligations under this Contract to another person or entity if we agree in writing.&#xA;&#xA;11.3 This Contract together with any Supplier Terms constitutes the entire agreement between us and supersedes and extinguishes all previous agreements, promises, assurances, warranties, representations and understandings between us, whether written or oral, relating to its subject matter. You agree that you shall have no remedies in respect of any statement, representation, assurance or warranty (whether made innocently or negligently) that is not set out in this Contract or any document expressly referred to in it. You agree that you shall have no claim for innocent or negligent misrepresentation or negligent misstatement based on any statement in this in this Contract or any document expressly referred to in it.&#xA;&#xA;11.4 If we fail to insist that you perform any of your obligations under this Contract, or if we do not enforce our rights against you, or if we delay in doing so, that will not mean that we have waived our rights against you and will not mean that you do not have to comply with those obligations. If we do waive a default by you, we will only do so in writing, and that will not mean that we will automatically waive any later default by you.&#xA;&#xA;11.5 Each of the provisions of this Contract operates separately. If any court or competent authority decides that any of them are unlawful or unenforceable, the remaining provisions will remain in full force and effect.&#xA;&#xA;11.6 This Contract, its subject matter and its formation (and any non-contractual disputes or claims) are governed by English law. We both irrevocably agree to the exclusive jurisdiction of the courts of England and Wales.&#xA;&#xA;11.7 Any questions concerning this Contract, the Licence or the Software should be directed to us. Contact details are available from www.runecast.biz .</eula>
+        <ovfEnvironmentTransport>com.vmware.guestInfo</ovfEnvironmentTransport>
+        <installBootRequired>false</installBootRequired>
+        <installBootStopDelay>0</installBootStopDelay>
+      </vAppConfig>
+      <vAssertsEnabled>false</vAssertsEnabled>
+      <changeTrackingEnabled>false</changeTrackingEnabled>
+      <firmware>bios</firmware>
+      <maxMksConnections>1</maxMksConnections>
+      <guestAutoLockEnabled>false</guestAutoLockEnabled>
+      <memoryReservationLockedToMax>false</memoryReservationLockedToMax>
+      <initialOverhead>
+        <initialMemoryReservation>61423616</initialMemoryReservation>
+        <initialSwapReservation>205762560</initialSwapReservation>
+      </initialOverhead>
+      <nestedHVEnabled>false</nestedHVEnabled>
+      <vPMCEnabled>false</vPMCEnabled>
+      <scheduledHardwareUpgradeInfo>
+        <upgradePolicy>never</upgradePolicy>
+        <scheduledHardwareUpgradeStatus>none</scheduledHardwareUpgradeStatus>
+      </scheduledHardwareUpgradeInfo>
+      <vmxConfigChecksum>49SvpxyaXBB6CQldoFAIQlxwlh4=</vmxConfigChecksum>
+      <messageBusTunnelEnabled>false</messageBusTunnelEnabled>
+      <vmStorageObjectId>8a35595f-0097-33f7-e454-6c3be5bd72c0</vmStorageObjectId>
+      <guestIntegrityInfo>
+        <enabled>false</enabled>
+      </guestIntegrityInfo>
+      <migrateEncryption>opportunistic</migrateEncryption>
+    </val>
+  </propSet>
+  <propSet>
+    <name>configIssue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfEvent"></val>
+  </propSet>
+  <propSet>
+    <name>configStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>customValue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>datastore</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="Datastore">datastore-76</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>declaredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState">
+      <AlarmState>
+        <key>alarm-10.vm-6961</key>
+        <entity type="VirtualMachine">vm-6961</entity>
+        <alarm type="Alarm">alarm-10</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-113.vm-6961</key>
+        <entity type="VirtualMachine">vm-6961</entity>
+        <alarm type="Alarm">alarm-113</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-12.vm-6961</key>
+        <entity type="VirtualMachine">vm-6961</entity>
+        <alarm type="Alarm">alarm-12</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1203.vm-6961</key>
+        <entity type="VirtualMachine">vm-6961</entity>
+        <alarm type="Alarm">alarm-1203</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-15.vm-6961</key>
+        <entity type="VirtualMachine">vm-6961</entity>
+        <alarm type="Alarm">alarm-15</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-19.vm-6961</key>
+        <entity type="VirtualMachine">vm-6961</entity>
+        <alarm type="Alarm">alarm-19</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-2.vm-6961</key>
+        <entity type="VirtualMachine">vm-6961</entity>
+        <alarm type="Alarm">alarm-2</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-38.vm-6961</key>
+        <entity type="VirtualMachine">vm-6961</entity>
+        <alarm type="Alarm">alarm-38</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-39.vm-6961</key>
+        <entity type="VirtualMachine">vm-6961</entity>
+        <alarm type="Alarm">alarm-39</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-40.vm-6961</key>
+        <entity type="VirtualMachine">vm-6961</entity>
+        <alarm type="Alarm">alarm-40</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-47.vm-6961</key>
+        <entity type="VirtualMachine">vm-6961</entity>
+        <alarm type="Alarm">alarm-47</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-5.vm-6961</key>
+        <entity type="VirtualMachine">vm-6961</entity>
+        <alarm type="Alarm">alarm-5</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:58:32.082197Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-52.vm-6961</key>
+        <entity type="VirtualMachine">vm-6961</entity>
+        <alarm type="Alarm">alarm-52</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-54.vm-6961</key>
+        <entity type="VirtualMachine">vm-6961</entity>
+        <alarm type="Alarm">alarm-54</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-6.vm-6961</key>
+        <entity type="VirtualMachine">vm-6961</entity>
+        <alarm type="Alarm">alarm-6</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:58:32.082204Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-81.vm-6961</key>
+        <entity type="VirtualMachine">vm-6961</entity>
+        <alarm type="Alarm">alarm-81</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-9.vm-6961</key>
+        <entity type="VirtualMachine">vm-6961</entity>
+        <alarm type="Alarm">alarm-9</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2021-01-05T15:57:54.380429Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+    </val>
+  </propSet>
+  <propSet>
+    <name>disabledMethod</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfString">
+      <string>MakePrimaryVM_Task</string>
+      <string>TerminateFaultTolerantVM_Task</string>
+      <string>ResetVM_Task</string>
+      <string>UnmountToolsInstaller</string>
+      <string>MountToolsInstaller</string>
+      <string>MountToolsInstallerImage</string>
+      <string>RebootGuest</string>
+      <string>StandbyGuest</string>
+      <string>ShutdownGuest</string>
+      <string>PowerOffVM_Task</string>
+      <string>ExtractOvfEnvironment</string>
+      <string>SuspendVM_Task</string>
+      <string>AcquireMksTicket</string>
+      <string>AnswerVM</string>
+      <string>UpgradeTools_Task</string>
+      <string>UpgradeToolsFromImage_Task</string>
+      <string>ApplyEvcModeVM_Task</string>
+      <string>StartRecording_Task</string>
+      <string>StopRecording_Task</string>
+      <string>StartReplaying_Task</string>
+      <string>StopReplaying_Task</string>
+      <string>TurnOffFaultToleranceForVM_Task</string>
+      <string>MakePrimaryVM_Task</string>
+      <string>TerminateFaultTolerantVM_Task</string>
+      <string>DisableSecondaryVM_Task</string>
+      <string>EnableSecondaryVM_Task</string>
+      <string>CreateSecondaryVM_Task</string>
+      <string>CreateSecondaryVMEx_Task</string>
+      <string>StopRecording_Task</string>
+      <string>StopReplaying_Task</string>
+      <string>MarkAsVirtualMachine</string>
+    </val>
+  </propSet>
+  <propSet>
+    <name>effectiveRole</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfInt">
+      <int>-1</int>
+    </val>
+  </propSet>
+  <propSet>
+    <name>environmentBrowser</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="EnvironmentBrowser">envbrowser-6961</val>
+  </propSet>
+  <propSet>
+    <name>guest</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="GuestInfo">
+      <toolsStatus>toolsNotRunning</toolsStatus>
+      <toolsVersionStatus>guestToolsUnmanaged</toolsVersionStatus>
+      <toolsVersionStatus2>guestToolsUnmanaged</toolsVersionStatus2>
+      <toolsRunningStatus>guestToolsNotRunning</toolsRunningStatus>
+      <toolsVersion>11269</toolsVersion>
+      <guestId>ubuntu64Guest</guestId>
+      <guestFamily>linuxGuest</guestFamily>
+      <guestFullName>Ubuntu Linux (64-bit)</guestFullName>
+      <hostName>runecast</hostName>
+      <ipStack>
+        <dnsConfig>
+          <dhcp>false</dhcp>
+          <hostName>runecast</hostName>
+          <domainName></domainName>
+          <ipAddress>10.67.10.5</ipAddress>
+        </dnsConfig>
+        <ipRouteConfig>
+          <ipRoute>
+            <network>0.0.0.0</network>
+            <prefixLength>0</prefixLength>
+            <gateway>
+              <ipAddress>10.67.10.254</ipAddress>
+              <device>0</device>
+            </gateway>
+          </ipRoute>
+          <ipRoute>
+            <network>10.67.10.0</network>
+            <prefixLength>24</prefixLength>
+            <gateway>
+              <device>0</device>
+            </gateway>
+          </ipRoute>
+          <ipRoute>
+            <network>fe80::</network>
+            <prefixLength>64</prefixLength>
+            <gateway>
+              <device>0</device>
+            </gateway>
+          </ipRoute>
+          <ipRoute>
+            <network>fe80::250:56ff:feaf:8552</network>
+            <prefixLength>128</prefixLength>
+            <gateway>
+              <device>0</device>
+            </gateway>
+          </ipRoute>
+          <ipRoute>
+            <network>ff00::</network>
+            <prefixLength>8</prefixLength>
+            <gateway>
+              <device>0</device>
+            </gateway>
+          </ipRoute>
+        </ipRouteConfig>
+      </ipStack>
+      <disk>
+        <diskPath>/</diskPath>
+        <capacity>31570432000</capacity>
+        <freeSpace>24832565248</freeSpace>
+      </disk>
+      <disk>
+        <diskPath>/logdata</diskPath>
+        <capacity>52575043584</capacity>
+        <freeSpace>45396779008</freeSpace>
+      </disk>
+      <disk>
+        <diskPath>/var/lib/postgresql</diskPath>
+        <capacity>42006183936</capacity>
+        <freeSpace>39543214080</freeSpace>
+      </disk>
+      <screen>
+        <width>800</width>
+        <height>600</height>
+      </screen>
+      <guestState>notRunning</guestState>
+      <guestKernelCrashed>false</guestKernelCrashed>
+      <guestOperationsReady>false</guestOperationsReady>
+      <interactiveGuestOperationsReady>false</interactiveGuestOperationsReady>
+      <guestStateChangeSupported>false</guestStateChangeSupported>
+    </val>
+  </propSet>
+  <propSet>
+    <name>guestHeartbeatStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">gray</val>
+  </propSet>
+  <propSet>
+    <name>layout</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineFileLayout">
+      <configFile>runecast.nvram</configFile>
+      <configFile>runecast.vmsd</configFile>
+      <logFile>vmware.log</logFile>
+      <logFile>vmware-318.log</logFile>
+      <logFile>vmware-319.log</logFile>
+      <logFile>vmware-314.log</logFile>
+      <logFile>vmware-315.log</logFile>
+      <logFile>vmware-316.log</logFile>
+      <logFile>vmware-317.log</logFile>
+      <logFile>vmware-310.log</logFile>
+      <logFile>vmware-311.log</logFile>
+      <logFile>vmware-312.log</logFile>
+      <logFile>vmware-313.log</logFile>
+      <disk>
+        <key>2000</key>
+        <diskFile>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/runecast.vmdk</diskFile>
+      </disk>
+      <disk>
+        <key>2001</key>
+        <diskFile>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/runecast_1.vmdk</diskFile>
+      </disk>
+      <disk>
+        <key>2002</key>
+        <diskFile>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/runecast_2.vmdk</diskFile>
+      </disk>
+    </val>
+  </propSet>
+  <propSet>
+    <name>layoutEx</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineFileLayoutEx">
+      <file>
+        <key>0</key>
+        <name>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/runecast.vmx</name>
+        <type>config</type>
+        <size>4487</size>
+        <uniqueSize>4487</uniqueSize>
+        <backingObjectId>8a35595f-0097-33f7-e454-6c3be5bd72c0</backingObjectId>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>1</key>
+        <name>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/runecast.nvram</name>
+        <type>nvram</type>
+        <size>8684</size>
+        <uniqueSize>8684</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>2</key>
+        <name>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/runecast.vmsd</name>
+        <type>snapshotList</type>
+        <size>0</size>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>3</key>
+        <name>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/runecast.vmdk</name>
+        <type>diskDescriptor</type>
+        <size>32065454080</size>
+        <uniqueSize>32065454080</uniqueSize>
+        <backingObjectId>8b35595f-e91e-5408-4a4e-6c3be5bd72c0</backingObjectId>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>4</key>
+        <name>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/runecast_1.vmdk</name>
+        <type>diskDescriptor</type>
+        <size>1606418432</size>
+        <uniqueSize>1606418432</uniqueSize>
+        <backingObjectId>8b35595f-e500-fe27-9c21-6c3be5bd72c0</backingObjectId>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>5</key>
+        <name>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/runecast_2.vmdk</name>
+        <type>diskDescriptor</type>
+        <size>103905492992</size>
+        <uniqueSize>103905492992</uniqueSize>
+        <backingObjectId>8b35595f-3dc7-ca40-8ef0-6c3be5bd72c0</backingObjectId>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>6</key>
+        <name>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/vmware.log</name>
+        <type>log</type>
+        <size>5113</size>
+        <uniqueSize>5113</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>7</key>
+        <name>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/vmware-318.log</name>
+        <type>log</type>
+        <size>100362</size>
+        <uniqueSize>100362</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>8</key>
+        <name>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/vmware-319.log</name>
+        <type>log</type>
+        <size>5053</size>
+        <uniqueSize>5053</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>9</key>
+        <name>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/vmware-314.log</name>
+        <type>log</type>
+        <size>40700</size>
+        <uniqueSize>40700</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>10</key>
+        <name>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/vmware-315.log</name>
+        <type>log</type>
+        <size>100013</size>
+        <uniqueSize>100013</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>11</key>
+        <name>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/vmware-316.log</name>
+        <type>log</type>
+        <size>100358</size>
+        <uniqueSize>100358</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>12</key>
+        <name>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/vmware-317.log</name>
+        <type>log</type>
+        <size>100068</size>
+        <uniqueSize>100068</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>13</key>
+        <name>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/vmware-310.log</name>
+        <type>log</type>
+        <size>3530</size>
+        <uniqueSize>3530</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>14</key>
+        <name>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/vmware-311.log</name>
+        <type>log</type>
+        <size>100017</size>
+        <uniqueSize>100017</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>15</key>
+        <name>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/vmware-312.log</name>
+        <type>log</type>
+        <size>100352</size>
+        <uniqueSize>100352</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>16</key>
+        <name>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/vmware-313.log</name>
+        <type>log</type>
+        <size>3622</size>
+        <uniqueSize>3622</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <disk>
+        <key>2000</key>
+        <chain>
+          <fileKey>3</fileKey>
+        </chain>
+      </disk>
+      <disk>
+        <key>2001</key>
+        <chain>
+          <fileKey>4</fileKey>
+        </chain>
+      </disk>
+      <disk>
+        <key>2002</key>
+        <chain>
+          <fileKey>5</fileKey>
+        </chain>
+      </disk>
+      <timestamp>2021-01-07T07:22:55.195875Z</timestamp>
+    </val>
+  </propSet>
+  <propSet>
+    <name>name</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:string">runecast</val>
+  </propSet>
+  <propSet>
+    <name>network</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="DistributedVirtualPortgroup">dvportgroup-23</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>overallStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>parent</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="Folder">group-v185</val>
+  </propSet>
+  <propSet>
+    <name>permission</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfPermission"></val>
+  </propSet>
+  <propSet>
+    <name>recentTask</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>resourceConfig</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ResourceConfigSpec">
+      <entity type="VirtualMachine">vm-6961</entity>
+      <cpuAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>false</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>2000</shares>
+          <level>normal</level>
+        </shares>
+      </cpuAllocation>
+      <memoryAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>false</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>40960</shares>
+          <level>normal</level>
+        </shares>
+      </memoryAllocation>
+    </val>
+  </propSet>
+  <propSet>
+    <name>resourcePool</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="ResourcePool">resgroup-6965</val>
+  </propSet>
+  <propSet>
+    <name>rootSnapshot</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>runtime</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineRuntimeInfo">
+      <device>
+        <runtimeState XMLSchema-instance:type="VirtualMachineDeviceRuntimeInfoVirtualEthernetCardRuntimeState">
+          <vmDirectPathGen2Active>false</vmDirectPathGen2Active>
+          <vmDirectPathGen2InactiveReasonVm>vmNptDisabledOrDisconnectedAdapter</vmDirectPathGen2InactiveReasonVm>
+          <vmDirectPathGen2InactiveReasonOther>vmNptIncompatibleHost</vmDirectPathGen2InactiveReasonOther>
+          <attachmentStatus>green</attachmentStatus>
+        </runtimeState>
+        <key>4000</key>
+      </device>
+      <host type="HostSystem">host-71</host>
+      <connectionState>connected</connectionState>
+      <powerState>poweredOff</powerState>
+      <faultToleranceState>notConfigured</faultToleranceState>
+      <toolsInstallerMounted>false</toolsInstallerMounted>
+      <numMksConnections>0</numMksConnections>
+      <recordReplayState>inactive</recordReplayState>
+      <onlineStandby>false</onlineStandby>
+      <consolidationNeeded>false</consolidationNeeded>
+      <offlineFeatureRequirement>
+        <key>cpuid.lm</key>
+        <featureName>cpuid.lm</featureName>
+        <value>Bool:Min:1</value>
+      </offlineFeatureRequirement>
+      <paused>false</paused>
+      <snapshotInBackground>false</snapshotInBackground>
+      <instantCloneFrozen>false</instantCloneFrozen>
+    </val>
+  </propSet>
+  <propSet>
+    <name>storage</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineStorageInfo">
+      <perDatastoreUsage>
+        <datastore type="Datastore">datastore-76</datastore>
+        <committed>137578037863</committed>
+        <uncommitted>45990785024</uncommitted>
+        <unshared>137577365504</unshared>
+      </perDatastoreUsage>
+      <timestamp>2021-01-07T07:22:55.198Z</timestamp>
+    </val>
+  </propSet>
+  <propSet>
+    <name>summary</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineSummary">
+      <vm type="VirtualMachine">vm-6961</vm>
+      <runtime>
+        <device>
+          <runtimeState XMLSchema-instance:type="VirtualMachineDeviceRuntimeInfoVirtualEthernetCardRuntimeState">
+            <vmDirectPathGen2Active>false</vmDirectPathGen2Active>
+            <vmDirectPathGen2InactiveReasonVm>vmNptDisabledOrDisconnectedAdapter</vmDirectPathGen2InactiveReasonVm>
+            <vmDirectPathGen2InactiveReasonOther>vmNptIncompatibleHost</vmDirectPathGen2InactiveReasonOther>
+            <attachmentStatus>green</attachmentStatus>
+          </runtimeState>
+          <key>4000</key>
+        </device>
+        <host type="HostSystem">host-71</host>
+        <connectionState>connected</connectionState>
+        <powerState>poweredOff</powerState>
+        <faultToleranceState>notConfigured</faultToleranceState>
+        <toolsInstallerMounted>false</toolsInstallerMounted>
+        <numMksConnections>0</numMksConnections>
+        <recordReplayState>inactive</recordReplayState>
+        <onlineStandby>false</onlineStandby>
+        <consolidationNeeded>false</consolidationNeeded>
+        <offlineFeatureRequirement>
+          <key>cpuid.lm</key>
+          <featureName>cpuid.lm</featureName>
+          <value>Bool:Min:1</value>
+        </offlineFeatureRequirement>
+        <paused>false</paused>
+        <snapshotInBackground>false</snapshotInBackground>
+        <instantCloneFrozen>false</instantCloneFrozen>
+      </runtime>
+      <guest>
+        <guestId>ubuntu64Guest</guestId>
+        <guestFullName>Ubuntu Linux (64-bit)</guestFullName>
+        <toolsStatus>toolsNotRunning</toolsStatus>
+        <toolsVersionStatus>guestToolsUnmanaged</toolsVersionStatus>
+        <toolsVersionStatus2>guestToolsUnmanaged</toolsVersionStatus2>
+        <toolsRunningStatus>guestToolsNotRunning</toolsRunningStatus>
+        <hostName>runecast</hostName>
+      </guest>
+      <config>
+        <name>runecast</name>
+        <template>false</template>
+        <vmPathName>[vsanDatastore] 8a35595f-0097-33f7-e454-6c3be5bd72c0/runecast.vmx</vmPathName>
+        <memorySizeMB>4096</memorySizeMB>
+        <numCpu>2</numCpu>
+        <numEthernetCards>1</numEthernetCards>
+        <numVirtualDisks>3</numVirtualDisks>
+        <uuid>422fb8c3-c2c0-2bbc-9ac3-aae2e66c54ab</uuid>
+        <instanceUuid>502fd8c4-60c3-84e4-c8dd-5f46c607f5e3</instanceUuid>
+        <guestId>ubuntu64Guest</guestId>
+        <guestFullName>Ubuntu Linux (64-bit)</guestFullName>
+        <annotation>Runecast is a Proactive monitoring solution which is using the known issue profiles and best practices documented in the VMware Knowledge base and other sources to identify and expose potential issues within your infrastructure, before they manifest into outages.</annotation>
+        <product>
+          <key>0</key>
+          <name>Runecast Analyzer</name>
+          <vendor>Runecast Solutions Ltd.</vendor>
+          <version>4.4.1.0</version>
+          <fullVersion>4.4.1.0</fullVersion>
+          <vendorUrl>https://www.runecast.com</vendorUrl>
+          <productUrl>https://www.runecast.com</productUrl>
+        </product>
+        <installBootRequired>false</installBootRequired>
+        <tpmPresent>false</tpmPresent>
+      </config>
+      <storage>
+        <committed>137578037863</committed>
+        <uncommitted>45990785024</uncommitted>
+        <unshared>137577365504</unshared>
+        <timestamp>2021-01-07T07:22:55.198193Z</timestamp>
+      </storage>
+      <quickStats>
+        <guestHeartbeatStatus>gray</guestHeartbeatStatus>
+        <ftLogBandwidth>-1</ftLogBandwidth>
+        <ftSecondaryLatency>-1</ftSecondaryLatency>
+        <ftLatencyStatus>gray</ftLatencyStatus>
+      </quickStats>
+      <overallStatus>green</overallStatus>
+    </val>
+  </propSet>
+  <propSet>
+    <name>tag</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfTag"></val>
+  </propSet>
+  <propSet>
+    <name>triggeredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState"></val>
+  </propSet>
+  <propSet>
+    <name>value</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+</ObjectContent>

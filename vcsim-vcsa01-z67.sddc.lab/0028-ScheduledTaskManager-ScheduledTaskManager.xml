@@ -1,0 +1,175 @@
+<ObjectContent>
+  <obj type="ScheduledTaskManager">ScheduledTaskManager</obj>
+  <propSet>
+    <name>description</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ScheduledTaskDescription">
+      <action XMLSchema-instance:type="TypeDescription">
+        <label>Method action</label>
+        <summary>Action invoked by standard entity APIs</summary>
+        <key>MethodAction</key>
+      </action>
+      <action XMLSchema-instance:type="TypeDescription">
+        <label>Run a script</label>
+        <summary>Action to run a server script</summary>
+        <key>RunScriptAction</key>
+      </action>
+      <action XMLSchema-instance:type="TypeDescription">
+        <label>Send email</label>
+        <summary>Action to send an email</summary>
+        <key>SendEmailAction</key>
+      </action>
+      <action XMLSchema-instance:type="TypeDescription">
+        <label>Create a task</label>
+        <summary>Action to create a task</summary>
+        <key>CreateTaskAction</key>
+      </action>
+      <action XMLSchema-instance:type="TypeDescription">
+        <label>Send SNMP</label>
+        <summary>Action to send a SNMP trap</summary>
+        <key>SendSNMPAction</key>
+      </action>
+      <schedulerInfo>
+        <label>Hourly</label>
+        <summary>Scheduled task will be triggered at a specific minute every hour</summary>
+        <key>HourlyTaskScheduler</key>
+        <frequency>Minute</frequency>
+      </schedulerInfo>
+      <schedulerInfo>
+        <label>Monthly (by weekday)</label>
+        <summary>Scheduled task will be triggered on a specific weekday of an offset week of the month</summary>
+        <key>MonthlyByWeekdayTaskScheduler</key>
+        <frequency>Weekday within offset week</frequency>
+      </schedulerInfo>
+      <schedulerInfo>
+        <label>Monthly</label>
+        <summary>Scheduled task will be triggered every month on a specific day</summary>
+        <key>MonthlyTaskScheduler</key>
+        <frequency>Day</frequency>
+      </schedulerInfo>
+      <schedulerInfo>
+        <label>Weekly</label>
+        <summary>Scheduled task will be triggered on a specific weekday every week</summary>
+        <key>WeeklyTaskScheduler</key>
+        <frequency>Weekday</frequency>
+      </schedulerInfo>
+      <schedulerInfo>
+        <label>&lt;internal&gt;</label>
+        <summary>&lt;internal&gt;</summary>
+        <key>RecurrentTaskScheduler</key>
+        <frequency>&lt;internal&gt;</frequency>
+      </schedulerInfo>
+      <schedulerInfo>
+        <label>After startup</label>
+        <summary>Scheduled task will be triggered a specific number of minutes after vCenter Server has started</summary>
+        <key>AfterStartupTaskScheduler</key>
+        <frequency>Delay minutes</frequency>
+      </schedulerInfo>
+      <schedulerInfo>
+        <label>Once</label>
+        <summary>Scheduled task will be triggered once at a specific time</summary>
+        <key>OnceTaskScheduler</key>
+        <frequency>Time</frequency>
+      </schedulerInfo>
+      <schedulerInfo>
+        <label>Daily</label>
+        <summary>Scheduled task will be triggered every day at a specific hour</summary>
+        <key>DailyTaskScheduler</key>
+        <frequency>Hour</frequency>
+      </schedulerInfo>
+      <schedulerInfo>
+        <label>Monthly (by day)</label>
+        <summary>Scheduled task will be triggered monthly on a specific day</summary>
+        <key>MonthlyByDayTaskScheduler</key>
+        <frequency>Day</frequency>
+      </schedulerInfo>
+      <state XMLSchema-instance:type="ElementDescription">
+        <label>Queued</label>
+        <summary>Task is queued</summary>
+        <key>queued</key>
+      </state>
+      <state XMLSchema-instance:type="ElementDescription">
+        <label>Running</label>
+        <summary>Task is in progress</summary>
+        <key>running</key>
+      </state>
+      <state XMLSchema-instance:type="ElementDescription">
+        <label>Success</label>
+        <summary>Task completed successfully</summary>
+        <key>success</key>
+      </state>
+      <state XMLSchema-instance:type="ElementDescription">
+        <label>Error</label>
+        <summary>Task completed with a failure</summary>
+        <key>error</key>
+      </state>
+      <dayOfWeek XMLSchema-instance:type="ElementDescription">
+        <label>Sunday</label>
+        <summary>Sunday</summary>
+        <key>sunday</key>
+      </dayOfWeek>
+      <dayOfWeek XMLSchema-instance:type="ElementDescription">
+        <label>Monday</label>
+        <summary>Monday</summary>
+        <key>monday</key>
+      </dayOfWeek>
+      <dayOfWeek XMLSchema-instance:type="ElementDescription">
+        <label>Tuesday</label>
+        <summary>Tuesday</summary>
+        <key>tuesday</key>
+      </dayOfWeek>
+      <dayOfWeek XMLSchema-instance:type="ElementDescription">
+        <label>Wednesday</label>
+        <summary>Wednesday</summary>
+        <key>wednesday</key>
+      </dayOfWeek>
+      <dayOfWeek XMLSchema-instance:type="ElementDescription">
+        <label>Thursday</label>
+        <summary>Thursday</summary>
+        <key>thursday</key>
+      </dayOfWeek>
+      <dayOfWeek XMLSchema-instance:type="ElementDescription">
+        <label>Friday</label>
+        <summary>Friday</summary>
+        <key>friday</key>
+      </dayOfWeek>
+      <dayOfWeek XMLSchema-instance:type="ElementDescription">
+        <label>Saturday</label>
+        <summary>Saturday</summary>
+        <key>saturday</key>
+      </dayOfWeek>
+      <weekOfMonth XMLSchema-instance:type="ElementDescription">
+        <label>First</label>
+        <summary>First week of the month</summary>
+        <key>first</key>
+      </weekOfMonth>
+      <weekOfMonth XMLSchema-instance:type="ElementDescription">
+        <label>Second</label>
+        <summary>Second week of the month</summary>
+        <key>second</key>
+      </weekOfMonth>
+      <weekOfMonth XMLSchema-instance:type="ElementDescription">
+        <label>Third</label>
+        <summary>Third week of the month</summary>
+        <key>third</key>
+      </weekOfMonth>
+      <weekOfMonth XMLSchema-instance:type="ElementDescription">
+        <label>Fourth</label>
+        <summary>Fourth week of the month</summary>
+        <key>fourth</key>
+      </weekOfMonth>
+      <weekOfMonth XMLSchema-instance:type="ElementDescription">
+        <label>Last</label>
+        <summary>Last week of the month</summary>
+        <key>last</key>
+      </weekOfMonth>
+    </val>
+  </propSet>
+  <propSet>
+    <name>scheduledTask</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="ScheduledTask">schedule-1</ManagedObjectReference>
+      <ManagedObjectReference type="ScheduledTask">schedule-101</ManagedObjectReference>
+      <ManagedObjectReference type="ScheduledTask">schedule-2</ManagedObjectReference>
+    </val>
+  </propSet>
+</ObjectContent>
