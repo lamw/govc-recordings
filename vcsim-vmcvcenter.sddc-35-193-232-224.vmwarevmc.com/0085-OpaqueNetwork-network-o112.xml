@@ -1,0 +1,129 @@
+<ObjectContent>
+  <obj type="OpaqueNetwork">network-o112</obj>
+  <propSet>
+    <name>alarmActionsEnabled</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:boolean">true</val>
+  </propSet>
+  <propSet>
+    <name>availableField</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldDef"></val>
+  </propSet>
+  <propSet>
+    <name>capability</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="OpaqueNetworkCapability">
+      <networkReservationSupported>true</networkReservationSupported>
+    </val>
+  </propSet>
+  <propSet>
+    <name>configIssue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfEvent"></val>
+  </propSet>
+  <propSet>
+    <name>configStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>customValue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>declaredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState"></val>
+  </propSet>
+  <propSet>
+    <name>disabledMethod</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfString"></val>
+  </propSet>
+  <propSet>
+    <name>effectiveRole</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfInt">
+      <int>-1939043557</int>
+      <int>1101</int>
+      <int>11135926</int>
+    </val>
+  </propSet>
+  <propSet>
+    <name>extraConfig</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfOptionValue">
+      <OptionValue XMLSchema-instance:type="OptionValue">
+        <key>com.vmware.opaquenetwork.version</key>
+        <value XMLSchema-instance:type="xsd:int">2</value>
+      </OptionValue>
+      <OptionValue XMLSchema-instance:type="OptionValue">
+        <key>com.vmware.opaquenetwork.segment.path</key>
+        <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/3c1507c0-50d8-11e9-90ad-015d2276921d</value>
+      </OptionValue>
+    </val>
+  </propSet>
+  <propSet>
+    <name>host</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="HostSystem">host-4234</ManagedObjectReference>
+      <ManagedObjectReference type="HostSystem">host-15215</ManagedObjectReference>
+      <ManagedObjectReference type="HostSystem">host-15229</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>name</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:string">sddc-cgw-network-1</val>
+  </propSet>
+  <propSet>
+    <name>overallStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>parent</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="Folder">group-n25</val>
+  </propSet>
+  <propSet>
+    <name>permission</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfPermission"></val>
+  </propSet>
+  <propSet>
+    <name>recentTask</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>summary</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="OpaqueNetworkSummary">
+      <network type="OpaqueNetwork">network-o112</network>
+      <name>sddc-cgw-network-1</name>
+      <accessible>true</accessible>
+      <ipPoolName></ipPoolName>
+      <opaqueNetworkId>63045d3f-fb1b-4643-8aa9-92e5db1695fa</opaqueNetworkId>
+      <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+    </val>
+  </propSet>
+  <propSet>
+    <name>tag</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfTag"></val>
+  </propSet>
+  <propSet>
+    <name>triggeredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState"></val>
+  </propSet>
+  <propSet>
+    <name>value</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>vm</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="VirtualMachine">vm-314</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-810</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-1223</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-2087</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-6206</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12380</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12390</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12919</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14282</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14530</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14658</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14697</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14699</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15087</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17284</ManagedObjectReference>
+    </val>
+  </propSet>
+</ObjectContent>

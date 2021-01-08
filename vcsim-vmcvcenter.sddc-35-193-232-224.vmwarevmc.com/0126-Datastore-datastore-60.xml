@@ -1,0 +1,741 @@
+<ObjectContent>
+  <obj type="Datastore">datastore-60</obj>
+  <propSet>
+    <name>alarmActionsEnabled</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:boolean">true</val>
+  </propSet>
+  <propSet>
+    <name>availableField</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldDef">
+      <CustomFieldDef>
+        <key>601</key>
+        <name>VEBA-EmailTo</name>
+        <type>string</type>
+        <managedObjectType>Datastore</managedObjectType>
+      </CustomFieldDef>
+    </val>
+  </propSet>
+  <propSet>
+    <name>browser</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="HostDatastoreBrowser">datastoreBrowser-datastore-60</val>
+  </propSet>
+  <propSet>
+    <name>capability</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="DatastoreCapability">
+      <directoryHierarchySupported>true</directoryHierarchySupported>
+      <rawDiskMappingsSupported>true</rawDiskMappingsSupported>
+      <perFileThinProvisioningSupported>true</perFileThinProvisioningSupported>
+      <storageIORMSupported>false</storageIORMSupported>
+      <nativeSnapshotSupported>false</nativeSnapshotSupported>
+      <topLevelDirectoryCreateSupported>false</topLevelDirectoryCreateSupported>
+      <seSparseSupported>false</seSparseSupported>
+      <vmfsSparseSupported>false</vmfsSparseSupported>
+      <vsanSparseSupported>true</vsanSparseSupported>
+      <vmdkExpandSupported>true</vmdkExpandSupported>
+    </val>
+  </propSet>
+  <propSet>
+    <name>configIssue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfEvent"></val>
+  </propSet>
+  <propSet>
+    <name>configStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">gray</val>
+  </propSet>
+  <propSet>
+    <name>customValue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue">
+      <CustomFieldValue XMLSchema-instance:type="CustomFieldStringValue">
+        <key>601</key>
+        <value>pk@kremerdev.com</value>
+      </CustomFieldValue>
+    </val>
+  </propSet>
+  <propSet>
+    <name>declaredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState">
+      <AlarmState>
+        <key>alarm-110.datastore-60</key>
+        <entity type="Datastore">datastore-60</entity>
+        <alarm type="Alarm">alarm-110</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-07-11T06:36:51.347Z</time>
+        <acknowledged>true</acknowledged>
+        <acknowledgedByUser>VMC.LOCAL\rcastruita-set.local</acknowledgedByUser>
+        <acknowledgedTime>2020-05-14T19:00:02.605999Z</acknowledgedTime>
+        <eventKey>10431333</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1103.datastore-60</key>
+        <entity type="Datastore">datastore-60</entity>
+        <alarm type="Alarm">alarm-1103</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1307.datastore-60</key>
+        <entity type="Datastore">datastore-60</entity>
+        <alarm type="Alarm">alarm-1307</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-05-11T18:57:31.088999Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-24.datastore-60</key>
+        <entity type="Datastore">datastore-60</entity>
+        <alarm type="Alarm">alarm-24</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-28.datastore-60</key>
+        <entity type="Datastore">datastore-60</entity>
+        <alarm type="Alarm">alarm-28</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-29.datastore-60</key>
+        <entity type="Datastore">datastore-60</entity>
+        <alarm type="Alarm">alarm-29</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-515.datastore-60</key>
+        <entity type="Datastore">datastore-60</entity>
+        <alarm type="Alarm">alarm-515</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2019-06-27T01:53:10.574999Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-53.datastore-60</key>
+        <entity type="Datastore">datastore-60</entity>
+        <alarm type="Alarm">alarm-53</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-7.datastore-60</key>
+        <entity type="Datastore">datastore-60</entity>
+        <alarm type="Alarm">alarm-7</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-06-01T22:47:13.922Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-79.datastore-60</key>
+        <entity type="Datastore">datastore-60</entity>
+        <alarm type="Alarm">alarm-79</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-80.datastore-60</key>
+        <entity type="Datastore">datastore-60</entity>
+        <alarm type="Alarm">alarm-80</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-84.datastore-60</key>
+        <entity type="Datastore">datastore-60</entity>
+        <alarm type="Alarm">alarm-84</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-901.datastore-60</key>
+        <entity type="Datastore">datastore-60</entity>
+        <alarm type="Alarm">alarm-901</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-11-30T03:21:38.454642Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+    </val>
+  </propSet>
+  <propSet>
+    <name>disabledMethod</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfString">
+      <string>DatastoreExitMaintenanceMode_Task</string>
+    </val>
+  </propSet>
+  <propSet>
+    <name>effectiveRole</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfInt">
+      <int>-1939043557</int>
+      <int>1101</int>
+      <int>11135926</int>
+    </val>
+  </propSet>
+  <propSet>
+    <name>host</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfDatastoreHostMount">
+      <DatastoreHostMount>
+        <key type="HostSystem">host-15229</key>
+        <mountInfo>
+          <path>/vmfs/volumes/vsan:de14938dee2b41c8-8aa3f463c3428f4a</path>
+          <accessMode>readWrite</accessMode>
+          <mounted>true</mounted>
+          <accessible>true</accessible>
+        </mountInfo>
+      </DatastoreHostMount>
+      <DatastoreHostMount>
+        <key type="HostSystem">host-15215</key>
+        <mountInfo>
+          <path>/vmfs/volumes/vsan:de14938dee2b41c8-8aa3f463c3428f4a</path>
+          <accessMode>readWrite</accessMode>
+          <mounted>true</mounted>
+          <accessible>true</accessible>
+        </mountInfo>
+      </DatastoreHostMount>
+      <DatastoreHostMount>
+        <key type="HostSystem">host-4234</key>
+        <mountInfo>
+          <path>/vmfs/volumes/vsan:de14938dee2b41c8-8aa3f463c3428f4a</path>
+          <accessMode>readWrite</accessMode>
+          <mounted>true</mounted>
+          <accessible>true</accessible>
+        </mountInfo>
+      </DatastoreHostMount>
+    </val>
+  </propSet>
+  <propSet>
+    <name>info</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VsanDatastoreInfo">
+      <name>WorkloadDatastore</name>
+      <url>ds:///vmfs/volumes/vsan:de14938dee2b41c8-8aa3f463c3428f4a/</url>
+      <freeSpace>21776516422383</freeSpace>
+      <maxFileSize>140737488355328</maxFileSize>
+      <maxVirtualDiskCapacity>68169720922112</maxVirtualDiskCapacity>
+      <maxMemoryFileSize>9223372036854775807</maxMemoryFileSize>
+      <timestamp>2021-01-07T21:21:13.491784Z</timestamp>
+      <containerId>de14938dee2b41c8-8aa3f463c3428f4a</containerId>
+      <aliasOf>527b986d83949b9e-2f0c492f518f3664</aliasOf>
+      <membershipUuid>a48fa95f-0e44-5cbb-2679-0a1acd802429</membershipUuid>
+      <accessGenNo>56207</accessGenNo>
+    </val>
+  </propSet>
+  <propSet>
+    <name>iormConfiguration</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="StorageIORMInfo">
+      <enabled>false</enabled>
+      <congestionThresholdMode>automatic</congestionThresholdMode>
+      <congestionThreshold>30</congestionThreshold>
+      <percentOfPeakThroughput>90</percentOfPeakThroughput>
+      <statsCollectionEnabled>false</statsCollectionEnabled>
+      <reservationEnabled>true</reservationEnabled>
+      <statsAggregationDisabled>false</statsAggregationDisabled>
+    </val>
+  </propSet>
+  <propSet>
+    <name>name</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:string">WorkloadDatastore</val>
+  </propSet>
+  <propSet>
+    <name>overallStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>parent</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="Folder">group-s24</val>
+  </propSet>
+  <propSet>
+    <name>permission</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfPermission"></val>
+  </propSet>
+  <propSet>
+    <name>recentTask</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>summary</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="DatastoreSummary">
+      <datastore type="Datastore">datastore-60</datastore>
+      <name>WorkloadDatastore</name>
+      <url>ds:///vmfs/volumes/vsan:de14938dee2b41c8-8aa3f463c3428f4a/</url>
+      <capacity>34199943045120</capacity>
+      <freeSpace>21776516422383</freeSpace>
+      <uncommitted>20622709698223</uncommitted>
+      <accessible>true</accessible>
+      <multipleHostAccess>true</multipleHostAccess>
+      <type>vsan</type>
+      <maintenanceMode>normal</maintenanceMode>
+    </val>
+  </propSet>
+  <propSet>
+    <name>tag</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfTag"></val>
+  </propSet>
+  <propSet>
+    <name>triggeredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState"></val>
+  </propSet>
+  <propSet>
+    <name>value</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue">
+      <CustomFieldValue XMLSchema-instance:type="CustomFieldStringValue">
+        <key>601</key>
+        <value>pk@kremerdev.com</value>
+      </CustomFieldValue>
+    </val>
+  </propSet>
+  <propSet>
+    <name>vm</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="VirtualMachine">vm-17413</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17405</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17400</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17393</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17392</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17389</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17367</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17349</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17350</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17331</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17329</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17332</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17328</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17320</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17313</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17312</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17308</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17306</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17337</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17307</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17302</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17284</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17277</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17261</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17232</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17228</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17226</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17221</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17217</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17215</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17214</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17205</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17199</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17179</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17178</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17182</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12390</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-8348</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12689</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14235</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-8268</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-7374</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-7323</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-7303</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-6177</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-7322</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-7280</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13645</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12505</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14476</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-6206</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12243</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-737</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-174</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17365</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-5291</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-4327</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-7313</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12697</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-4325</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13143</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13573</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-4317</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13575</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14346</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-3380</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-3308</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14595</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-2087</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-1991</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-505</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12693</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12324</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-1880</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-1410</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13248</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-1883</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-3378</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-723</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17387</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-493</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13308</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17301</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-586</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14252</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-761</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-584</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-1489</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17391</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13588</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-579</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12929</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14805</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-580</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14350</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-577</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-520</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-7174</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-519</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-748</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-3182</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-1223</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-6252</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-513</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-500</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-512</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-511</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17200</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-510</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-249</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12382</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-578</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14285</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-583</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15087</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-7263</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-202</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-144</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-183</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14236</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-222</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-261</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-6349</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14620</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-810</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-722</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-200</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-185</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-254</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-217</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-7278</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12210</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-147</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-250</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14592</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-258</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12919</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-224</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-498</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-153</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-148</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-152</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-263</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17197</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-211</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-155</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-93</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12690</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13560</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14801</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-231</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-581</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-7186</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-421</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-220</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-7188</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-585</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13156</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13535</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-121</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-8269</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-256</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-314</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12827</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-7297</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13249</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14660</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-215</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13512</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-113</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-219</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-8290</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-213</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-504</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-514</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-149</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-116</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-503</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13404</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14286</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-347</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-142</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-3309</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12696</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-264</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-518</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12498</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-506</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-582</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-251</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-8287</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12898</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15054</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-150</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-242</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-172</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-6344</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12439</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-515</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-206</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-210</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17198</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12491</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12380</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-237</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-146</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-169</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17327</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12759</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14218</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-507</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14590</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-230</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-358</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13315</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13312</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-151</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-508</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13642</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-228</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-181</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-8288</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-345</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-6348</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-260</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-721</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-234</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-236</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-135</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-458</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-240</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-243</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-262</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-377</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-245</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14452</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14298</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17401</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-208</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-248</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-576</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-126</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17203</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-123</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-253</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14681</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-259</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12928</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-1966</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-1935</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17433</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-502</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-494</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-246</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14810</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15161</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-239</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-575</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13607</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14347</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17294</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-501</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12434</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12524</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14807</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15039</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12560</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12571</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12603</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-117</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12619</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12687</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12691</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14634</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12692</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12694</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15251</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12695</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17404</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17194</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12753</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12754</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12811</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12819</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14287</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-497</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13638</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12825</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13533</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12826</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12828</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15082</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14697</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12924</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15037</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12758</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12965</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-5210</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14292</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13151</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14615</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-238</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13209</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17335</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-8226</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14291</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13247</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13307</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13309</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13311</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14683</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13313</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12437</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14559</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17216</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13314</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-588</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14281</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13393</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-7356</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13513</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13518</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13532</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13534</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13536</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-509</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15055</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13537</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13551</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13608</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13594</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13610</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14288</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13611</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-378</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-252</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13572</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13612</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13637</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14220</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13639</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14691</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13640</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13641</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13643</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14658</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14728</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13644</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14232</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14282</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-227</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14324</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-145</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14530</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14348</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14349</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-589</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13609</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14365</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14475</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14806</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14502</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14803</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-143</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14539</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-129</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14596</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14540</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14814</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14542</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14543</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14544</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-257</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12685</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14545</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14546</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14548</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14562</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14597</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-5369</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14631</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14633</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14636</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14653</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14703</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14733</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14547</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14699</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14799</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14800</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14563</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14802</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14804</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14638</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14808</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13558</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14809</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14811</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-17298</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14813</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15249</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14815</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14816</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14817</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12537</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12824</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14818</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-12703</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-8189</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-225</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14852</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14900</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14901</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-255</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14907</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14908</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-516</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14946</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14995</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14541</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14635</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14812</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15022</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15042</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15043</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-1206</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15061</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-7306</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15084</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14637</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-14916</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15099</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-359</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15109</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-6351</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15118</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15153</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-190</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-119</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-1488</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15155</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15158</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-13142</ManagedObjectReference>
+      <ManagedObjectReference type="VirtualMachine">vm-15183</ManagedObjectReference>
+    </val>
+  </propSet>
+</ObjectContent>

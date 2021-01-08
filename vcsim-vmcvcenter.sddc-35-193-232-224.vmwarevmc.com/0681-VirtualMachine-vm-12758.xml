@@ -1,0 +1,1777 @@
+<ObjectContent>
+  <obj type="VirtualMachine">vm-12758</obj>
+  <propSet>
+    <name>alarmActionsEnabled</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:boolean">true</val>
+  </propSet>
+  <propSet>
+    <name>availableField</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldDef"></val>
+  </propSet>
+  <propSet>
+    <name>capability</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineCapability">
+      <snapshotOperationsSupported>true</snapshotOperationsSupported>
+      <multipleSnapshotsSupported>true</multipleSnapshotsSupported>
+      <snapshotConfigSupported>true</snapshotConfigSupported>
+      <poweredOffSnapshotsSupported>true</poweredOffSnapshotsSupported>
+      <memorySnapshotsSupported>true</memorySnapshotsSupported>
+      <revertToSnapshotSupported>true</revertToSnapshotSupported>
+      <quiescedSnapshotsSupported>true</quiescedSnapshotsSupported>
+      <disableSnapshotsSupported>false</disableSnapshotsSupported>
+      <lockSnapshotsSupported>true</lockSnapshotsSupported>
+      <consolePreferencesSupported>false</consolePreferencesSupported>
+      <cpuFeatureMaskSupported>true</cpuFeatureMaskSupported>
+      <s1AcpiManagementSupported>true</s1AcpiManagementSupported>
+      <settingScreenResolutionSupported>false</settingScreenResolutionSupported>
+      <toolsAutoUpdateSupported>false</toolsAutoUpdateSupported>
+      <vmNpivWwnSupported>true</vmNpivWwnSupported>
+      <npivWwnOnNonRdmVmSupported>true</npivWwnOnNonRdmVmSupported>
+      <vmNpivWwnDisableSupported>true</vmNpivWwnDisableSupported>
+      <vmNpivWwnUpdateSupported>true</vmNpivWwnUpdateSupported>
+      <swapPlacementSupported>true</swapPlacementSupported>
+      <toolsSyncTimeSupported>true</toolsSyncTimeSupported>
+      <virtualMmuUsageSupported>true</virtualMmuUsageSupported>
+      <diskSharesSupported>true</diskSharesSupported>
+      <bootOptionsSupported>true</bootOptionsSupported>
+      <bootRetryOptionsSupported>true</bootRetryOptionsSupported>
+      <settingVideoRamSizeSupported>true</settingVideoRamSizeSupported>
+      <settingDisplayTopologySupported>false</settingDisplayTopologySupported>
+      <recordReplaySupported>false</recordReplaySupported>
+      <changeTrackingSupported>true</changeTrackingSupported>
+      <multipleCoresPerSocketSupported>true</multipleCoresPerSocketSupported>
+      <hostBasedReplicationSupported>true</hostBasedReplicationSupported>
+      <guestAutoLockSupported>true</guestAutoLockSupported>
+      <memoryReservationLockSupported>true</memoryReservationLockSupported>
+      <featureRequirementSupported>true</featureRequirementSupported>
+      <poweredOnMonitorTypeChangeSupported>true</poweredOnMonitorTypeChangeSupported>
+      <seSparseDiskSupported>true</seSparseDiskSupported>
+      <nestedHVSupported>true</nestedHVSupported>
+      <vPMCSupported>true</vPMCSupported>
+      <secureBootSupported>false</secureBootSupported>
+      <perVmEvcSupported>false</perVmEvcSupported>
+      <virtualMmuUsageIgnored>false</virtualMmuUsageIgnored>
+      <virtualExecUsageIgnored>false</virtualExecUsageIgnored>
+      <diskOnlySnapshotOnSuspendedVMSupported>true</diskOnlySnapshotOnSuspendedVMSupported>
+      <toolsSyncTimeAllowSupported>true</toolsSyncTimeAllowSupported>
+      <sevSupported>false</sevSupported>
+    </val>
+  </propSet>
+  <propSet>
+    <name>config</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineConfigInfo">
+      <changeVersion>2020-12-14T08:38:22.978835Z</changeVersion>
+      <modified>1970-01-01T00:00:00Z</modified>
+      <name>H7-UAG-Canton</name>
+      <guestFullName>Other 3.x or later Linux (64-bit)</guestFullName>
+      <version>vmx-10</version>
+      <uuid>421c1976-b887-9787-4299-3850d7ba31e8</uuid>
+      <createDate>2020-04-10T03:17:18.570068Z</createDate>
+      <instanceUuid>501c0fb5-13c3-bdfb-639c-af69b62d78cd</instanceUuid>
+      <npivTemporaryDisabled>true</npivTemporaryDisabled>
+      <template>false</template>
+      <guestId>other3xLinux64Guest</guestId>
+      <alternateGuestName></alternateGuestName>
+      <annotation>EUC Unified Access Gateway</annotation>
+      <files>
+        <vmPathName>[WorkloadDatastore] 3ee58f5e-2f9f-e044-1292-0a7300127891/H7-UAG-Canton.vmx</vmPathName>
+        <snapshotDirectory>[WorkloadDatastore] 3ee58f5e-2f9f-e044-1292-0a7300127891/</snapshotDirectory>
+        <suspendDirectory>[WorkloadDatastore] 3ee58f5e-2f9f-e044-1292-0a7300127891/</suspendDirectory>
+        <logDirectory>[WorkloadDatastore] 3ee58f5e-2f9f-e044-1292-0a7300127891/</logDirectory>
+      </files>
+      <tools>
+        <toolsVersion>10346</toolsVersion>
+        <toolsInstallType>guestToolsTypeOpenVMTools</toolsInstallType>
+        <afterPowerOn>true</afterPowerOn>
+        <afterResume>true</afterResume>
+        <beforeGuestStandby>true</beforeGuestStandby>
+        <beforeGuestShutdown>true</beforeGuestShutdown>
+        <toolsUpgradePolicy>manual</toolsUpgradePolicy>
+        <syncTimeWithHostAllowed>true</syncTimeWithHostAllowed>
+        <syncTimeWithHost>false</syncTimeWithHost>
+        <lastInstallInfo>
+          <counter>0</counter>
+        </lastInstallInfo>
+      </tools>
+      <flags>
+        <disableAcceleration>false</disableAcceleration>
+        <enableLogging>true</enableLogging>
+        <useToe>false</useToe>
+        <runWithDebugInfo>false</runWithDebugInfo>
+        <monitorType>release</monitorType>
+        <htSharing>any</htSharing>
+        <snapshotDisabled>false</snapshotDisabled>
+        <snapshotLocked>false</snapshotLocked>
+        <diskUuidEnabled>false</diskUuidEnabled>
+        <virtualMmuUsage>automatic</virtualMmuUsage>
+        <virtualExecUsage>hvAuto</virtualExecUsage>
+        <snapshotPowerOffBehavior>powerOff</snapshotPowerOffBehavior>
+        <recordReplayEnabled>false</recordReplayEnabled>
+        <faultToleranceType>unset</faultToleranceType>
+        <cbrcCacheEnabled>false</cbrcCacheEnabled>
+        <vvtdEnabled>false</vvtdEnabled>
+        <vbsEnabled>false</vbsEnabled>
+      </flags>
+      <defaultPowerOps>
+        <powerOffType>soft</powerOffType>
+        <suspendType>hard</suspendType>
+        <resetType>soft</resetType>
+        <defaultPowerOffType>soft</defaultPowerOffType>
+        <defaultSuspendType>hard</defaultSuspendType>
+        <defaultResetType>soft</defaultResetType>
+        <standbyAction>checkpoint</standbyAction>
+      </defaultPowerOps>
+      <hardware>
+        <numCPU>2</numCPU>
+        <numCoresPerSocket>1</numCoresPerSocket>
+        <memoryMB>4096</memoryMB>
+        <virtualICH7MPresent>false</virtualICH7MPresent>
+        <virtualSMCPresent>false</virtualSMCPresent>
+        <device XMLSchema-instance:type="VirtualIDEController">
+          <key>200</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>IDE 0</label>
+            <summary>IDE 0</summary>
+          </deviceInfo>
+          <busNumber>0</busNumber>
+          <device>3000</device>
+        </device>
+        <device XMLSchema-instance:type="VirtualIDEController">
+          <key>201</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>IDE 1</label>
+            <summary>IDE 1</summary>
+          </deviceInfo>
+          <busNumber>1</busNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualPS2Controller">
+          <key>300</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>PS2 controller 0</label>
+            <summary>PS2 controller 0</summary>
+          </deviceInfo>
+          <busNumber>0</busNumber>
+          <device>600</device>
+          <device>700</device>
+        </device>
+        <device XMLSchema-instance:type="VirtualPCIController">
+          <key>100</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>PCI controller 0</label>
+            <summary>PCI controller 0</summary>
+          </deviceInfo>
+          <busNumber>0</busNumber>
+          <device>500</device>
+          <device>12000</device>
+          <device>1000</device>
+          <device>4000</device>
+        </device>
+        <device XMLSchema-instance:type="VirtualSIOController">
+          <key>400</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>SIO controller 0</label>
+            <summary>SIO controller 0</summary>
+          </deviceInfo>
+          <busNumber>0</busNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualKeyboard">
+          <key>600</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Keyboard </label>
+            <summary>Keyboard</summary>
+          </deviceInfo>
+          <controllerKey>300</controllerKey>
+          <unitNumber>0</unitNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualPointingDevice">
+          <key>700</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Pointing device</label>
+            <summary>Pointing device; Device</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualPointingDeviceDeviceBackingInfo">
+            <deviceName></deviceName>
+            <useAutoDetect>false</useAutoDetect>
+            <hostPointingDevice>autodetect</hostPointingDevice>
+          </backing>
+          <controllerKey>300</controllerKey>
+          <unitNumber>1</unitNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualMachineVideoCard">
+          <key>500</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Video card </label>
+            <summary>Video card</summary>
+          </deviceInfo>
+          <controllerKey>100</controllerKey>
+          <unitNumber>0</unitNumber>
+          <videoRamSizeInKB>4096</videoRamSizeInKB>
+          <numDisplays>1</numDisplays>
+          <useAutoDetect>false</useAutoDetect>
+          <enable3DSupport>false</enable3DSupport>
+          <use3dRenderer>automatic</use3dRenderer>
+          <graphicsMemorySizeInKB>262144</graphicsMemorySizeInKB>
+        </device>
+        <device XMLSchema-instance:type="VirtualMachineVMCIDevice">
+          <key>12000</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>VMCI device</label>
+            <summary>Device on the virtual machine PCI bus that provides support for the virtual machine communication interface</summary>
+          </deviceInfo>
+          <slotInfo XMLSchema-instance:type="VirtualDevicePciBusSlotInfo">
+            <pciSlotNumber>32</pciSlotNumber>
+          </slotInfo>
+          <controllerKey>100</controllerKey>
+          <unitNumber>17</unitNumber>
+          <id>-675663384</id>
+          <allowUnrestrictedCommunication>false</allowUnrestrictedCommunication>
+          <filterEnable>false</filterEnable>
+        </device>
+        <device XMLSchema-instance:type="VirtualLsiLogicController">
+          <key>1000</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>SCSI controller 0</label>
+            <summary>LSI Logic</summary>
+          </deviceInfo>
+          <slotInfo XMLSchema-instance:type="VirtualDevicePciBusSlotInfo">
+            <pciSlotNumber>16</pciSlotNumber>
+          </slotInfo>
+          <controllerKey>100</controllerKey>
+          <unitNumber>3</unitNumber>
+          <busNumber>0</busNumber>
+          <device>2000</device>
+          <hotAddRemove>true</hotAddRemove>
+          <sharedBus>noSharing</sharedBus>
+          <scsiCtlrUnitNumber>7</scsiCtlrUnitNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualCdrom">
+          <key>3000</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>CD/DVD drive 1</label>
+            <summary>Remote device</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualCdromRemotePassthroughBackingInfo">
+            <deviceName></deviceName>
+            <useAutoDetect>true</useAutoDetect>
+            <exclusive>false</exclusive>
+          </backing>
+          <connectable>
+            <startConnected>true</startConnected>
+            <allowGuestControl>true</allowGuestControl>
+            <connected>false</connected>
+            <status>untried</status>
+          </connectable>
+          <controllerKey>200</controllerKey>
+          <unitNumber>0</unitNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualDisk">
+          <key>2000</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Hard disk 1</label>
+            <summary>20971520 KB</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualDiskFlatVer2BackingInfo">
+            <fileName>[WorkloadDatastore] 3ee58f5e-2f9f-e044-1292-0a7300127891/H7-UAG-Canton.vmdk</fileName>
+            <datastore type="Datastore">datastore-60</datastore>
+            <backingObjectId>3fe58f5e-218f-65d4-7065-0a7300127891</backingObjectId>
+            <diskMode>persistent</diskMode>
+            <split>false</split>
+            <writeThrough>false</writeThrough>
+            <thinProvisioned>true</thinProvisioned>
+            <eagerlyScrub>false</eagerlyScrub>
+            <uuid>6000C292-f1f5-c071-52ba-269687fb2363</uuid>
+            <contentId>9459a12ccd00770cfb7b77595138bc0a</contentId>
+            <digestEnabled>false</digestEnabled>
+            <sharing>sharingNone</sharing>
+          </backing>
+          <controllerKey>1000</controllerKey>
+          <unitNumber>0</unitNumber>
+          <capacityInKB>20971520</capacityInKB>
+          <capacityInBytes>21474836480</capacityInBytes>
+          <shares>
+            <shares>1000</shares>
+            <level>normal</level>
+          </shares>
+          <storageIOAllocation>
+            <limit>-1</limit>
+            <shares>
+              <shares>1000</shares>
+              <level>normal</level>
+            </shares>
+            <reservation>0</reservation>
+          </storageIOAllocation>
+          <diskObjectId>60-2000</diskObjectId>
+          <nativeUnmanagedLinkedClone>false</nativeUnmanagedLinkedClone>
+        </device>
+        <device XMLSchema-instance:type="VirtualVmxnet3">
+          <key>4000</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Network adapter 1</label>
+            <summary>nsx.LogicalSwitch: 7450dd90-add5-429b-805b-9a340b766061</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualEthernetCardOpaqueNetworkBackingInfo">
+            <opaqueNetworkId>7450dd90-add5-429b-805b-9a340b766061</opaqueNetworkId>
+            <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+          </backing>
+          <connectable>
+            <migrateConnect>unset</migrateConnect>
+            <startConnected>true</startConnected>
+            <allowGuestControl>true</allowGuestControl>
+            <connected>false</connected>
+            <status>untried</status>
+          </connectable>
+          <slotInfo XMLSchema-instance:type="VirtualDevicePciBusSlotInfo">
+            <pciSlotNumber>160</pciSlotNumber>
+          </slotInfo>
+          <controllerKey>100</controllerKey>
+          <unitNumber>7</unitNumber>
+          <addressType>assigned</addressType>
+          <macAddress>00:50:56:9c:a2:14</macAddress>
+          <wakeOnLanEnabled>true</wakeOnLanEnabled>
+          <resourceAllocation>
+            <reservation>0</reservation>
+            <share>
+              <shares>50</shares>
+              <level>normal</level>
+            </share>
+            <limit>-1</limit>
+          </resourceAllocation>
+          <externalId>3fcb38b8-8570-4a44-91c1-ed1195b424ea</externalId>
+          <uptCompatibilityEnabled>true</uptCompatibilityEnabled>
+        </device>
+      </hardware>
+      <cpuAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>false</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>2000</shares>
+          <level>normal</level>
+        </shares>
+      </cpuAllocation>
+      <memoryAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>false</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>40960</shares>
+          <level>normal</level>
+        </shares>
+      </memoryAllocation>
+      <latencySensitivity>
+        <level>normal</level>
+      </latencySensitivity>
+      <memoryHotAddEnabled>false</memoryHotAddEnabled>
+      <cpuHotAddEnabled>false</cpuHotAddEnabled>
+      <cpuHotRemoveEnabled>false</cpuHotRemoveEnabled>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>nvram</key>
+        <value XMLSchema-instance:type="xsd:string">H7-UAG-Canton.nvram</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge0.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>svga.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge4.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge4.virtualDev</key>
+        <value XMLSchema-instance:type="xsd:string">pcieRootPort</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge4.functions</key>
+        <value XMLSchema-instance:type="xsd:string">8</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge5.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge5.virtualDev</key>
+        <value XMLSchema-instance:type="xsd:string">pcieRootPort</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge5.functions</key>
+        <value XMLSchema-instance:type="xsd:string">8</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge6.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge6.virtualDev</key>
+        <value XMLSchema-instance:type="xsd:string">pcieRootPort</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge6.functions</key>
+        <value XMLSchema-instance:type="xsd:string">8</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge7.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge7.virtualDev</key>
+        <value XMLSchema-instance:type="xsd:string">pcieRootPort</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge7.functions</key>
+        <value XMLSchema-instance:type="xsd:string">8</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>hpet0.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>ide0:0.autodetect</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>viv.moid</key>
+        <value XMLSchema-instance:type="xsd:string">305c6204-690f-4acd-94da-97af4635f7f7:vm-12758:woW1cVW3lK9bb79SuA61fHpfnUMiIpIimNraLOismJI=</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>numa.autosize.cookie</key>
+        <value XMLSchema-instance:type="xsd:string">20001</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>numa.autosize.vcpu.maxPerVirtualNode</key>
+        <value XMLSchema-instance:type="xsd:string">2</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>sched.swap.derivedName</key>
+        <value XMLSchema-instance:type="xsd:string">/vmfs/volumes/vsan:de14938dee2b41c8-8aa3f463c3428f4a/3ee58f5e-2f9f-e044-1292-0a7300127891/H7-UAG-Canton-6f3f2431.vswp</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>scsi0:0.redo</key>
+        <value XMLSchema-instance:type="xsd:string"></value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge0.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">17</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge4.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">21</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge5.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">22</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge6.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">23</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge7.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">24</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>scsi0.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">16</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>ethernet0.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">160</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vmci0.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">32</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vmotion.checkpointFBSize</key>
+        <value XMLSchema-instance:type="xsd:string">4194304</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>monitor.phys_bits_used</key>
+        <value XMLSchema-instance:type="xsd:string">40</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>softPowerOff</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vmware.tools.internalversion</key>
+        <value XMLSchema-instance:type="xsd:string">10346</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vmware.tools.requiredversion</key>
+        <value XMLSchema-instance:type="xsd:string">11297</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>migrate.hostLogState</key>
+        <value XMLSchema-instance:type="xsd:string">success</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>migrate.migrationId</key>
+        <value XMLSchema-instance:type="xsd:string">4419214767181108528</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>migrate.hostLog</key>
+        <value XMLSchema-instance:type="xsd:string">H7-UAG-Canton-2464094f.hlog</value>
+      </extraConfig>
+      <datastoreUrl>
+        <name>WorkloadDatastore</name>
+        <url>/vmfs/volumes/vsan:de14938dee2b41c8-8aa3f463c3428f4a</url>
+      </datastoreUrl>
+      <swapPlacement>inherit</swapPlacement>
+      <bootOptions>
+        <enterBIOSSetup>false</enterBIOSSetup>
+        <efiSecureBootEnabled>false</efiSecureBootEnabled>
+        <bootRetryEnabled>false</bootRetryEnabled>
+        <bootRetryDelay>10000</bootRetryDelay>
+        <networkBootProtocol>ipv4</networkBootProtocol>
+      </bootOptions>
+      <vAppConfig XMLSchema-instance:type="VmConfigInfo">
+        <product>
+          <key>0</key>
+          <name>EUC Unified Access Gateway</name>
+          <vendor>VMware, Inc.</vendor>
+          <version>3.9.1.0</version>
+          <fullVersion>3.9.1.0 Build 15851887</fullVersion>
+          <vendorUrl>http://www.vmware.com</vendorUrl>
+        </product>
+        <product>
+          <key>1</key>
+          <classId>vami</classId>
+          <instanceId>EUC_Unified_Access_Gateway</instanceId>
+        </product>
+        <product>
+          <key>2</key>
+          <classId>vm</classId>
+        </product>
+        <property>
+          <key>0</key>
+          <id>defaultGateway</id>
+          <category>Networking Properties</category>
+          <label>IPv4 Default Gateway</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <value>192.168.80.1</value>
+          <description>The default gateway address.</description>
+        </property>
+        <property>
+          <key>1</key>
+          <id>forceNetmask2</id>
+          <category>Networking Properties</category>
+          <label>NIC 3 (eth2) IPv4 overriding netmask</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>The overriding IPv4 netmask for this interface.</description>
+        </property>
+        <property>
+          <key>2</key>
+          <id>ipv6prefix2</id>
+          <category>Networking Properties</category>
+          <label>NIC 3 (eth2) IPv6 netmask/prefix</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>IPv6 netmask or prefix for this interface.</description>
+        </property>
+        <property>
+          <key>3</key>
+          <id>ipv6prefix1</id>
+          <category>Networking Properties</category>
+          <label>NIC 2 (eth1) IPv6 netmask/prefix</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>IPv6 netmask or prefix for this interface.</description>
+        </property>
+        <property>
+          <key>4</key>
+          <id>forceNetmask1</id>
+          <category>Networking Properties</category>
+          <label>NIC 2 (eth1) IPv4 overriding netmask</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>The overriding IPv4 netmask for this interface.</description>
+        </property>
+        <property>
+          <key>5</key>
+          <id>forceNetmask0</id>
+          <category>Networking Properties</category>
+          <label>NIC 1 (eth0) IPv4 overriding netmask</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>The overriden IPv4 netmask for this interface.</description>
+        </property>
+        <property>
+          <key>6</key>
+          <id>vm.vmname</id>
+          <category>System Properties</category>
+          <label>VM Name</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <defaultValue>EUC_Unified_Access_Gateway</defaultValue>
+        </property>
+        <property>
+          <key>7</key>
+          <id>routes2</id>
+          <category>Networking Properties</category>
+          <label>List of IPv4 custom routes for NIC 3 (eth2)</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>Comma separated list of IPv4 custom routes for NIC 3 (eth2) in the form ipv4-network-address/bits ipv4-gateway-address OR ipv4-network-address/bits&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;For example: 20.2.0.0/16 10.2.0.1, 20.9.0.0/16 10.2.0.2, 10.2.0.1/32</description>
+        </property>
+        <property>
+          <key>8</key>
+          <id>routes1</id>
+          <category>Networking Properties</category>
+          <label>List of IPv4 custom routes for NIC 2 (eth1)</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>Comma separated list of IPv4 custom routes for NIC 2 (eth1) in the form ipv4-network-address/bits ipv4-gateway-address OR ipv4-network-address/bits&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;For example: 20.2.0.0/16 10.2.0.1, 20.9.0.0/16 10.2.0.2, 10.2.0.1/32</description>
+        </property>
+        <property>
+          <key>9</key>
+          <id>routes0</id>
+          <category>Networking Properties</category>
+          <label>List of IPv4 custom routes for NIC 1 (eth0)</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <description>Comma separated list of IPv4 custom routes for NIC 1 (eth0) in the form ipv4-network-address/bits ipv4-gateway-address OR ipv4-network-address/bits.&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;For example: 20.2.0.0/16 10.2.0.1, 20.9.0.0/16 10.2.0.2, 10.2.0.1/32</description>
+        </property>
+        <property>
+          <key>10</key>
+          <id>ip1</id>
+          <category>Networking Properties</category>
+          <label>NIC 2 (eth1) IPv4 address:</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>Enter the IPv4 address for NIC 2, which is used for management network interface.</description>
+        </property>
+        <property>
+          <key>11</key>
+          <id>netmask1</id>
+          <category>Networking Properties</category>
+          <label>NIC 2 (eth1) IPv4 netmask</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>IPv4 netmask for this interface.</description>
+        </property>
+        <property>
+          <key>12</key>
+          <id>ip2</id>
+          <category>Networking Properties</category>
+          <label>NIC 3 (eth2) IPv4 address:</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>Enter the IPv4 address for NIC 3, which is used for for the backend network interface.</description>
+        </property>
+        <property>
+          <key>13</key>
+          <id>netmask2</id>
+          <category>Networking Properties</category>
+          <label>NIC 3 (eth2) IPv4 netmask</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>IPv4 netmask for this interface.</description>
+        </property>
+        <property>
+          <key>14</key>
+          <id>ip0</id>
+          <category>Networking Properties</category>
+          <label>NIC 1 (eth0) IPv4 address:</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <value>192.168.80.4</value>
+          <description>Enter the IPv4 address for NIC 1, which is used for internet network interface.</description>
+        </property>
+        <property>
+          <key>15</key>
+          <id>tlsPortSharingEnabled</id>
+          <category>Networking Properties</category>
+          <label>TLS Port 443 Sharing</label>
+          <type>boolean</type>
+          <userConfigurable>false</userConfigurable>
+          <defaultValue>True</defaultValue>
+          <description>Enable TLS port 443 sharing with HA Proxy</description>
+        </property>
+        <property>
+          <key>16</key>
+          <id>syslogUrl</id>
+          <category>System Properties</category>
+          <label>Syslog server URL:</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>(Optional) The URL must contain the protocol, host name or IP address, and port number&#xA;&#x9;&#x9;&#x9;&#x9;(example: syslog.example.com:514) of the syslog server that logs UAG events.</description>
+        </property>
+        <property>
+          <key>17</key>
+          <id>fipsEnabled</id>
+          <category>System Properties</category>
+          <label>Enabling FIPS mode</label>
+          <type>boolean</type>
+          <userConfigurable>false</userConfigurable>
+          <defaultValue>False</defaultValue>
+          <description>A boolean which governs FIPS mode being enabled/disabled in UAG&#39;s OVA file</description>
+        </property>
+        <property>
+          <key>18</key>
+          <id>managementAppliance</id>
+          <category>System Properties</category>
+          <label>Management Appliance</label>
+          <type>boolean</type>
+          <userConfigurable>false</userConfigurable>
+          <defaultValue>False</defaultValue>
+          <description>Deploy as Management Appliance</description>
+        </property>
+        <property>
+          <key>19</key>
+          <id>ipMode0</id>
+          <category>Networking Properties</category>
+          <label>IPMode for NIC 1 (eth0)</label>
+          <type>string[&#34;&#34;, &#34;STATICV4&#34;, &#34;STATICV6&#34;, &#34;DHCPV4&#34;, &#34;DHCPV6&#34;, &#34;AUTOV6&#34;, &#34;STATICV4+STATICV6&#34;, &#34;STATICV4+DHCPV6&#34;, &#34;STATICV4+AUTOV6&#34;, &#34;DHCPV4+STATICV6&#34;, &#34;DHCPV4+DHCPV6&#34;, &#34;DHCPV4+AUTOV6&#34;]</type>
+          <userConfigurable>true</userConfigurable>
+          <value>STATICV4</value>
+          <description>If you choose STATICV4/STATICV6 option, enter IPv4/IPv6 address, netmask/prefix for respective NIC and an optional IPv4/IPv6 default gateway. If left blank, defaults to DHCPV4+DHCPV6 for IP address allocation.</description>
+        </property>
+        <property>
+          <key>20</key>
+          <id>ipMode1</id>
+          <category>Networking Properties</category>
+          <label>IPMode for NIC 2 (eth1)</label>
+          <type>string[&#34;&#34;, &#34;STATICV4&#34;, &#34;STATICV6&#34;, &#34;DHCPV4&#34;, &#34;DHCPV6&#34;, &#34;AUTOV6&#34;, &#34;STATICV4+STATICV6&#34;, &#34;STATICV4+DHCPV6&#34;, &#34;STATICV4+AUTOV6&#34;, &#34;DHCPV4+STATICV6&#34;, &#34;DHCPV4+DHCPV6&#34;, &#34;DHCPV4+AUTOV6&#34;]</type>
+          <userConfigurable>false</userConfigurable>
+          <description>If you choose STATICV4/STATICV6 option, enter IPv4/IPv6 address, netmask/prefix for respective NIC and an optional IPv4/IPv6 default gateway. If left blank, defaults to DHCPV4+DHCPV6 for IP address allocation.</description>
+        </property>
+        <property>
+          <key>21</key>
+          <id>forwardrules</id>
+          <category>Networking Properties</category>
+          <label>Comma separated list of forward rules in the form {tcp|udp}/listening-port-number/destination-ip-address:destination-port-number</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <description>(IPv4 example: tcp/5262/10.110.92.129:9443,tcp/5263/10.20.30.50:7443)</description>
+        </property>
+        <property>
+          <key>22</key>
+          <id>forceIpv6Prefix1</id>
+          <category>Networking Properties</category>
+          <label>NIC 2 (eth1) IPv6 overriding netmask/prefix</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>The overriding IPv6 prefix for this interface.</description>
+        </property>
+        <property>
+          <key>23</key>
+          <id>forceIpv6Prefix0</id>
+          <category>Networking Properties</category>
+          <label>NIC 1 (eth0) IPv6 overriding netmask/prefix</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>The overriding IPv6 prefix for this interface.</description>
+        </property>
+        <property>
+          <key>24</key>
+          <id>forceIpv6Prefix2</id>
+          <category>Networking Properties</category>
+          <label>NIC 3 (eth2) IPv6 overriding netmask/prefix</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>The overriding IPv6 prefix for this interface.</description>
+        </property>
+        <property>
+          <key>25</key>
+          <id>sshPasswordAccessEnabled</id>
+          <category>System Properties</category>
+          <label>Allow SSH root login using password</label>
+          <type>boolean</type>
+          <userConfigurable>true</userConfigurable>
+          <defaultValue>True</defaultValue>
+          <value>True</value>
+          <description>Option to allow ssh root login using password. Default value is true</description>
+        </property>
+        <property>
+          <key>26</key>
+          <id>ipMode2</id>
+          <category>Networking Properties</category>
+          <label>IPMode for NIC 3 (eth2)</label>
+          <type>string[&#34;&#34;, &#34;STATICV4&#34;, &#34;STATICV6&#34;, &#34;DHCPV4&#34;, &#34;DHCPV6&#34;, &#34;AUTOV6&#34;, &#34;STATICV4+STATICV6&#34;, &#34;STATICV4+DHCPV6&#34;, &#34;STATICV4+AUTOV6&#34;, &#34;DHCPV4+STATICV6&#34;, &#34;DHCPV4+DHCPV6&#34;, &#34;DHCPV4+AUTOV6&#34;]</type>
+          <userConfigurable>false</userConfigurable>
+          <description>If you choose STATICV4/STATICV6 option, enter IPv4/IPv6 address, netmask/prefix for respective NIC and an optional IPv4/IPv6 default gateway. If left blank, defaults to DHCPV4+DHCPV6 for IP address allocation.</description>
+        </property>
+        <property>
+          <key>27</key>
+          <id>settingsJSON-14</id>
+          <category>System Properties</category>
+          <label>Settings JSON</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>A JSON string that defines the complete Unified Access Gateway configuration via the Settings resource in&#xA;&#x9;&#x9;&#x9;&#x9;the REST API. These settings are applied after all others.</description>
+        </property>
+        <property>
+          <key>28</key>
+          <id>settingsJSON-13</id>
+          <category>System Properties</category>
+          <label>Settings JSON</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>A JSON string that defines the complete Unified Access Gateway configuration via the Settings resource in&#xA;&#x9;&#x9;&#x9;&#x9;the REST API. These settings are applied after all others.</description>
+        </property>
+        <property>
+          <key>29</key>
+          <id>adminPassword</id>
+          <category>Password Options</category>
+          <label>Password for the admin user, which enables REST API access</label>
+          <type>password</type>
+          <userConfigurable>true</userConfigurable>
+          <description>Passwords must be at least 8 characters long, contain at least one uppercase and one lowercase letter, one digit, and one special character, which includes ! @ # $ % * ( ).&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;Warning: IF YOU LEAVE THE PASSWORD BLANK, AN ADMIN UI USER WILL NOT BE CREATED, AND YOU WILL NOT BE ABLE TO CONFIGURE ANY SETTINGS ON THE APPLIANCE. YOU WILL HAVE TO REDEPLOY THE UAG APPLIANCE WITH A PASSWORD TO USE THE ADMIN UI.</description>
+        </property>
+        <property>
+          <key>30</key>
+          <id>managementApplianceCert</id>
+          <category>System Properties</category>
+          <label>Management Appliance Cert</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>Management Appliance Cert</description>
+        </property>
+        <property>
+          <key>31</key>
+          <id>uagName</id>
+          <category>Networking Properties</category>
+          <label>Unified Gateway Appliance Name</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <value>H7-UAG-Canton</value>
+          <description>Name of the UAG appliance for identification</description>
+        </property>
+        <property>
+          <key>32</key>
+          <id>settingsJSON-15</id>
+          <category>System Properties</category>
+          <label>Settings JSON</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>A JSON string that defines the complete Unified Access Gateway configuration via the Settings resource in&#xA;&#x9;&#x9;&#x9;&#x9;the REST API. These settings are applied after all others.</description>
+        </property>
+        <property>
+          <key>33</key>
+          <id>ipv6prefix0</id>
+          <category>Networking Properties</category>
+          <label>NIC 1 (eth0) IPv6 netmask/prefix</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <description>IPv6 netmask or prefix for this interface.</description>
+        </property>
+        <property>
+          <key>34</key>
+          <id>settingsJSON-10</id>
+          <category>System Properties</category>
+          <label>Settings JSON</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>A JSON string that defines the complete Unified Access Gateway configuration via the Settings resource in&#xA;&#x9;&#x9;&#x9;&#x9;the REST API. These settings are applied after all others.</description>
+        </property>
+        <property>
+          <key>35</key>
+          <id>settingsJSON-12</id>
+          <category>System Properties</category>
+          <label>Settings JSON</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>A JSON string that defines the complete Unified Access Gateway configuration via the Settings resource in&#xA;&#x9;&#x9;&#x9;&#x9;the REST API. These settings are applied after all others.</description>
+        </property>
+        <property>
+          <key>36</key>
+          <id>settingsJSON-11</id>
+          <category>System Properties</category>
+          <label>Settings JSON</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>A JSON string that defines the complete Unified Access Gateway configuration via the Settings resource in&#xA;&#x9;&#x9;&#x9;&#x9;the REST API. These settings are applied after all others.</description>
+        </property>
+        <property>
+          <key>37</key>
+          <id>settingsJSON</id>
+          <category>System Properties</category>
+          <label>Settings JSON</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>A JSON string that defines the complete Unified Access Gateway configuration via the Settings resource in&#xA;                the REST API. These settings are applied after all others.</description>
+        </property>
+        <property>
+          <key>38</key>
+          <id>sshEnabled</id>
+          <category>System Properties</category>
+          <label>Enable SSH</label>
+          <type>boolean</type>
+          <userConfigurable>true</userConfigurable>
+          <defaultValue>False</defaultValue>
+          <value>True</value>
+          <description>Option to enable SSH on UAG</description>
+        </property>
+        <property>
+          <key>39</key>
+          <id>gateway2</id>
+          <category>Networking Properties</category>
+          <label>NIC 3 (eth2) IPv4 gateway</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>The default gateway address for this VM.</description>
+        </property>
+        <property>
+          <key>40</key>
+          <id>gateway1</id>
+          <category>Networking Properties</category>
+          <label>NIC 2 (eth1) IPv4 gateway</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>The default gateway address for this VM.</description>
+        </property>
+        <property>
+          <key>41</key>
+          <id>gateway0</id>
+          <category>Networking Properties</category>
+          <label>NIC 1 (eth0) IPv4 gateway</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>The default gateway address for this VM.</description>
+        </property>
+        <property>
+          <key>42</key>
+          <id>v6ip1</id>
+          <category>Networking Properties</category>
+          <label>NIC 2 (eth1) IPv6 address:</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>Enter the IPv6 address for NIC 2, which is used for management network interface.</description>
+        </property>
+        <property>
+          <key>43</key>
+          <id>v6ip2</id>
+          <category>Networking Properties</category>
+          <label>NIC 3 (eth2) IPv6 address:</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>Enter the IPv6 address for NIC 3, which is used for for the backend network interface.</description>
+        </property>
+        <property>
+          <key>44</key>
+          <id>v6ip0</id>
+          <category>Networking Properties</category>
+          <label>NIC 1 (eth0) IPv6 address:</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <description>Enter the IPv6 address for NIC 1, which is used for internet network interface.</description>
+        </property>
+        <property>
+          <key>45</key>
+          <id>DNS0</id>
+          <category>Networking Properties</category>
+          <label>Internet DNS</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>The domain name servers for this VM (comma separated).</description>
+        </property>
+        <property>
+          <key>46</key>
+          <id>buildNumber</id>
+          <category>System Properties</category>
+          <label>Full Version :</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <defaultValue>15851887</defaultValue>
+          <description>Full Version of ova</description>
+        </property>
+        <property>
+          <key>47</key>
+          <id>rootPassword</id>
+          <category>Password Options</category>
+          <label>Password for the root user of this VM</label>
+          <type>password</type>
+          <userConfigurable>true</userConfigurable>
+        </property>
+        <property>
+          <key>48</key>
+          <id>settingsJSON-2</id>
+          <category>System Properties</category>
+          <label>Settings JSON</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>A JSON string that defines the complete Unified Access Gateway configuration via the Settings resource in&#xA;&#x9;&#x9;&#x9;&#x9;the REST API. These settings are applied after all others.</description>
+        </property>
+        <property>
+          <key>49</key>
+          <id>settingsJSON-3</id>
+          <category>System Properties</category>
+          <label>Settings JSON</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>A JSON string that defines the complete Unified Access Gateway configuration via the Settings resource in&#xA;&#x9;&#x9;&#x9;&#x9;the REST API. These settings are applied after all others.</description>
+        </property>
+        <property>
+          <key>50</key>
+          <id>settingsJSON-4</id>
+          <category>System Properties</category>
+          <label>Settings JSON</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>A JSON string that defines the complete Unified Access Gateway configuration via the Settings resource in&#xA;&#x9;&#x9;&#x9;&#x9;the REST API. These settings are applied after all others.</description>
+        </property>
+        <property>
+          <key>51</key>
+          <id>settingsJSON-5</id>
+          <category>System Properties</category>
+          <label>Settings JSON</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>A JSON string that defines the complete Unified Access Gateway configuration via the Settings resource in&#xA;&#x9;&#x9;&#x9;&#x9;the REST API. These settings are applied after all others.</description>
+        </property>
+        <property>
+          <key>52</key>
+          <id>v6DefaultGateway</id>
+          <category>Networking Properties</category>
+          <label>IPv6 Default Gateway</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <description>The default gateway address.</description>
+        </property>
+        <property>
+          <key>53</key>
+          <id>settingsJSON-6</id>
+          <category>System Properties</category>
+          <label>Settings JSON</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>A JSON string that defines the complete Unified Access Gateway configuration via the Settings resource in&#xA;&#x9;&#x9;&#x9;&#x9;the REST API. These settings are applied after all others.</description>
+        </property>
+        <property>
+          <key>54</key>
+          <id>settingsJSON-7</id>
+          <category>System Properties</category>
+          <label>Settings JSON</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>A JSON string that defines the complete Unified Access Gateway configuration via the Settings resource in&#xA;&#x9;&#x9;&#x9;&#x9;the REST API. These settings are applied after all others.</description>
+        </property>
+        <property>
+          <key>55</key>
+          <id>v6Routes1</id>
+          <category>Networking Properties</category>
+          <label>List of IPv6 custom routes for NIC 2 (eth1)</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>Comma separated list of IPv6 custom routes for NIC 2 (eth1) in the form ipv6-network-address/prefix ipv6-gateway-address&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;For example: fc00:10:112:111::/64 fc00:10:112:111::253, fe80::250:56ff:fe84:ed2f/64 fe80::21c:f9ff:fe75:2800</description>
+        </property>
+        <property>
+          <key>56</key>
+          <id>settingsJSON-8</id>
+          <category>System Properties</category>
+          <label>Settings JSON</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>A JSON string that defines the complete Unified Access Gateway configuration via the Settings resource in&#xA;&#x9;&#x9;&#x9;&#x9;the REST API. These settings are applied after all others.</description>
+        </property>
+        <property>
+          <key>57</key>
+          <id>v6Routes0</id>
+          <category>Networking Properties</category>
+          <label>List of IPv6 custom routes for NIC 1 (eth0)</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>Comma separated list of IPv6 custom routes for NIC 1 (eth0) in the form ipv6-network-address/prefix ipv6-gateway-address&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;For example: fc00:10:112:111::/64 fc00:10:112:111::253, fe80::250:56ff:fe84:ed2f/64 fe80::21c:f9ff:fe75:2800</description>
+        </property>
+        <property>
+          <key>58</key>
+          <id>settingsJSON-9</id>
+          <category>System Properties</category>
+          <label>Settings JSON</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>A JSON string that defines the complete Unified Access Gateway configuration via the Settings resource in&#xA;&#x9;&#x9;&#x9;&#x9;the REST API. These settings are applied after all others.</description>
+        </property>
+        <property>
+          <key>59</key>
+          <id>netmask0</id>
+          <category>Networking Properties</category>
+          <label>NIC 1 (eth0) IPv4 netmask</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <value>255.255.255.0</value>
+          <description>The IPv4 netmask for this interface.</description>
+        </property>
+        <property>
+          <key>60</key>
+          <id>dnsSearch</id>
+          <category>Networking Properties</category>
+          <label>DNS Search Domain</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <value>set.local</value>
+          <description>Enter space-separated DNS Search list. (example:  example1.com example2.com)</description>
+        </property>
+        <property>
+          <key>61</key>
+          <id>settingsJSON-0</id>
+          <category>System Properties</category>
+          <label>Settings JSON</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>A JSON string that defines the complete Unified Access Gateway configuration via the Settings resource in&#xA;&#x9;&#x9;&#x9;&#x9;the REST API. These settings are applied after all others.</description>
+        </property>
+        <property>
+          <key>62</key>
+          <id>settingsJSON-1</id>
+          <category>System Properties</category>
+          <label>Settings JSON</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>A JSON string that defines the complete Unified Access Gateway configuration via the Settings resource in&#xA;&#x9;&#x9;&#x9;&#x9;the REST API. These settings are applied after all others.</description>
+        </property>
+        <property>
+          <key>63</key>
+          <id>ceipEnabled</id>
+          <category>Join CEIP</category>
+          <label>Join the VMware Customer Experience Improvement Program</label>
+          <type>boolean</type>
+          <userConfigurable>true</userConfigurable>
+          <defaultValue>True</defaultValue>
+          <value>False</value>
+          <description>VMware&#39;s Customer Experience Improvement Program (&#34;CEIP&#34;) provides VMware with information that enables VMware to improve its products and services, to fix problems, and to advise you on how best to deploy and use our products.  As part of the CEIP, VMware collects technical information about your organization&#39;s use of VMware products and services on a regular basis in association with your organization&#39;s VMware license key(s).  This information does not personally identify any individual.&#xA;&#xA;&#x9;&#x9;&#x9;Additional information regarding the data collected through CEIP and the purposes for which it is used by VMware is set forth in the Trust and Assurance Center at http://www.vmware.com/trustvmware/ceip.html.&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;If you prefer not to participate in VMware&#39;s CEIP for this product, you should uncheck the box below. You may join or leave VMware&#39;s CEIP for this product at any time.</description>
+        </property>
+        <property>
+          <key>64</key>
+          <id>DNS</id>
+          <category>Networking Properties</category>
+          <label>DNS server addresses</label>
+          <type>string</type>
+          <userConfigurable>true</userConfigurable>
+          <value>192.168.80.7</value>
+          <description>Enter space-separated IPv4/IPv6 addresses of the domain name servers for this VM (example:  192.0.2.1 192.0.2.2) for ipv4 (example: fc00:10:112:54::1) for ipv6</description>
+        </property>
+        <property>
+          <key>65</key>
+          <id>sshKeyAccessEnabled</id>
+          <category>System Properties</category>
+          <label>Allow SSH root login using key pair</label>
+          <type>boolean</type>
+          <userConfigurable>true</userConfigurable>
+          <defaultValue>False</defaultValue>
+          <value>False</value>
+          <description>Option to allow ssh root login using key/pair. Default value is false</description>
+        </property>
+        <property>
+          <key>66</key>
+          <id>v6Routes2</id>
+          <category>Networking Properties</category>
+          <label>List of IPv6 custom routes for NIC 3 (eth2)</label>
+          <type>string</type>
+          <userConfigurable>false</userConfigurable>
+          <description>Comma separated list of IPv6 custom routes for NIC 3 (eth2) in the form ipv6-network-address/prefix ipv6-gateway-address&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;For example: fc00:10:112:111::/64 fc00:10:112:111::253, fe80::250:56ff:fe84:ed2f/64 fe80::21c:f9ff:fe75:2800</description>
+        </property>
+        <ipAssignment>
+          <ipAllocationPolicy>fixedPolicy</ipAllocationPolicy>
+          <supportedIpProtocol>IPv4</supportedIpProtocol>
+          <supportedIpProtocol>IPv6</supportedIpProtocol>
+          <ipProtocol>IPv4</ipProtocol>
+        </ipAssignment>
+        <ovfEnvironmentTransport>com.vmware.guestInfo</ovfEnvironmentTransport>
+        <installBootRequired>false</installBootRequired>
+        <installBootStopDelay>0</installBootStopDelay>
+      </vAppConfig>
+      <vAssertsEnabled>false</vAssertsEnabled>
+      <changeTrackingEnabled>false</changeTrackingEnabled>
+      <firmware>bios</firmware>
+      <maxMksConnections>40</maxMksConnections>
+      <guestAutoLockEnabled>false</guestAutoLockEnabled>
+      <memoryReservationLockedToMax>false</memoryReservationLockedToMax>
+      <initialOverhead>
+        <initialMemoryReservation>70168576</initialMemoryReservation>
+        <initialSwapReservation>398721024</initialSwapReservation>
+      </initialOverhead>
+      <nestedHVEnabled>false</nestedHVEnabled>
+      <vPMCEnabled>false</vPMCEnabled>
+      <scheduledHardwareUpgradeInfo>
+        <upgradePolicy>never</upgradePolicy>
+        <scheduledHardwareUpgradeStatus>none</scheduledHardwareUpgradeStatus>
+      </scheduledHardwareUpgradeInfo>
+      <vmxConfigChecksum>q9hB45MbkOhN6KZwjucEerNcjgA=</vmxConfigChecksum>
+      <messageBusTunnelEnabled>false</messageBusTunnelEnabled>
+      <vmStorageObjectId>3ee58f5e-2f9f-e044-1292-0a7300127891</vmStorageObjectId>
+      <guestIntegrityInfo>
+        <enabled>false</enabled>
+      </guestIntegrityInfo>
+      <migrateEncryption>opportunistic</migrateEncryption>
+      <sgxInfo>
+        <epcSize>0</epcSize>
+        <flcMode>unlocked</flcMode>
+      </sgxInfo>
+      <guestMonitoringModeInfo></guestMonitoringModeInfo>
+      <sevEnabled>false</sevEnabled>
+    </val>
+  </propSet>
+  <propSet>
+    <name>configIssue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfEvent"></val>
+  </propSet>
+  <propSet>
+    <name>configStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>customValue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>datastore</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="Datastore">datastore-60</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>declaredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState">
+      <AlarmState>
+        <key>alarm-10.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-10</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1001.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-1001</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-113.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-113</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-12.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-12</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1403.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-1403</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-15.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-15</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-19.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-19</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-2.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-2</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-38.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-38</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-04-10T13:25:22.007Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>9585388</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-39.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-39</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-40.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-40</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-405.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-405</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-406.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-406</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-407.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-407</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-410.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-410</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-411.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-411</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-47.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-47</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-5.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-5</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T19:00:55.455113Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-514.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-514</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-52.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-52</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-54.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-54</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-6.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-6</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T19:00:55.455147Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-81.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-81</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-9.vm-12758</key>
+        <entity type="VirtualMachine">vm-12758</entity>
+        <alarm type="Alarm">alarm-9</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+    </val>
+  </propSet>
+  <propSet>
+    <name>disabledMethod</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfString">
+      <string>MakePrimaryVM_Task</string>
+      <string>TerminateFaultTolerantVM_Task</string>
+      <string>ResetVM_Task</string>
+      <string>UnmountToolsInstaller</string>
+      <string>MountToolsInstaller</string>
+      <string>MountToolsInstallerImage</string>
+      <string>RebootGuest</string>
+      <string>StandbyGuest</string>
+      <string>ShutdownGuest</string>
+      <string>PowerOffVM_Task</string>
+      <string>ExtractOvfEnvironment</string>
+      <string>SuspendVM_Task</string>
+      <string>AcquireMksTicket</string>
+      <string>AnswerVM</string>
+      <string>UpgradeTools_Task</string>
+      <string>UpgradeToolsFromImage_Task</string>
+      <string>ApplyEvcModeVM_Task</string>
+      <string>StartRecording_Task</string>
+      <string>StopRecording_Task</string>
+      <string>StartReplaying_Task</string>
+      <string>StopReplaying_Task</string>
+      <string>TurnOffFaultToleranceForVM_Task</string>
+      <string>MakePrimaryVM_Task</string>
+      <string>TerminateFaultTolerantVM_Task</string>
+      <string>DisableSecondaryVM_Task</string>
+      <string>EnableSecondaryVM_Task</string>
+      <string>StopRecording_Task</string>
+      <string>StopReplaying_Task</string>
+      <string>MarkAsVirtualMachine</string>
+    </val>
+  </propSet>
+  <propSet>
+    <name>effectiveRole</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfInt">
+      <int>-1939043557</int>
+      <int>1101</int>
+      <int>11135926</int>
+    </val>
+  </propSet>
+  <propSet>
+    <name>environmentBrowser</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="EnvironmentBrowser">envbrowser-12758</val>
+  </propSet>
+  <propSet>
+    <name>guest</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="GuestInfo">
+      <toolsStatus>toolsNotRunning</toolsStatus>
+      <toolsVersionStatus>guestToolsUnmanaged</toolsVersionStatus>
+      <toolsVersionStatus2>guestToolsUnmanaged</toolsVersionStatus2>
+      <toolsRunningStatus>guestToolsNotRunning</toolsRunningStatus>
+      <toolsVersion>10346</toolsVersion>
+      <guestId>other3xLinux64Guest</guestId>
+      <guestFullName>Other 3.x Linux (64-bit)</guestFullName>
+      <hostName>H7-UAG-Canton</hostName>
+      <screen>
+        <width>0</width>
+        <height>0</height>
+      </screen>
+      <guestState>notRunning</guestState>
+      <guestKernelCrashed>false</guestKernelCrashed>
+      <guestOperationsReady>false</guestOperationsReady>
+      <interactiveGuestOperationsReady>false</interactiveGuestOperationsReady>
+      <guestStateChangeSupported>false</guestStateChangeSupported>
+    </val>
+  </propSet>
+  <propSet>
+    <name>guestHeartbeatStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">gray</val>
+  </propSet>
+  <propSet>
+    <name>layout</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineFileLayout">
+      <configFile>H7-UAG-Canton.nvram</configFile>
+      <configFile>H7-UAG-Canton.vmsd</configFile>
+      <logFile>vmware-3.log</logFile>
+      <logFile>vmware-2.log</logFile>
+      <logFile>vmware-1.log</logFile>
+      <logFile>vmware.log</logFile>
+      <logFile>vmware-4.log</logFile>
+      <disk>
+        <key>2000</key>
+        <diskFile>[WorkloadDatastore] 3ee58f5e-2f9f-e044-1292-0a7300127891/H7-UAG-Canton.vmdk</diskFile>
+      </disk>
+    </val>
+  </propSet>
+  <propSet>
+    <name>layoutEx</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineFileLayoutEx">
+      <file>
+        <key>0</key>
+        <name>[WorkloadDatastore] 3ee58f5e-2f9f-e044-1292-0a7300127891/H7-UAG-Canton.vmx</name>
+        <type>config</type>
+        <size>2423</size>
+        <uniqueSize>2423</uniqueSize>
+        <backingObjectId>3ee58f5e-2f9f-e044-1292-0a7300127891</backingObjectId>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>1</key>
+        <name>[WorkloadDatastore] 3ee58f5e-2f9f-e044-1292-0a7300127891/H7-UAG-Canton.nvram</name>
+        <type>nvram</type>
+        <size>8684</size>
+        <uniqueSize>8684</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>2</key>
+        <name>[WorkloadDatastore] 3ee58f5e-2f9f-e044-1292-0a7300127891/H7-UAG-Canton.vmsd</name>
+        <type>snapshotList</type>
+        <size>0</size>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>3</key>
+        <name>[WorkloadDatastore] 3ee58f5e-2f9f-e044-1292-0a7300127891/H7-UAG-Canton.vmdk</name>
+        <type>diskDescriptor</type>
+        <size>13740539904</size>
+        <uniqueSize>13740539904</uniqueSize>
+        <backingObjectId>3fe58f5e-218f-65d4-7065-0a7300127891</backingObjectId>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>4</key>
+        <name>[WorkloadDatastore] 3ee58f5e-2f9f-e044-1292-0a7300127891/vmware-3.log</name>
+        <type>log</type>
+        <size>124239</size>
+        <uniqueSize>124239</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>5</key>
+        <name>[WorkloadDatastore] 3ee58f5e-2f9f-e044-1292-0a7300127891/vmware-2.log</name>
+        <type>log</type>
+        <size>123872</size>
+        <uniqueSize>123872</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>6</key>
+        <name>[WorkloadDatastore] 3ee58f5e-2f9f-e044-1292-0a7300127891/vmware-1.log</name>
+        <type>log</type>
+        <size>489933</size>
+        <uniqueSize>489933</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>7</key>
+        <name>[WorkloadDatastore] 3ee58f5e-2f9f-e044-1292-0a7300127891/vmware.log</name>
+        <type>log</type>
+        <size>121432</size>
+        <uniqueSize>121432</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>8</key>
+        <name>[WorkloadDatastore] 3ee58f5e-2f9f-e044-1292-0a7300127891/vmware-4.log</name>
+        <type>log</type>
+        <size>123702</size>
+        <uniqueSize>123702</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <disk>
+        <key>2000</key>
+        <chain>
+          <fileKey>3</fileKey>
+        </chain>
+      </disk>
+      <timestamp>2020-12-16T19:04:23.93876Z</timestamp>
+    </val>
+  </propSet>
+  <propSet>
+    <name>name</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:string">H7-UAG-Canton</val>
+  </propSet>
+  <propSet>
+    <name>network</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="OpaqueNetwork">network-o12588</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>overallStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>parent</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="Folder">group-v12752</val>
+  </propSet>
+  <propSet>
+    <name>permission</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfPermission"></val>
+  </propSet>
+  <propSet>
+    <name>recentTask</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>resourceConfig</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ResourceConfigSpec">
+      <entity type="VirtualMachine">vm-12758</entity>
+      <cpuAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>false</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>2000</shares>
+          <level>normal</level>
+        </shares>
+      </cpuAllocation>
+      <memoryAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>false</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>40960</shares>
+          <level>normal</level>
+        </shares>
+      </memoryAllocation>
+    </val>
+  </propSet>
+  <propSet>
+    <name>resourcePool</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="ResourcePool">resgroup-12587</val>
+  </propSet>
+  <propSet>
+    <name>rootSnapshot</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>runtime</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineRuntimeInfo">
+      <host type="HostSystem">host-4234</host>
+      <connectionState>connected</connectionState>
+      <powerState>poweredOff</powerState>
+      <faultToleranceState>notConfigured</faultToleranceState>
+      <toolsInstallerMounted>false</toolsInstallerMounted>
+      <numMksConnections>0</numMksConnections>
+      <recordReplayState>inactive</recordReplayState>
+      <onlineStandby>false</onlineStandby>
+      <consolidationNeeded>false</consolidationNeeded>
+      <offlineFeatureRequirement>
+        <key>cpuid.lm</key>
+        <featureName>cpuid.lm</featureName>
+        <value>Num:Min:1</value>
+      </offlineFeatureRequirement>
+      <paused>false</paused>
+      <snapshotInBackground>false</snapshotInBackground>
+      <instantCloneFrozen>false</instantCloneFrozen>
+    </val>
+  </propSet>
+  <propSet>
+    <name>storage</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineStorageInfo">
+      <perDatastoreUsage>
+        <datastore type="Datastore">datastore-60</datastore>
+        <committed>14201913344</committed>
+        <uncommitted>12427984896</uncommitted>
+        <unshared>13740539904</unshared>
+      </perDatastoreUsage>
+      <timestamp>2020-12-16T19:04:23.939Z</timestamp>
+    </val>
+  </propSet>
+  <propSet>
+    <name>summary</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineSummary">
+      <vm type="VirtualMachine">vm-12758</vm>
+      <runtime>
+        <host type="HostSystem">host-4234</host>
+        <connectionState>connected</connectionState>
+        <powerState>poweredOff</powerState>
+        <faultToleranceState>notConfigured</faultToleranceState>
+        <toolsInstallerMounted>false</toolsInstallerMounted>
+        <numMksConnections>0</numMksConnections>
+        <recordReplayState>inactive</recordReplayState>
+        <onlineStandby>false</onlineStandby>
+        <consolidationNeeded>false</consolidationNeeded>
+        <offlineFeatureRequirement>
+          <key>cpuid.lm</key>
+          <featureName>cpuid.lm</featureName>
+          <value>Num:Min:1</value>
+        </offlineFeatureRequirement>
+        <paused>false</paused>
+        <snapshotInBackground>false</snapshotInBackground>
+        <instantCloneFrozen>false</instantCloneFrozen>
+      </runtime>
+      <guest>
+        <guestId>other3xLinux64Guest</guestId>
+        <guestFullName>Other 3.x Linux (64-bit)</guestFullName>
+        <toolsStatus>toolsNotRunning</toolsStatus>
+        <toolsVersionStatus>guestToolsUnmanaged</toolsVersionStatus>
+        <toolsVersionStatus2>guestToolsUnmanaged</toolsVersionStatus2>
+        <toolsRunningStatus>guestToolsNotRunning</toolsRunningStatus>
+        <hostName>H7-UAG-Canton</hostName>
+      </guest>
+      <config>
+        <name>H7-UAG-Canton</name>
+        <template>false</template>
+        <vmPathName>[WorkloadDatastore] 3ee58f5e-2f9f-e044-1292-0a7300127891/H7-UAG-Canton.vmx</vmPathName>
+        <memorySizeMB>4096</memorySizeMB>
+        <numCpu>2</numCpu>
+        <numEthernetCards>1</numEthernetCards>
+        <numVirtualDisks>1</numVirtualDisks>
+        <uuid>421c1976-b887-9787-4299-3850d7ba31e8</uuid>
+        <instanceUuid>501c0fb5-13c3-bdfb-639c-af69b62d78cd</instanceUuid>
+        <guestId>other3xLinux64Guest</guestId>
+        <guestFullName>Other 3.x or later Linux (64-bit)</guestFullName>
+        <annotation>EUC Unified Access Gateway</annotation>
+        <product>
+          <key>0</key>
+          <name>EUC Unified Access Gateway</name>
+          <vendor>VMware, Inc.</vendor>
+          <version>3.9.1.0</version>
+          <fullVersion>3.9.1.0 Build 15851887</fullVersion>
+          <vendorUrl>http://www.vmware.com</vendorUrl>
+        </product>
+        <installBootRequired>false</installBootRequired>
+        <tpmPresent>false</tpmPresent>
+        <hwVersion>vmx-10</hwVersion>
+      </config>
+      <storage>
+        <committed>14201913344</committed>
+        <uncommitted>12427984896</uncommitted>
+        <unshared>13740539904</unshared>
+        <timestamp>2020-12-16T19:04:23.939613Z</timestamp>
+      </storage>
+      <quickStats>
+        <overallCpuReadiness>-1</overallCpuReadiness>
+        <guestHeartbeatStatus>gray</guestHeartbeatStatus>
+        <ftLogBandwidth>-1</ftLogBandwidth>
+        <ftSecondaryLatency>-1</ftSecondaryLatency>
+        <ftLatencyStatus>gray</ftLatencyStatus>
+      </quickStats>
+      <overallStatus>green</overallStatus>
+    </val>
+  </propSet>
+  <propSet>
+    <name>tag</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfTag"></val>
+  </propSet>
+  <propSet>
+    <name>triggeredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState"></val>
+  </propSet>
+  <propSet>
+    <name>value</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+</ObjectContent>

@@ -1,0 +1,63 @@
+<ObjectContent>
+  <obj type="CustomizationSpecManager">CustomizationSpecManager</obj>
+  <propSet>
+    <name>encryptionKey</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfByte">
+      <byte>-7</byte>
+    </val>
+  </propSet>
+  <propSet>
+    <name>info</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomizationSpecInfo">
+      <CustomizationSpecInfo>
+        <name>Windows</name>
+        <description></description>
+        <type>Windows</type>
+        <changeVersion>1553710061</changeVersion>
+        <lastUpdateTime>2019-03-27T18:07:41Z</lastUpdateTime>
+      </CustomizationSpecInfo>
+      <CustomizationSpecInfo>
+        <name>LinuxSpec</name>
+        <description>Standard Linux Customization Specification</description>
+        <type>Linux</type>
+        <changeVersion>1553710062</changeVersion>
+        <lastUpdateTime>2019-03-27T18:07:42Z</lastUpdateTime>
+      </CustomizationSpecInfo>
+      <CustomizationSpecInfo>
+        <name>Windows-Domain-SET</name>
+        <description></description>
+        <type>Windows</type>
+        <changeVersion>1604939839</changeVersion>
+        <lastUpdateTime>2020-11-09T16:37:19Z</lastUpdateTime>
+      </CustomizationSpecInfo>
+      <CustomizationSpecInfo>
+        <name>Linux</name>
+        <description></description>
+        <type>Linux</type>
+        <changeVersion>1591720413</changeVersion>
+        <lastUpdateTime>2020-06-09T16:33:33Z</lastUpdateTime>
+      </CustomizationSpecInfo>
+      <CustomizationSpecInfo>
+        <name>Ubuntu-Standard</name>
+        <description></description>
+        <type>Linux</type>
+        <changeVersion>1577423124</changeVersion>
+        <lastUpdateTime>2019-12-27T05:05:24Z</lastUpdateTime>
+      </CustomizationSpecInfo>
+      <CustomizationSpecInfo>
+        <name>Canton-H7-Test</name>
+        <description></description>
+        <type>Windows</type>
+        <changeVersion>1586916411</changeVersion>
+        <lastUpdateTime>2020-04-15T02:06:51Z</lastUpdateTime>
+      </CustomizationSpecInfo>
+      <CustomizationSpecInfo>
+        <name>Linux TKG</name>
+        <description></description>
+        <type>Linux</type>
+        <changeVersion>1592379649</changeVersion>
+        <lastUpdateTime>2020-06-17T07:40:49Z</lastUpdateTime>
+      </CustomizationSpecInfo>
+    </val>
+  </propSet>
+</ObjectContent>
