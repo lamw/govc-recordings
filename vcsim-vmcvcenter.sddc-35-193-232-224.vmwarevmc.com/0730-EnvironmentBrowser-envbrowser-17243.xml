@@ -1,0 +1,7 @@
+<ObjectContent>
+  <obj type="EnvironmentBrowser">envbrowser-17243</obj>
+  <propSet>
+    <name>datastoreBrowser</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="HostDatastoreBrowser">datastoreBrowser-domain-s17243</val>
+  </propSet>
+</ObjectContent>

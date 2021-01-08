@@ -1,0 +1,677 @@
+<ObjectContent>
+  <obj type="ComputeResource">domain-s17243</obj>
+  <propSet>
+    <name>alarmActionsEnabled</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:boolean">true</val>
+  </propSet>
+  <propSet>
+    <name>availableField</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldDef"></val>
+  </propSet>
+  <propSet>
+    <name>configIssue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfEvent"></val>
+  </propSet>
+  <propSet>
+    <name>configStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">gray</val>
+  </propSet>
+  <propSet>
+    <name>configurationEx</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ComputeResourceConfigInfo">
+      <vmSwapPlacement>vmDirectory</vmSwapPlacement>
+      <spbmEnabled>true</spbmEnabled>
+    </val>
+  </propSet>
+  <propSet>
+    <name>customValue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>datastore</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="Datastore">datastore-17246</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>declaredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState">
+      <AlarmState>
+        <key>alarm-1.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-1</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.988919Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-10.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-10</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.987008Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1001.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-1001</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.987073Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-109.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-109</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.988939Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-11.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-11</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989022Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-113.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-113</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.987095Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-114.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-114</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989049Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-115.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-115</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989069Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-116.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-116</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989113Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-117.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-117</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989134Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-118.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-118</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989152Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-119.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-119</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989171Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-12.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-12</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.987117Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-120.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-120</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989294Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-121.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-121</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989337Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-122.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-122</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989402Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-123.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-123</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989534Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-124.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-124</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989561Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-125.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-125</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.98958Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-13.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-13</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989599Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-14.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-14</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.98962Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1403.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-1403</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.987134Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1404.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-1404</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989662Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1405.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-1405</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989685Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-15.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-15</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.987151Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1501.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-1501</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989704Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-16.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-16</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989809Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-17.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-17</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989832Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-19.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-19</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.987169Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-2.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-2</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.987191Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-20.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-20</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989854Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-21.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-21</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.98991Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-22.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-22</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.989985Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-23.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-23</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.990072Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-25.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-25</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.990113Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-26.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-26</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.990168Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-3.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-3</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.990237Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-37.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-37</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.990284Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-38.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-38</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.987209Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-39.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-39</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.987225Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-4.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-4</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.990345Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-40.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-40</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.987241Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-405.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-405</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.987256Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-406.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-406</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.987272Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-407.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-407</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.987297Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-410.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-410</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.987313Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-411.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-411</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.987331Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-42.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-42</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.990397Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-43.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-43</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.990454Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-44.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-44</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.990506Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-45.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-45</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.990557Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-46.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-46</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.990595Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-47.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-47</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.987347Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-48.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-48</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.990658Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-49.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-49</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.99068Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-5.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-5</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.987366Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-50.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-50</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.990699Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-514.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-514</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.987389Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-52.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-52</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.988808Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-54.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-54</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.988841Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-6.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-6</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.988861Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-77.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-77</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.990719Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-81.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-81</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.988881Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-82.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-82</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.990736Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-85.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-85</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.990885Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-88.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-88</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.990913Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-9.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-9</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.988901Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-90.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-90</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.990931Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-93.domain-s17243</key>
+        <entity type="ComputeResource">domain-s17243</entity>
+        <alarm type="Alarm">alarm-93</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:47.990948Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+    </val>
+  </propSet>
+  <propSet>
+    <name>disabledMethod</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfString"></val>
+  </propSet>
+  <propSet>
+    <name>effectiveRole</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfInt">
+      <int>-1939043557</int>
+      <int>1101</int>
+      <int>11135926</int>
+    </val>
+  </propSet>
+  <propSet>
+    <name>environmentBrowser</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="EnvironmentBrowser">envbrowser-17243</val>
+  </propSet>
+  <propSet>
+    <name>host</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="HostSystem">host-17245</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>lifecycleManaged</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:boolean">false</val>
+  </propSet>
+  <propSet>
+    <name>name</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:string">10.46.224.24</val>
+  </propSet>
+  <propSet>
+    <name>network</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="Network">network-17248</ManagedObjectReference>
+      <ManagedObjectReference type="Network">network-17249</ManagedObjectReference>
+      <ManagedObjectReference type="Network">network-17247</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>overallStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">gray</val>
+  </propSet>
+  <propSet>
+    <name>parent</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="Folder">group-h23</val>
+  </propSet>
+  <propSet>
+    <name>permission</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfPermission"></val>
+  </propSet>
+  <propSet>
+    <name>recentTask</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>resourcePool</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="ResourcePool">resgroup-17244</val>
+  </propSet>
+  <propSet>
+    <name>summary</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ComputeResourceSummary">
+      <totalCpu>384000</totalCpu>
+      <totalMemory>1099511627776</totalMemory>
+      <numCpuCores>128</numCpuCores>
+      <numCpuThreads>128</numCpuThreads>
+      <effectiveCpu>0</effectiveCpu>
+      <effectiveMemory>0</effectiveMemory>
+      <numHosts>1</numHosts>
+      <numEffectiveHosts>0</numEffectiveHosts>
+      <overallStatus>gray</overallStatus>
+    </val>
+  </propSet>
+  <propSet>
+    <name>tag</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfTag"></val>
+  </propSet>
+  <propSet>
+    <name>triggeredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState"></val>
+  </propSet>
+  <propSet>
+    <name>value</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+</ObjectContent>

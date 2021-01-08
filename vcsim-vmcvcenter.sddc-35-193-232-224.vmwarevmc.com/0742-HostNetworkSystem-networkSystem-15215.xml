@@ -1,0 +1,2646 @@
+<ObjectContent>
+  <obj type="HostNetworkSystem">networkSystem-15215</obj>
+  <propSet>
+    <name>availableField</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldDef"></val>
+  </propSet>
+  <propSet>
+    <name>capabilities</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="HostNetCapabilities">
+      <canSetPhysicalNicLinkSpeed>true</canSetPhysicalNicLinkSpeed>
+      <supportsNicTeaming>true</supportsNicTeaming>
+      <nicTeamingPolicy>loadbalance_ip</nicTeamingPolicy>
+      <nicTeamingPolicy>loadbalance_srcmac</nicTeamingPolicy>
+      <nicTeamingPolicy>loadbalance_srcid</nicTeamingPolicy>
+      <nicTeamingPolicy>failover_explicit</nicTeamingPolicy>
+      <supportsVlan>true</supportsVlan>
+      <usesServiceConsoleNic>false</usesServiceConsoleNic>
+      <supportsNetworkHints>true</supportsNetworkHints>
+      <vswitchConfigSupported>true</vswitchConfigSupported>
+      <vnicConfigSupported>true</vnicConfigSupported>
+      <ipRouteConfigSupported>true</ipRouteConfigSupported>
+      <dnsConfigSupported>true</dnsConfigSupported>
+      <dhcpOnVnicSupported>true</dhcpOnVnicSupported>
+      <ipV6Supported>true</ipV6Supported>
+      <backupNfcNiocSupported>true</backupNfcNiocSupported>
+    </val>
+  </propSet>
+  <propSet>
+    <name>dnsConfig</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="HostDnsConfig">
+      <dhcp>false</dhcp>
+      <hostName>esx-0</hostName>
+      <domainName>sddc-34-194-236-229.vmwarevmc.com</domainName>
+      <address>10.46.192.2</address>
+      <searchDomain>sddc-34-194-236-229.vmwarevmc.com</searchDomain>
+    </val>
+  </propSet>
+  <propSet>
+    <name>ipRouteConfig</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="HostIpRouteConfig">
+      <defaultGateway>10.46.32.1</defaultGateway>
+    </val>
+  </propSet>
+  <propSet>
+    <name>networkConfig</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="HostNetworkConfig">
+      <pnic>
+        <device>vmnic0</device>
+        <spec>
+          <ip>
+            <dhcp>false</dhcp>
+          </ip>
+          <linkSpeed>
+            <speedMb>25000</speedMb>
+            <duplex>true</duplex>
+          </linkSpeed>
+          <enableEnhancedNetworkingStack>false</enableEnhancedNetworkingStack>
+          <ensInterruptEnabled>false</ensInterruptEnabled>
+        </spec>
+      </pnic>
+      <vnic>
+        <device>vmk0</device>
+        <portgroup></portgroup>
+        <spec>
+          <ip>
+            <dhcp>false</dhcp>
+            <ipAddress>10.46.32.4</ipAddress>
+            <subnetMask>255.255.240.0</subnetMask>
+            <ipV6Config>
+              <ipV6Address>
+                <ipAddress>fe80::887:74ff:fe01:ba57</ipAddress>
+                <prefixLength>64</prefixLength>
+                <origin>other</origin>
+                <dadState>preferred</dadState>
+              </ipV6Address>
+              <autoConfigurationEnabled>true</autoConfigurationEnabled>
+              <dhcpV6Enabled>false</dhcpV6Enabled>
+            </ipV6Config>
+          </ip>
+          <mac>0a:87:74:01:ba:57</mac>
+          <mtu>1500</mtu>
+          <tsoEnabled>true</tsoEnabled>
+          <netStackInstanceKey>defaultTcpipStack</netStackInstanceKey>
+          <opaqueNetwork>
+            <opaqueNetworkId>1a1c38db-7c39-4588-b0ac-914776993563</opaqueNetworkId>
+            <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+          </opaqueNetwork>
+          <externalId>esx-10.46.32.4-vmk0-vif</externalId>
+        </spec>
+      </vnic>
+      <vnic>
+        <device>vmk1</device>
+        <portgroup></portgroup>
+        <spec>
+          <ip>
+            <dhcp>false</dhcp>
+            <ipAddress>10.46.0.4</ipAddress>
+            <subnetMask>255.255.240.0</subnetMask>
+            <ipV6Config>
+              <ipV6Address>
+                <ipAddress>fe80::897:38ff:fe56:9591</ipAddress>
+                <prefixLength>64</prefixLength>
+                <origin>other</origin>
+                <dadState>preferred</dadState>
+              </ipV6Address>
+              <autoConfigurationEnabled>false</autoConfigurationEnabled>
+              <dhcpV6Enabled>false</dhcpV6Enabled>
+            </ipV6Config>
+          </ip>
+          <mac>0a:97:38:56:95:91</mac>
+          <mtu>9000</mtu>
+          <tsoEnabled>true</tsoEnabled>
+          <netStackInstanceKey>defaultTcpipStack</netStackInstanceKey>
+          <opaqueNetwork>
+            <opaqueNetworkId>57928aa7-82bc-4ba8-aded-a6728f5d2cb4</opaqueNetworkId>
+            <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+          </opaqueNetwork>
+          <externalId>9bdf93e0-5104-43bb-ad77-68212e64483f</externalId>
+          <ipRouteSpec>
+            <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig">
+              <defaultGateway>10.46.0.1</defaultGateway>
+            </ipRouteConfig>
+          </ipRouteSpec>
+        </spec>
+      </vnic>
+      <vnic>
+        <device>vmk4</device>
+        <portgroup></portgroup>
+        <spec>
+          <ip>
+            <dhcp>false</dhcp>
+            <ipAddress>10.46.96.4</ipAddress>
+            <subnetMask>255.255.240.0</subnetMask>
+            <ipV6Config>
+              <ipV6Address>
+                <ipAddress>fe80::801:b6ff:fe3a:1a19</ipAddress>
+                <prefixLength>64</prefixLength>
+                <origin>other</origin>
+                <dadState>preferred</dadState>
+              </ipV6Address>
+              <autoConfigurationEnabled>false</autoConfigurationEnabled>
+              <dhcpV6Enabled>false</dhcpV6Enabled>
+            </ipV6Config>
+          </ip>
+          <mac>0a:01:b6:3a:1a:19</mac>
+          <mtu>1500</mtu>
+          <tsoEnabled>true</tsoEnabled>
+          <netStackInstanceKey>api</netStackInstanceKey>
+          <opaqueNetwork>
+            <opaqueNetworkId>8cb75fa8-3428-482a-9161-5786a6d300cd</opaqueNetworkId>
+            <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+          </opaqueNetwork>
+          <externalId>bf81cedd-33c4-436b-98f8-9be91a6bb85b</externalId>
+          <ipRouteSpec>
+            <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig">
+              <defaultGateway>10.46.96.1</defaultGateway>
+            </ipRouteConfig>
+          </ipRouteSpec>
+        </spec>
+      </vnic>
+      <vnic>
+        <device>vmk2</device>
+        <portgroup></portgroup>
+        <spec>
+          <ip>
+            <dhcp>false</dhcp>
+            <ipAddress>10.46.16.4</ipAddress>
+            <subnetMask>255.255.240.0</subnetMask>
+            <ipV6Config>
+              <ipV6Address>
+                <ipAddress>fe80::8f8:ceff:fef1:38e5</ipAddress>
+                <prefixLength>64</prefixLength>
+                <origin>other</origin>
+                <dadState>preferred</dadState>
+              </ipV6Address>
+              <autoConfigurationEnabled>false</autoConfigurationEnabled>
+              <dhcpV6Enabled>false</dhcpV6Enabled>
+            </ipV6Config>
+          </ip>
+          <mac>0a:f8:ce:f1:38:e5</mac>
+          <mtu>9000</mtu>
+          <tsoEnabled>true</tsoEnabled>
+          <netStackInstanceKey>vmotion</netStackInstanceKey>
+          <opaqueNetwork>
+            <opaqueNetworkId>1b5fdf60-63f1-4961-b0cc-b1351a4dff0e</opaqueNetworkId>
+            <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+          </opaqueNetwork>
+          <externalId>a1aeddb4-429b-46ec-b9fc-5bbb1980d1a9</externalId>
+          <ipRouteSpec>
+            <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig">
+              <defaultGateway>10.46.16.1</defaultGateway>
+            </ipRouteConfig>
+          </ipRouteSpec>
+        </spec>
+      </vnic>
+      <dnsConfig XMLSchema-instance:type="HostDnsConfig">
+        <dhcp>false</dhcp>
+        <hostName>esx-0</hostName>
+        <domainName>sddc-34-194-236-229.vmwarevmc.com</domainName>
+        <address>10.46.192.2</address>
+        <searchDomain>sddc-34-194-236-229.vmwarevmc.com</searchDomain>
+      </dnsConfig>
+      <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig">
+        <defaultGateway>10.46.32.1</defaultGateway>
+      </ipRouteConfig>
+      <netStackSpec>
+        <netStackInstance>
+          <key>vSphereProvisioning</key>
+          <dnsConfig XMLSchema-instance:type="HostDnsConfig">
+            <dhcp>false</dhcp>
+            <hostName></hostName>
+            <domainName></domainName>
+          </dnsConfig>
+          <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig"></ipRouteConfig>
+          <requestedMaxNumberOfConnections>11000</requestedMaxNumberOfConnections>
+          <congestionControlAlgorithm>newreno</congestionControlAlgorithm>
+          <ipV6Enabled>true</ipV6Enabled>
+        </netStackInstance>
+      </netStackSpec>
+      <netStackSpec>
+        <netStackInstance>
+          <key>vmotion</key>
+          <name>vmotion</name>
+          <dnsConfig XMLSchema-instance:type="HostDnsConfig">
+            <dhcp>false</dhcp>
+            <hostName></hostName>
+            <domainName></domainName>
+          </dnsConfig>
+          <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig">
+            <defaultGateway>10.46.16.1</defaultGateway>
+          </ipRouteConfig>
+          <requestedMaxNumberOfConnections>11000</requestedMaxNumberOfConnections>
+          <congestionControlAlgorithm>newreno</congestionControlAlgorithm>
+          <ipV6Enabled>true</ipV6Enabled>
+          <routeTableConfig>
+            <ipRoute>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>0.0.0.0</network>
+                <prefixLength>0</prefixLength>
+                <gateway>10.46.16.1</gateway>
+                <deviceName>vmk2</deviceName>
+              </route>
+            </ipRoute>
+            <ipRoute>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>10.46.16.0</network>
+                <prefixLength>20</prefixLength>
+                <gateway>0.0.0.0</gateway>
+                <deviceName>vmk2</deviceName>
+              </route>
+            </ipRoute>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>fe80::</network>
+                <prefixLength>64</prefixLength>
+                <gateway>::</gateway>
+                <deviceName>lo0</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>fe80::</network>
+                <prefixLength>64</prefixLength>
+                <gateway>::</gateway>
+                <deviceName>vmk2</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff01::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>::1</gateway>
+                <deviceName>lo0</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff01::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>fe80::8f8:ceff:fef1:38e5</gateway>
+                <deviceName>vmk2</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff02::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>::1</gateway>
+                <deviceName>lo0</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff02::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>fe80::8f8:ceff:fef1:38e5</gateway>
+                <deviceName>vmk2</deviceName>
+              </route>
+            </ipv6Route>
+          </routeTableConfig>
+        </netStackInstance>
+      </netStackSpec>
+      <netStackSpec>
+        <netStackInstance>
+          <key>api</key>
+          <name>api</name>
+          <dnsConfig XMLSchema-instance:type="HostDnsConfig">
+            <dhcp>false</dhcp>
+            <hostName></hostName>
+            <domainName></domainName>
+          </dnsConfig>
+          <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig">
+            <defaultGateway>10.46.96.1</defaultGateway>
+          </ipRouteConfig>
+          <requestedMaxNumberOfConnections>11000</requestedMaxNumberOfConnections>
+          <congestionControlAlgorithm>newreno</congestionControlAlgorithm>
+          <ipV6Enabled>true</ipV6Enabled>
+          <routeTableConfig>
+            <ipRoute>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>0.0.0.0</network>
+                <prefixLength>0</prefixLength>
+                <gateway>10.46.96.1</gateway>
+                <deviceName>vmk4</deviceName>
+              </route>
+            </ipRoute>
+            <ipRoute>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>10.46.96.0</network>
+                <prefixLength>20</prefixLength>
+                <gateway>0.0.0.0</gateway>
+                <deviceName>vmk4</deviceName>
+              </route>
+            </ipRoute>
+            <ipRoute>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>10.46.192.0</network>
+                <prefixLength>19</prefixLength>
+                <gateway>10.46.96.2</gateway>
+                <deviceName>vmk4</deviceName>
+              </route>
+            </ipRoute>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>fe80::</network>
+                <prefixLength>64</prefixLength>
+                <gateway>::</gateway>
+                <deviceName>lo0</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>fe80::</network>
+                <prefixLength>64</prefixLength>
+                <gateway>::</gateway>
+                <deviceName>vmk4</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff01::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>::1</gateway>
+                <deviceName>lo0</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff01::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>fe80::801:b6ff:fe3a:1a19</gateway>
+                <deviceName>vmk4</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff02::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>::1</gateway>
+                <deviceName>lo0</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff02::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>fe80::801:b6ff:fe3a:1a19</gateway>
+                <deviceName>vmk4</deviceName>
+              </route>
+            </ipv6Route>
+          </routeTableConfig>
+        </netStackInstance>
+      </netStackSpec>
+      <netStackSpec>
+        <netStackInstance>
+          <key>hyperbus</key>
+          <name>hyperbus</name>
+          <dnsConfig XMLSchema-instance:type="HostDnsConfig">
+            <dhcp>false</dhcp>
+            <hostName></hostName>
+            <domainName></domainName>
+          </dnsConfig>
+          <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig"></ipRouteConfig>
+          <requestedMaxNumberOfConnections>11000</requestedMaxNumberOfConnections>
+          <congestionControlAlgorithm>newreno</congestionControlAlgorithm>
+          <ipV6Enabled>true</ipV6Enabled>
+          <routeTableConfig>
+            <ipRoute>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>169.254.0.0</network>
+                <prefixLength>16</prefixLength>
+                <gateway>0.0.0.0</gateway>
+                <deviceName>vmk50</deviceName>
+              </route>
+            </ipRoute>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>fe80::</network>
+                <prefixLength>64</prefixLength>
+                <gateway>::</gateway>
+                <deviceName>lo0</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>fe80::</network>
+                <prefixLength>64</prefixLength>
+                <gateway>::</gateway>
+                <deviceName>vmk50</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff01::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>::1</gateway>
+                <deviceName>lo0</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff01::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>fe80::250:56ff:fe61:1d59</gateway>
+                <deviceName>vmk50</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff02::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>::1</gateway>
+                <deviceName>lo0</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff02::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>fe80::250:56ff:fe61:1d59</gateway>
+                <deviceName>vmk50</deviceName>
+              </route>
+            </ipv6Route>
+          </routeTableConfig>
+        </netStackInstance>
+      </netStackSpec>
+      <netStackSpec>
+        <netStackInstance>
+          <key>vxlan</key>
+          <name>vxlan</name>
+          <dnsConfig XMLSchema-instance:type="HostDnsConfig">
+            <dhcp>false</dhcp>
+            <hostName></hostName>
+            <domainName></domainName>
+          </dnsConfig>
+          <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig">
+            <defaultGateway>10.46.48.1</defaultGateway>
+          </ipRouteConfig>
+          <requestedMaxNumberOfConnections>11000</requestedMaxNumberOfConnections>
+          <congestionControlAlgorithm>newreno</congestionControlAlgorithm>
+          <ipV6Enabled>true</ipV6Enabled>
+          <routeTableConfig>
+            <ipRoute>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>0.0.0.0</network>
+                <prefixLength>0</prefixLength>
+                <gateway>10.46.48.1</gateway>
+                <deviceName>vmk10</deviceName>
+              </route>
+            </ipRoute>
+            <ipRoute>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>10.46.48.0</network>
+                <prefixLength>20</prefixLength>
+                <gateway>0.0.0.0</gateway>
+                <deviceName>vmk10</deviceName>
+              </route>
+            </ipRoute>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>fe80::</network>
+                <prefixLength>64</prefixLength>
+                <gateway>::</gateway>
+                <deviceName>lo0</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>fe80::</network>
+                <prefixLength>64</prefixLength>
+                <gateway>::</gateway>
+                <deviceName>vmk10</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff01::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>::1</gateway>
+                <deviceName>lo0</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff01::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>fe80::8e8:e7ff:fedb:c0ed</gateway>
+                <deviceName>vmk10</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff02::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>::1</gateway>
+                <deviceName>lo0</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff02::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>fe80::8e8:e7ff:fedb:c0ed</gateway>
+                <deviceName>vmk10</deviceName>
+              </route>
+            </ipv6Route>
+          </routeTableConfig>
+        </netStackInstance>
+      </netStackSpec>
+      <netStackSpec>
+        <netStackInstance>
+          <key>defaultTcpipStack</key>
+          <name>defaultTcpipStack</name>
+          <dnsConfig XMLSchema-instance:type="HostDnsConfig">
+            <dhcp>false</dhcp>
+            <hostName>esx-0</hostName>
+            <domainName>sddc-34-194-236-229.vmwarevmc.com</domainName>
+            <address>10.46.192.2</address>
+            <searchDomain>sddc-34-194-236-229.vmwarevmc.com</searchDomain>
+          </dnsConfig>
+          <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig">
+            <defaultGateway>10.46.32.1</defaultGateway>
+          </ipRouteConfig>
+          <requestedMaxNumberOfConnections>11000</requestedMaxNumberOfConnections>
+          <congestionControlAlgorithm>newreno</congestionControlAlgorithm>
+          <ipV6Enabled>true</ipV6Enabled>
+          <routeTableConfig>
+            <ipRoute>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>0.0.0.0</network>
+                <prefixLength>0</prefixLength>
+                <gateway>10.46.32.1</gateway>
+                <deviceName>vmk0</deviceName>
+              </route>
+            </ipRoute>
+            <ipRoute>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>10.46.0.0</network>
+                <prefixLength>20</prefixLength>
+                <gateway>0.0.0.0</gateway>
+                <deviceName>vmk1</deviceName>
+              </route>
+            </ipRoute>
+            <ipRoute>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>10.46.32.0</network>
+                <prefixLength>20</prefixLength>
+                <gateway>0.0.0.0</gateway>
+                <deviceName>vmk0</deviceName>
+              </route>
+            </ipRoute>
+            <ipRoute>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>10.46.224.0</network>
+                <prefixLength>19</prefixLength>
+                <gateway>10.46.32.2</gateway>
+                <deviceName>vmk0</deviceName>
+              </route>
+            </ipRoute>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>fe80::</network>
+                <prefixLength>64</prefixLength>
+                <gateway>::</gateway>
+                <deviceName>lo0</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>fe80::</network>
+                <prefixLength>64</prefixLength>
+                <gateway>::</gateway>
+                <deviceName>vmk0</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>fe80::</network>
+                <prefixLength>64</prefixLength>
+                <gateway>::</gateway>
+                <deviceName>vmk1</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff01::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>::1</gateway>
+                <deviceName>lo0</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff01::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>fe80::887:74ff:fe01:ba57</gateway>
+                <deviceName>vmk0</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff01::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>fe80::897:38ff:fe56:9591</gateway>
+                <deviceName>vmk1</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff02::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>::1</gateway>
+                <deviceName>lo0</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff02::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>fe80::887:74ff:fe01:ba57</gateway>
+                <deviceName>vmk0</deviceName>
+              </route>
+            </ipv6Route>
+            <ipv6Route>
+              <changeOperation>ignore</changeOperation>
+              <route>
+                <network>ff02::</network>
+                <prefixLength>32</prefixLength>
+                <gateway>fe80::897:38ff:fe56:9591</gateway>
+                <deviceName>vmk1</deviceName>
+              </route>
+            </ipv6Route>
+          </routeTableConfig>
+        </netStackInstance>
+      </netStackSpec>
+    </val>
+  </propSet>
+  <propSet>
+    <name>networkInfo</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="HostNetworkInfo">
+      <pnic>
+        <key>key-vim.host.PhysicalNic-vmnic0</key>
+        <device>vmnic0</device>
+        <pci>0000:04:00.0</pci>
+        <driver>ena</driver>
+        <linkSpeed>
+          <speedMb>25000</speedMb>
+          <duplex>true</duplex>
+        </linkSpeed>
+        <validLinkSpecification>
+          <speedMb>25000</speedMb>
+          <duplex>true</duplex>
+        </validLinkSpecification>
+        <spec>
+          <ip>
+            <dhcp>false</dhcp>
+          </ip>
+          <linkSpeed>
+            <speedMb>25000</speedMb>
+            <duplex>true</duplex>
+          </linkSpeed>
+          <enableEnhancedNetworkingStack>false</enableEnhancedNetworkingStack>
+          <ensInterruptEnabled>false</ensInterruptEnabled>
+        </spec>
+        <wakeOnLanSupported>false</wakeOnLanSupported>
+        <mac>0a:87:74:01:ba:57</mac>
+        <fcoeConfiguration>
+          <priorityClass>3</priorityClass>
+          <sourceMac>0a:87:74:01:ba:57</sourceMac>
+          <vlanRange>
+            <vlanLow>0</vlanLow>
+            <vlanHigh>0</vlanHigh>
+          </vlanRange>
+          <capabilities>
+            <priorityClass>false</priorityClass>
+            <sourceMacAddress>false</sourceMacAddress>
+            <vlanRange>true</vlanRange>
+          </capabilities>
+          <fcoeActive>false</fcoeActive>
+        </fcoeConfiguration>
+        <vmDirectPathGen2Supported>false</vmDirectPathGen2Supported>
+        <resourcePoolSchedulerAllowed>true</resourcePoolSchedulerAllowed>
+        <autoNegotiateSupported>false</autoNegotiateSupported>
+        <enhancedNetworkingStackSupported>false</enhancedNetworkingStackSupported>
+        <ensInterruptSupported>false</ensInterruptSupported>
+      </pnic>
+      <vnic>
+        <device>vmk0</device>
+        <key>key-vim.host.VirtualNic-vmk0</key>
+        <portgroup></portgroup>
+        <spec>
+          <ip>
+            <dhcp>false</dhcp>
+            <ipAddress>10.46.32.4</ipAddress>
+            <subnetMask>255.255.240.0</subnetMask>
+            <ipV6Config>
+              <ipV6Address>
+                <ipAddress>fe80::887:74ff:fe01:ba57</ipAddress>
+                <prefixLength>64</prefixLength>
+                <origin>other</origin>
+                <dadState>preferred</dadState>
+              </ipV6Address>
+              <autoConfigurationEnabled>true</autoConfigurationEnabled>
+              <dhcpV6Enabled>false</dhcpV6Enabled>
+            </ipV6Config>
+          </ip>
+          <mac>0a:87:74:01:ba:57</mac>
+          <mtu>1500</mtu>
+          <tsoEnabled>true</tsoEnabled>
+          <netStackInstanceKey>defaultTcpipStack</netStackInstanceKey>
+          <opaqueNetwork>
+            <opaqueNetworkId>1a1c38db-7c39-4588-b0ac-914776993563</opaqueNetworkId>
+            <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+          </opaqueNetwork>
+          <externalId>esx-10.46.32.4-vmk0-vif</externalId>
+        </spec>
+      </vnic>
+      <vnic>
+        <device>vmk1</device>
+        <key>key-vim.host.VirtualNic-vmk1</key>
+        <portgroup></portgroup>
+        <spec>
+          <ip>
+            <dhcp>false</dhcp>
+            <ipAddress>10.46.0.4</ipAddress>
+            <subnetMask>255.255.240.0</subnetMask>
+            <ipV6Config>
+              <ipV6Address>
+                <ipAddress>fe80::897:38ff:fe56:9591</ipAddress>
+                <prefixLength>64</prefixLength>
+                <origin>other</origin>
+                <dadState>preferred</dadState>
+              </ipV6Address>
+              <autoConfigurationEnabled>false</autoConfigurationEnabled>
+              <dhcpV6Enabled>false</dhcpV6Enabled>
+            </ipV6Config>
+          </ip>
+          <mac>0a:97:38:56:95:91</mac>
+          <mtu>9000</mtu>
+          <tsoEnabled>true</tsoEnabled>
+          <netStackInstanceKey>defaultTcpipStack</netStackInstanceKey>
+          <opaqueNetwork>
+            <opaqueNetworkId>57928aa7-82bc-4ba8-aded-a6728f5d2cb4</opaqueNetworkId>
+            <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+          </opaqueNetwork>
+          <externalId>9bdf93e0-5104-43bb-ad77-68212e64483f</externalId>
+          <ipRouteSpec>
+            <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig">
+              <defaultGateway>10.46.0.1</defaultGateway>
+            </ipRouteConfig>
+          </ipRouteSpec>
+        </spec>
+      </vnic>
+      <vnic>
+        <device>vmk4</device>
+        <key>key-vim.host.VirtualNic-vmk4</key>
+        <portgroup></portgroup>
+        <spec>
+          <ip>
+            <dhcp>false</dhcp>
+            <ipAddress>10.46.96.4</ipAddress>
+            <subnetMask>255.255.240.0</subnetMask>
+            <ipV6Config>
+              <ipV6Address>
+                <ipAddress>fe80::801:b6ff:fe3a:1a19</ipAddress>
+                <prefixLength>64</prefixLength>
+                <origin>other</origin>
+                <dadState>preferred</dadState>
+              </ipV6Address>
+              <autoConfigurationEnabled>false</autoConfigurationEnabled>
+              <dhcpV6Enabled>false</dhcpV6Enabled>
+            </ipV6Config>
+          </ip>
+          <mac>0a:01:b6:3a:1a:19</mac>
+          <mtu>1500</mtu>
+          <tsoEnabled>true</tsoEnabled>
+          <netStackInstanceKey>api</netStackInstanceKey>
+          <opaqueNetwork>
+            <opaqueNetworkId>8cb75fa8-3428-482a-9161-5786a6d300cd</opaqueNetworkId>
+            <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+          </opaqueNetwork>
+          <externalId>bf81cedd-33c4-436b-98f8-9be91a6bb85b</externalId>
+          <ipRouteSpec>
+            <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig">
+              <defaultGateway>10.46.96.1</defaultGateway>
+            </ipRouteConfig>
+          </ipRouteSpec>
+        </spec>
+      </vnic>
+      <vnic>
+        <device>vmk2</device>
+        <key>key-vim.host.VirtualNic-vmk2</key>
+        <portgroup></portgroup>
+        <spec>
+          <ip>
+            <dhcp>false</dhcp>
+            <ipAddress>10.46.16.4</ipAddress>
+            <subnetMask>255.255.240.0</subnetMask>
+            <ipV6Config>
+              <ipV6Address>
+                <ipAddress>fe80::8f8:ceff:fef1:38e5</ipAddress>
+                <prefixLength>64</prefixLength>
+                <origin>other</origin>
+                <dadState>preferred</dadState>
+              </ipV6Address>
+              <autoConfigurationEnabled>false</autoConfigurationEnabled>
+              <dhcpV6Enabled>false</dhcpV6Enabled>
+            </ipV6Config>
+          </ip>
+          <mac>0a:f8:ce:f1:38:e5</mac>
+          <mtu>9000</mtu>
+          <tsoEnabled>true</tsoEnabled>
+          <netStackInstanceKey>vmotion</netStackInstanceKey>
+          <opaqueNetwork>
+            <opaqueNetworkId>1b5fdf60-63f1-4961-b0cc-b1351a4dff0e</opaqueNetworkId>
+            <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+          </opaqueNetwork>
+          <externalId>a1aeddb4-429b-46ec-b9fc-5bbb1980d1a9</externalId>
+          <ipRouteSpec>
+            <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig">
+              <defaultGateway>10.46.16.1</defaultGateway>
+            </ipRouteConfig>
+          </ipRouteSpec>
+        </spec>
+      </vnic>
+      <dnsConfig XMLSchema-instance:type="HostDnsConfig">
+        <dhcp>false</dhcp>
+        <hostName>esx-0</hostName>
+        <domainName>sddc-34-194-236-229.vmwarevmc.com</domainName>
+        <address>10.46.192.2</address>
+        <searchDomain>sddc-34-194-236-229.vmwarevmc.com</searchDomain>
+      </dnsConfig>
+      <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig">
+        <defaultGateway>10.46.32.1</defaultGateway>
+      </ipRouteConfig>
+      <routeTableInfo>
+        <ipRoute>
+          <network>0.0.0.0</network>
+          <prefixLength>0</prefixLength>
+          <gateway>10.46.32.1</gateway>
+          <deviceName>vmk0</deviceName>
+        </ipRoute>
+        <ipRoute>
+          <network>10.46.0.0</network>
+          <prefixLength>20</prefixLength>
+          <gateway>0.0.0.0</gateway>
+          <deviceName>vmk1</deviceName>
+        </ipRoute>
+        <ipRoute>
+          <network>10.46.32.0</network>
+          <prefixLength>20</prefixLength>
+          <gateway>0.0.0.0</gateway>
+          <deviceName>vmk0</deviceName>
+        </ipRoute>
+        <ipRoute>
+          <network>10.46.224.0</network>
+          <prefixLength>19</prefixLength>
+          <gateway>10.46.32.2</gateway>
+          <deviceName>vmk0</deviceName>
+        </ipRoute>
+        <ipv6Route>
+          <network>fe80::</network>
+          <prefixLength>64</prefixLength>
+          <gateway>::</gateway>
+          <deviceName>lo0</deviceName>
+        </ipv6Route>
+        <ipv6Route>
+          <network>fe80::</network>
+          <prefixLength>64</prefixLength>
+          <gateway>::</gateway>
+          <deviceName>vmk0</deviceName>
+        </ipv6Route>
+        <ipv6Route>
+          <network>fe80::</network>
+          <prefixLength>64</prefixLength>
+          <gateway>::</gateway>
+          <deviceName>vmk1</deviceName>
+        </ipv6Route>
+        <ipv6Route>
+          <network>ff01::</network>
+          <prefixLength>32</prefixLength>
+          <gateway>::1</gateway>
+          <deviceName>lo0</deviceName>
+        </ipv6Route>
+        <ipv6Route>
+          <network>ff01::</network>
+          <prefixLength>32</prefixLength>
+          <gateway>fe80::887:74ff:fe01:ba57</gateway>
+          <deviceName>vmk0</deviceName>
+        </ipv6Route>
+        <ipv6Route>
+          <network>ff01::</network>
+          <prefixLength>32</prefixLength>
+          <gateway>fe80::897:38ff:fe56:9591</gateway>
+          <deviceName>vmk1</deviceName>
+        </ipv6Route>
+        <ipv6Route>
+          <network>ff02::</network>
+          <prefixLength>32</prefixLength>
+          <gateway>::1</gateway>
+          <deviceName>lo0</deviceName>
+        </ipv6Route>
+        <ipv6Route>
+          <network>ff02::</network>
+          <prefixLength>32</prefixLength>
+          <gateway>fe80::887:74ff:fe01:ba57</gateway>
+          <deviceName>vmk0</deviceName>
+        </ipv6Route>
+        <ipv6Route>
+          <network>ff02::</network>
+          <prefixLength>32</prefixLength>
+          <gateway>fe80::897:38ff:fe56:9591</gateway>
+          <deviceName>vmk1</deviceName>
+        </ipv6Route>
+      </routeTableInfo>
+      <ipV6Enabled>true</ipV6Enabled>
+      <atBootIpV6Enabled>true</atBootIpV6Enabled>
+      <netStackInstance>
+        <key>vSphereProvisioning</key>
+        <dnsConfig XMLSchema-instance:type="HostDnsConfig">
+          <dhcp>false</dhcp>
+          <hostName></hostName>
+          <domainName></domainName>
+        </dnsConfig>
+        <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig"></ipRouteConfig>
+        <requestedMaxNumberOfConnections>11000</requestedMaxNumberOfConnections>
+        <congestionControlAlgorithm>newreno</congestionControlAlgorithm>
+        <ipV6Enabled>true</ipV6Enabled>
+      </netStackInstance>
+      <netStackInstance>
+        <key>vmotion</key>
+        <name>vmotion</name>
+        <dnsConfig XMLSchema-instance:type="HostDnsConfig">
+          <dhcp>false</dhcp>
+          <hostName></hostName>
+          <domainName></domainName>
+        </dnsConfig>
+        <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig">
+          <defaultGateway>10.46.16.1</defaultGateway>
+        </ipRouteConfig>
+        <requestedMaxNumberOfConnections>11000</requestedMaxNumberOfConnections>
+        <congestionControlAlgorithm>newreno</congestionControlAlgorithm>
+        <ipV6Enabled>true</ipV6Enabled>
+        <routeTableConfig>
+          <ipRoute>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>0.0.0.0</network>
+              <prefixLength>0</prefixLength>
+              <gateway>10.46.16.1</gateway>
+              <deviceName>vmk2</deviceName>
+            </route>
+          </ipRoute>
+          <ipRoute>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>10.46.16.0</network>
+              <prefixLength>20</prefixLength>
+              <gateway>0.0.0.0</gateway>
+              <deviceName>vmk2</deviceName>
+            </route>
+          </ipRoute>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>fe80::</network>
+              <prefixLength>64</prefixLength>
+              <gateway>::</gateway>
+              <deviceName>lo0</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>fe80::</network>
+              <prefixLength>64</prefixLength>
+              <gateway>::</gateway>
+              <deviceName>vmk2</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff01::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>::1</gateway>
+              <deviceName>lo0</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff01::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>fe80::8f8:ceff:fef1:38e5</gateway>
+              <deviceName>vmk2</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff02::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>::1</gateway>
+              <deviceName>lo0</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff02::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>fe80::8f8:ceff:fef1:38e5</gateway>
+              <deviceName>vmk2</deviceName>
+            </route>
+          </ipv6Route>
+        </routeTableConfig>
+      </netStackInstance>
+      <netStackInstance>
+        <key>api</key>
+        <name>api</name>
+        <dnsConfig XMLSchema-instance:type="HostDnsConfig">
+          <dhcp>false</dhcp>
+          <hostName></hostName>
+          <domainName></domainName>
+        </dnsConfig>
+        <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig">
+          <defaultGateway>10.46.96.1</defaultGateway>
+        </ipRouteConfig>
+        <requestedMaxNumberOfConnections>11000</requestedMaxNumberOfConnections>
+        <congestionControlAlgorithm>newreno</congestionControlAlgorithm>
+        <ipV6Enabled>true</ipV6Enabled>
+        <routeTableConfig>
+          <ipRoute>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>0.0.0.0</network>
+              <prefixLength>0</prefixLength>
+              <gateway>10.46.96.1</gateway>
+              <deviceName>vmk4</deviceName>
+            </route>
+          </ipRoute>
+          <ipRoute>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>10.46.96.0</network>
+              <prefixLength>20</prefixLength>
+              <gateway>0.0.0.0</gateway>
+              <deviceName>vmk4</deviceName>
+            </route>
+          </ipRoute>
+          <ipRoute>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>10.46.192.0</network>
+              <prefixLength>19</prefixLength>
+              <gateway>10.46.96.2</gateway>
+              <deviceName>vmk4</deviceName>
+            </route>
+          </ipRoute>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>fe80::</network>
+              <prefixLength>64</prefixLength>
+              <gateway>::</gateway>
+              <deviceName>lo0</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>fe80::</network>
+              <prefixLength>64</prefixLength>
+              <gateway>::</gateway>
+              <deviceName>vmk4</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff01::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>::1</gateway>
+              <deviceName>lo0</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff01::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>fe80::801:b6ff:fe3a:1a19</gateway>
+              <deviceName>vmk4</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff02::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>::1</gateway>
+              <deviceName>lo0</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff02::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>fe80::801:b6ff:fe3a:1a19</gateway>
+              <deviceName>vmk4</deviceName>
+            </route>
+          </ipv6Route>
+        </routeTableConfig>
+      </netStackInstance>
+      <netStackInstance>
+        <key>hyperbus</key>
+        <name>hyperbus</name>
+        <dnsConfig XMLSchema-instance:type="HostDnsConfig">
+          <dhcp>false</dhcp>
+          <hostName></hostName>
+          <domainName></domainName>
+        </dnsConfig>
+        <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig"></ipRouteConfig>
+        <requestedMaxNumberOfConnections>11000</requestedMaxNumberOfConnections>
+        <congestionControlAlgorithm>newreno</congestionControlAlgorithm>
+        <ipV6Enabled>true</ipV6Enabled>
+        <routeTableConfig>
+          <ipRoute>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>169.254.0.0</network>
+              <prefixLength>16</prefixLength>
+              <gateway>0.0.0.0</gateway>
+              <deviceName>vmk50</deviceName>
+            </route>
+          </ipRoute>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>fe80::</network>
+              <prefixLength>64</prefixLength>
+              <gateway>::</gateway>
+              <deviceName>lo0</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>fe80::</network>
+              <prefixLength>64</prefixLength>
+              <gateway>::</gateway>
+              <deviceName>vmk50</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff01::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>::1</gateway>
+              <deviceName>lo0</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff01::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>fe80::250:56ff:fe61:1d59</gateway>
+              <deviceName>vmk50</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff02::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>::1</gateway>
+              <deviceName>lo0</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff02::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>fe80::250:56ff:fe61:1d59</gateway>
+              <deviceName>vmk50</deviceName>
+            </route>
+          </ipv6Route>
+        </routeTableConfig>
+      </netStackInstance>
+      <netStackInstance>
+        <key>vxlan</key>
+        <name>vxlan</name>
+        <dnsConfig XMLSchema-instance:type="HostDnsConfig">
+          <dhcp>false</dhcp>
+          <hostName></hostName>
+          <domainName></domainName>
+        </dnsConfig>
+        <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig">
+          <defaultGateway>10.46.48.1</defaultGateway>
+        </ipRouteConfig>
+        <requestedMaxNumberOfConnections>11000</requestedMaxNumberOfConnections>
+        <congestionControlAlgorithm>newreno</congestionControlAlgorithm>
+        <ipV6Enabled>true</ipV6Enabled>
+        <routeTableConfig>
+          <ipRoute>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>0.0.0.0</network>
+              <prefixLength>0</prefixLength>
+              <gateway>10.46.48.1</gateway>
+              <deviceName>vmk10</deviceName>
+            </route>
+          </ipRoute>
+          <ipRoute>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>10.46.48.0</network>
+              <prefixLength>20</prefixLength>
+              <gateway>0.0.0.0</gateway>
+              <deviceName>vmk10</deviceName>
+            </route>
+          </ipRoute>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>fe80::</network>
+              <prefixLength>64</prefixLength>
+              <gateway>::</gateway>
+              <deviceName>lo0</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>fe80::</network>
+              <prefixLength>64</prefixLength>
+              <gateway>::</gateway>
+              <deviceName>vmk10</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff01::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>::1</gateway>
+              <deviceName>lo0</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff01::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>fe80::8e8:e7ff:fedb:c0ed</gateway>
+              <deviceName>vmk10</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff02::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>::1</gateway>
+              <deviceName>lo0</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff02::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>fe80::8e8:e7ff:fedb:c0ed</gateway>
+              <deviceName>vmk10</deviceName>
+            </route>
+          </ipv6Route>
+        </routeTableConfig>
+      </netStackInstance>
+      <netStackInstance>
+        <key>defaultTcpipStack</key>
+        <name>defaultTcpipStack</name>
+        <dnsConfig XMLSchema-instance:type="HostDnsConfig">
+          <dhcp>false</dhcp>
+          <hostName>esx-0</hostName>
+          <domainName>sddc-34-194-236-229.vmwarevmc.com</domainName>
+          <address>10.46.192.2</address>
+          <searchDomain>sddc-34-194-236-229.vmwarevmc.com</searchDomain>
+        </dnsConfig>
+        <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig">
+          <defaultGateway>10.46.32.1</defaultGateway>
+        </ipRouteConfig>
+        <requestedMaxNumberOfConnections>11000</requestedMaxNumberOfConnections>
+        <congestionControlAlgorithm>newreno</congestionControlAlgorithm>
+        <ipV6Enabled>true</ipV6Enabled>
+        <routeTableConfig>
+          <ipRoute>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>0.0.0.0</network>
+              <prefixLength>0</prefixLength>
+              <gateway>10.46.32.1</gateway>
+              <deviceName>vmk0</deviceName>
+            </route>
+          </ipRoute>
+          <ipRoute>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>10.46.0.0</network>
+              <prefixLength>20</prefixLength>
+              <gateway>0.0.0.0</gateway>
+              <deviceName>vmk1</deviceName>
+            </route>
+          </ipRoute>
+          <ipRoute>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>10.46.32.0</network>
+              <prefixLength>20</prefixLength>
+              <gateway>0.0.0.0</gateway>
+              <deviceName>vmk0</deviceName>
+            </route>
+          </ipRoute>
+          <ipRoute>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>10.46.224.0</network>
+              <prefixLength>19</prefixLength>
+              <gateway>10.46.32.2</gateway>
+              <deviceName>vmk0</deviceName>
+            </route>
+          </ipRoute>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>fe80::</network>
+              <prefixLength>64</prefixLength>
+              <gateway>::</gateway>
+              <deviceName>lo0</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>fe80::</network>
+              <prefixLength>64</prefixLength>
+              <gateway>::</gateway>
+              <deviceName>vmk0</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>fe80::</network>
+              <prefixLength>64</prefixLength>
+              <gateway>::</gateway>
+              <deviceName>vmk1</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff01::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>::1</gateway>
+              <deviceName>lo0</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff01::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>fe80::887:74ff:fe01:ba57</gateway>
+              <deviceName>vmk0</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff01::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>fe80::897:38ff:fe56:9591</gateway>
+              <deviceName>vmk1</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff02::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>::1</gateway>
+              <deviceName>lo0</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff02::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>fe80::887:74ff:fe01:ba57</gateway>
+              <deviceName>vmk0</deviceName>
+            </route>
+          </ipv6Route>
+          <ipv6Route>
+            <changeOperation>ignore</changeOperation>
+            <route>
+              <network>ff02::</network>
+              <prefixLength>32</prefixLength>
+              <gateway>fe80::897:38ff:fe56:9591</gateway>
+              <deviceName>vmk1</deviceName>
+            </route>
+          </ipv6Route>
+        </routeTableConfig>
+      </netStackInstance>
+      <opaqueSwitch>
+        <key>a2 07 49 e1 86 95 40 11-89 37 51 dc ab e3 7b cc</key>
+        <name>vmc-hostswitch</name>
+        <pnic>key-vim.host.PhysicalNic-vmnic0</pnic>
+        <pnicZone>
+          <key>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</key>
+        </pnicZone>
+        <pnicZone>
+          <key>767db3bb-f8cc-4d80-aabe-884c261d1b99</key>
+        </pnicZone>
+        <status>up</status>
+        <vtep>
+          <device>vmk10</device>
+          <key>key-vim.host.VirtualNic-vmk10</key>
+          <portgroup></portgroup>
+          <spec>
+            <ip>
+              <dhcp>false</dhcp>
+              <ipAddress>10.46.48.4</ipAddress>
+              <subnetMask>255.255.240.0</subnetMask>
+              <ipV6Config>
+                <ipV6Address>
+                  <ipAddress>fe80::8e8:e7ff:fedb:c0ed</ipAddress>
+                  <prefixLength>64</prefixLength>
+                  <origin>other</origin>
+                  <dadState>preferred</dadState>
+                </ipV6Address>
+                <autoConfigurationEnabled>false</autoConfigurationEnabled>
+                <dhcpV6Enabled>false</dhcpV6Enabled>
+              </ipV6Config>
+            </ip>
+            <mac>0a:e8:e7:db:c0:ed</mac>
+            <distributedVirtualPort>
+              <switchUuid>a2 07 49 e1 86 95 40 11-89 37 51 dc ab e3 7b cc</switchUuid>
+              <portKey>10</portKey>
+              <connectionCookie>1603915228</connectionCookie>
+            </distributedVirtualPort>
+            <mtu>9000</mtu>
+            <tsoEnabled>true</tsoEnabled>
+            <netStackInstanceKey>vxlan</netStackInstanceKey>
+          </spec>
+        </vtep>
+        <vtep>
+          <device>vmk50</device>
+          <key>key-vim.host.VirtualNic-vmk50</key>
+          <portgroup></portgroup>
+          <spec>
+            <ip>
+              <dhcp>false</dhcp>
+              <ipAddress>169.254.1.1</ipAddress>
+              <subnetMask>255.255.0.0</subnetMask>
+              <ipV6Config>
+                <ipV6Address>
+                  <ipAddress>fe80::250:56ff:fe61:1d59</ipAddress>
+                  <prefixLength>64</prefixLength>
+                  <origin>other</origin>
+                  <dadState>preferred</dadState>
+                </ipV6Address>
+                <autoConfigurationEnabled>false</autoConfigurationEnabled>
+                <dhcpV6Enabled>false</dhcpV6Enabled>
+              </ipV6Config>
+            </ip>
+            <mac>00:50:56:61:1d:59</mac>
+            <distributedVirtualPort>
+              <switchUuid>a2 07 49 e1 86 95 40 11-89 37 51 dc ab e3 7b cc</switchUuid>
+              <portKey>c63bc9d9-06fb-4c05-bac7-8c58aa1a50a7</portKey>
+              <connectionCookie>1603915228</connectionCookie>
+            </distributedVirtualPort>
+            <mtu>1500</mtu>
+            <tsoEnabled>true</tsoEnabled>
+            <netStackInstanceKey>hyperbus</netStackInstanceKey>
+          </spec>
+        </vtep>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.extraconfig.opaqueDvs.ens</key>
+          <value XMLSchema-instance:type="xsd:string">false</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaqueswitch.nioc.infraAllocations</key>
+          <value XMLSchema-instance:type="ArrayOfInt">
+            <int>-1</int>
+            <int>50</int>
+          </value>
+        </extraConfig>
+        <featureCapability>
+          <key>container</key>
+          <featureName>container</featureName>
+          <value>1</value>
+        </featureCapability>
+      </opaqueSwitch>
+      <opaqueNetwork>
+        <opaqueNetworkId>cb29c861-71a9-4e56-9293-8a773a23bc7e</opaqueNetworkId>
+        <opaqueNetworkName>TechSummitVDI</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">1</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/TechSummitVDI</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>1f11bb75-b10b-4afb-bcc2-136535c0be59</opaqueNetworkId>
+        <opaqueNetworkName>RKelly-Private-Net</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">1</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/RKelly-Private-Net</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>8b857d2f-77aa-47fc-b8f8-b082a245e321</opaqueNetworkId>
+        <opaqueNetworkName>SI_LogicalSwitch_75168b42-e66b-4826-ba06-65ab41e43fa3</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">0</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>48fe6edd-4cc7-41b3-812f-e3df6ab3f3af</opaqueNetworkId>
+        <opaqueNetworkName>tkg-network-puneet</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">2</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/e4f45a20-90de-11ea-97e7-012d2e3c180d</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>8add97a1-7399-419b-b4ec-da2e523853a3</opaqueNetworkId>
+        <opaqueNetworkName>set-cgw-network-1</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">2</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/d52d3680-50ba-11e9-98c9-a7c1eccbea77</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>e0935573-98ec-4cf9-ac59-be2fe473ef55</opaqueNetworkId>
+        <opaqueNetworkName>192.168.110.0/23 RESERVED DO NOt USE!!</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">3</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/552f47c0-c139-11ea-81b2-bf7f07907ec1</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>843cd83a-8995-44ea-b25e-7e65352ca857</opaqueNetworkId>
+        <opaqueNetworkName>MulticastTest</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">2</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/79364530-54be-11e9-b0ab-9723f9cce2bb</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>8cb75fa8-3428-482a-9161-5786a6d300cd</opaqueNetworkId>
+        <opaqueNetworkName>vmk4-ls</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>767db3bb-f8cc-4d80-aabe-884c261d1b99</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">0</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>63045d3f-fb1b-4643-8aa9-92e5db1695fa</opaqueNetworkId>
+        <opaqueNetworkName>sddc-cgw-network-1</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">2</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/3c1507c0-50d8-11e9-90ad-015d2276921d</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>7ba9e452-c261-4c98-8316-4b8a947ac017</opaqueNetworkId>
+        <opaqueNetworkName>Randy-Demo</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">7</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/4826e010-7f2b-11ea-977e-35a138e77664</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>1b708ea3-9512-4db0-9ef8-777c99739143</opaqueNetworkId>
+        <opaqueNetworkName>Proxy-Demo</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">3</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/fb798430-5653-11e9-ac78-25b8f5d99863</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>7a4f2250-1c1a-4e37-9f77-009b87aa11fb</opaqueNetworkId>
+        <opaqueNetworkName>temp</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">2</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/b6bd7380-3eea-11ea-a8db-1f2f94ee79c7</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>7fe01b01-75a5-486d-a2c0-66fdb036f736</opaqueNetworkId>
+        <opaqueNetworkName>ttwyman-testnet</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">8</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/d35d60e0-dbd5-11e9-8cf1-7564a64b6d20</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>57928aa7-82bc-4ba8-aded-a6728f5d2cb4</opaqueNetworkId>
+        <opaqueNetworkName>VSAN</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>767db3bb-f8cc-4d80-aabe-884c261d1b99</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">0</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>d6a10056-c7de-426a-92a1-6e054cf652da</opaqueNetworkId>
+        <opaqueNetworkName>IPSEC-test</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">2</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/2756c6e0-c917-11e9-a1f2-b1596f3c7e59</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>7450dd90-add5-429b-805b-9a340b766061</opaqueNetworkId>
+        <opaqueNetworkName>Canton-H7-Mgmt</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">2</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/31e13c30-6fc0-11ea-9c50-0124bf25d31f</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>19eace98-955b-43c3-95fe-91240f17d08d</opaqueNetworkId>
+        <opaqueNetworkName>L2E_seg-dr-stretched-71681-6a721a34</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">3</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/hcx-ne-a31f39db-dcb3-488a-a61f-230e6b085f91</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>686a52c3-4a69-437b-a9c8-b861ae0cad7d</opaqueNetworkId>
+        <opaqueNetworkName>TJ-DR-Migrate</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">106</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/6ce5ef50-58d8-11ea-9871-37f1ad174aa8</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>64ac2ec1-1dfa-42ac-a8ca-51f5cb272c5e</opaqueNetworkId>
+        <opaqueNetworkName>VMworld-Demo</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">2</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/974d8fe0-c8fb-11e9-ad18-9364be51f9fe</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>06f71609-9e37-4b2d-9558-8a9742384b2c</opaqueNetworkId>
+        <opaqueNetworkName>test1</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">4</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/7c617b70-a4b5-11e9-bcdc-bbcd47a2e871</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>68e61c96-4220-4e24-9e24-94a5d284a5a6</opaqueNetworkId>
+        <opaqueNetworkName>tom&#39;s new segment</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">1</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/e94bb7b0-ab48-11ea-81d2-65fc46366d62</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>6ad9bec1-99d7-4967-872d-380058994641</opaqueNetworkId>
+        <opaqueNetworkName>direct-connect-ls</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>767db3bb-f8cc-4d80-aabe-884c261d1b99</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">0</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>243494ac-95b5-462d-96cb-4ddb3ff0d603</opaqueNetworkId>
+        <opaqueNetworkName>Deckard-vNet02</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">4</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/c9010ca0-d860-11e9-9a59-d52137dbbbf5</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>ad2cfc63-7c08-4f6b-8baf-377a6b2b3662</opaqueNetworkId>
+        <opaqueNetworkName>VmworldEurope-Demo</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">2</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/e6652af0-0151-11ea-b820-b3943eb39a6a</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>1a8f1914-0d80-4c63-a552-a7d6ee4bfe01</opaqueNetworkId>
+        <opaqueNetworkName>Workshop Desktop</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">2</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/219590a0-31f5-11ea-9d3a-357f40912248</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>31756fa9-066e-49b6-ada5-5c87dab4ce94</opaqueNetworkId>
+        <opaqueNetworkName>hcx-5862d7bc-a1b8-4de4-89d0-da6f8bc7d9f4</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">1</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/mgw/segments/hcx-5862d7bc-a1b8-4de4-89d0-da6f8bc7d9f4</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>72064d50-8207-458c-9208-667e3d16ebfa</opaqueNetworkId>
+        <opaqueNetworkName>saundersch-demo</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">1</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/a3aede10-5efb-11ea-aef7-2d37f82be16d</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>101abd30-21d2-4842-b075-c22644939cf0</opaqueNetworkId>
+        <opaqueNetworkName>rkelly-net</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">3</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/9d377620-66a7-11e9-9b0e-af2d12b3305c</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>c10cc304-0b56-4fa2-9f0f-4aed7847797e</opaqueNetworkId>
+        <opaqueNetworkName>SI_LogicalSwitch_5da95090-df21-40ae-bd48-766b81ca3141</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">0</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>9782be62-0dc6-4627-a1e5-74af83e26973</opaqueNetworkId>
+        <opaqueNetworkName>SI_LogicalSwitch_98d77d85-8bc5-4c5b-be7a-d7ab8724bb3e</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">0</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>22615109-bd6a-4b9f-990a-1ccd32cbc6c3</opaqueNetworkId>
+        <opaqueNetworkName>Santhosh-Net-122</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">1</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/9a01d420-9061-11ea-9e11-692c25eadaa3</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>eec8dc9a-78d1-4e73-ad6f-3e1ff6b859e9</opaqueNetworkId>
+        <opaqueNetworkName>Canton-H7-VDI</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">1</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/8ab793a0-71fe-11ea-971c-8b281d80b4ac</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>3090f7e1-5bc8-42cf-a5a0-61982fa40260</opaqueNetworkId>
+        <opaqueNetworkName>mark-nat-overlap</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">1</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/670883a0-cc2c-11ea-a8ce-537a61d09b31</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>c85782a8-0793-4838-945b-2e8eb049dafb</opaqueNetworkId>
+        <opaqueNetworkName>Prod-Web-Public</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">2</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/1e6a7750-a95c-11e9-be74-71456cdc058f</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>da65090b-ac0f-43ba-8dfe-27efa18c3922</opaqueNetworkId>
+        <opaqueNetworkName>Deckard-vNet01</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">2</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/6d455e20-efc1-11e9-a3fd-27fbac666542</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>a6d9010a-fe4b-4117-b58b-6c863c544c81</opaqueNetworkId>
+        <opaqueNetworkName>mark-nat-routed</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">1</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/1f64d2b0-cc2c-11ea-a8ce-537a61d09b31</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>f90563ea-1244-4486-b2cc-2380cd201d3d</opaqueNetworkId>
+        <opaqueNetworkName>mgmt-app-network</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">2</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/mgw/segments/mgmt-app-network</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>c201204c-b396-4c1e-9517-cf9c117a6fcc</opaqueNetworkId>
+        <opaqueNetworkName>mgmt-ls</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>767db3bb-f8cc-4d80-aabe-884c261d1b99</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">0</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>fd0f176e-d0eb-49d2-9f50-47adbc583ad5</opaqueNetworkId>
+        <opaqueNetworkName>Adam Test</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">1</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/5ed16c50-f3d8-11ea-b456-b70580bc12fd</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>b1071654-7d52-415d-a68d-23052e554e9a</opaqueNetworkId>
+        <opaqueNetworkName>US-TKG-01</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">1</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/539e1fd0-8485-11ea-8cce-0bf9d6b49558</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>1a1c38db-7c39-4588-b0ac-914776993563</opaqueNetworkId>
+        <opaqueNetworkName>o-vmk0-ls</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">0</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>d2ffa46b-e741-4c16-ab23-ec7a6158a0b8</opaqueNetworkId>
+        <opaqueNetworkName>tkg-test</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">1</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/0a0f6f50-b099-11ea-93e9-d9fb8475794e</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>e83466eb-4584-4a6c-ac3e-7d27148139c2</opaqueNetworkId>
+        <opaqueNetworkName>cgw-dhcp-ls</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">0</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>25aaf89b-b8ca-488c-8456-726ef8653127</opaqueNetworkId>
+        <opaqueNetworkName>SSFA Demo</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">2</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/d3fd53b0-3946-11ea-a046-393887eabd5b</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>18901b1b-f778-491c-90eb-f3ff79a7415b</opaqueNetworkId>
+        <opaqueNetworkName>nsx-dlink0-vls</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>767db3bb-f8cc-4d80-aabe-884c261d1b99</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">0</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>c68d5cf7-1353-453d-b05a-f6d3962b55a0</opaqueNetworkId>
+        <opaqueNetworkName>sb-sgw</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">1</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/346194e0-5379-11ea-a2fa-f70f33779e4a</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>3e0dc4fb-5e27-43a1-ad11-06b52d8ff3f6</opaqueNetworkId>
+        <opaqueNetworkName>Puneet-DB</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">2</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/efb4ba40-261c-11ea-84c6-e7626ae0fc1b</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>12351164-c1a2-4919-b684-fc6a5f06c5f4</opaqueNetworkId>
+        <opaqueNetworkName>SI_LogicalSwitch_640520f9-4bf1-4496-9d73-5093cc99454e</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">0</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>62792ac9-6435-429c-ab68-11f4ae9558eb</opaqueNetworkId>
+        <opaqueNetworkName>SI_LogicalSwitch_b4f36500-f297-4058-95f4-2048e81fd859</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">1</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>c5fcd6e1-c4e6-4fa6-bc2b-e17e57b94092</opaqueNetworkId>
+        <opaqueNetworkName>pkremer-TKG-DHCP2</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">2</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/f2e16620-d123-11ea-8531-6d03cfe38b68</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>076f0a73-2d76-40aa-a9f2-0ca4aa1d4093</opaqueNetworkId>
+        <opaqueNetworkName>public-ls</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>767db3bb-f8cc-4d80-aabe-884c261d1b99</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">0</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>30dd9342-022f-4d0a-80e2-7a57c86ce6ca</opaqueNetworkId>
+        <opaqueNetworkName>hcx-1137a89b-56fc-42c2-9626-ea0db5149aef</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">2</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/mgw/segments/hcx-1137a89b-56fc-42c2-9626-ea0db5149aef</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>c726d023-29c6-41e0-bb71-797153e1417c</opaqueNetworkId>
+        <opaqueNetworkName>oliveirac-tkg-network</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">1</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/1eeb4c10-75ec-11ea-b64f-d31f867ffa0c</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>1b5fdf60-63f1-4961-b0cc-b1351a4dff0e</opaqueNetworkId>
+        <opaqueNetworkName>VMOTION</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>767db3bb-f8cc-4d80-aabe-884c261d1b99</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">0</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>5ed65eae-3184-4441-8aca-066e591fcd6d</opaqueNetworkId>
+        <opaqueNetworkName>cross-vpc-ls</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>767db3bb-f8cc-4d80-aabe-884c261d1b99</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">0</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>00d77c22-25f7-4999-8fed-ee054dd89c58</opaqueNetworkId>
+        <opaqueNetworkName>L2E_pg_rax_stretched2-0-6a721a34</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">6</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/L2E_pg_rax_stretched2-0-6a721a34</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>2a803f1f-7e95-4777-b1dd-e88749d6108e</opaqueNetworkId>
+        <opaqueNetworkName>SI_LogicalSwitch_1d1cc7ad-7a0a-425b-98b2-eca628978349</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">1</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>5dcd4616-1c12-4e0e-a7a6-0f86f97fa0b4</opaqueNetworkId>
+        <opaqueNetworkName>tkg-network-muru</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">1</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/46393960-8f5c-11ea-ae7d-23bcf42fa462</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>0b498304-9ec7-4a46-8867-d3399b4cbe2a</opaqueNetworkId>
+        <opaqueNetworkName>L2E_pg_rax_stretched-0-6a721a34</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">7</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/L2E_pg_rax_stretched-0-6a721a34</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>33aa661f-71e2-45b5-b96a-6e1593a4fe33</opaqueNetworkId>
+        <opaqueNetworkName>App-DB-Demo</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">3</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/c61af300-5653-11e9-ac78-25b8f5d99863</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>b7196e87-9d8f-482d-9843-4a56bcbc9705</opaqueNetworkId>
+        <opaqueNetworkName>trunk-ls</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>767db3bb-f8cc-4d80-aabe-884c261d1b99</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">0</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>2e91a652-f5c5-476e-b596-211141276000</opaqueNetworkId>
+        <opaqueNetworkName>test3</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">5</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/b83f41e0-a4b5-11e9-bcdc-bbcd47a2e871</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>1e3a963f-2393-4792-aa1a-93574fad2091</opaqueNetworkId>
+        <opaqueNetworkName>Deckard-vNetXX</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">2</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/ef744b90-efc6-11e9-a3fd-27fbac666542</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>302b0aa0-1593-4d54-b576-2b0b032c263b</opaqueNetworkId>
+        <opaqueNetworkName>hcibench-net</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">13</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/ae55ad30-899e-11ea-aadf-61be0f26bb85</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <opaqueNetwork>
+        <opaqueNetworkId>5a90c568-de74-4bf2-bde3-7c1aad7bbaad</opaqueNetworkId>
+        <opaqueNetworkName>Puneet-Web/App</opaqueNetworkName>
+        <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+        <pnicZone>8ca1b7fe-6c9b-47bb-a34c-a9851bac7ea3</pnicZone>
+        <capability>
+          <networkReservationSupported>true</networkReservationSupported>
+        </capability>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.version</key>
+          <value XMLSchema-instance:type="xsd:int">2</value>
+        </extraConfig>
+        <extraConfig XMLSchema-instance:type="OptionValue">
+          <key>com.vmware.opaquenetwork.segment.path</key>
+          <value XMLSchema-instance:type="xsd:string">/infra/tier-1s/cgw/segments/bef13500-261c-11ea-84c6-e7626ae0fc1b</value>
+        </extraConfig>
+      </opaqueNetwork>
+      <nsxTransportNodeId>3b4912c8-742c-4eb0-9d98-40ff488d1fbd</nsxTransportNodeId>
+    </val>
+  </propSet>
+  <propSet>
+    <name>offloadCapabilities</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="HostNetOffloadCapabilities">
+      <csumOffload>true</csumOffload>
+      <tcpSegmentation>true</tcpSegmentation>
+      <zeroCopyXmit>true</zeroCopyXmit>
+    </val>
+  </propSet>
+  <propSet>
+    <name>value</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+</ObjectContent>

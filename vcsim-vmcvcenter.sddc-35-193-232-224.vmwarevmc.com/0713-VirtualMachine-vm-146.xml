@@ -1,0 +1,1836 @@
+<ObjectContent>
+  <obj type="VirtualMachine">vm-146</obj>
+  <propSet>
+    <name>alarmActionsEnabled</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:boolean">true</val>
+  </propSet>
+  <propSet>
+    <name>availableField</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldDef"></val>
+  </propSet>
+  <propSet>
+    <name>capability</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineCapability">
+      <snapshotOperationsSupported>true</snapshotOperationsSupported>
+      <multipleSnapshotsSupported>true</multipleSnapshotsSupported>
+      <snapshotConfigSupported>true</snapshotConfigSupported>
+      <poweredOffSnapshotsSupported>true</poweredOffSnapshotsSupported>
+      <memorySnapshotsSupported>true</memorySnapshotsSupported>
+      <revertToSnapshotSupported>true</revertToSnapshotSupported>
+      <quiescedSnapshotsSupported>true</quiescedSnapshotsSupported>
+      <disableSnapshotsSupported>false</disableSnapshotsSupported>
+      <lockSnapshotsSupported>true</lockSnapshotsSupported>
+      <consolePreferencesSupported>false</consolePreferencesSupported>
+      <cpuFeatureMaskSupported>true</cpuFeatureMaskSupported>
+      <s1AcpiManagementSupported>true</s1AcpiManagementSupported>
+      <settingScreenResolutionSupported>true</settingScreenResolutionSupported>
+      <toolsAutoUpdateSupported>true</toolsAutoUpdateSupported>
+      <vmNpivWwnSupported>true</vmNpivWwnSupported>
+      <npivWwnOnNonRdmVmSupported>true</npivWwnOnNonRdmVmSupported>
+      <vmNpivWwnDisableSupported>true</vmNpivWwnDisableSupported>
+      <vmNpivWwnUpdateSupported>true</vmNpivWwnUpdateSupported>
+      <swapPlacementSupported>true</swapPlacementSupported>
+      <toolsSyncTimeSupported>true</toolsSyncTimeSupported>
+      <virtualMmuUsageSupported>false</virtualMmuUsageSupported>
+      <diskSharesSupported>true</diskSharesSupported>
+      <bootOptionsSupported>true</bootOptionsSupported>
+      <bootRetryOptionsSupported>true</bootRetryOptionsSupported>
+      <settingVideoRamSizeSupported>true</settingVideoRamSizeSupported>
+      <settingDisplayTopologySupported>true</settingDisplayTopologySupported>
+      <recordReplaySupported>false</recordReplaySupported>
+      <changeTrackingSupported>true</changeTrackingSupported>
+      <multipleCoresPerSocketSupported>true</multipleCoresPerSocketSupported>
+      <hostBasedReplicationSupported>true</hostBasedReplicationSupported>
+      <guestAutoLockSupported>true</guestAutoLockSupported>
+      <memoryReservationLockSupported>true</memoryReservationLockSupported>
+      <featureRequirementSupported>true</featureRequirementSupported>
+      <poweredOnMonitorTypeChangeSupported>true</poweredOnMonitorTypeChangeSupported>
+      <seSparseDiskSupported>true</seSparseDiskSupported>
+      <nestedHVSupported>true</nestedHVSupported>
+      <vPMCSupported>true</vPMCSupported>
+      <secureBootSupported>true</secureBootSupported>
+      <perVmEvcSupported>true</perVmEvcSupported>
+      <virtualMmuUsageIgnored>true</virtualMmuUsageIgnored>
+      <virtualExecUsageIgnored>true</virtualExecUsageIgnored>
+      <diskOnlySnapshotOnSuspendedVMSupported>true</diskOnlySnapshotOnSuspendedVMSupported>
+      <toolsSyncTimeAllowSupported>true</toolsSyncTimeAllowSupported>
+      <sevSupported>false</sevSupported>
+    </val>
+  </propSet>
+  <propSet>
+    <name>config</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineConfigInfo">
+      <changeVersion>2020-12-14T08:39:09.387272Z</changeVersion>
+      <modified>1970-01-01T00:00:00Z</modified>
+      <name>VMCWINHZ03</name>
+      <guestFullName>Microsoft Windows Server 2016 or later (64-bit)</guestFullName>
+      <version>vmx-14</version>
+      <uuid>564d5432-bbf2-cecc-8483-714929de546c</uuid>
+      <createDate>2018-08-11T19:01:40.274527Z</createDate>
+      <instanceUuid>5038a473-868e-746b-5b51-780b2b7dc051</instanceUuid>
+      <npivTemporaryDisabled>true</npivTemporaryDisabled>
+      <locationId>564d187e-fbfb-2da9-d9d8-abd85703f7b1</locationId>
+      <template>false</template>
+      <guestId>windows9Server64Guest</guestId>
+      <alternateGuestName></alternateGuestName>
+      <files>
+        <vmPathName>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/VMCWINHZ03.vmx</vmPathName>
+        <snapshotDirectory>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/</snapshotDirectory>
+        <suspendDirectory>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/</suspendDirectory>
+        <logDirectory>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/</logDirectory>
+      </files>
+      <tools>
+        <toolsVersion>10304</toolsVersion>
+        <toolsInstallType>guestToolsTypeMSI</toolsInstallType>
+        <afterPowerOn>true</afterPowerOn>
+        <afterResume>true</afterResume>
+        <beforeGuestStandby>true</beforeGuestStandby>
+        <beforeGuestShutdown>true</beforeGuestShutdown>
+        <toolsUpgradePolicy>manual</toolsUpgradePolicy>
+        <syncTimeWithHostAllowed>true</syncTimeWithHostAllowed>
+        <syncTimeWithHost>false</syncTimeWithHost>
+        <lastInstallInfo>
+          <counter>0</counter>
+        </lastInstallInfo>
+      </tools>
+      <flags>
+        <disableAcceleration>false</disableAcceleration>
+        <enableLogging>true</enableLogging>
+        <useToe>false</useToe>
+        <runWithDebugInfo>false</runWithDebugInfo>
+        <monitorType>release</monitorType>
+        <htSharing>any</htSharing>
+        <snapshotDisabled>false</snapshotDisabled>
+        <snapshotLocked>false</snapshotLocked>
+        <diskUuidEnabled>true</diskUuidEnabled>
+        <virtualMmuUsage>automatic</virtualMmuUsage>
+        <virtualExecUsage>hvAuto</virtualExecUsage>
+        <snapshotPowerOffBehavior>powerOff</snapshotPowerOffBehavior>
+        <recordReplayEnabled>false</recordReplayEnabled>
+        <faultToleranceType>unset</faultToleranceType>
+        <cbrcCacheEnabled>false</cbrcCacheEnabled>
+        <vvtdEnabled>false</vvtdEnabled>
+        <vbsEnabled>false</vbsEnabled>
+      </flags>
+      <defaultPowerOps>
+        <powerOffType>soft</powerOffType>
+        <suspendType>hard</suspendType>
+        <resetType>soft</resetType>
+        <defaultPowerOffType>soft</defaultPowerOffType>
+        <defaultSuspendType>hard</defaultSuspendType>
+        <defaultResetType>soft</defaultResetType>
+        <standbyAction>checkpoint</standbyAction>
+      </defaultPowerOps>
+      <hardware>
+        <numCPU>4</numCPU>
+        <numCoresPerSocket>1</numCoresPerSocket>
+        <memoryMB>12288</memoryMB>
+        <virtualICH7MPresent>false</virtualICH7MPresent>
+        <virtualSMCPresent>false</virtualSMCPresent>
+        <device XMLSchema-instance:type="VirtualIDEController">
+          <key>200</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>IDE 0</label>
+            <summary>IDE 0</summary>
+          </deviceInfo>
+          <busNumber>0</busNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualIDEController">
+          <key>201</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>IDE 1</label>
+            <summary>IDE 1</summary>
+          </deviceInfo>
+          <busNumber>1</busNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualPS2Controller">
+          <key>300</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>PS2 controller 0</label>
+            <summary>PS2 controller 0</summary>
+          </deviceInfo>
+          <busNumber>0</busNumber>
+          <device>600</device>
+          <device>700</device>
+        </device>
+        <device XMLSchema-instance:type="VirtualPCIController">
+          <key>100</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>PCI controller 0</label>
+            <summary>PCI controller 0</summary>
+          </deviceInfo>
+          <busNumber>0</busNumber>
+          <device>500</device>
+          <device>12000</device>
+          <device>1000</device>
+          <device>4000</device>
+        </device>
+        <device XMLSchema-instance:type="VirtualSIOController">
+          <key>400</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>SIO controller 0</label>
+            <summary>SIO controller 0</summary>
+          </deviceInfo>
+          <busNumber>0</busNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualKeyboard">
+          <key>600</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Keyboard </label>
+            <summary>Keyboard</summary>
+          </deviceInfo>
+          <controllerKey>300</controllerKey>
+          <unitNumber>0</unitNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualPointingDevice">
+          <key>700</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Pointing device</label>
+            <summary>Pointing device; Device</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualPointingDeviceDeviceBackingInfo">
+            <deviceName></deviceName>
+            <useAutoDetect>false</useAutoDetect>
+            <hostPointingDevice>autodetect</hostPointingDevice>
+          </backing>
+          <controllerKey>300</controllerKey>
+          <unitNumber>1</unitNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualMachineVideoCard">
+          <key>500</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Video card </label>
+            <summary>Video card</summary>
+          </deviceInfo>
+          <controllerKey>100</controllerKey>
+          <unitNumber>0</unitNumber>
+          <videoRamSizeInKB>16384</videoRamSizeInKB>
+          <numDisplays>1</numDisplays>
+          <useAutoDetect>false</useAutoDetect>
+          <enable3DSupport>false</enable3DSupport>
+          <use3dRenderer>automatic</use3dRenderer>
+          <graphicsMemorySizeInKB>262144</graphicsMemorySizeInKB>
+        </device>
+        <device XMLSchema-instance:type="VirtualMachineVMCIDevice">
+          <key>12000</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>VMCI device</label>
+            <summary>Device on the virtual machine PCI bus that provides support for the virtual machine communication interface</summary>
+          </deviceInfo>
+          <slotInfo XMLSchema-instance:type="VirtualDevicePciBusSlotInfo">
+            <pciSlotNumber>32</pciSlotNumber>
+          </slotInfo>
+          <controllerKey>100</controllerKey>
+          <unitNumber>17</unitNumber>
+          <id>-857770505</id>
+          <allowUnrestrictedCommunication>false</allowUnrestrictedCommunication>
+          <filterEnable>true</filterEnable>
+        </device>
+        <device XMLSchema-instance:type="VirtualLsiLogicSASController">
+          <key>1000</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>SCSI controller 0</label>
+            <summary>LSI Logic SAS</summary>
+          </deviceInfo>
+          <slotInfo XMLSchema-instance:type="VirtualDevicePciBusSlotInfo">
+            <pciSlotNumber>160</pciSlotNumber>
+          </slotInfo>
+          <controllerKey>100</controllerKey>
+          <unitNumber>3</unitNumber>
+          <busNumber>0</busNumber>
+          <device>2000</device>
+          <hotAddRemove>true</hotAddRemove>
+          <sharedBus>noSharing</sharedBus>
+          <scsiCtlrUnitNumber>7</scsiCtlrUnitNumber>
+        </device>
+        <device XMLSchema-instance:type="VirtualDisk">
+          <key>2000</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Hard disk 1</label>
+            <summary>52428800 KB</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualDiskFlatVer2BackingInfo">
+            <fileName>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/VMCWINHZ030-000001.vmdk</fileName>
+            <datastore type="Datastore">datastore-60</datastore>
+            <backingObjectId>6f27a05e-9880-7730-c13c-0adb918b96b3</backingObjectId>
+            <diskMode>persistent</diskMode>
+            <split>false</split>
+            <writeThrough>false</writeThrough>
+            <thinProvisioned>true</thinProvisioned>
+            <eagerlyScrub>false</eagerlyScrub>
+            <uuid>6000C298-e650-a5c5-6084-091ded5e3412</uuid>
+            <contentId>6b2c6c98f3867a9bdec9834f91239131</contentId>
+            <parent>
+              <fileName>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/VMCWINHZ030.vmdk</fileName>
+              <datastore type="Datastore">datastore-60</datastore>
+              <backingObjectId>40309d5c-4b1a-2a3b-6102-0afce58fa864</backingObjectId>
+              <diskMode>persistent</diskMode>
+              <thinProvisioned>true</thinProvisioned>
+              <eagerlyScrub>false</eagerlyScrub>
+              <uuid>6000C298-e650-a5c5-6084-091ded5e3412</uuid>
+              <contentId>a202eccf7ac8165ab7fd09bea4e1b385</contentId>
+              <digestEnabled>false</digestEnabled>
+            </parent>
+            <deltaDiskFormat>redoLogFormat</deltaDiskFormat>
+            <digestEnabled>false</digestEnabled>
+            <deltaDiskFormatVariant>vsanSparseVariant</deltaDiskFormatVariant>
+            <sharing>sharingNone</sharing>
+          </backing>
+          <controllerKey>1000</controllerKey>
+          <unitNumber>0</unitNumber>
+          <capacityInKB>52428800</capacityInKB>
+          <capacityInBytes>53687091200</capacityInBytes>
+          <shares>
+            <shares>1000</shares>
+            <level>normal</level>
+          </shares>
+          <storageIOAllocation>
+            <limit>-1</limit>
+            <shares>
+              <shares>1000</shares>
+              <level>normal</level>
+            </shares>
+            <reservation>0</reservation>
+          </storageIOAllocation>
+          <diskObjectId>7-2000</diskObjectId>
+          <nativeUnmanagedLinkedClone>false</nativeUnmanagedLinkedClone>
+        </device>
+        <device XMLSchema-instance:type="VirtualVmxnet3">
+          <key>4000</key>
+          <deviceInfo XMLSchema-instance:type="Description">
+            <label>Network adapter 1</label>
+            <summary>nsx.LogicalSwitch: 8add97a1-7399-419b-b4ec-da2e523853a3</summary>
+          </deviceInfo>
+          <backing XMLSchema-instance:type="VirtualEthernetCardOpaqueNetworkBackingInfo">
+            <opaqueNetworkId>8add97a1-7399-419b-b4ec-da2e523853a3</opaqueNetworkId>
+            <opaqueNetworkType>nsx.LogicalSwitch</opaqueNetworkType>
+          </backing>
+          <connectable>
+            <migrateConnect>unset</migrateConnect>
+            <startConnected>true</startConnected>
+            <allowGuestControl>false</allowGuestControl>
+            <connected>true</connected>
+            <status>ok</status>
+          </connectable>
+          <slotInfo XMLSchema-instance:type="VirtualDevicePciBusSlotInfo">
+            <pciSlotNumber>192</pciSlotNumber>
+          </slotInfo>
+          <controllerKey>100</controllerKey>
+          <unitNumber>7</unitNumber>
+          <addressType>manual</addressType>
+          <macAddress>00:50:56:9a:d3:97</macAddress>
+          <wakeOnLanEnabled>true</wakeOnLanEnabled>
+          <resourceAllocation>
+            <reservation>0</reservation>
+            <share>
+              <shares>50</shares>
+              <level>normal</level>
+            </share>
+            <limit>-1</limit>
+          </resourceAllocation>
+          <externalId>e3ff07a2-5812-4f05-b37b-02991ab8dc8b</externalId>
+          <uptCompatibilityEnabled>true</uptCompatibilityEnabled>
+        </device>
+      </hardware>
+      <cpuAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>false</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>4000</shares>
+          <level>normal</level>
+        </shares>
+      </cpuAllocation>
+      <memoryAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>false</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>122880</shares>
+          <level>normal</level>
+        </shares>
+        <overheadLimit>122</overheadLimit>
+      </memoryAllocation>
+      <latencySensitivity>
+        <level>normal</level>
+      </latencySensitivity>
+      <memoryHotAddEnabled>false</memoryHotAddEnabled>
+      <cpuHotAddEnabled>false</cpuHotAddEnabled>
+      <cpuHotRemoveEnabled>false</cpuHotRemoveEnabled>
+      <hotPlugMemoryLimit>12288</hotPlugMemoryLimit>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>guestinfo.vmtools.buildNumber</key>
+        <value XMLSchema-instance:type="xsd:string">7253323</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>sched.swap.derivedName</key>
+        <value XMLSchema-instance:type="xsd:string">/vmfs/volumes/vsan:de14938dee2b41c8-8aa3f463c3428f4a/40309d5c-39c7-36fb-7028-0afce58fa864/VMCWINHZ03-ed165d07.vswp</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>nvram</key>
+        <value XMLSchema-instance:type="xsd:string">VMCWINHZ03.nvram</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge5.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>tools.guest.desktop.autolock</key>
+        <value XMLSchema-instance:type="xsd:string">FALSE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge6.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">23</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>scsi0.sasWWID</key>
+        <value XMLSchema-instance:type="xsd:string">50 05 05 62 bb f2 ce c0</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge7.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>guestinfo.vmtools.versionNumber</key>
+        <value XMLSchema-instance:type="xsd:string">10304</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge6.virtualDev</key>
+        <value XMLSchema-instance:type="xsd:string">pcieRootPort</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge5.functions</key>
+        <value XMLSchema-instance:type="xsd:string">8</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge7.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">24</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge7.virtualDev</key>
+        <value XMLSchema-instance:type="xsd:string">pcieRootPort</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>softPowerOff</key>
+        <value XMLSchema-instance:type="xsd:string">FALSE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>numa.autosize.vcpu.maxPerVirtualNode</key>
+        <value XMLSchema-instance:type="xsd:string">4</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>sched.cpu.latencySensitivity</key>
+        <value XMLSchema-instance:type="xsd:string">normal</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vmotion.checkpointFBSize</key>
+        <value XMLSchema-instance:type="xsd:string">4194304</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vmotion.checkpointSVGAPrimarySize</key>
+        <value XMLSchema-instance:type="xsd:string">16777216</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge0.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge6.functions</key>
+        <value XMLSchema-instance:type="xsd:string">8</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>disk.EnableUUID</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge5.virtualDev</key>
+        <value XMLSchema-instance:type="xsd:string">pcieRootPort</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge4.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>devices.hotplug</key>
+        <value XMLSchema-instance:type="xsd:string">FALSE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>guestinfo.vmtools.versionString</key>
+        <value XMLSchema-instance:type="xsd:string">10.2.0</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge6.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge4.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">21</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>hpet0.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>numa.autosize.cookie</key>
+        <value XMLSchema-instance:type="xsd:string">40001</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>monitor.phys_bits_used</key>
+        <value XMLSchema-instance:type="xsd:string">43</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>svga.present</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge0.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">17</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>ethernet0.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">192</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge7.functions</key>
+        <value XMLSchema-instance:type="xsd:string">8</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>scsi0.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">160</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge5.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">22</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>guestinfo.vmtools.description</key>
+        <value XMLSchema-instance:type="xsd:string">VMware Tools 10.2.0 build 7253323</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>svga.guestBackedPrimaryAware</key>
+        <value XMLSchema-instance:type="xsd:string">TRUE</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>scsi0:0.redo</key>
+        <value XMLSchema-instance:type="xsd:string"></value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vmci0.pciSlotNumber</key>
+        <value XMLSchema-instance:type="xsd:string">32</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge4.virtualDev</key>
+        <value XMLSchema-instance:type="xsd:string">pcieRootPort</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>pciBridge4.functions</key>
+        <value XMLSchema-instance:type="xsd:string">8</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vm.genid</key>
+        <value XMLSchema-instance:type="xsd:string">9213314619291420527</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vm.genidX</key>
+        <value XMLSchema-instance:type="xsd:string">8680387382680835563</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>viv.moid</key>
+        <value XMLSchema-instance:type="xsd:string">305c6204-690f-4acd-94da-97af4635f7f7:vm-146:Nr76A97msfzPjaWISuU6t+7QHqZTW5HrQNJDIFGsBYg=</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vmware.tools.internalversion</key>
+        <value XMLSchema-instance:type="xsd:string">10304</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>vmware.tools.requiredversion</key>
+        <value XMLSchema-instance:type="xsd:string">11297</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>migrate.hostLogState</key>
+        <value XMLSchema-instance:type="xsd:string">none</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>migrate.migrationId</key>
+        <value XMLSchema-instance:type="xsd:string">4419215788367404307</value>
+      </extraConfig>
+      <extraConfig XMLSchema-instance:type="OptionValue">
+        <key>migrate.hostLog</key>
+        <value XMLSchema-instance:type="xsd:string">VMCWINHZ03-574580e0.hlog</value>
+      </extraConfig>
+      <datastoreUrl>
+        <name>WorkloadDatastore</name>
+        <url>/vmfs/volumes/vsan:de14938dee2b41c8-8aa3f463c3428f4a</url>
+      </datastoreUrl>
+      <swapPlacement>inherit</swapPlacement>
+      <bootOptions>
+        <enterBIOSSetup>false</enterBIOSSetup>
+        <efiSecureBootEnabled>true</efiSecureBootEnabled>
+        <bootRetryEnabled>false</bootRetryEnabled>
+        <bootRetryDelay>10000</bootRetryDelay>
+        <networkBootProtocol>ipv4</networkBootProtocol>
+      </bootOptions>
+      <vAssertsEnabled>false</vAssertsEnabled>
+      <changeTrackingEnabled>false</changeTrackingEnabled>
+      <firmware>efi</firmware>
+      <maxMksConnections>40</maxMksConnections>
+      <guestAutoLockEnabled>false</guestAutoLockEnabled>
+      <memoryReservationLockedToMax>false</memoryReservationLockedToMax>
+      <initialOverhead>
+        <initialMemoryReservation>125829120</initialMemoryReservation>
+        <initialSwapReservation>702287872</initialSwapReservation>
+      </initialOverhead>
+      <nestedHVEnabled>false</nestedHVEnabled>
+      <vPMCEnabled>false</vPMCEnabled>
+      <scheduledHardwareUpgradeInfo>
+        <upgradePolicy>never</upgradePolicy>
+        <scheduledHardwareUpgradeStatus>none</scheduledHardwareUpgradeStatus>
+      </scheduledHardwareUpgradeInfo>
+      <vmxConfigChecksum>2xlwtSxZ2X27x5TVaTdwSlIRqKc=</vmxConfigChecksum>
+      <messageBusTunnelEnabled>false</messageBusTunnelEnabled>
+      <vmStorageObjectId>40309d5c-39c7-36fb-7028-0afce58fa864</vmStorageObjectId>
+      <swapStorageObjectId>a127a05e-0027-a9fe-7214-0a83924ab129</swapStorageObjectId>
+      <guestIntegrityInfo>
+        <enabled>false</enabled>
+      </guestIntegrityInfo>
+      <migrateEncryption>opportunistic</migrateEncryption>
+      <sgxInfo>
+        <epcSize>0</epcSize>
+        <flcMode>unlocked</flcMode>
+      </sgxInfo>
+      <guestMonitoringModeInfo></guestMonitoringModeInfo>
+      <sevEnabled>false</sevEnabled>
+    </val>
+  </propSet>
+  <propSet>
+    <name>configIssue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfEvent"></val>
+  </propSet>
+  <propSet>
+    <name>configStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>customValue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>datastore</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="Datastore">datastore-60</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>declaredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState">
+      <AlarmState>
+        <key>alarm-10.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-10</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1001.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-1001</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-113.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-113</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-12.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-12</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1403.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-1403</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-15.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-15</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-19.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-19</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-2.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-2</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-38.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-38</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-07-11T06:36:50.170999Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>11333222</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-39.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-39</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-40.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-40</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-405.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-405</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-406.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-406</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-407.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-407</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-410.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-410</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-411.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-411</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-47.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-47</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-5.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-5</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-11-09T18:55:26.542965Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-514.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-514</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-52.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-52</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-54.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-54</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-6.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-6</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-11-09T18:55:26.542969Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-81.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-81</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-9.vm-146</key>
+        <entity type="VirtualMachine">vm-146</entity>
+        <alarm type="Alarm">alarm-9</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-09T08:27:42.15296Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+    </val>
+  </propSet>
+  <propSet>
+    <name>disabledMethod</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfString">
+      <string>Destroy_Task</string>
+      <string>UnregisterVM</string>
+      <string>UnmountToolsInstaller</string>
+      <string>AnswerVM</string>
+      <string>UpgradeVM_Task</string>
+      <string>ApplyEvcModeVM_Task</string>
+      <string>StartRecording_Task</string>
+      <string>StopRecording_Task</string>
+      <string>StartReplaying_Task</string>
+      <string>StopReplaying_Task</string>
+      <string>TurnOffFaultToleranceForVM_Task</string>
+      <string>MakePrimaryVM_Task</string>
+      <string>TerminateFaultTolerantVM_Task</string>
+      <string>DisableSecondaryVM_Task</string>
+      <string>EnableSecondaryVM_Task</string>
+      <string>StopRecording_Task</string>
+      <string>StopReplaying_Task</string>
+      <string>CustomizeVM_Task</string>
+      <string>MarkAsTemplate</string>
+      <string>ResetGuestInformation</string>
+      <string>ExportVm</string>
+      <string>PowerOnVM_Task</string>
+      <string>MarkAsVirtualMachine</string>
+    </val>
+  </propSet>
+  <propSet>
+    <name>effectiveRole</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfInt">
+      <int>-1939043557</int>
+      <int>1101</int>
+      <int>11135926</int>
+    </val>
+  </propSet>
+  <propSet>
+    <name>environmentBrowser</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="EnvironmentBrowser">envbrowser-146</val>
+  </propSet>
+  <propSet>
+    <name>guest</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="GuestInfo">
+      <toolsStatus>toolsOld</toolsStatus>
+      <toolsVersionStatus>guestToolsNeedUpgrade</toolsVersionStatus>
+      <toolsVersionStatus2>guestToolsSupportedOld</toolsVersionStatus2>
+      <toolsRunningStatus>guestToolsRunning</toolsRunningStatus>
+      <toolsVersion>10304</toolsVersion>
+      <toolsInstallType>guestToolsTypeMSI</toolsInstallType>
+      <guestId>windows9Server64Guest</guestId>
+      <guestFamily>windowsGuest</guestFamily>
+      <guestFullName>Microsoft Windows Server 2016 or later (64-bit)</guestFullName>
+      <hostName>VMCWINHZ03.set.local</hostName>
+      <ipAddress>10.47.159.38</ipAddress>
+      <net>
+        <ipAddress>10.47.159.38</ipAddress>
+        <macAddress>00:50:56:9a:d3:97</macAddress>
+        <connected>true</connected>
+        <deviceConfigId>4000</deviceConfigId>
+        <dnsConfig>
+          <dhcp>false</dhcp>
+          <hostName></hostName>
+          <domainName></domainName>
+          <ipAddress>10.47.159.11</ipAddress>
+          <ipAddress>10.47.159.10</ipAddress>
+        </dnsConfig>
+        <ipConfig>
+          <ipAddress>
+            <ipAddress>10.47.159.38</ipAddress>
+            <prefixLength>24</prefixLength>
+            <origin>manual</origin>
+            <state>preferred</state>
+          </ipAddress>
+          <dhcp>
+            <ipv6>
+              <enable>false</enable>
+            </ipv6>
+            <ipv4>
+              <enable>false</enable>
+            </ipv4>
+          </dhcp>
+        </ipConfig>
+      </net>
+      <ipStack>
+        <dnsConfig>
+          <dhcp>false</dhcp>
+          <hostName>VMCWINHZ03</hostName>
+          <domainName>set.local</domainName>
+          <ipAddress>10.47.159.11</ipAddress>
+          <ipAddress>10.47.159.10</ipAddress>
+        </dnsConfig>
+        <ipRouteConfig>
+          <ipRoute>
+            <network>0.0.0.0</network>
+            <prefixLength>0</prefixLength>
+            <gateway>
+              <ipAddress>10.47.159.1</ipAddress>
+              <device>0</device>
+            </gateway>
+          </ipRoute>
+          <ipRoute>
+            <network>10.47.159.0</network>
+            <prefixLength>24</prefixLength>
+            <gateway>
+              <device>0</device>
+            </gateway>
+          </ipRoute>
+          <ipRoute>
+            <network>10.47.159.38</network>
+            <prefixLength>32</prefixLength>
+            <gateway>
+              <device>0</device>
+            </gateway>
+          </ipRoute>
+          <ipRoute>
+            <network>10.47.159.255</network>
+            <prefixLength>32</prefixLength>
+            <gateway>
+              <device>0</device>
+            </gateway>
+          </ipRoute>
+          <ipRoute>
+            <network>224.0.0.0</network>
+            <prefixLength>4</prefixLength>
+            <gateway>
+              <device>0</device>
+            </gateway>
+          </ipRoute>
+          <ipRoute>
+            <network>255.255.255.255</network>
+            <prefixLength>32</prefixLength>
+            <gateway>
+              <device>0</device>
+            </gateway>
+          </ipRoute>
+        </ipRouteConfig>
+      </ipStack>
+      <disk>
+        <diskPath>C:\</diskPath>
+        <capacity>53091495936</capacity>
+        <freeSpace>37073272832</freeSpace>
+      </disk>
+      <screen>
+        <width>1880</width>
+        <height>1031</height>
+      </screen>
+      <guestState>running</guestState>
+      <appHeartbeatStatus>appStatusGray</appHeartbeatStatus>
+      <guestKernelCrashed>false</guestKernelCrashed>
+      <appState>none</appState>
+      <guestOperationsReady>true</guestOperationsReady>
+      <interactiveGuestOperationsReady>true</interactiveGuestOperationsReady>
+      <guestStateChangeSupported>true</guestStateChangeSupported>
+      <hwVersion>vmx-14</hwVersion>
+    </val>
+  </propSet>
+  <propSet>
+    <name>guestHeartbeatStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>layout</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineFileLayout">
+      <configFile>VMCWINHZ03.vmxf</configFile>
+      <configFile>VMCWINHZ03.nvram</configFile>
+      <configFile>VMCWINHZ03.vmsd</configFile>
+      <logFile>vmware-27.log</logFile>
+      <logFile>vmware-26.log</logFile>
+      <logFile>vmware-25.log</logFile>
+      <logFile>vmware-24.log</logFile>
+      <logFile>vmware-23.log</logFile>
+      <logFile>vmware-22.log</logFile>
+      <logFile>vmware.log</logFile>
+      <disk>
+        <key>2000</key>
+        <diskFile>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/VMCWINHZ030.vmdk</diskFile>
+        <diskFile>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/VMCWINHZ030-000001.vmdk</diskFile>
+      </disk>
+      <snapshot>
+        <key type="VirtualMachineSnapshot">snapshot-13145</key>
+        <snapshotFile>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/VMCWINHZ03-Snapshot1.vmsn</snapshotFile>
+        <snapshotFile>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/VMCWINHZ030.vmdk</snapshotFile>
+      </snapshot>
+      <swapFile>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/VMCWINHZ03-ed165d07.vswp</swapFile>
+    </val>
+  </propSet>
+  <propSet>
+    <name>layoutEx</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineFileLayoutEx">
+      <file>
+        <key>0</key>
+        <name>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/VMCWINHZ03.vmx</name>
+        <type>config</type>
+        <size>3427</size>
+        <uniqueSize>3427</uniqueSize>
+        <backingObjectId>40309d5c-39c7-36fb-7028-0afce58fa864</backingObjectId>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>1</key>
+        <name>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/VMCWINHZ03.vmxf</name>
+        <type>extendedConfig</type>
+        <size>0</size>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>2</key>
+        <name>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/VMCWINHZ03.nvram</name>
+        <type>nvram</type>
+        <size>270840</size>
+        <uniqueSize>270840</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>3</key>
+        <name>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/VMCWINHZ03.vmsd</name>
+        <type>snapshotList</type>
+        <size>0</size>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>4</key>
+        <name>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/VMCWINHZ030.vmdk</name>
+        <type>diskDescriptor</type>
+        <size>24809308160</size>
+        <uniqueSize>24809308160</uniqueSize>
+        <backingObjectId>40309d5c-4b1a-2a3b-6102-0afce58fa864</backingObjectId>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>5</key>
+        <name>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/VMCWINHZ030-000001.vmdk</name>
+        <type>diskDescriptor</type>
+        <size>48649732096</size>
+        <uniqueSize>48649732096</uniqueSize>
+        <backingObjectId>6f27a05e-9880-7730-c13c-0adb918b96b3</backingObjectId>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>6</key>
+        <name>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/VMCWINHZ03-Snapshot1.vmsn</name>
+        <type>snapshotData</type>
+        <size>290880</size>
+        <uniqueSize>290880</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>7</key>
+        <name>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/VMCWINHZ03-ed165d07.vswp</name>
+        <type>swap</type>
+        <size>12884901888</size>
+        <uniqueSize>37748736</uniqueSize>
+        <backingObjectId>a127a05e-0027-a9fe-7214-0a83924ab129</backingObjectId>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>8</key>
+        <name>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/vmx-VMCWINHZ03-8c159e242bf2bdcd8c57517a5fbf867e6b5e3f17-2.vswp</name>
+        <type>uwswap</type>
+        <size>97517568</size>
+        <uniqueSize>97517568</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>9</key>
+        <name>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/vmware-27.log</name>
+        <type>log</type>
+        <size>155597</size>
+        <uniqueSize>155597</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>10</key>
+        <name>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/vmware-26.log</name>
+        <type>log</type>
+        <size>156500</size>
+        <uniqueSize>156500</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>11</key>
+        <name>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/vmware-25.log</name>
+        <type>log</type>
+        <size>155167</size>
+        <uniqueSize>155167</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>12</key>
+        <name>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/vmware-24.log</name>
+        <type>log</type>
+        <size>159284</size>
+        <uniqueSize>159284</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>13</key>
+        <name>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/vmware-23.log</name>
+        <type>log</type>
+        <size>154461</size>
+        <uniqueSize>154461</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>14</key>
+        <name>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/vmware-22.log</name>
+        <type>log</type>
+        <size>154301</size>
+        <uniqueSize>154301</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <file>
+        <key>15</key>
+        <name>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/vmware.log</name>
+        <type>log</type>
+        <size>626604974</size>
+        <uniqueSize>626604974</uniqueSize>
+        <accessible>true</accessible>
+      </file>
+      <disk>
+        <key>2000</key>
+        <chain>
+          <fileKey>4</fileKey>
+        </chain>
+        <chain>
+          <fileKey>5</fileKey>
+        </chain>
+      </disk>
+      <snapshot>
+        <key type="VirtualMachineSnapshot">snapshot-13145</key>
+        <dataKey>6</dataKey>
+        <memoryKey>-1</memoryKey>
+        <disk>
+          <key>2000</key>
+          <chain>
+            <fileKey>4</fileKey>
+          </chain>
+        </disk>
+      </snapshot>
+      <timestamp>2021-01-07T21:14:36.462264Z</timestamp>
+    </val>
+  </propSet>
+  <propSet>
+    <name>name</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:string">VMCWINHZ03</val>
+  </propSet>
+  <propSet>
+    <name>network</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="OpaqueNetwork">network-o72</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>overallStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>parent</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="Folder">group-v80</val>
+  </propSet>
+  <propSet>
+    <name>permission</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfPermission"></val>
+  </propSet>
+  <propSet>
+    <name>recentTask</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>resourceConfig</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ResourceConfigSpec">
+      <entity type="VirtualMachine">vm-146</entity>
+      <cpuAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>false</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>4000</shares>
+          <level>normal</level>
+        </shares>
+      </cpuAllocation>
+      <memoryAllocation>
+        <reservation>0</reservation>
+        <expandableReservation>false</expandableReservation>
+        <limit>-1</limit>
+        <shares>
+          <shares>122880</shares>
+          <level>normal</level>
+        </shares>
+        <overheadLimit>122</overheadLimit>
+      </memoryAllocation>
+    </val>
+  </propSet>
+  <propSet>
+    <name>resourcePool</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="ResourcePool">resgroup-74</val>
+  </propSet>
+  <propSet>
+    <name>rootSnapshot</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="VirtualMachineSnapshot">snapshot-13145</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>runtime</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineRuntimeInfo">
+      <device>
+        <runtimeState XMLSchema-instance:type="VirtualMachineDeviceRuntimeInfoVirtualEthernetCardRuntimeState">
+          <vmDirectPathGen2Active>false</vmDirectPathGen2Active>
+          <vmDirectPathGen2InactiveReasonOther>vmNptIncompatibleHost</vmDirectPathGen2InactiveReasonOther>
+          <attachmentStatus>green</attachmentStatus>
+        </runtimeState>
+        <key>4000</key>
+      </device>
+      <host type="HostSystem">host-4234</host>
+      <connectionState>connected</connectionState>
+      <powerState>poweredOn</powerState>
+      <faultToleranceState>notConfigured</faultToleranceState>
+      <dasVmProtection>
+        <dasProtected>true</dasProtected>
+      </dasVmProtection>
+      <toolsInstallerMounted>false</toolsInstallerMounted>
+      <bootTime>2020-12-14T08:39:09.632967Z</bootTime>
+      <maxCpuUsage>9200</maxCpuUsage>
+      <maxMemoryUsage>12288</maxMemoryUsage>
+      <numMksConnections>0</numMksConnections>
+      <recordReplayState>inactive</recordReplayState>
+      <onlineStandby>false</onlineStandby>
+      <minRequiredEVCModeKey>intel-broadwell</minRequiredEVCModeKey>
+      <consolidationNeeded>false</consolidationNeeded>
+      <offlineFeatureRequirement>
+        <key>cpuid.lm</key>
+        <featureName>cpuid.lm</featureName>
+        <value>Num:Min:1</value>
+      </offlineFeatureRequirement>
+      <featureRequirement>
+        <key>cpuid.3dnprefetch</key>
+        <featureName>cpuid.3dnprefetch</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.abm</key>
+        <featureName>cpuid.abm</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.adx</key>
+        <featureName>cpuid.adx</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.aes</key>
+        <featureName>cpuid.aes</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.avx</key>
+        <featureName>cpuid.avx</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.avx2</key>
+        <featureName>cpuid.avx2</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.bmi1</key>
+        <featureName>cpuid.bmi1</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.bmi2</key>
+        <featureName>cpuid.bmi2</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.cmpxchg16b</key>
+        <featureName>cpuid.cmpxchg16b</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.enfstrg</key>
+        <featureName>cpuid.enfstrg</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.f16c</key>
+        <featureName>cpuid.f16c</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.fcmd</key>
+        <featureName>cpuid.fcmd</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.fma</key>
+        <featureName>cpuid.fma</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.fsgsbase</key>
+        <featureName>cpuid.fsgsbase</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.ibpb</key>
+        <featureName>cpuid.ibpb</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.ibrs</key>
+        <featureName>cpuid.ibrs</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.intel</key>
+        <featureName>cpuid.intel</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.invpcid</key>
+        <featureName>cpuid.invpcid</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.lahf64</key>
+        <featureName>cpuid.lahf64</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.lm</key>
+        <featureName>cpuid.lm</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.mdclear</key>
+        <featureName>cpuid.mdclear</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.movbe</key>
+        <featureName>cpuid.movbe</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.nx</key>
+        <featureName>cpuid.nx</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.pcid</key>
+        <featureName>cpuid.pcid</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.pclmulqdq</key>
+        <featureName>cpuid.pclmulqdq</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.pdpe1gb</key>
+        <featureName>cpuid.pdpe1gb</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.popcnt</key>
+        <featureName>cpuid.popcnt</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.rdrand</key>
+        <featureName>cpuid.rdrand</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.rdseed</key>
+        <featureName>cpuid.rdseed</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.rdtscp</key>
+        <featureName>cpuid.rdtscp</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.smap</key>
+        <featureName>cpuid.smap</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.smep</key>
+        <featureName>cpuid.smep</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.ss</key>
+        <featureName>cpuid.ss</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.ssbd</key>
+        <featureName>cpuid.ssbd</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.sse3</key>
+        <featureName>cpuid.sse3</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.sse41</key>
+        <featureName>cpuid.sse41</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.sse42</key>
+        <featureName>cpuid.sse42</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.ssse3</key>
+        <featureName>cpuid.ssse3</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.stibp</key>
+        <featureName>cpuid.stibp</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.xcr0_master_sse</key>
+        <featureName>cpuid.xcr0_master_sse</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.xcr0_master_ymm_h</key>
+        <featureName>cpuid.xcr0_master_ymm_h</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.xsave</key>
+        <featureName>cpuid.xsave</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>cpuid.xsaveopt</key>
+        <featureName>cpuid.xsaveopt</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <featureRequirement>
+        <key>misc.cpuidfaulting</key>
+        <featureName>misc.cpuidfaulting</featureName>
+        <value>Bool:Min:1</value>
+      </featureRequirement>
+      <paused>false</paused>
+      <snapshotInBackground>false</snapshotInBackground>
+      <instantCloneFrozen>false</instantCloneFrozen>
+    </val>
+  </propSet>
+  <propSet>
+    <name>snapshot</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineSnapshotInfo">
+      <currentSnapshot type="VirtualMachineSnapshot">snapshot-13145</currentSnapshot>
+      <rootSnapshotList>
+        <snapshot type="VirtualMachineSnapshot">snapshot-13145</snapshot>
+        <vm type="VirtualMachine">vm-146</vm>
+        <name>pre 7.12 update</name>
+        <description></description>
+        <id>1</id>
+        <createTime>2020-04-22T11:15:59.748097Z</createTime>
+        <state>poweredOff</state>
+        <quiesced>false</quiesced>
+        <replaySupported>false</replaySupported>
+      </rootSnapshotList>
+    </val>
+  </propSet>
+  <propSet>
+    <name>storage</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineStorageInfo">
+      <perDatastoreUsage>
+        <datastore type="Datastore">datastore-60</datastore>
+        <committed>76244058112</committed>
+        <uncommitted>46762295296</uncommitted>
+        <unshared>73459040256</unshared>
+      </perDatastoreUsage>
+      <timestamp>2021-01-07T21:14:36.463Z</timestamp>
+    </val>
+  </propSet>
+  <propSet>
+    <name>summary</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="VirtualMachineSummary">
+      <vm type="VirtualMachine">vm-146</vm>
+      <runtime>
+        <device>
+          <runtimeState XMLSchema-instance:type="VirtualMachineDeviceRuntimeInfoVirtualEthernetCardRuntimeState">
+            <vmDirectPathGen2Active>false</vmDirectPathGen2Active>
+            <vmDirectPathGen2InactiveReasonOther>vmNptIncompatibleHost</vmDirectPathGen2InactiveReasonOther>
+            <attachmentStatus>green</attachmentStatus>
+          </runtimeState>
+          <key>4000</key>
+        </device>
+        <host type="HostSystem">host-4234</host>
+        <connectionState>connected</connectionState>
+        <powerState>poweredOn</powerState>
+        <faultToleranceState>notConfigured</faultToleranceState>
+        <dasVmProtection>
+          <dasProtected>true</dasProtected>
+        </dasVmProtection>
+        <toolsInstallerMounted>false</toolsInstallerMounted>
+        <bootTime>2020-12-14T08:39:09.632967Z</bootTime>
+        <maxCpuUsage>9200</maxCpuUsage>
+        <maxMemoryUsage>12288</maxMemoryUsage>
+        <numMksConnections>0</numMksConnections>
+        <recordReplayState>inactive</recordReplayState>
+        <onlineStandby>false</onlineStandby>
+        <minRequiredEVCModeKey>intel-broadwell</minRequiredEVCModeKey>
+        <consolidationNeeded>false</consolidationNeeded>
+        <offlineFeatureRequirement>
+          <key>cpuid.lm</key>
+          <featureName>cpuid.lm</featureName>
+          <value>Num:Min:1</value>
+        </offlineFeatureRequirement>
+        <featureRequirement>
+          <key>cpuid.3dnprefetch</key>
+          <featureName>cpuid.3dnprefetch</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.abm</key>
+          <featureName>cpuid.abm</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.adx</key>
+          <featureName>cpuid.adx</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.aes</key>
+          <featureName>cpuid.aes</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.avx</key>
+          <featureName>cpuid.avx</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.avx2</key>
+          <featureName>cpuid.avx2</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.bmi1</key>
+          <featureName>cpuid.bmi1</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.bmi2</key>
+          <featureName>cpuid.bmi2</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.cmpxchg16b</key>
+          <featureName>cpuid.cmpxchg16b</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.enfstrg</key>
+          <featureName>cpuid.enfstrg</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.f16c</key>
+          <featureName>cpuid.f16c</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.fcmd</key>
+          <featureName>cpuid.fcmd</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.fma</key>
+          <featureName>cpuid.fma</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.fsgsbase</key>
+          <featureName>cpuid.fsgsbase</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.ibpb</key>
+          <featureName>cpuid.ibpb</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.ibrs</key>
+          <featureName>cpuid.ibrs</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.intel</key>
+          <featureName>cpuid.intel</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.invpcid</key>
+          <featureName>cpuid.invpcid</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.lahf64</key>
+          <featureName>cpuid.lahf64</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.lm</key>
+          <featureName>cpuid.lm</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.mdclear</key>
+          <featureName>cpuid.mdclear</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.movbe</key>
+          <featureName>cpuid.movbe</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.nx</key>
+          <featureName>cpuid.nx</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.pcid</key>
+          <featureName>cpuid.pcid</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.pclmulqdq</key>
+          <featureName>cpuid.pclmulqdq</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.pdpe1gb</key>
+          <featureName>cpuid.pdpe1gb</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.popcnt</key>
+          <featureName>cpuid.popcnt</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.rdrand</key>
+          <featureName>cpuid.rdrand</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.rdseed</key>
+          <featureName>cpuid.rdseed</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.rdtscp</key>
+          <featureName>cpuid.rdtscp</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.smap</key>
+          <featureName>cpuid.smap</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.smep</key>
+          <featureName>cpuid.smep</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.ss</key>
+          <featureName>cpuid.ss</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.ssbd</key>
+          <featureName>cpuid.ssbd</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.sse3</key>
+          <featureName>cpuid.sse3</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.sse41</key>
+          <featureName>cpuid.sse41</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.sse42</key>
+          <featureName>cpuid.sse42</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.ssse3</key>
+          <featureName>cpuid.ssse3</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.stibp</key>
+          <featureName>cpuid.stibp</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.xcr0_master_sse</key>
+          <featureName>cpuid.xcr0_master_sse</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.xcr0_master_ymm_h</key>
+          <featureName>cpuid.xcr0_master_ymm_h</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.xsave</key>
+          <featureName>cpuid.xsave</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>cpuid.xsaveopt</key>
+          <featureName>cpuid.xsaveopt</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <featureRequirement>
+          <key>misc.cpuidfaulting</key>
+          <featureName>misc.cpuidfaulting</featureName>
+          <value>Bool:Min:1</value>
+        </featureRequirement>
+        <paused>false</paused>
+        <snapshotInBackground>false</snapshotInBackground>
+        <instantCloneFrozen>false</instantCloneFrozen>
+      </runtime>
+      <guest>
+        <guestId>windows9Server64Guest</guestId>
+        <guestFullName>Microsoft Windows Server 2016 or later (64-bit)</guestFullName>
+        <toolsStatus>toolsOld</toolsStatus>
+        <toolsVersionStatus>guestToolsNeedUpgrade</toolsVersionStatus>
+        <toolsVersionStatus2>guestToolsSupportedOld</toolsVersionStatus2>
+        <toolsRunningStatus>guestToolsRunning</toolsRunningStatus>
+        <hostName>VMCWINHZ03.set.local</hostName>
+        <ipAddress>10.47.159.38</ipAddress>
+        <hwVersion>vmx-14</hwVersion>
+      </guest>
+      <config>
+        <name>VMCWINHZ03</name>
+        <template>false</template>
+        <vmPathName>[WorkloadDatastore] 40309d5c-39c7-36fb-7028-0afce58fa864/VMCWINHZ03.vmx</vmPathName>
+        <memorySizeMB>12288</memorySizeMB>
+        <numCpu>4</numCpu>
+        <numEthernetCards>1</numEthernetCards>
+        <numVirtualDisks>1</numVirtualDisks>
+        <uuid>564d5432-bbf2-cecc-8483-714929de546c</uuid>
+        <instanceUuid>5038a473-868e-746b-5b51-780b2b7dc051</instanceUuid>
+        <guestId>windows9Server64Guest</guestId>
+        <guestFullName>Microsoft Windows Server 2016 or later (64-bit)</guestFullName>
+        <installBootRequired>false</installBootRequired>
+        <tpmPresent>false</tpmPresent>
+        <hwVersion>vmx-14</hwVersion>
+      </config>
+      <storage>
+        <committed>76244058112</committed>
+        <uncommitted>46762295296</uncommitted>
+        <unshared>73459040256</unshared>
+        <timestamp>2021-01-07T21:14:36.463925Z</timestamp>
+      </storage>
+      <quickStats>
+        <overallCpuUsage>437</overallCpuUsage>
+        <overallCpuDemand>506</overallCpuDemand>
+        <overallCpuReadiness>2</overallCpuReadiness>
+        <guestMemoryUsage>1474</guestMemoryUsage>
+        <hostMemoryUsage>12384</hostMemoryUsage>
+        <guestHeartbeatStatus>green</guestHeartbeatStatus>
+        <distributedCpuEntitlement>506</distributedCpuEntitlement>
+        <distributedMemoryEntitlement>5448</distributedMemoryEntitlement>
+        <staticCpuEntitlement>46</staticCpuEntitlement>
+        <staticMemoryEntitlement>1861</staticMemoryEntitlement>
+        <grantedMemory>12288</grantedMemory>
+        <privateMemory>12286</privateMemory>
+        <sharedMemory>2</sharedMemory>
+        <consumedOverheadMemory>99</consumedOverheadMemory>
+        <ftLogBandwidth>-1</ftLogBandwidth>
+        <ftSecondaryLatency>-1</ftSecondaryLatency>
+        <ftLatencyStatus>gray</ftLatencyStatus>
+        <uptimeSeconds>5106513</uptimeSeconds>
+      </quickStats>
+      <overallStatus>green</overallStatus>
+    </val>
+  </propSet>
+  <propSet>
+    <name>tag</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfTag"></val>
+  </propSet>
+  <propSet>
+    <name>triggeredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState"></val>
+  </propSet>
+  <propSet>
+    <name>value</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+</ObjectContent>

@@ -1,0 +1,36 @@
+<ObjectContent>
+  <obj type="Task">task-262507</obj>
+  <propSet>
+    <name>availableField</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldDef"></val>
+  </propSet>
+  <propSet>
+    <name>info</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="TaskInfo">
+      <key>task-262507</key>
+      <task type="Task">task-262507</task>
+      <name>QueryHostPatch_Task</name>
+      <descriptionId>host.PatchManager.Query</descriptionId>
+      <entity type="HostSystem">host-15215</entity>
+      <entityName>10.46.32.4</entityName>
+      <state>success</state>
+      <cancelled>false</cancelled>
+      <cancelable>false</cancelable>
+      <result XMLSchema-instance:type="HostPatchManagerResult">
+        <version>1.50</version>
+        <xmlResult>&lt;esxupdate-response&gt;&#xA;&lt;version&gt;1.50&lt;/version&gt;&#xA;&lt;/esxupdate-response&gt;&#xA;</xmlResult>
+      </result>
+      <reason XMLSchema-instance:type="TaskReasonUser">
+        <userName>com.vmware.vsan.health</userName>
+      </reason>
+      <queueTime>2021-01-07T21:16:57.545492Z</queueTime>
+      <startTime>2021-01-07T21:16:57.548373Z</startTime>
+      <completeTime>2021-01-07T21:16:58.172649Z</completeTime>
+      <eventChainId>18595049</eventChainId>
+    </val>
+  </propSet>
+  <propSet>
+    <name>value</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+</ObjectContent>

@@ -1,0 +1,3386 @@
+<ObjectContent>
+  <obj type="HostSystem">host-17245</obj>
+  <propSet>
+    <name>alarmActionsEnabled</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:boolean">true</val>
+  </propSet>
+  <propSet>
+    <name>availableField</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldDef">
+      <CustomFieldDef>
+        <key>101</key>
+        <name>InstantClone.Maintenance</name>
+        <type>string</type>
+        <managedObjectType>HostSystem</managedObjectType>
+      </CustomFieldDef>
+    </val>
+  </propSet>
+  <propSet>
+    <name>capability</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="HostCapability">
+      <recursiveResourcePoolsSupported>true</recursiveResourcePoolsSupported>
+      <cpuMemoryResourceConfigurationSupported>true</cpuMemoryResourceConfigurationSupported>
+      <rebootSupported>false</rebootSupported>
+      <shutdownSupported>false</shutdownSupported>
+      <vmotionSupported>true</vmotionSupported>
+      <standbySupported>false</standbySupported>
+      <ipmiSupported>false</ipmiSupported>
+      <maxRegisteredVMs>2048</maxRegisteredVMs>
+      <datastorePrincipalSupported>false</datastorePrincipalSupported>
+      <sanSupported>true</sanSupported>
+      <nfsSupported>true</nfsSupported>
+      <iscsiSupported>true</iscsiSupported>
+      <vlanTaggingSupported>true</vlanTaggingSupported>
+      <nicTeamingSupported>true</nicTeamingSupported>
+      <highGuestMemSupported>true</highGuestMemSupported>
+      <maintenanceModeSupported>true</maintenanceModeSupported>
+      <suspendedRelocateSupported>true</suspendedRelocateSupported>
+      <restrictedSnapshotRelocateSupported>true</restrictedSnapshotRelocateSupported>
+      <perVmSwapFiles>true</perVmSwapFiles>
+      <localSwapDatastoreSupported>true</localSwapDatastoreSupported>
+      <unsharedSwapVMotionSupported>true</unsharedSwapVMotionSupported>
+      <backgroundSnapshotsSupported>false</backgroundSnapshotsSupported>
+      <preAssignedPCIUnitNumbersSupported>true</preAssignedPCIUnitNumbersSupported>
+      <screenshotSupported>false</screenshotSupported>
+      <scaledScreenshotSupported>false</scaledScreenshotSupported>
+      <storageVMotionSupported>true</storageVMotionSupported>
+      <vmotionWithStorageVMotionSupported>true</vmotionWithStorageVMotionSupported>
+      <vmotionAcrossNetworkSupported>true</vmotionAcrossNetworkSupported>
+      <maxNumDisksSVMotion>248</maxNumDisksSVMotion>
+      <hbrNicSelectionSupported>false</hbrNicSelectionSupported>
+      <vrNfcNicSelectionSupported>false</vrNfcNicSelectionSupported>
+      <recordReplaySupported>false</recordReplaySupported>
+      <ftSupported>false</ftSupported>
+      <replayUnsupportedReason>unsupportedProduct</replayUnsupportedReason>
+      <smpFtSupported>false</smpFtSupported>
+      <ftCompatibilityIssues>ftNotLicensed</ftCompatibilityIssues>
+      <ftCompatibilityIssues>haAgentIssue</ftCompatibilityIssues>
+      <ftCompatibilityIssues>missingFTLoggingNic</ftCompatibilityIssues>
+      <ftCompatibilityIssues>unsupportedProduct</ftCompatibilityIssues>
+      <smpFtCompatibilityIssues>ftNotLicensed</smpFtCompatibilityIssues>
+      <smpFtCompatibilityIssues>haAgentIssue</smpFtCompatibilityIssues>
+      <smpFtCompatibilityIssues>missingFTLoggingNic</smpFtCompatibilityIssues>
+      <smpFtCompatibilityIssues>unsupportedProduct</smpFtCompatibilityIssues>
+      <loginBySSLThumbprintSupported>true</loginBySSLThumbprintSupported>
+      <cloneFromSnapshotSupported>true</cloneFromSnapshotSupported>
+      <deltaDiskBackingsSupported>true</deltaDiskBackingsSupported>
+      <perVMNetworkTrafficShapingSupported>false</perVMNetworkTrafficShapingSupported>
+      <tpmSupported>false</tpmSupported>
+      <virtualExecUsageSupported>true</virtualExecUsageSupported>
+      <storageIORMSupported>false</storageIORMSupported>
+      <vmDirectPathGen2Supported>false</vmDirectPathGen2Supported>
+      <vmDirectPathGen2UnsupportedReason>hostNptIncompatibleHardware</vmDirectPathGen2UnsupportedReason>
+      <vmDirectPathGen2UnsupportedReason>hostNptDisabled</vmDirectPathGen2UnsupportedReason>
+      <supportedVmfsMajorVersion>5</supportedVmfsMajorVersion>
+      <vStorageCapable>true</vStorageCapable>
+      <snapshotRelayoutSupported>true</snapshotRelayoutSupported>
+      <firewallIpRulesSupported>false</firewallIpRulesSupported>
+      <servicePackageInfoSupported>true</servicePackageInfoSupported>
+      <maxHostRunningVms>512</maxHostRunningVms>
+      <maxHostSupportedVcpus>512</maxHostSupportedVcpus>
+      <vmfsDatastoreMountCapable>true</vmfsDatastoreMountCapable>
+      <eightPlusHostVmfsSharedAccessSupported>true</eightPlusHostVmfsSharedAccessSupported>
+      <nestedHVSupported>true</nestedHVSupported>
+      <vPMCSupported>true</vPMCSupported>
+      <interVMCommunicationThroughVMCISupported>false</interVMCommunicationThroughVMCISupported>
+      <scheduledHardwareUpgradeSupported>true</scheduledHardwareUpgradeSupported>
+      <featureCapabilitiesSupported>true</featureCapabilitiesSupported>
+      <latencySensitivitySupported>true</latencySensitivitySupported>
+      <storagePolicySupported>true</storagePolicySupported>
+      <accel3dSupported>true</accel3dSupported>
+      <reliableMemoryAware>false</reliableMemoryAware>
+      <multipleNetworkStackInstanceSupported>true</multipleNetworkStackInstanceSupported>
+      <messageBusProxySupported>true</messageBusProxySupported>
+      <vsanSupported>false</vsanSupported>
+      <vFlashSupported>true</vFlashSupported>
+      <hostAccessManagerSupported>true</hostAccessManagerSupported>
+      <provisioningNicSelectionSupported>true</provisioningNicSelectionSupported>
+      <nfs41Supported>true</nfs41Supported>
+      <turnDiskLocatorLedSupported>false</turnDiskLocatorLedSupported>
+      <virtualVolumeDatastoreSupported>false</virtualVolumeDatastoreSupported>
+      <markAsSsdSupported>false</markAsSsdSupported>
+      <markAsLocalSupported>false</markAsLocalSupported>
+      <smartCardAuthenticationSupported>false</smartCardAuthenticationSupported>
+      <pMemSupported>false</pMemSupported>
+      <cryptoSupported>false</cryptoSupported>
+      <oneKVolumeAPIsSupported>false</oneKVolumeAPIsSupported>
+      <gatewayOnNicSupported>false</gatewayOnNicSupported>
+      <cpuHwMmuSupported>false</cpuHwMmuSupported>
+      <encryptedVMotionSupported>false</encryptedVMotionSupported>
+      <encryptionChangeOnAddRemoveSupported>false</encryptionChangeOnAddRemoveSupported>
+      <encryptionHotOperationSupported>false</encryptionHotOperationSupported>
+      <encryptionWithSnapshotsSupported>false</encryptionWithSnapshotsSupported>
+      <encryptionFaultToleranceSupported>false</encryptionFaultToleranceSupported>
+      <encryptionMemorySaveSupported>false</encryptionMemorySaveSupported>
+      <encryptionRDMSupported>false</encryptionRDMSupported>
+      <encryptionVFlashSupported>false</encryptionVFlashSupported>
+      <encryptionCBRCSupported>false</encryptionCBRCSupported>
+      <encryptionHBRSupported>false</encryptionHBRSupported>
+    </val>
+  </propSet>
+  <propSet>
+    <name>config</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="HostConfigInfo">
+      <host type="HostSystem">host-17245</host>
+      <product>
+        <name>VMware ESXi</name>
+        <fullName>VMware ESXi 7.0.0 build-17093508</fullName>
+        <vendor>VMware, Inc.</vendor>
+        <version>7.0.0</version>
+        <build>17093508</build>
+        <localeVersion>INTL</localeVersion>
+        <localeBuild>000</localeBuild>
+        <osType>vmnix-x86</osType>
+        <productLineId>embeddedEsx</productLineId>
+        <apiType>HostAgent</apiType>
+        <apiVersion>7.0.0.0</apiVersion>
+        <instanceUuid>UUID-Mockup</instanceUuid>
+        <licenseProductName>VMware Mobility Agent</licenseProductName>
+        <licenseProductVersion>5.1</licenseProductVersion>
+      </product>
+      <virtualMachineReservation>
+        <virtualMachineMin>4000000</virtualMachineMin>
+        <virtualMachineMax>200000000</virtualMachineMax>
+        <virtualMachineReserved>100000000</virtualMachineReserved>
+        <allocationPolicy>swapSome</allocationPolicy>
+      </virtualMachineReservation>
+      <storageDevice>
+        <hostBusAdapter XMLSchema-instance:type="HostFibreChannelHba">
+          <key>key-vim.host.FibreChannelHba-0</key>
+          <device>0</device>
+          <bus>0</bus>
+          <status>online</status>
+          <model>test</model>
+          <driver>hbadriver</driver>
+          <pci>0</pci>
+          <portWorldWideName>0</portWorldWideName>
+          <nodeWorldWideName>0</nodeWorldWideName>
+          <portType>unknown</portType>
+          <speed>0</speed>
+        </hostBusAdapter>
+        <scsiLun XMLSchema-instance:type="HostScsiDisk">
+          <deviceName>/vmfs/devices/disks/disk1</deviceName>
+          <deviceType>scsi-disk</deviceType>
+          <key>key-vim.host.ScsiDisk-disk1</key>
+          <uuid>disk1</uuid>
+          <canonicalName>hba1:1:1</canonicalName>
+          <lunType>disk</lunType>
+          <vendor>test</vendor>
+          <model>emc</model>
+          <scsiLevel>2</scsiLevel>
+          <serialNumber>10xxf</serialNumber>
+          <durableName>
+            <namespace>Unknown</namespace>
+            <namespaceId>0</namespaceId>
+            <data>9</data>
+          </durableName>
+          <queueDepth>32</queueDepth>
+          <operationalState>online</operationalState>
+          <capacity>
+            <blockSize>4096</blockSize>
+            <block>1000000</block>
+          </capacity>
+          <devicePath>/vmfs/devices/disks/disk1</devicePath>
+        </scsiLun>
+        <scsiTopology>
+          <adapter>
+            <key>key-vim.host.ScsiTopology.Interface-0</key>
+            <adapter>key-vim.host.FibreChannelHba-0</adapter>
+          </adapter>
+        </scsiTopology>
+        <plugStoreTopology>
+          <adapter>
+            <key>key-vim.host.PlugStoreTopology.Adapter-0</key>
+            <adapter>key-vim.host.FibreChannelHba-0</adapter>
+          </adapter>
+          <plugin>
+            <key>key-vim.host.PlugStoreTopology.Plugin-Mockup NMP</key>
+            <name>Mockup NMP</name>
+          </plugin>
+        </plugStoreTopology>
+        <softwareInternetScsiEnabled>true</softwareInternetScsiEnabled>
+      </storageDevice>
+      <multipathState></multipathState>
+      <fileSystemVolume>
+        <volumeTypeList>vmfs</volumeTypeList>
+        <mountInfo>
+          <mountInfo>
+            <path>/vmfs/volumes/525f66ec-ca4e8c10-83f8-f2ac1b80b719</path>
+            <accessMode>readWrite</accessMode>
+            <mounted>true</mounted>
+            <accessible>true</accessible>
+          </mountInfo>
+          <volume XMLSchema-instance:type="HostVmfsVolume">
+            <type>VMFS</type>
+            <name>ma-ds-525f66ec-ca4e8c10-83f8-f2ac1b80b719</name>
+            <capacity>549755813888000</capacity>
+            <blockSizeMb>1</blockSizeMb>
+            <maxBlocks>786432</maxBlocks>
+            <majorVersion>5</majorVersion>
+            <version>5.00</version>
+            <uuid>525f66ec-ca4e8c10-83f8-f2ac1b80b719</uuid>
+            <extent>
+              <diskName>hba0:1:1</diskName>
+              <partition>1</partition>
+            </extent>
+            <vmfsUpgradable>false</vmfsUpgradable>
+            <forceMountedInfo>
+              <persist>true</persist>
+              <mounted>true</mounted>
+            </forceMountedInfo>
+          </volume>
+        </mountInfo>
+      </fileSystemVolume>
+      <network>
+        <vswitch>
+          <name>vSwitch0</name>
+          <key>key-vim.host.VirtualSwitch-vSwitch0</key>
+          <numPorts>64</numPorts>
+          <numPortsAvailable>32</numPortsAvailable>
+          <mtu>1500</mtu>
+          <portgroup>key-vim.host.PortGroup-VM Network</portgroup>
+          <pnic>key-vim.host.PhysicalNic-vmnic0</pnic>
+          <spec>
+            <numPorts>64</numPorts>
+            <bridge XMLSchema-instance:type="HostVirtualSwitchBondBridge">
+              <nicDevice>vmnic0</nicDevice>
+            </bridge>
+            <policy>
+              <security>
+                <allowPromiscuous>false</allowPromiscuous>
+                <macChanges>true</macChanges>
+                <forgedTransmits>true</forgedTransmits>
+              </security>
+              <nicTeaming>
+                <policy>loadbalance_srcid</policy>
+                <reversePolicy>true</reversePolicy>
+                <notifySwitches>true</notifySwitches>
+                <rollingOrder>false</rollingOrder>
+                <failureCriteria>
+                  <checkSpeed>minimum</checkSpeed>
+                  <speed>10</speed>
+                  <checkDuplex>false</checkDuplex>
+                  <fullDuplex>false</fullDuplex>
+                  <checkErrorPercent>false</checkErrorPercent>
+                  <checkBeacon>false</checkBeacon>
+                </failureCriteria>
+                <nicOrder>
+                  <activeNic>vmnic0</activeNic>
+                </nicOrder>
+              </nicTeaming>
+              <offloadPolicy>
+                <csumOffload>true</csumOffload>
+                <tcpSegmentation>true</tcpSegmentation>
+                <zeroCopyXmit>true</zeroCopyXmit>
+              </offloadPolicy>
+              <shapingPolicy>
+                <enabled>false</enabled>
+              </shapingPolicy>
+            </policy>
+          </spec>
+        </vswitch>
+        <vswitch>
+          <name>vSwitch1</name>
+          <key>key-vim.host.VirtualSwitch-vSwitch1</key>
+          <numPorts>64</numPorts>
+          <numPortsAvailable>32</numPortsAvailable>
+          <mtu>1500</mtu>
+          <portgroup>key-vim.host.PortGroup-MA-VMW-Management</portgroup>
+          <pnic>key-vim.host.PhysicalNic-vmnic1</pnic>
+          <spec>
+            <numPorts>64</numPorts>
+            <bridge XMLSchema-instance:type="HostVirtualSwitchBondBridge">
+              <nicDevice>vmnic1</nicDevice>
+            </bridge>
+            <policy>
+              <security>
+                <allowPromiscuous>false</allowPromiscuous>
+                <macChanges>false</macChanges>
+                <forgedTransmits>false</forgedTransmits>
+              </security>
+              <nicTeaming>
+                <policy>loadbalance_srcid</policy>
+                <reversePolicy>true</reversePolicy>
+                <notifySwitches>true</notifySwitches>
+                <rollingOrder>false</rollingOrder>
+                <failureCriteria>
+                  <checkSpeed>minimum</checkSpeed>
+                  <speed>10</speed>
+                  <checkDuplex>false</checkDuplex>
+                  <fullDuplex>false</fullDuplex>
+                  <checkErrorPercent>false</checkErrorPercent>
+                  <checkBeacon>false</checkBeacon>
+                </failureCriteria>
+                <nicOrder>
+                  <activeNic>vmnic1</activeNic>
+                </nicOrder>
+              </nicTeaming>
+              <offloadPolicy>
+                <csumOffload>true</csumOffload>
+                <tcpSegmentation>true</tcpSegmentation>
+                <zeroCopyXmit>true</zeroCopyXmit>
+              </offloadPolicy>
+              <shapingPolicy>
+                <enabled>false</enabled>
+              </shapingPolicy>
+            </policy>
+          </spec>
+        </vswitch>
+        <vswitch>
+          <name>vSwitch2</name>
+          <key>key-vim.host.VirtualSwitch-vSwitch2</key>
+          <numPorts>64</numPorts>
+          <numPortsAvailable>32</numPortsAvailable>
+          <mtu>1500</mtu>
+          <portgroup>key-vim.host.PortGroup-MA-VMW-VMotion</portgroup>
+          <pnic>key-vim.host.PhysicalNic-vmnic2</pnic>
+          <spec>
+            <numPorts>64</numPorts>
+            <bridge XMLSchema-instance:type="HostVirtualSwitchBondBridge">
+              <nicDevice>vmnic2</nicDevice>
+            </bridge>
+            <policy>
+              <security>
+                <allowPromiscuous>false</allowPromiscuous>
+                <macChanges>false</macChanges>
+                <forgedTransmits>false</forgedTransmits>
+              </security>
+              <nicTeaming>
+                <policy>loadbalance_srcid</policy>
+                <reversePolicy>true</reversePolicy>
+                <notifySwitches>true</notifySwitches>
+                <rollingOrder>false</rollingOrder>
+                <failureCriteria>
+                  <checkSpeed>minimum</checkSpeed>
+                  <speed>10</speed>
+                  <checkDuplex>false</checkDuplex>
+                  <fullDuplex>false</fullDuplex>
+                  <checkErrorPercent>false</checkErrorPercent>
+                  <checkBeacon>false</checkBeacon>
+                </failureCriteria>
+                <nicOrder>
+                  <activeNic>vmnic2</activeNic>
+                </nicOrder>
+              </nicTeaming>
+              <offloadPolicy>
+                <csumOffload>true</csumOffload>
+                <tcpSegmentation>true</tcpSegmentation>
+                <zeroCopyXmit>true</zeroCopyXmit>
+              </offloadPolicy>
+              <shapingPolicy>
+                <enabled>false</enabled>
+              </shapingPolicy>
+            </policy>
+          </spec>
+        </vswitch>
+        <portgroup>
+          <key>key-vim.host.PortGroup-VM Network</key>
+          <vswitch>key-vim.host.VirtualSwitch-vSwitch0</vswitch>
+          <computedPolicy>
+            <security>
+              <allowPromiscuous>false</allowPromiscuous>
+              <macChanges>true</macChanges>
+              <forgedTransmits>true</forgedTransmits>
+            </security>
+            <nicTeaming>
+              <policy>loadbalance_srcid</policy>
+              <reversePolicy>true</reversePolicy>
+              <notifySwitches>true</notifySwitches>
+              <rollingOrder>false</rollingOrder>
+              <failureCriteria>
+                <checkSpeed>minimum</checkSpeed>
+                <speed>10</speed>
+                <checkDuplex>false</checkDuplex>
+                <fullDuplex>false</fullDuplex>
+                <checkErrorPercent>false</checkErrorPercent>
+                <checkBeacon>false</checkBeacon>
+              </failureCriteria>
+              <nicOrder>
+                <activeNic>vmnic0</activeNic>
+              </nicOrder>
+            </nicTeaming>
+            <offloadPolicy>
+              <csumOffload>true</csumOffload>
+              <tcpSegmentation>true</tcpSegmentation>
+              <zeroCopyXmit>true</zeroCopyXmit>
+            </offloadPolicy>
+            <shapingPolicy>
+              <enabled>false</enabled>
+            </shapingPolicy>
+          </computedPolicy>
+          <spec>
+            <name>VM Network</name>
+            <vlanId>0</vlanId>
+            <vswitchName>vSwitch0</vswitchName>
+            <policy></policy>
+          </spec>
+        </portgroup>
+        <portgroup>
+          <key>key-vim.host.PortGroup-MA-VMW-Management</key>
+          <vswitch>key-vim.host.VirtualSwitch-vSwitch1</vswitch>
+          <computedPolicy>
+            <security>
+              <allowPromiscuous>false</allowPromiscuous>
+              <macChanges>false</macChanges>
+              <forgedTransmits>false</forgedTransmits>
+            </security>
+            <nicTeaming>
+              <policy>loadbalance_srcid</policy>
+              <reversePolicy>true</reversePolicy>
+              <notifySwitches>true</notifySwitches>
+              <rollingOrder>false</rollingOrder>
+              <failureCriteria>
+                <checkSpeed>minimum</checkSpeed>
+                <speed>10</speed>
+                <checkDuplex>false</checkDuplex>
+                <fullDuplex>false</fullDuplex>
+                <checkErrorPercent>false</checkErrorPercent>
+                <checkBeacon>false</checkBeacon>
+              </failureCriteria>
+              <nicOrder>
+                <activeNic>vmnic1</activeNic>
+              </nicOrder>
+            </nicTeaming>
+            <offloadPolicy>
+              <csumOffload>true</csumOffload>
+              <tcpSegmentation>true</tcpSegmentation>
+              <zeroCopyXmit>true</zeroCopyXmit>
+            </offloadPolicy>
+            <shapingPolicy>
+              <enabled>false</enabled>
+            </shapingPolicy>
+          </computedPolicy>
+          <spec>
+            <name>MA-VMW-Management</name>
+            <vlanId>0</vlanId>
+            <vswitchName>vSwitch1</vswitchName>
+            <policy></policy>
+          </spec>
+        </portgroup>
+        <portgroup>
+          <key>key-vim.host.PortGroup-MA-VMW-VMotion</key>
+          <vswitch>key-vim.host.VirtualSwitch-vSwitch2</vswitch>
+          <computedPolicy>
+            <security>
+              <allowPromiscuous>false</allowPromiscuous>
+              <macChanges>false</macChanges>
+              <forgedTransmits>false</forgedTransmits>
+            </security>
+            <nicTeaming>
+              <policy>loadbalance_srcid</policy>
+              <reversePolicy>true</reversePolicy>
+              <notifySwitches>true</notifySwitches>
+              <rollingOrder>false</rollingOrder>
+              <failureCriteria>
+                <checkSpeed>minimum</checkSpeed>
+                <speed>10</speed>
+                <checkDuplex>false</checkDuplex>
+                <fullDuplex>false</fullDuplex>
+                <checkErrorPercent>false</checkErrorPercent>
+                <checkBeacon>false</checkBeacon>
+              </failureCriteria>
+              <nicOrder>
+                <activeNic>vmnic2</activeNic>
+              </nicOrder>
+            </nicTeaming>
+            <offloadPolicy>
+              <csumOffload>true</csumOffload>
+              <tcpSegmentation>true</tcpSegmentation>
+              <zeroCopyXmit>true</zeroCopyXmit>
+            </offloadPolicy>
+            <shapingPolicy>
+              <enabled>false</enabled>
+            </shapingPolicy>
+          </computedPolicy>
+          <spec>
+            <name>MA-VMW-VMotion</name>
+            <vlanId>0</vlanId>
+            <vswitchName>vSwitch2</vswitchName>
+            <policy></policy>
+          </spec>
+        </portgroup>
+        <pnic>
+          <key>key-vim.host.PhysicalNic-vmnic0</key>
+          <device>vmnic0</device>
+          <pci>23:14.1</pci>
+          <linkSpeed>
+            <speedMb>1000</speedMb>
+            <duplex>true</duplex>
+          </linkSpeed>
+          <validLinkSpecification>
+            <speedMb>10</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>10</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>100</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>100</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>1000</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>1000</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <spec>
+            <ip>
+              <dhcp>false</dhcp>
+            </ip>
+          </spec>
+          <wakeOnLanSupported>false</wakeOnLanSupported>
+          <mac></mac>
+          <vmDirectPathGen2Supported>false</vmDirectPathGen2Supported>
+          <resourcePoolSchedulerAllowed>false</resourcePoolSchedulerAllowed>
+          <autoNegotiateSupported>false</autoNegotiateSupported>
+        </pnic>
+        <pnic>
+          <key>key-vim.host.PhysicalNic-vmnic1</key>
+          <device>vmnic1</device>
+          <pci>32:34.3</pci>
+          <linkSpeed>
+            <speedMb>1000</speedMb>
+            <duplex>true</duplex>
+          </linkSpeed>
+          <validLinkSpecification>
+            <speedMb>10</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>10</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>100</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>100</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>1000</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>1000</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <spec>
+            <ip>
+              <dhcp>false</dhcp>
+            </ip>
+          </spec>
+          <wakeOnLanSupported>false</wakeOnLanSupported>
+          <mac></mac>
+          <vmDirectPathGen2Supported>false</vmDirectPathGen2Supported>
+          <resourcePoolSchedulerAllowed>false</resourcePoolSchedulerAllowed>
+          <autoNegotiateSupported>false</autoNegotiateSupported>
+        </pnic>
+        <pnic>
+          <key>key-vim.host.PhysicalNic-vmnic2</key>
+          <device>vmnic2</device>
+          <pci>33:12.3</pci>
+          <linkSpeed>
+            <speedMb>1000</speedMb>
+            <duplex>true</duplex>
+          </linkSpeed>
+          <validLinkSpecification>
+            <speedMb>10</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>10</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>100</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>100</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>1000</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>1000</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <spec>
+            <ip>
+              <dhcp>false</dhcp>
+            </ip>
+          </spec>
+          <wakeOnLanSupported>false</wakeOnLanSupported>
+          <mac></mac>
+          <vmDirectPathGen2Supported>false</vmDirectPathGen2Supported>
+          <resourcePoolSchedulerAllowed>false</resourcePoolSchedulerAllowed>
+          <autoNegotiateSupported>false</autoNegotiateSupported>
+        </pnic>
+        <pnic>
+          <key>key-vim.host.PhysicalNic-vmnic3</key>
+          <device>vmnic3</device>
+          <pci>43:14.1</pci>
+          <linkSpeed>
+            <speedMb>1000</speedMb>
+            <duplex>true</duplex>
+          </linkSpeed>
+          <validLinkSpecification>
+            <speedMb>10</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>10</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>100</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>100</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>1000</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>1000</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <spec>
+            <ip>
+              <dhcp>false</dhcp>
+            </ip>
+          </spec>
+          <wakeOnLanSupported>false</wakeOnLanSupported>
+          <mac></mac>
+          <vmDirectPathGen2Supported>false</vmDirectPathGen2Supported>
+          <resourcePoolSchedulerAllowed>false</resourcePoolSchedulerAllowed>
+          <autoNegotiateSupported>false</autoNegotiateSupported>
+        </pnic>
+        <pnic>
+          <key>key-vim.host.PhysicalNic-vmnic4</key>
+          <device>vmnic4</device>
+          <pci>44:14.1</pci>
+          <linkSpeed>
+            <speedMb>1000</speedMb>
+            <duplex>true</duplex>
+          </linkSpeed>
+          <validLinkSpecification>
+            <speedMb>10</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>10</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>100</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>100</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>1000</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>1000</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <spec>
+            <ip>
+              <dhcp>false</dhcp>
+            </ip>
+          </spec>
+          <wakeOnLanSupported>false</wakeOnLanSupported>
+          <mac></mac>
+          <vmDirectPathGen2Supported>false</vmDirectPathGen2Supported>
+          <resourcePoolSchedulerAllowed>false</resourcePoolSchedulerAllowed>
+          <autoNegotiateSupported>false</autoNegotiateSupported>
+        </pnic>
+        <pnic>
+          <key>key-vim.host.PhysicalNic-vmnic5</key>
+          <device>vmnic5</device>
+          <pci>45:14.1</pci>
+          <linkSpeed>
+            <speedMb>1000</speedMb>
+            <duplex>true</duplex>
+          </linkSpeed>
+          <validLinkSpecification>
+            <speedMb>10</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>10</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>100</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>100</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>1000</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>1000</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <spec>
+            <ip>
+              <dhcp>false</dhcp>
+            </ip>
+          </spec>
+          <wakeOnLanSupported>false</wakeOnLanSupported>
+          <mac></mac>
+          <vmDirectPathGen2Supported>false</vmDirectPathGen2Supported>
+          <resourcePoolSchedulerAllowed>false</resourcePoolSchedulerAllowed>
+          <autoNegotiateSupported>false</autoNegotiateSupported>
+        </pnic>
+        <pnic>
+          <key>key-vim.host.PhysicalNic-vmnic6</key>
+          <device>vmnic6</device>
+          <pci>46:14.1</pci>
+          <linkSpeed>
+            <speedMb>1000</speedMb>
+            <duplex>true</duplex>
+          </linkSpeed>
+          <validLinkSpecification>
+            <speedMb>10</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>10</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>100</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>100</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>1000</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>1000</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <spec>
+            <ip>
+              <dhcp>false</dhcp>
+            </ip>
+          </spec>
+          <wakeOnLanSupported>false</wakeOnLanSupported>
+          <mac></mac>
+          <vmDirectPathGen2Supported>false</vmDirectPathGen2Supported>
+          <resourcePoolSchedulerAllowed>false</resourcePoolSchedulerAllowed>
+          <autoNegotiateSupported>false</autoNegotiateSupported>
+        </pnic>
+        <pnic>
+          <key>key-vim.host.PhysicalNic-vmnic7</key>
+          <device>vmnic7</device>
+          <pci>47:14.1</pci>
+          <linkSpeed>
+            <speedMb>1000</speedMb>
+            <duplex>true</duplex>
+          </linkSpeed>
+          <validLinkSpecification>
+            <speedMb>10</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>10</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>100</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>100</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>1000</speedMb>
+            <duplex>false</duplex>
+          </validLinkSpecification>
+          <validLinkSpecification>
+            <speedMb>1000</speedMb>
+            <duplex>true</duplex>
+          </validLinkSpecification>
+          <spec>
+            <ip>
+              <dhcp>false</dhcp>
+            </ip>
+          </spec>
+          <wakeOnLanSupported>false</wakeOnLanSupported>
+          <mac></mac>
+          <vmDirectPathGen2Supported>false</vmDirectPathGen2Supported>
+          <resourcePoolSchedulerAllowed>false</resourcePoolSchedulerAllowed>
+          <autoNegotiateSupported>false</autoNegotiateSupported>
+        </pnic>
+        <vnic>
+          <device>vmk0</device>
+          <key>key-vim.host.VirtualNic-MA-VMW-Management</key>
+          <portgroup>MA-VMW-Management</portgroup>
+          <spec>
+            <ip>
+              <dhcp>false</dhcp>
+              <ipAddress>10.46.224.24</ipAddress>
+              <subnetMask>255.255.255.0</subnetMask>
+            </ip>
+            <portgroup>MA-VMW-Management</portgroup>
+          </spec>
+        </vnic>
+        <vnic>
+          <device>vmk1</device>
+          <key>key-vim.host.VirtualNic-MA-VMW-VMotion</key>
+          <portgroup>MA-VMW-VMotion</portgroup>
+          <spec>
+            <ip>
+              <dhcp>false</dhcp>
+              <ipAddress>127.0.0.1</ipAddress>
+              <subnetMask>255.255.255.0</subnetMask>
+            </ip>
+            <portgroup>MA-VMW-VMotion</portgroup>
+          </spec>
+        </vnic>
+        <dnsConfig XMLSchema-instance:type="HostDnsConfig">
+          <dhcp>false</dhcp>
+          <hostName></hostName>
+          <domainName></domainName>
+        </dnsConfig>
+        <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig"></ipRouteConfig>
+        <netStackInstance>
+          <key>defaultTcpipStack</key>
+          <dnsConfig XMLSchema-instance:type="HostDnsConfig">
+            <dhcp>false</dhcp>
+            <hostName></hostName>
+            <domainName></domainName>
+          </dnsConfig>
+          <ipRouteConfig XMLSchema-instance:type="HostIpRouteConfig"></ipRouteConfig>
+        </netStackInstance>
+      </network>
+      <vmotion>
+        <netConfig>
+          <candidateVnic>
+            <device>vmk0</device>
+            <key>VMotionConfig.vmotion.key-vim.host.VirtualNic-MA-VMW-Management</key>
+            <portgroup>MA-VMW-Management</portgroup>
+            <spec>
+              <ip>
+                <dhcp>false</dhcp>
+                <ipAddress>10.46.224.24</ipAddress>
+                <subnetMask>255.255.255.0</subnetMask>
+              </ip>
+              <portgroup>MA-VMW-Management</portgroup>
+            </spec>
+          </candidateVnic>
+          <candidateVnic>
+            <device>vmk1</device>
+            <key>VMotionConfig.vmotion.key-vim.host.VirtualNic-MA-VMW-VMotion</key>
+            <portgroup>MA-VMW-VMotion</portgroup>
+            <spec>
+              <ip>
+                <dhcp>false</dhcp>
+                <ipAddress>127.0.0.1</ipAddress>
+                <subnetMask>255.255.255.0</subnetMask>
+              </ip>
+              <portgroup>MA-VMW-VMotion</portgroup>
+            </spec>
+          </candidateVnic>
+          <selectedVnic>VMotionConfig.vmotion.key-vim.host.VirtualNic-MA-VMW-Management</selectedVnic>
+        </netConfig>
+        <ipConfig>
+          <dhcp>false</dhcp>
+          <ipAddress>10.46.224.24</ipAddress>
+          <subnetMask>255.255.255.0</subnetMask>
+        </ipConfig>
+      </vmotion>
+      <virtualNicManagerInfo>
+        <netConfig>
+          <nicType>management</nicType>
+          <multiSelectAllowed>true</multiSelectAllowed>
+          <candidateVnic>
+            <device>vmk0</device>
+            <key>management.key-vim.host.VirtualNic-MA-VMW-Management</key>
+            <portgroup>MA-VMW-Management</portgroup>
+            <spec>
+              <ip>
+                <dhcp>false</dhcp>
+                <ipAddress>10.46.224.24</ipAddress>
+                <subnetMask>255.255.255.0</subnetMask>
+              </ip>
+              <portgroup>MA-VMW-Management</portgroup>
+            </spec>
+          </candidateVnic>
+          <candidateVnic>
+            <device>vmk1</device>
+            <key>management.key-vim.host.VirtualNic-MA-VMW-VMotion</key>
+            <portgroup>MA-VMW-VMotion</portgroup>
+            <spec>
+              <ip>
+                <dhcp>false</dhcp>
+                <ipAddress>127.0.0.1</ipAddress>
+                <subnetMask>255.255.255.0</subnetMask>
+              </ip>
+              <portgroup>MA-VMW-VMotion</portgroup>
+            </spec>
+          </candidateVnic>
+          <selectedVnic>management.key-vim.host.VirtualNic-MA-VMW-Management</selectedVnic>
+        </netConfig>
+        <netConfig>
+          <nicType>vSphereProvisioning</nicType>
+          <multiSelectAllowed>true</multiSelectAllowed>
+          <candidateVnic>
+            <device>vmk0</device>
+            <key>vSphereProvisioning.key-vim.host.VirtualNic-MA-VMW-Management</key>
+            <portgroup>MA-VMW-Management</portgroup>
+            <spec>
+              <ip>
+                <dhcp>false</dhcp>
+                <ipAddress>10.46.224.24</ipAddress>
+                <subnetMask>255.255.255.0</subnetMask>
+              </ip>
+              <portgroup>MA-VMW-Management</portgroup>
+            </spec>
+          </candidateVnic>
+          <candidateVnic>
+            <device>vmk1</device>
+            <key>vSphereProvisioning.key-vim.host.VirtualNic-MA-VMW-VMotion</key>
+            <portgroup>MA-VMW-VMotion</portgroup>
+            <spec>
+              <ip>
+                <dhcp>false</dhcp>
+                <ipAddress>127.0.0.1</ipAddress>
+                <subnetMask>255.255.255.0</subnetMask>
+              </ip>
+              <portgroup>MA-VMW-VMotion</portgroup>
+            </spec>
+          </candidateVnic>
+        </netConfig>
+        <netConfig>
+          <nicType>vmotion</nicType>
+          <multiSelectAllowed>true</multiSelectAllowed>
+          <candidateVnic>
+            <device>vmk0</device>
+            <key>vmotion.key-vim.host.VirtualNic-MA-VMW-Management</key>
+            <portgroup>MA-VMW-Management</portgroup>
+            <spec>
+              <ip>
+                <dhcp>false</dhcp>
+                <ipAddress>10.46.224.24</ipAddress>
+                <subnetMask>255.255.255.0</subnetMask>
+              </ip>
+              <portgroup>MA-VMW-Management</portgroup>
+            </spec>
+          </candidateVnic>
+          <candidateVnic>
+            <device>vmk1</device>
+            <key>vmotion.key-vim.host.VirtualNic-MA-VMW-VMotion</key>
+            <portgroup>MA-VMW-VMotion</portgroup>
+            <spec>
+              <ip>
+                <dhcp>false</dhcp>
+                <ipAddress>127.0.0.1</ipAddress>
+                <subnetMask>255.255.255.0</subnetMask>
+              </ip>
+              <portgroup>MA-VMW-VMotion</portgroup>
+            </spec>
+          </candidateVnic>
+          <selectedVnic>vmotion.key-vim.host.VirtualNic-MA-VMW-Management</selectedVnic>
+        </netConfig>
+      </virtualNicManagerInfo>
+      <capabilities>
+        <canSetPhysicalNicLinkSpeed>true</canSetPhysicalNicLinkSpeed>
+        <supportsNicTeaming>true</supportsNicTeaming>
+        <nicTeamingPolicy>loadbalance_ip</nicTeamingPolicy>
+        <nicTeamingPolicy>loadbalance_srcmac</nicTeamingPolicy>
+        <nicTeamingPolicy>loadbalance_srcid</nicTeamingPolicy>
+        <nicTeamingPolicy>failover_explicit</nicTeamingPolicy>
+        <supportsVlan>true</supportsVlan>
+        <usesServiceConsoleNic>false</usesServiceConsoleNic>
+        <supportsNetworkHints>true</supportsNetworkHints>
+        <vswitchConfigSupported>true</vswitchConfigSupported>
+        <vnicConfigSupported>true</vnicConfigSupported>
+        <ipRouteConfigSupported>true</ipRouteConfigSupported>
+        <dnsConfigSupported>true</dnsConfigSupported>
+        <dhcpOnVnicSupported>false</dhcpOnVnicSupported>
+        <ipV6Supported>false</ipV6Supported>
+      </capabilities>
+      <datastoreCapabilities>
+        <nfsMountCreationRequired>false</nfsMountCreationRequired>
+        <nfsMountCreationSupported>false</nfsMountCreationSupported>
+        <localDatastoreSupported>false</localDatastoreSupported>
+        <vmfsExtentExpansionSupported>true</vmfsExtentExpansionSupported>
+      </datastoreCapabilities>
+      <offloadCapabilities></offloadCapabilities>
+      <service>
+        <service>
+          <key>vpxa</key>
+          <label>VMware vCenter Agent</label>
+          <required>false</required>
+          <uninstallable>false</uninstallable>
+          <running>true</running>
+          <ruleset>vpxHeartbeats</ruleset>
+          <policy>automatic</policy>
+          <sourcePackage>
+            <sourcePackageName>esx-base</sourcePackageName>
+            <description>This VIB contains all of the base functionality of vSphere ESXi.</description>
+          </sourcePackage>
+        </service>
+      </service>
+      <autoStart>
+        <defaults>
+          <enabled>false</enabled>
+        </defaults>
+      </autoStart>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Annotations.WelcomeMessage</key>
+        <value XMLSchema-instance:type="xsd:string"></value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>CBRC.Enable</key>
+        <value XMLSchema-instance:type="xsd:boolean">false</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Config.Defaults.cpuidMask.mode.d.eax</key>
+        <value XMLSchema-instance:type="xsd:string">disable</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Config.Defaults.cpuidMask.mode.d.ebx</key>
+        <value XMLSchema-instance:type="xsd:string">disable</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Config.Defaults.cpuidMask.mode.d.ecx</key>
+        <value XMLSchema-instance:type="xsd:string">disable</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Config.Defaults.cpuidMask.mode.d.edx</key>
+        <value XMLSchema-instance:type="xsd:string">disable</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Config.Defaults.cpuidMask.val.d.eax</key>
+        <value XMLSchema-instance:type="xsd:string"></value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Config.Defaults.cpuidMask.val.d.ebx</key>
+        <value XMLSchema-instance:type="xsd:string"></value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Config.Defaults.cpuidMask.val.d.ecx</key>
+        <value XMLSchema-instance:type="xsd:string"></value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Config.Defaults.cpuidMask.val.d.edx</key>
+        <value XMLSchema-instance:type="xsd:string"></value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Mem.HostLocalSwapDirEnabled</key>
+        <value XMLSchema-instance:type="xsd:long">0</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Mem.VMOverheadGrowthLimit</key>
+        <value XMLSchema-instance:type="xsd:long">-1</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Migrate.Enabled</key>
+        <value XMLSchema-instance:type="xsd:long">1</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Migrate.Vmknic</key>
+        <value XMLSchema-instance:type="xsd:string"></value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Misc.DefaultHardwareVersion</key>
+        <value XMLSchema-instance:type="xsd:string"></value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Misc.vsanWitnessVirtualAppliance</key>
+        <value XMLSchema-instance:type="xsd:long">0</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Syslog.global.defaultRotate</key>
+        <value XMLSchema-instance:type="xsd:int">0</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Syslog.global.defaultSize</key>
+        <value XMLSchema-instance:type="xsd:int">0</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Syslog.global.logDir</key>
+        <value XMLSchema-instance:type="xsd:string"></value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Syslog.global.logDirUnique</key>
+        <value XMLSchema-instance:type="xsd:string">False</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Syslog.global.logHost</key>
+        <value XMLSchema-instance:type="xsd:string"></value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Syslog.loggers.hostd.rotate</key>
+        <value XMLSchema-instance:type="xsd:int">0</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Syslog.loggers.hostd.size</key>
+        <value XMLSchema-instance:type="xsd:int">0</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Syslog.loggers.vpxa.rotate</key>
+        <value XMLSchema-instance:type="xsd:int">0</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Syslog.loggers.vpxa.size</key>
+        <value XMLSchema-instance:type="xsd:int">0</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>UserVars.SuppressCoredumpWarning</key>
+        <value XMLSchema-instance:type="xsd:long">0</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>UserVars.SuppressShellWarning</key>
+        <value XMLSchema-instance:type="xsd:long">0</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.workingDir</key>
+        <value XMLSchema-instance:type="xsd:string">/var/log/vmware/vpx</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.vpxa.memoryCheckerTimeInSecs</key>
+        <value XMLSchema-instance:type="xsd:string">30</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.vpxa.licenseExpiryNotificationThreshold</key>
+        <value XMLSchema-instance:type="xsd:string">15</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.vpxa.hostPort</key>
+        <value XMLSchema-instance:type="xsd:string">443</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.vpxa.hostIp</key>
+        <value XMLSchema-instance:type="xsd:string">10.46.224.24</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.vpxa.datastorePrincipal</key>
+        <value XMLSchema-instance:type="xsd:string">root</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.vmacore.threadPool.threadNamePrefix</key>
+        <value XMLSchema-instance:type="xsd:string">vpxa</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.vmacore.threadPool.ThreadStackSizeKb</key>
+        <value XMLSchema-instance:type="xsd:string">128</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.vmacore.threadPool.TaskMax</key>
+        <value XMLSchema-instance:type="xsd:string">4</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.vmacore.threadPool.IoMax</key>
+        <value XMLSchema-instance:type="xsd:string">9</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.vmacore.ssl.sslOptions</key>
+        <value XMLSchema-instance:type="xsd:string">16924672</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.vmacore.ssl.doVersionCheck</key>
+        <value XMLSchema-instance:type="xsd:string">false</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.vmacore.soap.sessionTimeout</key>
+        <value XMLSchema-instance:type="xsd:string">1440</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.vmacore.http.defaultClientPoolConnectionsPerServer</key>
+        <value XMLSchema-instance:type="xsd:string">300</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.trace.vmomi.calls</key>
+        <value XMLSchema-instance:type="xsd:string">false</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.trace.mutex.profiledMutexes</key>
+        <value XMLSchema-instance:type="xsd:string">InvtLock</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.task.minCompletedLifetime</key>
+        <value XMLSchema-instance:type="xsd:string">120</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.task.maxThreads</key>
+        <value XMLSchema-instance:type="xsd:string">98</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.task.completedMaxEntries</key>
+        <value XMLSchema-instance:type="xsd:string">1000</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.nfc.loglevel</key>
+        <value XMLSchema-instance:type="xsd:string">error</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.log.syslog.logHeaderFile</key>
+        <value XMLSchema-instance:type="xsd:string">/var/run/vmware/vpxaLogHeader.txt</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.log.syslog.ident</key>
+        <value XMLSchema-instance:type="xsd:string">Vpxa</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.log.syslog.facility</key>
+        <value XMLSchema-instance:type="xsd:string">local4</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.log.outputToSyslog</key>
+        <value XMLSchema-instance:type="xsd:string">false</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.log.outputToConsole</key>
+        <value XMLSchema-instance:type="xsd:string">false</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.log.memoryLevel</key>
+        <value XMLSchema-instance:type="xsd:string">trivia</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.log.maxFileSize</key>
+        <value XMLSchema-instance:type="xsd:string">1048576</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.log.maxFileNum</key>
+        <value XMLSchema-instance:type="xsd:string">30</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.log.level</key>
+        <value XMLSchema-instance:type="xsd:string">verbose</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.level[SoapAdapter.HTTPService.HttpConnection].logName</key>
+        <value XMLSchema-instance:type="xsd:string">SoapAdapter.HTTPService.HttpConnection</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.level[SoapAdapter.HTTPService.HttpConnection].logLevel</key>
+        <value XMLSchema-instance:type="xsd:string">info</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.level[SoapAdapter.HTTPService].logName</key>
+        <value XMLSchema-instance:type="xsd:string">SoapAdapter.HTTPService</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.level[SoapAdapter.HTTPService].logLevel</key>
+        <value XMLSchema-instance:type="xsd:string">info</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.httpNfc.enabled</key>
+        <value XMLSchema-instance:type="xsd:string">true</value>
+      </option>
+      <option XMLSchema-instance:type="OptionValue">
+        <key>Vpx.Vpxa.config.httpNfc.accessMode</key>
+        <value XMLSchema-instance:type="xsd:string">proxyAuto</value>
+      </option>
+      <optionDef>
+        <label>Welcome message for the Direct Console User Interface (DCUI)</label>
+        <summary>A welcome message in the initial screen of the Direct Console User Interface (DCUI). Use an empty string to reset to the default message.</summary>
+        <key>Annotations.WelcomeMessage</key>
+        <optionType XMLSchema-instance:type="StringOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <defaultValue></defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>Enable</label>
+        <summary>Enable Content Based Read Cache</summary>
+        <key>CBRC.Enable</key>
+        <optionType XMLSchema-instance:type="BoolOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <supported>false</supported>
+          <defaultValue>false</defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>cpuidMask.mode.d.eax</label>
+        <summary>Controls the use of Config.Defaults.cpuidMask.val.d.eax; legal values &#34;mask&#34;, &#34;clobber&#34;, or &#34;disable&#34;.</summary>
+        <key>Config.Defaults.cpuidMask.mode.d.eax</key>
+        <optionType XMLSchema-instance:type="StringOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <defaultValue>disable</defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>cpuidMask.mode.d.ebx</label>
+        <summary>Controls the use of Config.Defaults.cpuidMask.val.d.ebx; legal values &#34;mask&#34;, &#34;clobber&#34;, or &#34;disable&#34;.</summary>
+        <key>Config.Defaults.cpuidMask.mode.d.ebx</key>
+        <optionType XMLSchema-instance:type="StringOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <defaultValue>disable</defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>cpuidMask.mode.d.ecx</label>
+        <summary>Controls the use of Config.Defaults.cpuidMask.val.d.ecx; legal values &#34;mask&#34;, &#34;clobber&#34;, or &#34;disable&#34;.</summary>
+        <key>Config.Defaults.cpuidMask.mode.d.ecx</key>
+        <optionType XMLSchema-instance:type="StringOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <defaultValue>disable</defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>cpuidMask.mode.d.edx</label>
+        <summary>Controls the use of Config.Defaults.cpuidMask.val.d.edx; legal values &#34;mask&#34;, &#34;clobber&#34;, or &#34;disable&#34;.</summary>
+        <key>Config.Defaults.cpuidMask.mode.d.edx</key>
+        <optionType XMLSchema-instance:type="StringOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <defaultValue>disable</defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>cpuidMask.val.d.eax</label>
+        <summary>CPUID override that may be applied to level d register eax; controlled by Config.Defaults.cpuidMask.mode.d.eax.</summary>
+        <key>Config.Defaults.cpuidMask.val.d.eax</key>
+        <optionType XMLSchema-instance:type="StringOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <defaultValue></defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>cpuidMask.val.d.ebx</label>
+        <summary>CPUID override that may be applied to level d register ebx; controlled by Config.Defaults.cpuidMask.mode.d.ebx.</summary>
+        <key>Config.Defaults.cpuidMask.val.d.ebx</key>
+        <optionType XMLSchema-instance:type="StringOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <defaultValue></defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>cpuidMask.val.d.ecx</label>
+        <summary>CPUID override that may be applied to level d register ecx; controlled by Config.Defaults.cpuidMask.mode.d.ecx.</summary>
+        <key>Config.Defaults.cpuidMask.val.d.ecx</key>
+        <optionType XMLSchema-instance:type="StringOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <defaultValue></defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>cpuidMask.val.d.edx</label>
+        <summary>CPUID override that may be applied to level d register edx; controlled by Config.Defaults.cpuidMask.mode.d.edx.</summary>
+        <key>Config.Defaults.cpuidMask.val.d.edx</key>
+        <optionType XMLSchema-instance:type="StringOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <defaultValue></defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>HostLocalSwapDirEnabled</label>
+        <summary>Enable use of host-local swap directory</summary>
+        <key>Mem.HostLocalSwapDirEnabled</key>
+        <optionType XMLSchema-instance:type="LongOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <min>0</min>
+          <max>1</max>
+          <defaultValue>0</defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>VMOverheadGrowthLimit</label>
+        <summary>Default limit (in MB) on VM overhead memory growth. Valid values are 0 to maximum memory supported, and 0xffffffff which means &#34;unlimited&#34;.</summary>
+        <key>Mem.VMOverheadGrowthLimit</key>
+        <optionType XMLSchema-instance:type="LongOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <min>0</min>
+          <max>-1</max>
+          <defaultValue>-1</defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>Enabled</label>
+        <summary>Enable hot migration support</summary>
+        <key>Migrate.Enabled</key>
+        <optionType XMLSchema-instance:type="LongOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <min>0</min>
+          <max>1</max>
+          <defaultValue>1</defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>Vmknic</label>
+        <summary>vmknic for vMotion vmkernel VNIC</summary>
+        <key>Migrate.Vmknic</key>
+        <optionType XMLSchema-instance:type="StringOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <defaultValue></defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>DefaultHardwareVersion</label>
+        <summary>Default virtual machine compatibility</summary>
+        <key>Misc.DefaultHardwareVersion</key>
+        <optionType XMLSchema-instance:type="StringOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <defaultValue></defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>vsanWitnessVirtualAppliance</label>
+        <summary>Indicates a vSAN witness host running in a Virtual Appliance. VM services (create/register/power on) are blocked</summary>
+        <key>Misc.vsanWitnessVirtualAppliance</key>
+        <optionType XMLSchema-instance:type="LongOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <min>32285</min>
+          <max>-388804792</max>
+          <defaultValue>0</defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>Syslog.global.defaultRotate</label>
+        <summary>Default number of rotated logs to keep. Reset to default on zero.</summary>
+        <key>Syslog.global.defaultRotate</key>
+        <optionType XMLSchema-instance:type="IntOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <min>0</min>
+          <max>100</max>
+          <defaultValue>0</defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>Syslog.global.defaultSize</label>
+        <summary>Default size of logs before rotation, in KiB. Reset to default on zero.</summary>
+        <key>Syslog.global.defaultSize</key>
+        <optionType XMLSchema-instance:type="IntOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <min>0</min>
+          <max>10240</max>
+          <defaultValue>0</defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>Syslog.global.logDir</label>
+        <summary>Datastore path of directory to output logs to. Reset to default on null. Example: [datastoreName]/logdir</summary>
+        <key>Syslog.global.logDir</key>
+        <optionType XMLSchema-instance:type="StringOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <defaultValue></defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>Syslog.global.logDirUnique</label>
+        <summary>Place logs in a unique subdirectory of logdir, based on hostname.</summary>
+        <key>Syslog.global.logDirUnique</key>
+        <optionType XMLSchema-instance:type="StringOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <defaultValue>False</defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>Syslog.global.logHost</label>
+        <summary>The remote host to output logs to. Reset to default on null. Multiple hosts are supported and must be separated with comma (,). Example: udp://hostName1:514, hostName2, ssl://hostName3:1514</summary>
+        <key>Syslog.global.logHost</key>
+        <optionType XMLSchema-instance:type="StringOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <defaultValue></defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>Logger rotations</label>
+        <summary>Number of rotated logs to keep for this logger. Reset to default on zero.</summary>
+        <key>Syslog.loggers.hostd.rotate</key>
+        <optionType XMLSchema-instance:type="IntOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <min>0</min>
+          <max>100</max>
+          <defaultValue>0</defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>Logger size</label>
+        <summary>Set size of logs before rotation for this logger, in KiB. Reset to default on zero.</summary>
+        <key>Syslog.loggers.hostd.size</key>
+        <optionType XMLSchema-instance:type="IntOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <min>0</min>
+          <max>102400</max>
+          <defaultValue>0</defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>Logger rotations</label>
+        <summary>Number of rotated logs to keep for this logger. Reset to default on zero.</summary>
+        <key>Syslog.loggers.vpxa.rotate</key>
+        <optionType XMLSchema-instance:type="IntOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <min>0</min>
+          <max>100</max>
+          <defaultValue>0</defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>Logger size</label>
+        <summary>Set size of logs before rotation for this logger, in KiB. Reset to default on zero.</summary>
+        <key>Syslog.loggers.vpxa.size</key>
+        <optionType XMLSchema-instance:type="IntOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <min>0</min>
+          <max>102400</max>
+          <defaultValue>0</defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>SuppressCoredumpWarning</label>
+        <summary>Do not show warning for disabled or unconfigured coredump target</summary>
+        <key>UserVars.SuppressCoredumpWarning</key>
+        <optionType XMLSchema-instance:type="LongOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <min>0</min>
+          <max>1</max>
+          <defaultValue>0</defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>SuppressShellWarning</label>
+        <summary>Do not show warning for enabled local and remote shell access</summary>
+        <key>UserVars.SuppressShellWarning</key>
+        <optionType XMLSchema-instance:type="LongOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <min>0</min>
+          <max>1</max>
+          <defaultValue>0</defaultValue>
+        </optionType>
+      </optionDef>
+      <optionDef>
+        <label>Log level</label>
+        <summary>vCenter agent logging level</summary>
+        <key>Vpx.Vpxa.config.log.level</key>
+        <optionType XMLSchema-instance:type="ChoiceOption">
+          <valueIsReadonly>false</valueIsReadonly>
+          <choiceInfo XMLSchema-instance:type="ElementDescription">
+            <label>none</label>
+            <summary>none</summary>
+            <key>none</key>
+          </choiceInfo>
+          <choiceInfo XMLSchema-instance:type="ElementDescription">
+            <label>error</label>
+            <summary>error</summary>
+            <key>error</key>
+          </choiceInfo>
+          <choiceInfo XMLSchema-instance:type="ElementDescription">
+            <label>warning</label>
+            <summary>warning</summary>
+            <key>warning</key>
+          </choiceInfo>
+          <choiceInfo XMLSchema-instance:type="ElementDescription">
+            <label>info</label>
+            <summary>info</summary>
+            <key>info</key>
+          </choiceInfo>
+          <choiceInfo XMLSchema-instance:type="ElementDescription">
+            <label>verbose</label>
+            <summary>verbose</summary>
+            <key>verbose</key>
+          </choiceInfo>
+          <choiceInfo XMLSchema-instance:type="ElementDescription">
+            <label>trivia</label>
+            <summary>trivia</summary>
+            <key>trivia</key>
+          </choiceInfo>
+          <defaultIndex>3</defaultIndex>
+        </optionType>
+      </optionDef>
+      <datastorePrincipal>root</datastorePrincipal>
+      <systemResources>
+        <key>host</key>
+        <config>
+          <cpuAllocation>
+            <reservation>400</reservation>
+            <expandableReservation>false</expandableReservation>
+            <limit>400</limit>
+            <shares>
+              <shares>1000</shares>
+              <level>custom</level>
+            </shares>
+            <overheadLimit>-1</overheadLimit>
+          </cpuAllocation>
+          <memoryAllocation>
+            <reservation>256</reservation>
+            <expandableReservation>false</expandableReservation>
+            <limit>256</limit>
+            <shares>
+              <shares>1000</shares>
+              <level>custom</level>
+            </shares>
+            <overheadLimit>-1</overheadLimit>
+          </memoryAllocation>
+        </config>
+        <child>
+          <key>host/vim/vmvisor</key>
+          <config>
+            <cpuAllocation>
+              <reservation>400</reservation>
+              <expandableReservation>false</expandableReservation>
+              <limit>400</limit>
+              <shares>
+                <shares>1000</shares>
+                <level>custom</level>
+              </shares>
+              <overheadLimit>-1</overheadLimit>
+            </cpuAllocation>
+            <memoryAllocation>
+              <reservation>256</reservation>
+              <expandableReservation>false</expandableReservation>
+              <limit>256</limit>
+              <shares>
+                <shares>1000</shares>
+                <level>custom</level>
+              </shares>
+              <overheadLimit>-1</overheadLimit>
+            </memoryAllocation>
+          </config>
+          <child>
+            <key>host/vim/vmvisor/aam</key>
+            <config>
+              <cpuAllocation>
+                <reservation>400</reservation>
+                <expandableReservation>false</expandableReservation>
+                <limit>400</limit>
+                <shares>
+                  <shares>1000</shares>
+                  <level>custom</level>
+                </shares>
+                <overheadLimit>-1</overheadLimit>
+              </cpuAllocation>
+              <memoryAllocation>
+                <reservation>256</reservation>
+                <expandableReservation>false</expandableReservation>
+                <limit>256</limit>
+                <shares>
+                  <shares>1000</shares>
+                  <level>custom</level>
+                </shares>
+                <overheadLimit>-1</overheadLimit>
+              </memoryAllocation>
+            </config>
+          </child>
+        </child>
+      </systemResources>
+      <flags></flags>
+      <adminDisabled>false</adminDisabled>
+      <sslThumbprintInfo>
+        <principal>vpxuser</principal>
+        <sslThumbprints>55:9D:67:D7:82:71:A8:D6:31:53:8B:39:A9:7D:C1:55:9E:24:3A:5D:F7:CC:4E:57:58:4B:88:77:D7:68:C0:55</sslThumbprints>
+      </sslThumbprintInfo>
+      <sslThumbprintData>
+        <principal>vpxuser</principal>
+        <ownerTag>com.vmware.hms</ownerTag>
+        <sslThumbprints>55:9D:67:D7:82:71:A8:D6:31:53:8B:39:A9:7D:C1:55:9E:24:3A:5D:F7:CC:4E:57:58:4B:88:77:D7:68:C0:55</sslThumbprints>
+      </sslThumbprintData>
+      <certificate>10</certificate>
+      <wakeOnLanCapable>false</wakeOnLanCapable>
+      <featureCapability>
+        <key>cpuid.3dnprefetch</key>
+        <featureName>cpuid.3dnprefetch</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.abm</key>
+        <featureName>cpuid.abm</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.adx</key>
+        <featureName>cpuid.adx</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.aes</key>
+        <featureName>cpuid.aes</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.avx</key>
+        <featureName>cpuid.avx</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.avx2</key>
+        <featureName>cpuid.avx2</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.bmi1</key>
+        <featureName>cpuid.bmi1</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.bmi2</key>
+        <featureName>cpuid.bmi2</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.cmpxchg16b</key>
+        <featureName>cpuid.cmpxchg16b</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.ds</key>
+        <featureName>cpuid.ds</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.enfstrg</key>
+        <featureName>cpuid.enfstrg</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.f16c</key>
+        <featureName>cpuid.f16c</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.fcmd</key>
+        <featureName>cpuid.fcmd</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.fma</key>
+        <featureName>cpuid.fma</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.fsgsbase</key>
+        <featureName>cpuid.fsgsbase</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.hle</key>
+        <featureName>cpuid.hle</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.ibpb</key>
+        <featureName>cpuid.ibpb</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.ibrs</key>
+        <featureName>cpuid.ibrs</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.intel</key>
+        <featureName>cpuid.intel</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.invpcid</key>
+        <featureName>cpuid.invpcid</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.lahf64</key>
+        <featureName>cpuid.lahf64</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.lm</key>
+        <featureName>cpuid.lm</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.mdclear</key>
+        <featureName>cpuid.mdclear</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.movbe</key>
+        <featureName>cpuid.movbe</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.mwait</key>
+        <featureName>cpuid.mwait</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.nx</key>
+        <featureName>cpuid.nx</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.pcid</key>
+        <featureName>cpuid.pcid</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.pclmulqdq</key>
+        <featureName>cpuid.pclmulqdq</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.pdpe1gb</key>
+        <featureName>cpuid.pdpe1gb</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.popcnt</key>
+        <featureName>cpuid.popcnt</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.rdrand</key>
+        <featureName>cpuid.rdrand</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.rdseed</key>
+        <featureName>cpuid.rdseed</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.rdtscp</key>
+        <featureName>cpuid.rdtscp</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.rtm</key>
+        <featureName>cpuid.rtm</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.smap</key>
+        <featureName>cpuid.smap</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.smep</key>
+        <featureName>cpuid.smep</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.ss</key>
+        <featureName>cpuid.ss</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.ssbd</key>
+        <featureName>cpuid.ssbd</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.sse3</key>
+        <featureName>cpuid.sse3</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.sse41</key>
+        <featureName>cpuid.sse41</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.sse42</key>
+        <featureName>cpuid.sse42</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.ssse3</key>
+        <featureName>cpuid.ssse3</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.stibp</key>
+        <featureName>cpuid.stibp</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.vmx</key>
+        <featureName>cpuid.vmx</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.xcr0_master_bndcsr</key>
+        <featureName>cpuid.xcr0_master_bndcsr</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.xcr0_master_bndregs</key>
+        <featureName>cpuid.xcr0_master_bndregs</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.xcr0_master_sse</key>
+        <featureName>cpuid.xcr0_master_sse</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.xcr0_master_ymm_h</key>
+        <featureName>cpuid.xcr0_master_ymm_h</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.xsave</key>
+        <featureName>cpuid.xsave</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>cpuid.xsaveopt</key>
+        <featureName>cpuid.xsaveopt</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>hv.capable</key>
+        <featureName>hv.capable</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>misc.cpuidfaulting</key>
+        <featureName>misc.cpuidfaulting</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>svga16*svga.basecapslevel</key>
+        <featureName>svga16*svga.basecapslevel</featureName>
+        <value>7</value>
+      </featureCapability>
+      <featureCapability>
+        <key>svga16*svga.dxmaxconstantbuffers</key>
+        <featureName>svga16*svga.dxmaxconstantbuffers</featureName>
+        <value>0xe</value>
+      </featureCapability>
+      <featureCapability>
+        <key>svga16*svga.dxprovokingvertex</key>
+        <featureName>svga16*svga.dxprovokingvertex</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>svga16*svga.linestipple</key>
+        <featureName>svga16*svga.linestipple</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>svga16*svga.logicops</key>
+        <featureName>svga16*svga.logicops</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>svga16*svga.maxpointsize</key>
+        <featureName>svga16*svga.maxpointsize</featureName>
+        <value>0xbd</value>
+      </featureCapability>
+      <featureCapability>
+        <key>svga16*svga.maxtextureanisotropy</key>
+        <featureName>svga16*svga.maxtextureanisotropy</featureName>
+        <value>0x10</value>
+      </featureCapability>
+      <featureCapability>
+        <key>svga16*svga.maxtexturesize</key>
+        <featureName>svga16*svga.maxtexturesize</featureName>
+        <value>0x2000</value>
+      </featureCapability>
+      <featureCapability>
+        <key>svga16*svga.maxvolumeextent</key>
+        <featureName>svga16*svga.maxvolumeextent</featureName>
+        <value>0x800</value>
+      </featureCapability>
+      <featureCapability>
+        <key>svga16*svga.multisample2x</key>
+        <featureName>svga16*svga.multisample2x</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>svga16*svga.multisample4x</key>
+        <featureName>svga16*svga.multisample4x</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>svga16*svga.sm41</key>
+        <featureName>svga16*svga.sm41</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>svga16*svga.supports3d</key>
+        <featureName>svga16*svga.supports3d</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>vpmc.fixctr.0</key>
+        <featureName>vpmc.fixctr.0</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>vpmc.fixctr.2</key>
+        <featureName>vpmc.fixctr.2</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>vpmc.fixedwidth</key>
+        <featureName>vpmc.fixedwidth</featureName>
+        <value>0x30</value>
+      </featureCapability>
+      <featureCapability>
+        <key>vpmc.genctr.0</key>
+        <featureName>vpmc.genctr.0</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>vpmc.genctr.1</key>
+        <featureName>vpmc.genctr.1</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>vpmc.genctr.2</key>
+        <featureName>vpmc.genctr.2</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>vpmc.genctr.3</key>
+        <featureName>vpmc.genctr.3</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>vpmc.genwidth</key>
+        <featureName>vpmc.genwidth</featureName>
+        <value>0x30</value>
+      </featureCapability>
+      <featureCapability>
+        <key>vpmc.microarchitecture.broadwell</key>
+        <featureName>vpmc.microarchitecture.broadwell</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>vpmc.numfixedctrs</key>
+        <featureName>vpmc.numfixedctrs</featureName>
+        <value>3</value>
+      </featureCapability>
+      <featureCapability>
+        <key>vpmc.numgenctrs</key>
+        <featureName>vpmc.numgenctrs</featureName>
+        <value>4</value>
+      </featureCapability>
+      <featureCapability>
+        <key>vpmc.version</key>
+        <featureName>vpmc.version</featureName>
+        <value>3</value>
+      </featureCapability>
+      <featureCapability>
+        <key>vt.eptad</key>
+        <featureName>vt.eptad</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>vt.ple</key>
+        <featureName>vt.ple</featureName>
+        <value>1</value>
+      </featureCapability>
+      <featureCapability>
+        <key>vt.realmode</key>
+        <featureName>vt.realmode</featureName>
+        <value>1</value>
+      </featureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.3dnprefetch</key>
+        <featureName>cpuid.3dnprefetch</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.abm</key>
+        <featureName>cpuid.abm</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.adx</key>
+        <featureName>cpuid.adx</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.aes</key>
+        <featureName>cpuid.aes</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.avx</key>
+        <featureName>cpuid.avx</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.avx2</key>
+        <featureName>cpuid.avx2</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.bmi1</key>
+        <featureName>cpuid.bmi1</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.bmi2</key>
+        <featureName>cpuid.bmi2</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.cmpxchg16b</key>
+        <featureName>cpuid.cmpxchg16b</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.ds</key>
+        <featureName>cpuid.ds</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.enfstrg</key>
+        <featureName>cpuid.enfstrg</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.f16c</key>
+        <featureName>cpuid.f16c</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.fcmd</key>
+        <featureName>cpuid.fcmd</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.fma</key>
+        <featureName>cpuid.fma</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.fsgsbase</key>
+        <featureName>cpuid.fsgsbase</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.hle</key>
+        <featureName>cpuid.hle</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.ibpb</key>
+        <featureName>cpuid.ibpb</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.ibrs</key>
+        <featureName>cpuid.ibrs</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.intel</key>
+        <featureName>cpuid.intel</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.invpcid</key>
+        <featureName>cpuid.invpcid</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.lahf64</key>
+        <featureName>cpuid.lahf64</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.lm</key>
+        <featureName>cpuid.lm</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.mdclear</key>
+        <featureName>cpuid.mdclear</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.movbe</key>
+        <featureName>cpuid.movbe</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.mwait</key>
+        <featureName>cpuid.mwait</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.nx</key>
+        <featureName>cpuid.nx</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.pcid</key>
+        <featureName>cpuid.pcid</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.pclmulqdq</key>
+        <featureName>cpuid.pclmulqdq</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.pdpe1gb</key>
+        <featureName>cpuid.pdpe1gb</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.popcnt</key>
+        <featureName>cpuid.popcnt</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.rdrand</key>
+        <featureName>cpuid.rdrand</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.rdseed</key>
+        <featureName>cpuid.rdseed</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.rdtscp</key>
+        <featureName>cpuid.rdtscp</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.rtm</key>
+        <featureName>cpuid.rtm</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.smap</key>
+        <featureName>cpuid.smap</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.smep</key>
+        <featureName>cpuid.smep</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.ss</key>
+        <featureName>cpuid.ss</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.ssbd</key>
+        <featureName>cpuid.ssbd</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.sse3</key>
+        <featureName>cpuid.sse3</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.sse41</key>
+        <featureName>cpuid.sse41</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.sse42</key>
+        <featureName>cpuid.sse42</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.ssse3</key>
+        <featureName>cpuid.ssse3</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.stibp</key>
+        <featureName>cpuid.stibp</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.vmx</key>
+        <featureName>cpuid.vmx</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.xcr0_master_bndcsr</key>
+        <featureName>cpuid.xcr0_master_bndcsr</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.xcr0_master_bndregs</key>
+        <featureName>cpuid.xcr0_master_bndregs</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.xcr0_master_sse</key>
+        <featureName>cpuid.xcr0_master_sse</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.xcr0_master_ymm_h</key>
+        <featureName>cpuid.xcr0_master_ymm_h</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.xsave</key>
+        <featureName>cpuid.xsave</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>cpuid.xsaveopt</key>
+        <featureName>cpuid.xsaveopt</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>hv.capable</key>
+        <featureName>hv.capable</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>misc.cpuidfaulting</key>
+        <featureName>misc.cpuidfaulting</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>svga16*svga.basecapslevel</key>
+        <featureName>svga16*svga.basecapslevel</featureName>
+        <value>7</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>svga16*svga.dxmaxconstantbuffers</key>
+        <featureName>svga16*svga.dxmaxconstantbuffers</featureName>
+        <value>0xe</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>svga16*svga.dxprovokingvertex</key>
+        <featureName>svga16*svga.dxprovokingvertex</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>svga16*svga.linestipple</key>
+        <featureName>svga16*svga.linestipple</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>svga16*svga.logicops</key>
+        <featureName>svga16*svga.logicops</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>svga16*svga.maxpointsize</key>
+        <featureName>svga16*svga.maxpointsize</featureName>
+        <value>0xbd</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>svga16*svga.maxtextureanisotropy</key>
+        <featureName>svga16*svga.maxtextureanisotropy</featureName>
+        <value>0x10</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>svga16*svga.maxtexturesize</key>
+        <featureName>svga16*svga.maxtexturesize</featureName>
+        <value>0x2000</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>svga16*svga.maxvolumeextent</key>
+        <featureName>svga16*svga.maxvolumeextent</featureName>
+        <value>0x800</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>svga16*svga.multisample2x</key>
+        <featureName>svga16*svga.multisample2x</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>svga16*svga.multisample4x</key>
+        <featureName>svga16*svga.multisample4x</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>svga16*svga.sm41</key>
+        <featureName>svga16*svga.sm41</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>svga16*svga.supports3d</key>
+        <featureName>svga16*svga.supports3d</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>vpmc.fixctr.0</key>
+        <featureName>vpmc.fixctr.0</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>vpmc.fixctr.2</key>
+        <featureName>vpmc.fixctr.2</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>vpmc.fixedwidth</key>
+        <featureName>vpmc.fixedwidth</featureName>
+        <value>0x30</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>vpmc.genctr.0</key>
+        <featureName>vpmc.genctr.0</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>vpmc.genctr.1</key>
+        <featureName>vpmc.genctr.1</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>vpmc.genctr.2</key>
+        <featureName>vpmc.genctr.2</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>vpmc.genctr.3</key>
+        <featureName>vpmc.genctr.3</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>vpmc.genwidth</key>
+        <featureName>vpmc.genwidth</featureName>
+        <value>0x30</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>vpmc.microarchitecture.broadwell</key>
+        <featureName>vpmc.microarchitecture.broadwell</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>vpmc.numfixedctrs</key>
+        <featureName>vpmc.numfixedctrs</featureName>
+        <value>3</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>vpmc.numgenctrs</key>
+        <featureName>vpmc.numgenctrs</featureName>
+        <value>4</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>vpmc.version</key>
+        <featureName>vpmc.version</featureName>
+        <value>3</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>vt.eptad</key>
+        <featureName>vt.eptad</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>vt.ple</key>
+        <featureName>vt.ple</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <maskedFeatureCapability>
+        <key>vt.realmode</key>
+        <featureName>vt.realmode</featureName>
+        <value>1</value>
+      </maskedFeatureCapability>
+      <scriptCheckSum>TdV0VsXgMj2dgm+3m8ZKdrVqtDc=</scriptCheckSum>
+      <hostConfigCheckSum>k9n/PL32KyrzKTmaYezNlhDKMfM=</hostConfigCheckSum>
+    </val>
+  </propSet>
+  <propSet>
+    <name>configIssue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfEvent"></val>
+  </propSet>
+  <propSet>
+    <name>configManager</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="HostConfigManager">
+      <datastoreSystem type="HostDatastoreSystem">datastoreSystem-17245</datastoreSystem>
+      <memoryManager type="HostMemorySystem">memorySystem-17245</memoryManager>
+      <storageSystem type="HostStorageSystem">storageSystem-17245</storageSystem>
+      <networkSystem type="HostNetworkSystem">networkSystem-17245</networkSystem>
+      <vmotionSystem type="HostVMotionSystem">vmotionSystem-17245</vmotionSystem>
+      <virtualNicManager type="HostVirtualNicManager">virtualNicManager-17245</virtualNicManager>
+      <serviceSystem type="HostServiceSystem">serviceSystem-17245</serviceSystem>
+      <advancedOption type="OptionManager">EsxHostAdvSettings-17245</advancedOption>
+      <autoStartManager type="HostAutoStartManager">autoStartManager-17245</autoStartManager>
+      <patchManager type="HostPatchManager">patchManager-17245</patchManager>
+      <esxAgentHostManager type="HostEsxAgentHostManager">esxAgentHostManager-17245</esxAgentHostManager>
+      <userDirectory type="UserDirectory">userDirectory-17245</userDirectory>
+      <accountManager type="HostLocalAccountManager">accountManager-17245</accountManager>
+      <certificateManager type="HostCertificateManager">ha-certificate-manager-17245</certificateManager>
+    </val>
+  </propSet>
+  <propSet>
+    <name>configStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">gray</val>
+  </propSet>
+  <propSet>
+    <name>customValue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>datastore</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="Datastore">datastore-17246</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>datastoreBrowser</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="HostDatastoreBrowser">datastoreBrowser-host-17245</val>
+  </propSet>
+  <propSet>
+    <name>declaredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState">
+      <AlarmState>
+        <key>alarm-1.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-1</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-11-23T19:29:48.001972Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-109.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-109</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002012Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-11.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-11</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002046Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-114.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-114</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002068Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-115.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-115</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002091Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-116.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-116</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002113Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-117.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-117</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002134Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-118.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-118</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002153Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-119.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-119</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002172Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-120.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-120</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002191Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-121.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-121</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002209Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-122.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-122</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002228Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-123.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-123</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002245Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-124.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-124</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002262Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-125.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-125</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002278Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-13.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-13</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002295Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-14.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-14</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002315Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1404.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-1404</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002335Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1405.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-1405</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002352Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-1501.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-1501</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.00237Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-16.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-16</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002398Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-17.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-17</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.00242Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-20.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-20</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002443Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-21.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-21</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002463Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-22.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-22</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002483Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-23.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-23</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002503Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-25.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-25</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002519Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-26.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-26</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002537Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-3.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-3</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-11-23T19:30:10.873062Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-37.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-37</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002616Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-4.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-4</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-11-23T19:30:10.873066Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-42.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-42</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002679Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-43.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-43</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002699Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-44.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-44</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002721Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-45.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-45</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002741Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-46.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-46</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002775Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-48.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-48</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002801Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-49.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-49</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.00282Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-50.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-50</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002839Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-77.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-77</alarm>
+        <overallStatus>green</overallStatus>
+        <time>2020-11-23T19:29:50.650255Z</time>
+        <acknowledged>false</acknowledged>
+        <eventKey>17158712</eventKey>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-82.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-82</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002876Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-85.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-85</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002894Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-88.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-88</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002915Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-90.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-90</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002933Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+      <AlarmState>
+        <key>alarm-93.host-17245</key>
+        <entity type="HostSystem">host-17245</entity>
+        <alarm type="Alarm">alarm-93</alarm>
+        <overallStatus>gray</overallStatus>
+        <time>2020-11-23T19:29:48.002953Z</time>
+        <acknowledged>false</acknowledged>
+      </AlarmState>
+    </val>
+  </propSet>
+  <propSet>
+    <name>disabledMethod</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfString">
+      <string>RebootHost_Task</string>
+      <string>ShutdownHost_Task</string>
+      <string>ExitMaintenanceMode_Task</string>
+      <string>PowerUpHostFromStandBy_Task</string>
+      <string>PowerDownHostToStandBy_Task</string>
+      <string>ReconnectHost_Task</string>
+      <string>ReconfigureHostForDAS_Task</string>
+    </val>
+  </propSet>
+  <propSet>
+    <name>effectiveRole</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfInt">
+      <int>-1939043557</int>
+      <int>1101</int>
+      <int>11135926</int>
+    </val>
+  </propSet>
+  <propSet>
+    <name>hardware</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="HostHardwareInfo">
+      <systemInfo>
+        <vendor>VMware</vendor>
+        <model>VMware Mobility Platform</model>
+        <uuid>421c6cd9-8051-7738-51ac-d1fb0bc73906</uuid>
+      </systemInfo>
+      <cpuInfo>
+        <numCpuPackages>2</numCpuPackages>
+        <numCpuCores>128</numCpuCores>
+        <numCpuThreads>128</numCpuThreads>
+        <hz>3000000000</hz>
+      </cpuInfo>
+      <cpuPkg>
+        <index>1</index>
+        <vendor>intel</vendor>
+        <hz>3000000000</hz>
+        <busHz>1001</busHz>
+        <description>VMware Virtual Processor</description>
+        <threadId>1</threadId>
+        <threadId>2</threadId>
+        <threadId>3</threadId>
+        <threadId>4</threadId>
+        <threadId>5</threadId>
+        <threadId>6</threadId>
+        <threadId>7</threadId>
+        <threadId>8</threadId>
+        <cpuFeature>
+          <level>0</level>
+          <eax>0000:0000:0000:0000:0000:0000:0001:0100</eax>
+          <ebx>0111:0101:0110:1110:0110:0101:0100:0111</ebx>
+          <ecx>0110:1100:0110:0101:0111:0100:0110:1110</ecx>
+          <edx>0100:1001:0110:0101:0110:1110:0110:1001</edx>
+        </cpuFeature>
+        <cpuFeature>
+          <level>1</level>
+          <eax>0000:0000:0000:0100:0000:0110:1111:0001</eax>
+          <ebx>0000:0000:0100:0000:0000:1000:0000:0000</ebx>
+          <ecx>0111:0111:1111:1110:1111:1011:1111:1111</ecx>
+          <edx>1011:1111:1110:1011:1111:1011:1111:1111</edx>
+        </cpuFeature>
+        <cpuFeature>
+          <level>-2147483648</level>
+          <eax>1000:0000:0000:0000:0000:0000:0000:1000</eax>
+          <ebx>0000:0000:0000:0000:0000:0000:0000:0000</ebx>
+          <ecx>0000:0000:0000:0000:0000:0000:0000:0000</ecx>
+          <edx>0000:0000:0000:0000:0000:0000:0000:0000</edx>
+        </cpuFeature>
+        <cpuFeature>
+          <level>-2147483647</level>
+          <eax>0000:0000:0000:0000:0000:0000:0000:0000</eax>
+          <ebx>0000:0000:0000:0000:0000:0000:0000:0000</ebx>
+          <ecx>0000:0000:0000:0000:0000:0001:0010:0001</ecx>
+          <edx>0010:1100:0001:0000:0000:1000:0000:0000</edx>
+        </cpuFeature>
+        <cpuFeature>
+          <level>-2147483640</level>
+          <eax>0000:0000:0000:0000:0011:0000:0010:1110</eax>
+          <ebx>0000:0000:0000:0000:0000:0000:0000:0000</ebx>
+          <ecx>0000:0000:0000:0000:0000:0000:0000:0000</ecx>
+          <edx>0000:0000:0000:0000:0000:0000:0000:0000</edx>
+        </cpuFeature>
+      </cpuPkg>
+      <memorySize>1099511627776</memorySize>
+      <numaInfo>
+        <type>X440</type>
+        <numNodes>1</numNodes>
+        <numaNode>
+          <typeId>9</typeId>
+          <cpuID>1</cpuID>
+          <cpuID>2</cpuID>
+          <cpuID>3</cpuID>
+          <cpuID>4</cpuID>
+          <cpuID>5</cpuID>
+          <cpuID>6</cpuID>
+          <cpuID>7</cpuID>
+          <cpuID>8</cpuID>
+          <memoryRangeBegin>0</memoryRangeBegin>
+          <memoryRangeLength>909090909</memoryRangeLength>
+          <pciId>0000:00:00.0</pciId>
+        </numaNode>
+      </numaInfo>
+      <smcPresent>true</smcPresent>
+      <pciDevice>
+        <id>23:14.1</id>
+        <classId>0</classId>
+        <bus>23</bus>
+        <slot>14</slot>
+        <function>1</function>
+        <vendorId>0</vendorId>
+        <subVendorId>16477</subVendorId>
+        <vendorName>Mockup Vendor</vendorName>
+        <deviceId>0</deviceId>
+        <subDeviceId>0</subDeviceId>
+        <deviceName>vmnic0</deviceName>
+      </pciDevice>
+      <pciDevice>
+        <id>32:34.3</id>
+        <classId>0</classId>
+        <bus>32</bus>
+        <slot>34</slot>
+        <function>3</function>
+        <vendorId>0</vendorId>
+        <subVendorId>16477</subVendorId>
+        <vendorName>Mockup Vendor</vendorName>
+        <deviceId>0</deviceId>
+        <subDeviceId>0</subDeviceId>
+        <deviceName>vmnic1</deviceName>
+      </pciDevice>
+      <pciDevice>
+        <id>33:12.3</id>
+        <classId>0</classId>
+        <bus>33</bus>
+        <slot>12</slot>
+        <function>3</function>
+        <vendorId>0</vendorId>
+        <subVendorId>16477</subVendorId>
+        <vendorName>Mockup Vendor</vendorName>
+        <deviceId>0</deviceId>
+        <subDeviceId>0</subDeviceId>
+        <deviceName>vmnic2</deviceName>
+      </pciDevice>
+      <pciDevice>
+        <id>43:14.1</id>
+        <classId>0</classId>
+        <bus>43</bus>
+        <slot>14</slot>
+        <function>1</function>
+        <vendorId>0</vendorId>
+        <subVendorId>16477</subVendorId>
+        <vendorName>Mockup Vendor</vendorName>
+        <deviceId>0</deviceId>
+        <subDeviceId>0</subDeviceId>
+        <deviceName>vmnic3</deviceName>
+      </pciDevice>
+      <pciDevice>
+        <id>44:14.1</id>
+        <classId>0</classId>
+        <bus>44</bus>
+        <slot>14</slot>
+        <function>1</function>
+        <vendorId>0</vendorId>
+        <subVendorId>16477</subVendorId>
+        <vendorName>Mockup Vendor</vendorName>
+        <deviceId>0</deviceId>
+        <subDeviceId>0</subDeviceId>
+        <deviceName>vmnic4</deviceName>
+      </pciDevice>
+      <pciDevice>
+        <id>45:14.1</id>
+        <classId>0</classId>
+        <bus>45</bus>
+        <slot>14</slot>
+        <function>1</function>
+        <vendorId>0</vendorId>
+        <subVendorId>16477</subVendorId>
+        <vendorName>Mockup Vendor</vendorName>
+        <deviceId>0</deviceId>
+        <subDeviceId>0</subDeviceId>
+        <deviceName>vmnic5</deviceName>
+      </pciDevice>
+      <pciDevice>
+        <id>46:14.1</id>
+        <classId>0</classId>
+        <bus>46</bus>
+        <slot>14</slot>
+        <function>1</function>
+        <vendorId>0</vendorId>
+        <subVendorId>16477</subVendorId>
+        <vendorName>Mockup Vendor</vendorName>
+        <deviceId>0</deviceId>
+        <subDeviceId>0</subDeviceId>
+        <deviceName>vmnic6</deviceName>
+      </pciDevice>
+      <pciDevice>
+        <id>47:14.1</id>
+        <classId>0</classId>
+        <bus>47</bus>
+        <slot>14</slot>
+        <function>1</function>
+        <vendorId>0</vendorId>
+        <subVendorId>16477</subVendorId>
+        <vendorName>Mockup Vendor</vendorName>
+        <deviceId>0</deviceId>
+        <subDeviceId>0</subDeviceId>
+        <deviceName>vmnic7</deviceName>
+      </pciDevice>
+      <cpuFeature>
+        <level>0</level>
+        <eax>0000:0000:0000:0000:0000:0000:0001:0100</eax>
+        <ebx>0111:0101:0110:1110:0110:0101:0100:0111</ebx>
+        <ecx>0110:1100:0110:0101:0111:0100:0110:1110</ecx>
+        <edx>0100:1001:0110:0101:0110:1110:0110:1001</edx>
+      </cpuFeature>
+      <cpuFeature>
+        <level>1</level>
+        <eax>0000:0000:0000:0100:0000:0110:1111:0001</eax>
+        <ebx>0000:0000:0100:0000:0000:1000:0000:0000</ebx>
+        <ecx>0111:0111:1111:1110:1111:1011:1111:1111</ecx>
+        <edx>1011:1111:1110:1011:1111:1011:1111:1111</edx>
+      </cpuFeature>
+      <cpuFeature>
+        <level>-2147483648</level>
+        <eax>1000:0000:0000:0000:0000:0000:0000:1000</eax>
+        <ebx>0000:0000:0000:0000:0000:0000:0000:0000</ebx>
+        <ecx>0000:0000:0000:0000:0000:0000:0000:0000</ecx>
+        <edx>0000:0000:0000:0000:0000:0000:0000:0000</edx>
+      </cpuFeature>
+      <cpuFeature>
+        <level>-2147483647</level>
+        <eax>0000:0000:0000:0000:0000:0000:0000:0000</eax>
+        <ebx>0000:0000:0000:0000:0000:0000:0000:0000</ebx>
+        <ecx>0000:0000:0000:0000:0000:0001:0010:0001</ecx>
+        <edx>0010:1100:0001:0000:0000:1000:0000:0000</edx>
+      </cpuFeature>
+      <cpuFeature>
+        <level>-2147483640</level>
+        <eax>0000:0000:0000:0000:0011:0000:0010:1110</eax>
+        <ebx>0000:0000:0000:0000:0000:0000:0000:0000</ebx>
+        <ecx>0000:0000:0000:0000:0000:0000:0000:0000</ecx>
+        <edx>0000:0000:0000:0000:0000:0000:0000:0000</edx>
+      </cpuFeature>
+    </val>
+  </propSet>
+  <propSet>
+    <name>licensableResource</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="HostLicensableResourceInfo">
+      <resource>
+        <key>numCpuPackages</key>
+        <value XMLSchema-instance:type="xsd:long">2</value>
+      </resource>
+      <resource>
+        <key>numCpuCores</key>
+        <value XMLSchema-instance:type="xsd:long">128</value>
+      </resource>
+      <resource>
+        <key>memorySize</key>
+        <value XMLSchema-instance:type="xsd:long">1073741824</value>
+      </resource>
+      <resource>
+        <key>memoryForVms</key>
+        <value XMLSchema-instance:type="xsd:long">0</value>
+      </resource>
+      <resource>
+        <key>numVmsStarted</key>
+        <value XMLSchema-instance:type="xsd:long">0</value>
+      </resource>
+      <resource>
+        <key>numVmsStarting</key>
+        <value XMLSchema-instance:type="xsd:long">0</value>
+      </resource>
+    </val>
+  </propSet>
+  <propSet>
+    <name>name</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:string">10.46.224.24</val>
+  </propSet>
+  <propSet>
+    <name>network</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="Network">network-17248</ManagedObjectReference>
+      <ManagedObjectReference type="Network">network-17249</ManagedObjectReference>
+      <ManagedObjectReference type="Network">network-17247</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>overallStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">green</val>
+  </propSet>
+  <propSet>
+    <name>parent</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="ComputeResource">domain-s17243</val>
+  </propSet>
+  <propSet>
+    <name>permission</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfPermission"></val>
+  </propSet>
+  <propSet>
+    <name>recentTask</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>runtime</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="HostRuntimeInfo">
+      <connectionState>connected</connectionState>
+      <powerState>poweredOn</powerState>
+      <standbyMode>none</standbyMode>
+      <inMaintenanceMode>false</inMaintenanceMode>
+      <inQuarantineMode>false</inQuarantineMode>
+      <bootTime>2020-11-23T19:28:30.13421Z</bootTime>
+      <hostMaxVirtualDiskCapacity>68169720922112</hostMaxVirtualDiskCapacity>
+    </val>
+  </propSet>
+  <propSet>
+    <name>summary</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="HostListSummary">
+      <host type="HostSystem">host-17245</host>
+      <hardware>
+        <vendor>VMware</vendor>
+        <model>VMware Mobility Platform</model>
+        <uuid>421c6cd9-8051-7738-51ac-d1fb0bc73906</uuid>
+        <memorySize>1099511627776</memorySize>
+        <cpuModel>VMware Virtual Processor</cpuModel>
+        <cpuMhz>3000</cpuMhz>
+        <numCpuPkgs>2</numCpuPkgs>
+        <numCpuCores>128</numCpuCores>
+        <numCpuThreads>128</numCpuThreads>
+        <numNics>8</numNics>
+        <numHBAs>1</numHBAs>
+      </hardware>
+      <runtime>
+        <connectionState>connected</connectionState>
+        <powerState>poweredOn</powerState>
+        <standbyMode>none</standbyMode>
+        <inMaintenanceMode>false</inMaintenanceMode>
+        <inQuarantineMode>false</inQuarantineMode>
+        <bootTime>2020-11-23T19:28:30.13421Z</bootTime>
+        <hostMaxVirtualDiskCapacity>68169720922112</hostMaxVirtualDiskCapacity>
+      </runtime>
+      <config>
+        <name>10.46.224.24</name>
+        <port>443</port>
+        <sslThumbprint>7F:F7:15:15:C3:D0:A4:2E:F1:9B:DC:90:33:64:63:F2:38:10:A0:8D</sslThumbprint>
+        <product>
+          <name>VMware ESXi</name>
+          <fullName>VMware ESXi 7.0.0 build-17093508</fullName>
+          <vendor>VMware, Inc.</vendor>
+          <version>7.0.0</version>
+          <build>17093508</build>
+          <localeVersion>INTL</localeVersion>
+          <localeBuild>000</localeBuild>
+          <osType>vmnix-x86</osType>
+          <productLineId>embeddedEsx</productLineId>
+          <apiType>HostAgent</apiType>
+          <apiVersion>7.0.0.0</apiVersion>
+          <instanceUuid>UUID-Mockup</instanceUuid>
+          <licenseProductName>VMware Mobility Agent</licenseProductName>
+          <licenseProductVersion>5.1</licenseProductVersion>
+        </product>
+        <vmotionEnabled>true</vmotionEnabled>
+        <faultToleranceEnabled>false</faultToleranceEnabled>
+      </config>
+      <quickStats>
+        <distributedCpuFairness>-1</distributedCpuFairness>
+        <distributedMemoryFairness>-1</distributedMemoryFairness>
+        <availablePMemCapacity>-1</availablePMemCapacity>
+        <uptime>58422300</uptime>
+      </quickStats>
+      <overallStatus>green</overallStatus>
+      <rebootRequired>false</rebootRequired>
+      <managementServerIp>10.46.224.4</managementServerIp>
+      <maxEVCModeKey>intel-broadwell</maxEVCModeKey>
+    </val>
+  </propSet>
+  <propSet>
+    <name>systemResources</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="HostSystemResourceInfo">
+      <key>host</key>
+      <config>
+        <cpuAllocation>
+          <reservation>400</reservation>
+          <expandableReservation>false</expandableReservation>
+          <limit>400</limit>
+          <shares>
+            <shares>1000</shares>
+            <level>custom</level>
+          </shares>
+          <overheadLimit>-1</overheadLimit>
+        </cpuAllocation>
+        <memoryAllocation>
+          <reservation>256</reservation>
+          <expandableReservation>false</expandableReservation>
+          <limit>256</limit>
+          <shares>
+            <shares>1000</shares>
+            <level>custom</level>
+          </shares>
+          <overheadLimit>-1</overheadLimit>
+        </memoryAllocation>
+      </config>
+      <child>
+        <key>host/vim/vmvisor</key>
+        <config>
+          <cpuAllocation>
+            <reservation>400</reservation>
+            <expandableReservation>false</expandableReservation>
+            <limit>400</limit>
+            <shares>
+              <shares>1000</shares>
+              <level>custom</level>
+            </shares>
+            <overheadLimit>-1</overheadLimit>
+          </cpuAllocation>
+          <memoryAllocation>
+            <reservation>256</reservation>
+            <expandableReservation>false</expandableReservation>
+            <limit>256</limit>
+            <shares>
+              <shares>1000</shares>
+              <level>custom</level>
+            </shares>
+            <overheadLimit>-1</overheadLimit>
+          </memoryAllocation>
+        </config>
+        <child>
+          <key>host/vim/vmvisor/aam</key>
+          <config>
+            <cpuAllocation>
+              <reservation>400</reservation>
+              <expandableReservation>false</expandableReservation>
+              <limit>400</limit>
+              <shares>
+                <shares>1000</shares>
+                <level>custom</level>
+              </shares>
+              <overheadLimit>-1</overheadLimit>
+            </cpuAllocation>
+            <memoryAllocation>
+              <reservation>256</reservation>
+              <expandableReservation>false</expandableReservation>
+              <limit>256</limit>
+              <shares>
+                <shares>1000</shares>
+                <level>custom</level>
+              </shares>
+              <overheadLimit>-1</overheadLimit>
+            </memoryAllocation>
+          </config>
+        </child>
+      </child>
+    </val>
+  </propSet>
+  <propSet>
+    <name>tag</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfTag"></val>
+  </propSet>
+  <propSet>
+    <name>triggeredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState"></val>
+  </propSet>
+  <propSet>
+    <name>value</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>vm</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+</ObjectContent>

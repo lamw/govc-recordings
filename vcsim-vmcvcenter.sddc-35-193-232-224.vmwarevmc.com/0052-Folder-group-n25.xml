@@ -1,0 +1,140 @@
+<ObjectContent>
+  <obj type="Folder">group-n25</obj>
+  <propSet>
+    <name>alarmActionsEnabled</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:boolean">true</val>
+  </propSet>
+  <propSet>
+    <name>availableField</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldDef"></val>
+  </propSet>
+  <propSet>
+    <name>childEntity</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference">
+      <ManagedObjectReference type="Network">network-17249</ManagedObjectReference>
+      <ManagedObjectReference type="Network">network-17248</ManagedObjectReference>
+      <ManagedObjectReference type="Network">network-17247</ManagedObjectReference>
+      <ManagedObjectReference type="Network">network-270</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o17368</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o6337</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o4370</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o278</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o7185</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o12885</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o3361</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o2006</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o14701</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o13541</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o12381</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o13569</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o2062</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o8266</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o3359</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o1732</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o14621</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o1731</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o1399</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o344</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o12303</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o12309</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o5200</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o14503</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o13586</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o14700</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o12679</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o745</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o112</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o376</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o65</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o13140</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o13370</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o1398</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o15025</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o14353</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o70</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o17193</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o1443</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o12588</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o6338</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o66</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o375</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o14788</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o7381</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o15007</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o72</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o12595</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o12212</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o1939</ManagedObjectReference>
+      <ManagedObjectReference type="OpaqueNetwork">network-o15031</ManagedObjectReference>
+      <ManagedObjectReference type="Folder">group-n57</ManagedObjectReference>
+    </val>
+  </propSet>
+  <propSet>
+    <name>childType</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfString">
+      <string>Folder</string>
+      <string>Network</string>
+      <string>DistributedVirtualSwitch</string>
+    </val>
+  </propSet>
+  <propSet>
+    <name>configIssue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfEvent"></val>
+  </propSet>
+  <propSet>
+    <name>configStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">gray</val>
+  </propSet>
+  <propSet>
+    <name>customValue</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+  <propSet>
+    <name>declaredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState"></val>
+  </propSet>
+  <propSet>
+    <name>disabledMethod</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfString"></val>
+  </propSet>
+  <propSet>
+    <name>effectiveRole</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfInt">
+      <int>-1939043557</int>
+      <int>1101</int>
+      <int>11135926</int>
+    </val>
+  </propSet>
+  <propSet>
+    <name>name</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="xsd:string">network</val>
+  </propSet>
+  <propSet>
+    <name>overallStatus</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedEntityStatus">gray</val>
+  </propSet>
+  <propSet>
+    <name>parent</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ManagedObjectReference" type="Datacenter">datacenter-21</val>
+  </propSet>
+  <propSet>
+    <name>permission</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfPermission"></val>
+  </propSet>
+  <propSet>
+    <name>recentTask</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfManagedObjectReference"></val>
+  </propSet>
+  <propSet>
+    <name>tag</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfTag"></val>
+  </propSet>
+  <propSet>
+    <name>triggeredAlarmState</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfAlarmState"></val>
+  </propSet>
+  <propSet>
+    <name>value</name>
+    <val xmlns:XMLSchema-instance="http://www.w3.org/2001/XMLSchema-instance" XMLSchema-instance:type="ArrayOfCustomFieldValue"></val>
+  </propSet>
+</ObjectContent>
